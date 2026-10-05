@@ -1,0 +1,40 @@
+{
+ "month": "2026-03",
+ "feed": [
+  {
+   "d": "2026-03-25",
+   "c": "Research",
+   "s": "confirmed",
+   "h": "New York Fed: legal betting raises credit delinquencies, most among people under 40",
+   "b": "Delinquency rose about 0.3 points overall after legalization, and credit-card delinquency rose 1.02 points among borrowers under 40.",
+   "src": [
+    {
+     "o": "Liberty Street Economics (NY Fed)",
+     "t": "Sports Betting Is Everywhere, Especially on Credit Reports",
+     "u": "https://libertystreeteconomics.newyorkfed.org/2026/03/sports-betting-is-everywhere-especially-on-credit-reports/"
+    }
+   ],
+   "id": "2026-03-25-new-york-fed-legal-betting-raises-credit"
+  },
+  {
+   "d": "2026-03-19",
+   "c": "Athletes & deals",
+   "s": "confirmed",
+   "h": "MLB names Polymarket its exclusive prediction-market partner",
+   "b": "MLB did not announce a price. Unnamed sources gave conflicting figures, from about $150 million to $300 million, so we do not record an amount.",
+   "src": [
+    {
+     "o": "ESPN",
+     "t": "MLB reaches agreements with Polymarket, federal commission",
+     "u": "https://www.espn.com/mlb/story/_/id/48248176/mlb-reaches-agreements-polymarket-federal-commission"
+    },
+    {
+     "o": "Front Office Sports",
+     "t": "MLB Makes Multiyear Prediction-Market Deal With Polymarket",
+     "u": "https://frontofficesports.com/article/mlb-makes-multiyear-prediction-markets-deal-with-polymarket/"
+    }
+   ],
+   "id": "2026-03-19-mlb-names-polymarket-its-exclusive-predictionmarket-partner"
+  }
+ ]
+}

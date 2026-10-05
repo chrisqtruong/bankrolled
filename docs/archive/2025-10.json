@@ -1,0 +1,20 @@
+{
+ "month": "2025-10",
+ "feed": [
+  {
+   "d": "2025-10-23",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "Federal prosecutors charge Terry Rozier, Chauncey Billups and Damon Jones",
+   "b": "More than 30 people were arrested in two cases, one over betting on NBA inside information and one over rigged poker games prosecutors tie to organized crime.",
+   "src": [
+    {
+     "o": "NBC News",
+     "t": "Billups, Rozier among over 30 arrested in two federal gambling-related investigations",
+     "u": "https://www.nbcnews.com/news/us-news/live-blog/live-updates-nba-chauncey-billups-terry-rozier-arrested-gambling-rcna239312"
+    }
+   ],
+   "id": "2025-10-23-federal-prosecutors-charge-terry-rozier-chauncey-billups"
+  }
+ ]
+}

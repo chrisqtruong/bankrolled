@@ -1,0 +1,65 @@
+{
+ "month": "2026-04",
+ "feed": [
+  {
+   "d": "2026-04-28",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "Damon Jones is the first to plead guilty in the NBA gambling cases",
+   "b": "He pleaded guilty to two wire-fraud conspiracy counts, covering betting on nonpublic injury information and the rigged poker games.",
+   "src": [
+    {
+     "o": "ESPN",
+     "t": "Ex-NBA player Damon Jones 1st to plead guilty in gambling case",
+     "u": "https://www.espn.com/nba/story/_/id/48618707/ex-nba-player-damon-jones-1st-plead-guilty-gambling-case"
+    }
+   ],
+   "id": "2026-04-28-damon-jones-is-the-first-to-plead"
+  },
+  {
+   "d": "2026-04-28",
+   "c": "Research",
+   "s": "confirmed",
+   "h": "Test accounts set up as 15-year-olds were shown gambling promotions on TikTok, YouTube and Instagram",
+   "b": "The Institute for Strategic Dialogue found all three platforms surfaced betting and prediction-market content, mostly through influencers and athletes.",
+   "src": [
+    {
+     "o": "Institute for Strategic Dialogue",
+     "t": "Pathways to parlays",
+     "u": "https://www.isdglobal.org/digital-dispatch/pathways-to-parlays-analyzing-youth-exposure-to-online-gambling-prediction-market-advertising/"
+    }
+   ],
+   "id": "2026-04-28-test-accounts-set-up-as-15yearolds-were"
+  },
+  {
+   "d": "2026-04-13",
+   "c": "Research",
+   "s": "confirmed",
+   "h": "More than half of men aged 18 to 49 have an active online sportsbook account",
+   "b": "Siena's survey found 27% of all Americans and 52% of men 18 to 49 had an active account, up from 22% and 48% a year earlier.",
+   "src": [
+    {
+     "o": "Siena Research Institute",
+     "t": "ASFS 2026 Release 2: Sports Betting",
+     "u": "https://sri.siena.edu/wp-content/uploads/2026/04/ASFS2026-Release-2-Sports-Betting-Final.pdf"
+    }
+   ],
+   "id": "2026-04-13-more-than-half-of-men-aged-18"
+  },
+  {
+   "d": "2026-04-09",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "DraftKings, FanDuel, Fanatics and bet365 revealed as funders of a new super PAC",
+   "b": "Axios reported Win for America had spent more than $20 million across six states and planned to get involved in 15 more.",
+   "src": [
+    {
+     "o": "Axios",
+     "t": "Exclusive: DraftKings, FanDuel, Fanatics fund sports betting super PAC",
+     "u": "https://www.axios.com/2026/04/09/sports-gambling-super-pac-draftkings-fanduel"
+    }
+   ],
+   "id": "2026-04-09-draftkings-fanduel-fanatics-and-bet365-revealed-as"
+  }
+ ]
+}

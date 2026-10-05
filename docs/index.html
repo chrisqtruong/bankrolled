@@ -263,6 +263,14 @@
   .newtag { font: 600 11px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
   article.post.fresh { border-left: 3px solid var(--accent); padding-left: 14px; margin-left: -17px; }
   @media (max-width: 760px) { article.post.fresh { margin-left: 0; } }
+  .postfoot { display: flex; gap: 18px; padding-top: 2px; }
+  .pbtn { background: none; border: 0; padding: 4px 0; font: 500 14px/1 var(--sans); color: var(--mute); cursor: pointer; border-bottom: 1px solid transparent; }
+  .pbtn:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .pbtn[aria-expanded="true"] { color: var(--ink); }
+  .discuss { display: grid; gap: 10px; padding: 14px 0 4px; border-top: 1px dashed var(--rule); margin-top: 6px; min-width: 0; }
+  .discuss-note { margin: 0; font: 400 14px/1.45 var(--body); color: var(--mute); }
+  .discuss .giscus, .discuss iframe { width: 100%; min-width: 0; }
+  article.post.target { background: var(--wash); box-shadow: -14px 0 0 var(--wash), 14px 0 0 var(--wash); transition: background .6s; }
   footer { border-top: 3px double var(--ink); padding-top: 18px; display: grid; gap: 10px; }
   .foot-brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; justify-self: start; }
   .foot-brand svg { width: 26px; height: 26px; color: var(--accent); flex: none; }
@@ -336,6 +344,8 @@
       </div>
       <div id="feed-list" style="display:grid;gap:28px;min-width:0"><p class="empty">Loading the feed…</p></div>
       <button class="plain more" id="feed-more" type="button" hidden>Show more</button>
+      <button class="plain more" id="archive-btn" type="button" hidden>Open the archive</button>
+      <p class="exportnote" id="archive-note" hidden>You've reached the start of the archive. The feed keeps the last 90 days; older posts move into the archive and are never deleted.</p>
     </section>
 
     <!-- LEDGER -->
@@ -418,6 +428,12 @@
           <li>Super PAC data arrives quarterly. Between filings, the political totals do not move.</li>
         </ul>
 
+        <h3>Archive</h3>
+        <p>The feed shows the last 90 days. Older posts move into a monthly archive at the bottom of the feed and are never deleted, so every post keeps a permanent link. The Ledger and the charts always cover the full history.</p>
+
+        <h3>Comments</h3>
+        <p>Every post has its own comment thread, stored publicly in this project's GitHub Discussions, so commenting needs a GitHub account. Corrections and new leads with a source are the most useful comments. Comments that harass people or make unsupported accusations are removed.</p>
+
         <h3>Corrections</h3>
         <p>When a fact changes or turns out to be wrong, the entry is corrected in place and the correction is noted in the entry.</p>
       </div>
@@ -461,17 +477,28 @@
   const TABS = ['feed', 'ledger', 'numbers', 'method'];
   function show() {
     const h = (location.hash || '#feed').slice(1);
-    const tab = TABS.includes(h) ? h : 'feed';
+    const tab = TABS.includes(h) ? h : 'feed';  // post links (#p-...) open the feed
     TABS.forEach(t => { document.getElementById('s-' + t).hidden = t !== tab; });
     document.querySelectorAll('nav.tabs a').forEach(a => { if (a.dataset.tab === tab) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   }
-  window.addEventListener('hashchange', () => { show(); window.scrollTo(0, 0); });
+  let openPost = null; // set once the feed is ready
+  window.addEventListener('hashchange', () => {
+    show();
+    if (location.hash.startsWith('#p-') && openPost) openPost(location.hash.slice(3)); else window.scrollTo(0, 0);
+  });
 
   // ---- theme: auto follows the device; light/dark override it and are remembered on this device
   const themeSeg = $('#theme');
   function applyTheme(t) {
     if (t === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t);
     themeSeg.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.t === t)));
+    const f = document.querySelector('iframe.giscus-frame');
+    if (f) f.contentWindow.postMessage({ giscus: { setConfig: { theme: giscusTheme() } } }, 'https://giscus.app');
+  }
+  function giscusTheme() {
+    const t = document.documentElement.getAttribute('data-theme');
+    const dark = t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    return dark ? 'dark' : 'light';
   }
   let savedTheme = 'auto';
   try { savedTheme = localStorage.getItem('bankrolled-theme') || 'auto'; } catch (e) {}
@@ -765,15 +792,19 @@
 
     // feed
     const feed = [...data.feed].sort((a, b) => b.d.localeCompare(a.d));
-    const cats = ['All', ...new Set(feed.map(f => f.c))];
+    let archiveLoaded = false, archiveIndex = null;
     let active = 'All', days = 0, confOnly = false, limit = 20;
     const PAGE = 20;
     const ref = new Date(data.updated + 'T12:00:00Z');
     const dayOf = d => new Date((d.length === 4 ? d + '-01-01' : d.length === 7 ? d + '-01' : d) + 'T12:00:00Z');
     const ff = $('#feed-filters');
     const ORDER = ['All', 'Political money', 'Athletes & deals', 'Lawsuits & fines', 'Regulation', 'Integrity', 'Industry', 'Research'];
-    cats.sort((a, b) => (ORDER.indexOf(a) + 1 || 99) - (ORDER.indexOf(b) + 1 || 99));
-    ff.innerHTML = cats.map(c => `<button type="button" aria-pressed="${c === 'All'}" data-c="${esc(c)}">${esc(c)} <span class="ct"></span></button>`).join('');
+    function buildCats() {
+      const cats = ['All', ...new Set(feed.map(f => f.c))];
+      cats.sort((a, b) => (ORDER.indexOf(a) + 1 || 99) - (ORDER.indexOf(b) + 1 || 99));
+      ff.innerHTML = cats.map(c => `<button type="button" aria-pressed="${c === active}" data-c="${esc(c)}">${esc(c)} <span class="ct"></span></button>`).join('');
+    }
+    buildCats();
     function drawFeed() {
       const base = feed.filter(f => (!confOnly || f.s === 'confirmed') && (!days || (ref - dayOf(f.d)) / 864e5 <= days));
       ff.querySelectorAll('button').forEach(b => {
@@ -788,16 +819,86 @@
       $('#feed-count').textContent = items.length ? `${items.length} post${items.length === 1 ? '' : 's'}` : '';
       $('#feed-list').innerHTML = items.length ? [...byDay].map(([d, posts]) => `
         <div class="day"><span class="label">${esc(longDate(d))}</span>
-        ${posts.map(f => { const isNew = f.added && Date.now() - Date.parse(f.added) < 864e5; return `<article class="post${isNew ? ' fresh' : ''}">
+        ${posts.map(f => { const isNew = f.added && Date.now() - Date.parse(f.added) < 864e5; return `<article class="post${isNew ? ' fresh' : ''}" id="p-${esc(f.id)}" data-id="${esc(f.id)}">
           <div class="meta">${statusChip(f.s)}<span class="label">${esc(f.c)}</span>${isNew ? `<span class="newtag" data-added="${esc(f.added)}">New · ${ago(Date.now() - Date.parse(f.added))}</span>` : ''}</div>
           <h3>${esc(f.h)}</h3>
           <p>${esc(f.b)}</p>
           <div class="sources">Sources: ${f.src.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener" title="${esc(s.t || '')}">${esc(s.o)}</a> <span class="ext" aria-hidden="true">↗</span>`).join('&ensp;·&ensp;')}</div>
+          <div class="postfoot"><button type="button" class="pbtn" data-act="discuss" aria-expanded="false">Comments</button><button type="button" class="pbtn" data-act="copy">Copy link</button></div>
+          <div class="discuss" hidden></div>
         </article>`; }).join('')}</div>`).join('') : '<p class="empty">Nothing matches these filters. Try a longer time range or another topic.</p>';
       const more = $('#feed-more'), left = items.length - shown.length;
       more.hidden = left <= 0;
       more.textContent = `Show ${Math.min(PAGE, left)} more of ${left}`;
+      const ab = $('#archive-btn');
+      ab.hidden = archiveLoaded || !archiveIndex || !archiveIndex.total || left > 0;
+      if (archiveIndex && archiveIndex.total) {
+        const ms = archiveIndex.months, first = ms[ms.length - 1].m, last = ms[0].m;
+        const mname = m => { const [y, mo] = m.split('-').map(Number); return `${MON[mo - 1]} ${y}`; };
+        ab.textContent = `Open the archive: ${archiveIndex.total} older posts, ${mname(first)} to ${mname(last)}`;
+      }
+      $('#archive-note').hidden = !archiveLoaded;
     }
+    function loadArchive() {
+      if (archiveLoaded || !archiveIndex) return Promise.resolve();
+      return Promise.all(archiveIndex.months.map(m => fetch(`archive/${m.m}.json`).then(r => r.ok ? r.json() : { feed: [] }).catch(() => ({ feed: [] }))))
+        .then(parts => {
+          const have = new Set(feed.map(f => f.id));
+          parts.forEach(p => p.feed.forEach(f => { if (!have.has(f.id)) feed.push(f); }));
+          feed.sort((a, b) => b.d.localeCompare(a.d));
+          archiveLoaded = true; buildCats();
+        });
+    }
+    $('#archive-btn').addEventListener('click', () => {
+      const before = limit;
+      loadArchive().then(() => { days = 0; $('#feed-time').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.days === '0'))); limit = Math.max(before, feed.length); drawFeed(); });
+    });
+    fetch('archive/index.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(ix => { archiveIndex = ix; drawFeed(); }).catch(() => {});
+
+    // per-post comments (GitHub Discussions through giscus), loaded only when opened, one thread at a time
+    const GISCUS = { repo: 'chrisqtruong/bankrolled', repoId: 'R_kgDOU76HSA', category: 'Announcements', categoryId: 'DIC_kwDOU76HSM4DHDmy' };
+    function closeDiscuss() {
+      document.querySelectorAll('.discuss:not([hidden])').forEach(d => { d.hidden = true; d.innerHTML = ''; d.parentElement.querySelector('[data-act="discuss"]').setAttribute('aria-expanded', 'false'); d.parentElement.querySelector('[data-act="discuss"]').textContent = 'Comments'; });
+    }
+    function openDiscuss(article) {
+      const box = article.querySelector('.discuss'), btn = article.querySelector('[data-act="discuss"]');
+      if (!box.hidden) { closeDiscuss(); return; }
+      closeDiscuss();
+      box.hidden = false; btn.setAttribute('aria-expanded', 'true'); btn.textContent = 'Hide comments';
+      box.innerHTML = `<p class="discuss-note">Comments are public and need a GitHub account. Corrections with a source are especially welcome. Posts that harass people or spread unsupported claims are removed.</p><div class="giscus"></div>`;
+      const s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js'; s.async = true; s.crossOrigin = 'anonymous';
+      Object.entries({ 'data-repo': GISCUS.repo, 'data-repo-id': GISCUS.repoId, 'data-category': GISCUS.category, 'data-category-id': GISCUS.categoryId,
+        'data-mapping': 'specific', 'data-term': article.dataset.id, 'data-strict': '1', 'data-reactions-enabled': '1', 'data-emit-metadata': '0',
+        'data-input-position': 'top', 'data-theme': giscusTheme(), 'data-lang': 'en', 'data-loading': 'lazy' }).forEach(([k, v]) => s.setAttribute(k, v));
+      box.appendChild(s);
+    }
+    $('#feed-list').addEventListener('click', e => {
+      const b = e.target.closest('.pbtn'); if (!b) return;
+      const art = b.closest('article.post');
+      if (b.dataset.act === 'discuss') openDiscuss(art);
+      if (b.dataset.act === 'copy') {
+        const url = location.origin + location.pathname + '#p-' + art.dataset.id;
+        const done = t => { b.textContent = t; setTimeout(() => { b.textContent = 'Copy link'; }, 1800); };
+        try { navigator.clipboard.writeText(url).then(() => done('Link copied'), () => done('Copy blocked')); } catch (err) { done('Copy blocked'); }
+      }
+    });
+    openPost = id => {
+      const go = () => {
+        active = 'All'; days = 0; confOnly = false; $('#conf-only').checked = false;
+        ff.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.c === 'All')));
+        $('#feed-time').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.days === '0')));
+        limit = Math.max(limit, feed.findIndex(f => f.id === id) + PAGE);
+        drawFeed();
+        const el = document.getElementById('p-' + id);
+        if (el) { el.scrollIntoView({ block: 'start' }); el.classList.add('target'); setTimeout(() => el.classList.remove('target'), 2600); }
+        return !!el;
+      };
+      if (!go() && !archiveLoaded) {
+        const wait = archiveIndex ? Promise.resolve() : fetch('archive/index.json').then(r => r.json()).then(ix => { archiveIndex = ix; });
+        wait.then(loadArchive).then(go);
+      }
+    };
     const reset = () => { limit = PAGE; drawFeed(); };
     ff.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
@@ -814,6 +915,7 @@
     $('#conf-only').addEventListener('change', e => { confOnly = e.target.checked; reset(); });
     $('#feed-more').addEventListener('click', () => { limit += PAGE; drawFeed(); });
     drawFeed();
+    if (location.hash.startsWith('#p-')) setTimeout(() => openPost(location.hash.slice(3)), 0);
 
     // ledger
     const ledger = [...data.ledger].sort((a, b) => b.d.localeCompare(a.d));

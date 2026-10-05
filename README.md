@@ -18,6 +18,7 @@ The site is served from this repository with GitHub Pages and is updated every m
 | `docs/index.html` | The page itself |
 | `docs/data.json` | All content: feed posts, ledger rows, chart series and key figures |
 | `ledger.csv` | The confirmed ledger as a spreadsheet |
+| `docs/archive/` | Feed posts older than 90 days, one file per month. Posts are archived, never deleted. |
 | `reports/YYYY-MM-DD.md` | One report per daily run, listing what was added or corrected, or noting that nothing met the bar |
 
 ## Rules for what gets published
@@ -49,6 +50,10 @@ A scheduled run checks every two hours from 7:52 a.m. to 11:52 p.m. Eastern with
 6. Republishes the site and commits the updated files and that day's report here.
 
 If nothing meets the bar, nothing new is posted, and the day's report says so.
+
+## Comments
+
+Each post has its own comment thread, stored in this repository's [Discussions](https://github.com/chrisqtruong/bankrolled/discussions) (Announcements category) through giscus. Commenting needs a GitHub account. Comments that harass people or make unsupported accusations are removed.
 
 ## Sources watched
 

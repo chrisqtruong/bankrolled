@@ -1,0 +1,55 @@
+{
+ "month": "2026-01",
+ "feed": [
+  {
+   "d": "2026-01-29",
+   "c": "Research",
+   "s": "confirmed",
+   "h": "36% of boys aged 11 to 17 gambled in the past year",
+   "b": "Common Sense Media found nearly one in eight bet on sports and 60% saw gambling ads on YouTube or social media.",
+   "src": [
+    {
+     "o": "Common Sense Media",
+     "t": "New Research on Adolescent Boys' Gambling Habits",
+     "u": "https://www.commonsensemedia.org/press-releases/common-sense-media-releases-new-research-on-adolescent-boys-gambling-habits"
+    }
+   ],
+   "id": "2026-01-29-36-of-boys-aged-11-to-17"
+  },
+  {
+   "d": "2026-01-15",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "26 charged, including college basketball players, in a point-shaving case",
+   "b": "Prosecutors in Philadelphia allege players took bribes to fix games. The alleged organizer pleaded guilty in March.",
+   "src": [
+    {
+     "o": "NPR",
+     "t": "College basketball players among dozens charged in wide-ranging point-shaving scheme",
+     "u": "https://www.npr.org/2026/01/15/nx-s1-5678600/college-basketball-players-among-dozens-charged-in-wide-ranging-point-shaving-scheme"
+    },
+    {
+     "o": "DOJ (EDPA)",
+     "t": "Jalen Smith Pleads Guilty in Bribery and Point-Shaving Scheme",
+     "u": "https://www.justice.gov/usao-edpa/pr/jalen-smith-pleads-guilty-bribery-and-point-shaving-scheme-fix-ncaa-cba-mens"
+    }
+   ],
+   "id": "2026-01-15-26-charged-including-college-basketball-players-in"
+  },
+  {
+   "d": "2026-01-13",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "Prediction-market lobby hires two former congressmen",
+   "b": "The Coalition for Prediction Markets named ex-Rep. Sean Patrick Maloney CEO and former House Financial Services chair Patrick McHenry senior adviser.",
+   "src": [
+    {
+     "o": "PR Newswire",
+     "t": "The Coalition for Prediction Markets Names Former U.S. Congressman Sean Patrick Maloney as CEO",
+     "u": "https://www.prnewswire.com/news-releases/the-coalition-for-prediction-markets-names-former-us-congressman-sean-patrick-maloney-as-ceo-and-president-and-chairman-patrick-mchenry-as-senior-advisor-302659139.html"
+    }
+   ],
+   "id": "2026-01-13-predictionmarket-lobby-hires-two-former-congressmen"
+  }
+ ]
+}

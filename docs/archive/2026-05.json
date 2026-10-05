@@ -1,0 +1,55 @@
+{
+ "month": "2026-05",
+ "feed": [
+  {
+   "d": "2026-05-22",
+   "c": "Research",
+   "s": "confirmed",
+   "h": "Sports betting is now the main problem in more than a quarter of national helpline contacts",
+   "b": "Sports betting was the primary gambling type in 27.3% of 2025 helpline conversations, up from 22.3% in 2024.",
+   "src": [
+    {
+     "o": "NCPG",
+     "t": "National Problem Gambling Helpline 2025 Annual Report",
+     "u": "https://www.ncpgambling.org/news/2025-national-problem-gambling-helpline-annual-report/"
+    }
+   ],
+   "id": "2026-05-22-sports-betting-is-now-the-main-problem"
+  },
+  {
+   "d": "2026-05-20",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "Pennsylvania senators defended by sportsbook money all win their primaries",
+   "b": "Win for Pennsylvania spent more than $5 million protecting three GOP state senators against challengers backed by skill-game interests.",
+   "src": [
+    {
+     "o": "Spotlight PA",
+     "t": "Gambling interests pour millions into key PA Senate primaries",
+     "u": "https://www.spotlightpa.org/news/2026/05/gambling-skill-games-sports-betting-pennsylvania-senate-races-funding-attack-incumbents-elections/"
+    },
+    {
+     "o": "Spotlight PA",
+     "t": "PA primary election results: Gaming-targeted senators win",
+     "u": "https://www.spotlightpa.org/news/2026/05/pennsylvania-primary-election-results-legislature-2026-elections/"
+    }
+   ],
+   "id": "2026-05-20-pennsylvania-senators-defended-by-sportsbook-money-all"
+  },
+  {
+   "d": "2026-05-14",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "About $10 million in sportsbook money enters Georgia's legislative primaries",
+   "b": "The AJC found it backed leaders including House Speaker Jon Burns and Senate Majority Leader Jason Anavitarte.",
+   "src": [
+    {
+     "o": "Atlanta Journal-Constitution",
+     "t": "Sports betting industry pours $10M into Georgia campaigns",
+     "u": "https://www.ajc.com/politics/2026/05/sports-betting-industry-pours-10m-into-georgia-campaigns/"
+    }
+   ],
+   "id": "2026-05-14-about-10-million-in-sportsbook-money-enters"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "month": "2025-11",
+ "feed": [
+  {
+   "d": "2025-11-09",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "Guardians pitchers indicted on charges of rigging pitches for bettors",
+   "b": "Emmanuel Clase and Luis Ortiz face wire fraud, bribery and money laundering charges. Both pleaded not guilty.",
+   "src": [
+    {
+     "o": "DOJ (EDNY)",
+     "t": "Two Current Major League Baseball Players Charged with Sports Betting and Money Laundering",
+     "u": "https://www.justice.gov/usao-edny/pr/two-current-major-league-baseball-players-charged-sports-betting-and-money-laundering"
+    }
+   ],
+   "id": "2025-11-09-guardians-pitchers-indicted-on-charges-of-rigging"
+  },
+  {
+   "d": "2025-11-05",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "Win for America super PAC registers with the FEC",
+   "b": "It later emerged as the sportsbook industry's main vehicle for the 2026 midterms.",
+   "src": [
+    {
+     "o": "FEC",
+     "t": "Win for America committee overview",
+     "u": "https://www.fec.gov/data/committee/C00925586/"
+    }
+   ],
+   "id": "2025-11-05-win-for-america-super-pac-registers-with"
+  }
+ ]
+}

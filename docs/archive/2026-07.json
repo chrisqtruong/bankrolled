@@ -1,0 +1,20 @@
+{
+ "month": "2026-07",
+ "feed": [
+  {
+   "d": "2026-07-01",
+   "c": "Regulation",
+   "s": "confirmed",
+   "h": "Illinois starts taxing prediction-market trades; the CFTC sues to stop it",
+   "b": "The tax is 1.75% per transaction for an operator's first 5 million trades and 3.5% after that. The CFTC amended its suit against Illinois to challenge it.",
+   "src": [
+    {
+     "o": "Covers",
+     "t": "CFTC Expands Illinois Lawsuit to Target New Prediction Market Tax",
+     "u": "https://www.covers.com/industry/illinois-cftc-lawsuit-update-prediction-market-transaction-tax-attack-june-2026"
+    }
+   ],
+   "id": "2026-07-01-illinois-starts-taxing-predictionmarket-trades-the-cftc"
+  }
+ ]
+}

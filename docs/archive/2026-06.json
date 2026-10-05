@@ -1,0 +1,50 @@
+{
+ "month": "2026-06",
+ "feed": [
+  {
+   "d": "2026-06-30",
+   "c": "Regulation",
+   "s": "confirmed",
+   "h": "North Carolina raises its online sports betting tax from 18% to 23%",
+   "b": "The budget also adds a 6% tax on prediction-market operators starting in 2027.",
+   "src": [
+    {
+     "o": "Covers",
+     "t": "NC Budget Targets Sportsbooks, Prediction Markets With New Taxes",
+     "u": "https://www.covers.com/industry/north-carolina-finalized-budget-raises-sports-betting-tax-charges-prediction-markets-june-30-2026"
+    }
+   ],
+   "id": "2026-06-30-north-carolina-raises-its-online-sports-betting"
+  },
+  {
+   "d": "2026-06-29",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "Former NBA players Malik Beasley and Ed Davis charged in expanded betting case",
+   "b": "Prosecutors accuse Beasley of altering his play to match prop bets while with the Bucks in 2024. He pleaded not guilty.",
+   "src": [
+    {
+     "o": "PBS NewsHour",
+     "t": "Former players Malik Beasley, Ed Davis charged in NBA gambling scandal",
+     "u": "https://www.pbs.org/newshour/nation/former-players-malik-beasley-ed-davis-charged-in-nba-gambling-scandal"
+    }
+   ],
+   "id": "2026-06-29-former-nba-players-malik-beasley-and-ed"
+  },
+  {
+   "d": "2026-06-01",
+   "c": "Political money",
+   "s": "confirmed",
+   "h": "Kalshi gave $39,200 to Xavier Becerra days before California's primary",
+   "b": "CalMatters found Kalshi had also given $115,000 to state candidates and $100,000 to the state Democratic Party since mid-2025, while its own market gave Becerra high odds.",
+   "src": [
+    {
+     "o": "CalMatters",
+     "t": "Kalshi gives Becerra high odds of winning. They also bet on his campaign",
+     "u": "https://calmatters.org/politics/2026/06/kalshi-becerra-prediction-governor/"
+    }
+   ],
+   "id": "2026-06-01-kalshi-gave-39200-to-xavier-becerra-days"
+  }
+ ]
+}
