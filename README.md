@@ -2,6 +2,8 @@
 
 A daily, sourced record of the money behind American sports betting: who pays whom, who loses, and who writes the rules.
 
+### → [Read Bankrolled: chrisqtruong.github.io/bankrolled](https://chrisqtruong.github.io/bankrolled/)
+
 Bankrolled tracks four things:
 
 - **Political money.** Super PACs, corporate PACs, ballot measure committees and lobbying by sportsbooks and sports prediction markets.
