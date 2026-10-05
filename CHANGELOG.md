@@ -4,6 +4,7 @@ A record of changes to the Bankrolled site and project. Daily content updates (n
 
 ## 2026-10-05
 
+- **Pinned developing story.** A major, still-moving story can sit above the feed with a running list of updates, then unpin automatically after its `pinUntil` date. Rules in `PINNING.md`. Also added `sources.md`, the checklist of primary pages each check reads.
 - **Post images.** Posts can carry one optional image under the headline, with a credit, license and source link, in the feed and archive. Only public-domain or freely licensed images are used; see `IMAGES.md`. First image: the Supreme Court building on the New Jersey v. Kalshi petition post.
 - **Archive search.** A search box on the Archive tab filters archived posts by company, person or topic, with a live match count.
 - **Archive tab.** New tab explaining the 90-day rule (the feed holds the last 90 days; older posts move to the archive, are never deleted, and keep their links) and listing archived posts by month. The feed's archive button now opens it. ([9df0778](../../commit/9df0778))

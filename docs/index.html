@@ -263,6 +263,11 @@
   .newtag { font: 600 11px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
   article.post.fresh { border-left: 3px solid var(--accent); padding-left: 14px; margin-left: -17px; }
   @media (max-width: 760px) { article.post.fresh { margin-left: 0; } }
+  .pinned { border-top: 3px solid var(--accent); border-bottom: 1px solid var(--rule); margin-bottom: 20px; padding-top: 10px; }
+  .pinned > .label { color: var(--accent); }
+  .pinned article.post { border-bottom: 0; }
+  .pupdates { list-style: none; margin: 0 0 14px; padding: 10px 0 0 14px; border-left: 2px solid var(--rule); display: grid; gap: 8px; font: 400 15px/1.45 var(--body); }
+  .pupdates .label { margin-right: 6px; }
   .postfoot { display: flex; gap: 18px; padding-top: 2px; }
   .pbtn { background: none; border: 0; padding: 4px 0; font: 500 14px/1 var(--sans); color: var(--mute); cursor: pointer; border-bottom: 1px solid transparent; }
   .pbtn:hover { color: var(--accent); border-bottom-color: var(--accent); }
@@ -360,6 +365,7 @@
           <div class="fhints" id="feed-hints" aria-label="Quick searches"><span>Try:</span><button type="button">Kalshi</button><button type="button">Polymarket</button><button type="button">DraftKings</button><button type="button">FanDuel</button><button type="button">CFTC</button><button type="button">Supreme Court</button></div>
         </div>
       </div>
+      <div id="feed-pinned"></div>
       <div id="feed-list" style="display:grid;gap:28px;min-width:0"><p class="empty">Loading the feed…</p></div>
       <button class="plain more" id="feed-more" type="button" hidden>Show more</button>
       <button class="plain more" id="archive-btn" type="button" hidden>Open the archive</button>
@@ -841,6 +847,19 @@
       ff.innerHTML = cats.map(c => `<button type="button" aria-pressed="${c === active}" data-c="${esc(c)}">${esc(c)} <span class="ct"></span></button>`).join('');
     }
     buildCats();
+    const postHtml = f => { const isNew = f.added && Date.now() - Date.parse(f.added) < 864e5; return `<article class="post${isNew ? ' fresh' : ''}" id="p-${esc(f.id)}" data-id="${esc(f.id)}">
+          <div class="meta">${statusChip(f.s)}<span class="label">${esc(f.c)}</span>${isNew ? `<span class="newtag" data-added="${esc(f.added)}">New · ${ago(Date.now() - Date.parse(f.added))}</span>` : ''}</div>
+          <h3>${esc(f.h)}</h3>
+          ${imgFig(f)}<p>${esc(f.b)}</p>
+          <div class="sources">Sources: ${f.src.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener" title="${esc(s.t || '')}">${esc(s.o)}</a> <span class="ext" aria-hidden="true">↗</span>`).join('&ensp;·&ensp;')}</div>
+          <div class="postfoot"><button type="button" class="pbtn" data-act="discuss" aria-expanded="false">Comments</button><button type="button" class="pbtn" data-act="copy">Copy link</button><button type="button" class="pbtn rx" data-act="discuss" hidden aria-label="Open comments and reactions"></button></div>
+          <div class="discuss" hidden></div>
+        </article>`; };
+    const pinnedNow = () => feed.filter(f => f.pin && (!f.pinUntil || f.pinUntil >= data.updated));
+    function pinHtml(f) {
+      const ups = (f.updates || []).slice().sort((x, y) => (y.d || '').localeCompare(x.d || ''));
+      return `<section class="pinned" aria-label="Developing story"><div class="label">Developing story${f.pinUntil ? ' \u00b7 pinned until ' + esc(longDate(f.pinUntil)) : ''}</div>${postHtml(f)}${ups.length ? `<ol class="pupdates"><li class="label">Updates</li>${ups.map(u => `<li><span class="label">${esc(longDate(u.d))}</span> ${esc(u.t)}${u.u ? ` <a href="${esc(u.u)}" target="_blank" rel="noopener">${esc(u.o || 'Source')}</a>` : ''}</li>`).join('')}</ol>` : ''}</section>`;
+    }
     function drawFeed() {
       const terms = fq.toLowerCase().split(/\s+/).filter(Boolean);
       const base = feed.filter(f => (!confOnly || f.s === 'confirmed') && (!days || (ref - dayOf(f.d)) / 864e5 <= days) && terms.every(t => hay(f).includes(t)));
@@ -849,22 +868,17 @@
         b.querySelector('.ct').textContent = n;
         b.disabled = n === 0 && b.dataset.c !== active;
       });
-      const items = base.filter(f => active === 'All' || f.c === active);
+      const pins = (active === 'All' && !fq && !days && !confOnly) ? pinnedNow() : [];
+      $('#feed-pinned').innerHTML = pins.map(pinHtml).join('');
+      const items = base.filter(f => (active === 'All' || f.c === active) && !pins.includes(f));
       const shown = items.slice(0, limit);
       const byDay = new Map();
       shown.forEach(f => { if (!byDay.has(f.d)) byDay.set(f.d, []); byDay.get(f.d).push(f); });
       $('#feed-count').textContent = items.length ? `${items.length} post${items.length === 1 ? '' : 's'}` : '';
       $('#feed-list').innerHTML = items.length ? [...byDay].map(([d, posts]) => `
         <div class="day"><span class="label">${esc(longDate(d))}</span>
-        ${posts.map(f => { const isNew = f.added && Date.now() - Date.parse(f.added) < 864e5; return `<article class="post${isNew ? ' fresh' : ''}" id="p-${esc(f.id)}" data-id="${esc(f.id)}">
-          <div class="meta">${statusChip(f.s)}<span class="label">${esc(f.c)}</span>${isNew ? `<span class="newtag" data-added="${esc(f.added)}">New · ${ago(Date.now() - Date.parse(f.added))}</span>` : ''}</div>
-          <h3>${esc(f.h)}</h3>
-          ${imgFig(f)}<p>${esc(f.b)}</p>
-          <div class="sources">Sources: ${f.src.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener" title="${esc(s.t || '')}">${esc(s.o)}</a> <span class="ext" aria-hidden="true">↗</span>`).join('&ensp;·&ensp;')}</div>
-          <div class="postfoot"><button type="button" class="pbtn" data-act="discuss" aria-expanded="false">Comments</button><button type="button" class="pbtn" data-act="copy">Copy link</button><button type="button" class="pbtn rx" data-act="discuss" hidden aria-label="Open comments and reactions"></button></div>
-          <div class="discuss" hidden></div>
-        </article>`; }).join('')}</div>`).join('') : '<p class="empty">Nothing matches these filters. Try a longer time range or another topic.</p>';
-      if (typeof loadRx === 'function') document.querySelectorAll('#feed-list article.post').forEach(loadRx);
+        ${posts.map(postHtml).join('')}</div>`).join('') : '<p class="empty">Nothing matches these filters. Try a longer time range or another topic.</p>';
+      if (typeof loadRx === 'function') document.querySelectorAll('#feed-pinned article.post, #feed-list article.post').forEach(loadRx);
       const more = $('#feed-more'), left = items.length - shown.length;
       more.hidden = left <= 0;
       more.textContent = `Show ${Math.min(PAGE, left)} more of ${left}`;
@@ -955,9 +969,9 @@
     var rxData = null;
     function loadRx(art) {
       if (rxData) { const d = rxData[art.dataset.id]; paintRx(art, d && { reactions: Object.fromEntries(Object.entries(d.r || {}).map(([k, v]) => [k, { count: v }])), totalCommentCount: d.c }); return; }
-      if (!rxData && !loadRx.p) loadRx.p = fetch('reactions.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : {}).catch(() => ({})).then(j => { rxData = j; document.querySelectorAll('#feed-list article.post').forEach(loadRx); });
+      if (!rxData && !loadRx.p) loadRx.p = fetch('reactions.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : {}).catch(() => ({})).then(j => { rxData = j; document.querySelectorAll('#feed-pinned article.post, #feed-list article.post').forEach(loadRx); });
     }
-    $('#feed-list').addEventListener('click', e => {
+    $('#feed-list').parentElement.addEventListener('click', e => {
       const b = e.target.closest('.pbtn'); if (!b) return;
       const art = b.closest('article.post');
       if (b.dataset.act === 'discuss') openDiscuss(art);
