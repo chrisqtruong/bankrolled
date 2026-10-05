@@ -139,6 +139,27 @@
   },
   {
    "d": "2026-09-24",
+   "added": "2026-10-05T09:30:00-04:00",
+   "id": "2026-09-24-new-york-sues-polymarket-as-an-unlicensed",
+   "c": "Lawsuits & fines",
+   "s": "confirmed",
+   "h": "New York sues Polymarket as an unlicensed gambling operation; Polymarket countersues in federal court",
+   "b": "Attorney General Letitia James and Gov. Kathy Hochul sued Polymarket US in state court in Manhattan, alleging its sports markets are unlicensed gambling that is open to 18-to-20-year-olds, and seeking forfeiture of gains, restitution and fines of three times its gains. CNBC reports the suit also seeks $100,000 for each offer of sports wagering in the state. Polymarket moved to take the case to federal court and filed its own suit against James and Gaming Commission officials, arguing states cannot regulate federally overseen swaps; the claims are allegations. It follows New York's July suit against Kalshi.",
+   "src": [
+    {
+     "o": "New York Attorney General",
+     "t": "Attorney General James and Governor Hochul Announce Lawsuit Against Polymarket for Running Illegal Gambling Operation",
+     "u": "https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-lawsuit-against-polymarket"
+    },
+    {
+     "o": "CNBC",
+     "t": "Polymarket countersues New York state over 'unregulated gambling' allegation",
+     "u": "https://www.cnbc.com/2026/09/24/new-york-sues-polymarket-us-two-months-after-filing-suit-against-kalshi-.html"
+    }
+   ]
+  },
+  {
+   "d": "2026-09-24",
    "c": "Regulation",
    "s": "confirmed",
    "h": "Massachusetts regulators will review how sportsbooks use AI, starting with DraftKings",
@@ -2379,6 +2400,6 @@
    ]
   }
  ],
- "lastCheck": "2026-10-05T09:10:18-04:00",
+ "lastCheck": "2026-10-05T09:30:00-04:00",
  "archiveAfterDays": 90
 }
