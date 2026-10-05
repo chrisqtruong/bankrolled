@@ -831,7 +831,7 @@
           <div class="postfoot"><button type="button" class="pbtn" data-act="discuss" aria-expanded="false">Comments</button><button type="button" class="pbtn" data-act="copy">Copy link</button><button type="button" class="pbtn rx" data-act="discuss" hidden aria-label="Open comments and reactions"></button></div>
           <div class="discuss" hidden></div>
         </article>`; }).join('')}</div>`).join('') : '<p class="empty">Nothing matches these filters. Try a longer time range or another topic.</p>';
-      if (typeof rxObs !== 'undefined' && rxObs) document.querySelectorAll('#feed-list article.post').forEach(a => rxObs.observe(a));
+      if (typeof loadRx === 'function') document.querySelectorAll('#feed-list article.post').forEach(loadRx);
       const more = $('#feed-more'), left = items.length - shown.length;
       more.hidden = left <= 0;
       more.textContent = `Show ${Math.min(PAGE, left)} more of ${left}`;
@@ -889,13 +889,11 @@
       if (c) parts.unshift(`${c} comment${c === 1 ? '' : 's'}`);
       b.textContent = parts.join('  \u00b7  '); b.hidden = !parts.length;
     }
+    var rxData = null;
     function loadRx(art) {
-      const id = art.dataset.id;
-      if (rxCache.has(id)) { paintRx(art, rxCache.get(id)); return; }
-      const q = new URLSearchParams({ repo: GISCUS.repo, term: id, category: GISCUS.category, number: '0', strict: 'true', first: '1' });
-      fetch('https://giscus.app/api/discussions?' + q).then(r => r.ok ? r.json() : null).then(j => { const d = j && j.discussion; rxCache.set(id, d || null); paintRx(art, d); }).catch(() => {});
+      if (rxData) { const d = rxData[art.dataset.id]; paintRx(art, d && { reactions: Object.fromEntries(Object.entries(d.r || {}).map(([k, v]) => [k, { count: v }])), totalCommentCount: d.c }); return; }
+      if (!rxData && !loadRx.p) loadRx.p = fetch('reactions.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : {}).catch(() => ({})).then(j => { rxData = j; document.querySelectorAll('#feed-list article.post').forEach(loadRx); });
     }
-    var rxObs = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { rxObs.unobserve(e.target); loadRx(e.target); } }), { rootMargin: '200px' }) : null;
     $('#feed-list').addEventListener('click', e => {
       const b = e.target.closest('.pbtn'); if (!b) return;
       const art = b.closest('article.post');

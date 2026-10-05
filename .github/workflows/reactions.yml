@@ -1,0 +1,30 @@
+name: Refresh reaction counts
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  discussions: read
+  pages: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/reactions.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Commit if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(git status --porcelain docs/reactions.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/reactions.json
+            git commit -m "Refresh reaction counts"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
+          fi
