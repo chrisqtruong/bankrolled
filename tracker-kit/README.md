@@ -13,7 +13,7 @@ Use it for anything where the public record is scattered and easy to forget: mon
 | `routine-prompt.template.md` | The scheduled-task prompt, filled in for your topic by the script |
 | `METHOD.md` | The standards every tracker follows (status labels, evidence tiers, sensitive-topic rules) |
 | `LAUNCH-CHECKLIST.md` | Steps from "idea" to "running hourly" |
-| `examples/` | Ready-made configs: corporate lobbying, environmental disasters, conflict accountability |
+| `examples/` | Ready-made configs: corporate lobbying, environmental disasters, conflict accountability, tech and data-center power (`tech-power.json`, used for Rackwatch) |
 
 ## Start a new tracker (about 10 minutes)
 
