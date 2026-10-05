@@ -244,6 +244,12 @@
   .chk input { width: 16px; height: 16px; accent-color: var(--accent); margin: 0; }
   .feedcount { font: 400 14px/1.3 var(--sans); color: var(--mute); margin-left: auto; }
   .more { justify-self: start; }
+  .pager { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .pager button { font: 500 14px/1 var(--sans); min-width: 38px; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 6px; background: transparent; color: var(--ink); cursor: pointer; }
+  .pager button:hover:not(:disabled) { border-color: var(--accent); }
+  .pager button[aria-current="page"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .pager button:disabled { opacity: .4; cursor: default; }
+  .pager .gap { color: var(--mute); padding: 0 2px; }
   .totop { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 15; font: 600 14px/1 var(--sans); padding: 11px 15px; border: 0; border-radius: 999px; background: var(--ink); color: var(--paper); cursor: pointer; box-shadow: 0 3px 14px rgba(0,0,0,.18); }
   .totop:hover { background: var(--accent); color: var(--on-accent); }
   @media (max-width: 480px) { .feedcount { margin-left: 0; width: 100%; } .seg button { padding: 7px 9px; } }
@@ -367,7 +373,7 @@
       </div>
       <div id="feed-pinned"></div>
       <div id="feed-list" style="display:grid;gap:28px;min-width:0"><p class="empty">Loading the feed…</p></div>
-      <button class="plain more" id="feed-more" type="button" hidden>Show more</button>
+      <nav class="pager" id="feed-pager" aria-label="Feed pages" hidden></nav>
       <button class="plain more" id="archive-btn" type="button" hidden>Open the archive</button>
       <p class="exportnote" id="archive-note" hidden>You've reached the start of the archive. The feed keeps the last 90 days; older posts move into the archive and are never deleted.</p>
     </section>
@@ -843,7 +849,7 @@
     // feed
     const feed = [...data.feed].sort((a, b) => b.d.localeCompare(a.d));
     let archiveLoaded = false, archiveIndex = null;
-    let active = 'All', days = 0, confOnly = false, limit = 20, fq = '';
+    let active = 'All', days = 0, confOnly = false, page = 1, fq = '';
     const hay = f => (f._h || (f._h = [f.h, f.b, f.c, ...f.src.map(x => (x.o || '') + ' ' + (x.t || ''))].join(' ').toLowerCase()));
     const PAGE = 20;
     const ref = new Date(data.updated + 'T12:00:00Z');
@@ -880,17 +886,21 @@
       const pins = (active === 'All' && !fq && !days && !confOnly) ? pinnedNow() : [];
       $('#feed-pinned').innerHTML = pins.map(pinHtml).join('');
       const items = base.filter(f => (active === 'All' || f.c === active) && !pins.includes(f));
-      const shown = items.slice(0, limit);
+      const pages = Math.max(1, Math.ceil(items.length / PAGE));
+      if (page > pages) page = pages;
+      const shown = items.slice((page - 1) * PAGE, page * PAGE);
       const byDay = new Map();
       shown.forEach(f => { if (!byDay.has(f.d)) byDay.set(f.d, []); byDay.get(f.d).push(f); });
-      $('#feed-count').textContent = items.length ? `${items.length} post${items.length === 1 ? '' : 's'}` : '';
+      $('#feed-count').textContent = items.length ? `${items.length} post${items.length === 1 ? '' : 's'}${pages > 1 ? ` \u00b7 page ${page} of ${pages}` : ''}` : '';
       $('#feed-list').innerHTML = items.length ? [...byDay].map(([d, posts]) => `
         <div class="day"><span class="label">${esc(longDate(d))}</span>
         ${posts.map(postHtml).join('')}</div>`).join('') : '<p class="empty">Nothing matches these filters. Try a longer time range or another topic.</p>';
       if (typeof loadRx === 'function') document.querySelectorAll('#feed-pinned article.post, #feed-list article.post').forEach(loadRx);
-      const more = $('#feed-more'), left = items.length - shown.length;
-      more.hidden = left <= 0;
-      more.textContent = `Show ${Math.min(PAGE, left)} more of ${left}`;
+      const left = items.length - page * PAGE;
+      const nums = []; for (let i = 1; i <= pages; i++) if (i === 1 || i === pages || Math.abs(i - page) <= 1) nums.push(i); else if (nums[nums.length - 1] !== '\u2026') nums.push('\u2026');
+      const pg = $('#feed-pager');
+      pg.hidden = pages <= 1;
+      pg.innerHTML = pages <= 1 ? '' : `<button type="button" data-p="${page - 1}" ${page === 1 ? 'disabled' : ''}>\u2190 Newer</button>${nums.map(n => n === '\u2026' ? '<span class="gap" aria-hidden="true">\u2026</span>' : `<button type="button" data-p="${n}" ${n === page ? 'aria-current="page"' : ''} aria-label="Page ${n}">${n}</button>`).join('')}<button type="button" data-p="${page + 1}" ${page === pages ? 'disabled' : ''}>Older \u2192</button>`;
       const ab = $('#archive-btn');
       ab.hidden = archiveLoaded || !archiveIndex || !archiveIndex.total || left > 0;
       if (archiveIndex && archiveIndex.total) {
@@ -995,7 +1005,7 @@
         active = 'All'; days = 0; confOnly = false; $('#conf-only').checked = false;
         ff.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.c === 'All')));
         $('#feed-time').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.days === '0')));
-        limit = Math.max(limit, feed.findIndex(f => f.id === id) + PAGE);
+        page = Math.floor(Math.max(0, feed.filter(f => !pinnedNow().includes(f)).findIndex(f => f.id === id)) / PAGE) + 1;
         drawFeed();
         const el = document.getElementById('p-' + id);
         if (el) { el.scrollIntoView({ block: 'start' }); el.classList.add('target'); setTimeout(() => el.classList.remove('target'), 2600); }
@@ -1006,7 +1016,7 @@
         wait.then(loadArchive).then(go);
       }
     };
-    const reset = () => { limit = PAGE; drawFeed(); };
+    const reset = () => { page = 1; drawFeed(); };
     ff.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       active = b.dataset.c;
@@ -1028,7 +1038,11 @@
     $('#feed-q').addEventListener('input', e => { clearTimeout(fqT); fqT = setTimeout(() => setQ(e.target.value), 200); });
     $('#feed-hints').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; $('#feed-q').value = b.textContent; setQ(b.textContent); });
     $('#conf-only').addEventListener('change', e => { confOnly = e.target.checked; reset(); });
-    $('#feed-more').addEventListener('click', () => { limit += PAGE; drawFeed(); });
+    $('#feed-pager').addEventListener('click', e => {
+      const b = e.target.closest('button[data-p]'); if (!b || b.disabled) return;
+      page = +b.dataset.p; drawFeed();
+      $('#feed-pinned').scrollIntoView({ block: 'start' });
+    });
     drawFeed();
     if (location.hash.startsWith('#p-')) setTimeout(() => openPost(location.hash.slice(3)), 0);
 
