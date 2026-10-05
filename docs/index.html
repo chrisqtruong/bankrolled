@@ -267,6 +267,12 @@
   .pbtn { background: none; border: 0; padding: 4px 0; font: 500 14px/1 var(--sans); color: var(--mute); cursor: pointer; border-bottom: 1px solid transparent; }
   .pbtn:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .pbtn[aria-expanded="true"] { color: var(--ink); }
+  .fsearch { display: grid; gap: 6px; margin-bottom: 10px; }
+  #feed-q { width: 100%; box-sizing: border-box; font: 400 16px/1.2 var(--sans); padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; background: var(--paper); color: var(--ink); }
+  #feed-q:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .fhints { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; font: 400 13.5px/1.3 var(--sans); color: var(--mute); }
+  .fhints button { background: none; border: 0; padding: 2px 0; font: inherit; color: var(--accent); cursor: pointer; border-bottom: 1px solid transparent; }
+  .fhints button:hover { border-bottom-color: var(--accent); }
   .pbtn.rx { margin-left: auto; font-variant-numeric: tabular-nums; }
   .discuss { display: grid; gap: 10px; padding: 14px 0 4px; border-top: 1px dashed var(--rule); margin-top: 6px; min-width: 0; }
   .discuss-note { margin: 0; font: 400 14px/1.45 var(--body); color: var(--mute); }
@@ -331,6 +337,10 @@
         </figure>
       </div>
       <div class="feedtools">
+        <div class="fsearch">
+          <input type="search" id="feed-q" placeholder="Search the feed: Kalshi, DraftKings, CFTC, a name…" aria-label="Search the feed" autocomplete="off">
+          <div class="fhints" id="feed-hints" aria-label="Quick searches"><span>Try:</span><button type="button">Kalshi</button><button type="button">Polymarket</button><button type="button">DraftKings</button><button type="button">FanDuel</button><button type="button">CFTC</button><button type="button">Supreme Court</button></div>
+        </div>
         <div class="filters" id="feed-filters" role="group" aria-label="Filter by topic"></div>
         <div class="feedbar">
           <div class="seg" id="feed-time" role="group" aria-label="Filter by date">
@@ -797,7 +807,8 @@
     // feed
     const feed = [...data.feed].sort((a, b) => b.d.localeCompare(a.d));
     let archiveLoaded = false, archiveIndex = null;
-    let active = 'All', days = 0, confOnly = false, limit = 20;
+    let active = 'All', days = 0, confOnly = false, limit = 20, fq = '';
+    const hay = f => (f._h || (f._h = [f.h, f.b, f.c, ...f.src.map(x => (x.o || '') + ' ' + (x.t || ''))].join(' ').toLowerCase()));
     const PAGE = 20;
     const ref = new Date(data.updated + 'T12:00:00Z');
     const dayOf = d => new Date((d.length === 4 ? d + '-01-01' : d.length === 7 ? d + '-01' : d) + 'T12:00:00Z');
@@ -810,7 +821,8 @@
     }
     buildCats();
     function drawFeed() {
-      const base = feed.filter(f => (!confOnly || f.s === 'confirmed') && (!days || (ref - dayOf(f.d)) / 864e5 <= days));
+      const terms = fq.toLowerCase().split(/\s+/).filter(Boolean);
+      const base = feed.filter(f => (!confOnly || f.s === 'confirmed') && (!days || (ref - dayOf(f.d)) / 864e5 <= days) && terms.every(t => hay(f).includes(t)));
       ff.querySelectorAll('button').forEach(b => {
         const n = b.dataset.c === 'All' ? base.length : base.filter(f => f.c === b.dataset.c).length;
         b.querySelector('.ct').textContent = n;
@@ -933,6 +945,14 @@
       $('#feed-time').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
       reset();
     });
+    let fqT = null;
+    function setQ(v) {
+      fq = v.trim();
+      // searching reaches the whole archive, so load it the first time someone types
+      if (fq && !archiveLoaded && archiveIndex) loadArchive().then(() => reset()); else reset();
+    }
+    $('#feed-q').addEventListener('input', e => { clearTimeout(fqT); fqT = setTimeout(() => setQ(e.target.value), 200); });
+    $('#feed-hints').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; $('#feed-q').value = b.textContent; setQ(b.textContent); });
     $('#conf-only').addEventListener('change', e => { confOnly = e.target.checked; reset(); });
     $('#feed-more').addEventListener('click', () => { limit += PAGE; drawFeed(); });
     drawFeed();
