@@ -267,9 +267,9 @@
   .pbtn { background: none; border: 0; padding: 4px 0; font: 500 14px/1 var(--sans); color: var(--mute); cursor: pointer; border-bottom: 1px solid transparent; }
   .pbtn:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .pbtn[aria-expanded="true"] { color: var(--ink); }
-  .fsearch { display: grid; gap: 6px; margin-bottom: 10px; }
-  #feed-q { width: 100%; box-sizing: border-box; font: 400 16px/1.2 var(--sans); padding: 10px 12px; border: 1px solid var(--rule); border-radius: 8px; background: var(--paper); color: var(--ink); }
-  #feed-q:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .fsearch { display: grid; gap: 6px; margin-top: 14px; }
+  #feed-q { width: 100%; box-sizing: border-box; font: 400 16px/1.2 var(--sans); padding: 8px 0 8px 26px; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23888' stroke-width='1.6' stroke-linecap='round'%3E%3Ccircle cx='6.5' cy='6.5' r='4.5'/%3E%3Cpath d='M10 10l4.5 4.5'/%3E%3C/svg%3E") no-repeat 0 50%; color: var(--ink); -webkit-appearance: none; appearance: none; }
+  #feed-q:focus { outline: none; border-bottom-color: var(--accent); }
   .fhints { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; font: 400 13.5px/1.3 var(--sans); color: var(--mute); }
   .fhints button { background: none; border: 0; padding: 2px 0; font: inherit; color: var(--accent); cursor: pointer; border-bottom: 1px solid transparent; }
   .fhints button:hover { border-bottom-color: var(--accent); }
@@ -337,10 +337,6 @@
         </figure>
       </div>
       <div class="feedtools">
-        <div class="fsearch">
-          <input type="search" id="feed-q" placeholder="Search the feed: Kalshi, DraftKings, CFTC, a name…" aria-label="Search the feed" autocomplete="off">
-          <div class="fhints" id="feed-hints" aria-label="Quick searches"><span>Try:</span><button type="button">Kalshi</button><button type="button">Polymarket</button><button type="button">DraftKings</button><button type="button">FanDuel</button><button type="button">CFTC</button><button type="button">Supreme Court</button></div>
-        </div>
         <div class="filters" id="feed-filters" role="group" aria-label="Filter by topic"></div>
         <div class="feedbar">
           <div class="seg" id="feed-time" role="group" aria-label="Filter by date">
@@ -351,6 +347,10 @@
           </div>
           <label class="chk" for="conf-only"><input type="checkbox" id="conf-only"> Confirmed only</label>
           <span class="feedcount" id="feed-count" aria-live="polite"></span>
+        </div>
+        <div class="fsearch">
+          <input type="search" id="feed-q" placeholder="Search posts by company, person or topic" aria-label="Search the feed" autocomplete="off">
+          <div class="fhints" id="feed-hints" aria-label="Quick searches"><span>Try:</span><button type="button">Kalshi</button><button type="button">Polymarket</button><button type="button">DraftKings</button><button type="button">FanDuel</button><button type="button">CFTC</button><button type="button">Supreme Court</button></div>
         </div>
       </div>
       <div id="feed-list" style="display:grid;gap:28px;min-width:0"><p class="empty">Loading the feed…</p></div>
