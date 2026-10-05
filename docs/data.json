@@ -274,6 +274,22 @@
    "id": "2026-09-22-problemgambling-council-hardens-its-stance-on-prediction"
   },
   {
+   "d": "2026-09-22",
+   "added": "2026-10-05T09:57:56-04:00",
+   "id": "2026-09-22-cftc-staff-warn-that-mention-market-event",
+   "c": "Regulation",
+   "s": "confirmed",
+   "h": "CFTC staff warn that 'mention market' event contracts carry a heightened risk of manipulation",
+   "b": "The CFTC's Division of Market Oversight issued an advisory on contracts that settle on whether a person will say certain words, attend an event or interact with someone. It says such contracts can be listed only in limited circumstances and reminds exchanges they must list only contracts not readily susceptible to manipulation. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
+   "src": [
+    {
+     "o": "CFTC",
+     "t": "CFTC Releases Staff Advisory on Mention Markets",
+     "u": "https://www.cftc.gov/PressRoom/PressReleases/9302-26"
+    }
+   ]
+  },
+  {
    "d": "2026-09-19",
    "c": "Research",
    "s": "disputed",
@@ -475,6 +491,22 @@
     }
    ],
    "id": "2026-08-28-ninth-circuit-rules-nevada-can-apply-its"
+  },
+  {
+   "d": "2026-08-28",
+   "added": "2026-10-05T09:57:56-04:00",
+   "id": "2026-08-28-cftc-orders-former-white-house-teleprompter-operator",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "CFTC orders former White House teleprompter operator to pay $172,000 for insider trading of prediction-market contracts",
+   "b": "In a settled order, the CFTC found that Gabriel Perez used nonpublic access to presidential speeches to trade 'mention market' event contracts between December 2025 and February 2026, earning about $107,500. He must give up $107,539.02 in profits and pay a $65,000 penalty, and is barred from trading for three years. The agency credited Kalshi for assisting. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
+   "src": [
+    {
+     "o": "CFTC",
+     "t": "CFTC Orders Gabriel Perez to Pay $172,000 for Insider Trading of Mention Market Event Contracts",
+     "u": "https://www.cftc.gov/PressRoom/PressReleases/9289-26"
+    }
+   ]
   },
   {
    "d": "2026-08-27",
@@ -756,6 +788,22 @@
     }
    ],
    "id": "2026-07-31-ig-group-agrees-to-buy-underdog-in"
+  },
+  {
+   "d": "2026-07-31",
+   "added": "2026-10-05T09:57:56-04:00",
+   "id": "2026-07-31-cftc-orders-george-santos-to-pay-35000",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "CFTC orders George Santos to pay $35,000 for manipulating a State of the Union event contract",
+   "b": "In a settled order, the CFTC found that former Congressman George Santos traded a contract on whether he would attend the 2026 State of the Union while posting misleading social-media statements about his plans, moving prices in his favor. He must give up $17,569.98 in profits, pay a $17,500 penalty and is barred from trading for three years. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
+   "src": [
+    {
+     "o": "CFTC",
+     "t": "CFTC Orders George Santos to Pay $35,000 for Manipulative Trading of State-of-the-Union Event Contract",
+     "u": "https://www.cftc.gov/PressRoom/PressReleases/9276-26"
+    }
+   ]
   },
   {
    "d": "2026-07-30",
@@ -1789,6 +1837,34 @@
      "u": "https://sbcamericas.com/2026/07/31/underdog-acquired-ig-group/"
     }
    ]
+  },
+  {
+   "d": "2026-08-28",
+   "t": "Fine",
+   "from": "Gabriel Perez",
+   "to": "CFTC",
+   "amt": 172539.02,
+   "note": "Insider trading of presidential mention-market contracts: $107,539.02 disgorgement plus $65,000 penalty",
+   "src": [
+    {
+     "o": "CFTC",
+     "u": "https://www.cftc.gov/PressRoom/PressReleases/9289-26"
+    }
+   ]
+  },
+  {
+   "d": "2026-07-31",
+   "t": "Fine",
+   "from": "George Santos",
+   "to": "CFTC",
+   "amt": 35069.98,
+   "note": "Manipulating a State of the Union event contract: $17,569.98 disgorgement plus $17,500 penalty",
+   "src": [
+    {
+     "o": "CFTC",
+     "u": "https://www.cftc.gov/PressRoom/PressReleases/9276-26"
+    }
+   ]
   }
  ],
  "losses": [
@@ -2449,6 +2525,6 @@
    ]
   }
  ],
- "lastCheck": "2026-10-05T09:53:52-04:00",
+ "lastCheck": "2026-10-05T09:57:56-04:00",
  "archiveAfterDays": 90
 }

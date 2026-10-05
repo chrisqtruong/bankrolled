@@ -13,7 +13,7 @@ Bankrolled tracks four things:
 
 **Scope.** Sportsbooks and all prediction markets (Kalshi, Polymarket, DraftKings Predictions, FanDuel Predicts, Crypto.com, Robinhood, Coinbase and new entrants) are treated equally: lawsuits, state and CFTC action, partnerships, political spending, funding, insider-trading cases and research on who trades.
 
-The site is served from this repository with GitHub Pages and is checked for new information every two hours. This repository is also its public archive.
+The site is served from this repository with GitHub Pages and is checked for new information every hour. This repository is also its public archive.
 
 ## What's here
 
@@ -35,7 +35,7 @@ The site is served from this repository with GitHub Pages and is checked for new
 | Data | JSON files (`docs/data.json` plus monthly archives) and `ledger.csv` |
 | Hosting | [GitHub Pages](https://pages.github.com/), served from `docs/` |
 | Comments | [giscus](https://giscus.app/), backed by GitHub Discussions |
-| Research and updates | A scheduled [Claude](https://claude.ai) task that runs every two hours, checks public records and the news, verifies each item, and commits the results here |
+| Research and updates | A scheduled [Claude](https://claude.ai) task that runs every hour, checks public records and the news, verifies each item, and commits the results here |
 
 ## Rules for what gets published
 
@@ -56,7 +56,7 @@ Other standards:
 
 ## How the daily update works
 
-A scheduled run checks every two hours from 7:52 a.m. to 11:52 p.m. Eastern without anyone prompting it. Each check:
+A scheduled run checks every hour, around the clock, without anyone prompting it. The first check each morning (7:52 a.m. Eastern) also reads every primary source and reader comments for corrections. Each check:
 
 1. Loads the current `data.json`.
 2. Checks primary sources first: FEC, Senate lobbying disclosures, DOJ, CFTC, court dockets, state gaming regulators, and company investor pages.
@@ -100,6 +100,10 @@ Each post has its own comment thread, stored in this repository's [Discussions](
 ## Help
 
 If gambling is causing problems for you or someone you know, the National Problem Gambling Helpline is **1-800-GAMBLER** (call or text).
+
+## Why it exists
+
+Powerful institutions count on the public record being scattered and easy to forget. Bankrolled uses AI for public good: it gathers what is already public, checks it against primary sources, and keeps it in one searchable, permanent, freely reusable place. Sports betting is the first subject. The method (sourced facts, honest labels, nothing deleted) is intended to extend to other matters of public concern, such as money in politics, corruption, corporate conduct, environmental harm and the documentation of abuses.
 
 ## Maintainer
 

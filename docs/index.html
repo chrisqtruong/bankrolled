@@ -423,6 +423,9 @@
       <h2 class="sec">About</h2>
       <div class="prose">
         <p>Bankrolled is maintained by <b>Chris Truong</b>. He started it because he wants a fairer, more equitable world, and getting there means watching what large corporations do with their money and power: how they profit from the communities they operate in, and how they buy influence over the people who are supposed to regulate them. Sports betting is the first industry Bankrolled tracks.</p>
+        <h3>Why it exists</h3>
+        <p>Powerful institutions count on the public record being scattered, slow to read and easy to forget. Bankrolled is an experiment in using AI for public good: gathering what is already public, checking it against primary sources, and keeping it in one searchable, permanent place that anyone can read, copy and reuse. Sports betting is the first subject. The same method (sourced facts, honest labels, nothing deleted) is meant to work for other matters of public concern, such as money in politics, corruption, corporate conduct, environmental harm and the documentation of abuses, so that the record outlasts the news cycle.</p>
+
         <h3>What this is</h3>
         <p>Bankrolled tracks the sports betting industry's money and its effects on people. We take a clear position: this industry profits from losses that fall hardest on young men and on households that can least afford them, and it spends heavily to shape the laws that govern it. Because we take that position, the facts have to be airtight. This page explains how they are gathered and checked.</p>
 
@@ -436,7 +439,7 @@
 
         <h3>How a day's update works</h3>
         <div class="pipe">
-          <div><b>01</b><span>A scheduled research run checks every two hours, from 7:52 a.m. to 11:52 p.m. Eastern. Nobody has to prompt it.</span></div>
+          <div><b>01</b><span>A scheduled research run checks every hour, around the clock, with a fuller sweep of filings and reader tips each morning. Nobody has to prompt it.</span></div>
           <div><b>02</b><span>It checks the primary sources first: FEC filings for the industry's super PACs and corporate PACs, Senate lobbying disclosures, DOJ press releases, CFTC and court dockets, state gaming regulators, and company investor pages.</span></div>
           <div><b>03</b><span>It then scans the news: wire services, major papers, and the trade press (Covers, SBC Americas, Legal Sports Report, Sportico, Front Office Sports, InGame), along with targeted news searches on charges, fines, lawsuits, legislation and deals.</span></div>
           <div><b>04</b><span>Each candidate item is read at the source, not from a headline. It is checked against what is already published, so nothing is posted twice, and classified as confirmed, reported or disputed.</span></div>
@@ -445,7 +448,7 @@
         </div>
 
         <h3>Where the data lives</h3>
-        <p>The site is a single page that reads one data file, holding feed posts, Ledger rows, chart series and key figures. Each daily run edits that file and republishes the page at the same link. Every entry stores its date, category, status and source links, so the Ledger can be copied out as a spreadsheet at any time with the "Copy table as CSV" button below it.</p>
+        <p>The site is a single page that reads one data file, holding feed posts, Ledger rows, chart series and key figures. Each daily run edits that file and republishes the page at the same link. Every entry stores its date, category, status and source links, so the Ledger can be copied out as a spreadsheet at any time with the "Copy table as CSV" button below it. The full documentation, source checklist and change history are in the <a href="https://github.com/chrisqtruong/bankrolled#readme" target="_blank" rel="noopener">project README on GitHub</a>.</p>
 
         <h3>Sources we watch</h3>
         <ul>
@@ -746,8 +749,7 @@
     return fig;
   }
 
-  // ---- live status: when the tracker last checked, and when it checks next (every 2 hours, 7:52 a.m. to 11:52 p.m. ET)
-  const SLOTS = [7, 9, 11, 13, 15, 17, 19, 21, 23];
+  // ---- live status: when the tracker last checked, and when it checks next (checks every hour)
   function ago(ms) {
     const m = Math.round(ms / 6e4);
     if (m < 1) return 'just now';
@@ -756,21 +758,14 @@
     if (hrs < 24) return hrs + (hrs === 1 ? ' hour ago' : ' hours ago');
     const d = Math.round(hrs / 24); return d + (d === 1 ? ' day ago' : ' days ago');
   }
-  function nextCheck() {
-    const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }).formatToParts(new Date()).map(p => [p.type, p.value]));
-    const now = (+parts.hour) * 60 + (+parts.minute);
-    const slot = SLOTS.find(hh => hh * 60 + 52 > now) ?? SLOTS[0];
-    const h12 = slot % 12 || 12;
-    return `${h12}:52 ${slot < 12 ? 'a.m.' : 'p.m.'} ET`;
-  }
   let lastCheck = null, updated = null;
   function tickLive() {
     const el = $('#live'), t = $('#dateline');
     if (!lastCheck) { t.textContent = 'Updated ' + shortDate(updated); return; }
     const age = Date.now() - lastCheck;
-    el.classList.toggle('on', age < 3 * 36e5);
-    t.textContent = `Checked ${ago(age)} · next check ${nextCheck()}`;
-    el.title = 'Bankrolled checks filings and the news every two hours, 7:52 a.m. to 11:52 p.m. Eastern.';
+    el.classList.toggle('on', age < 2.5 * 36e5);
+    t.textContent = `Checked ${ago(age)} · checks every hour`;
+    el.title = 'Bankrolled checks filings and the news every hour, around the clock.';
     document.querySelectorAll('[data-added]').forEach(n => { n.textContent = 'New · ' + ago(Date.now() - Date.parse(n.dataset.added)); });
   }
   setInterval(tickLive, 30000);
