@@ -1,4 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bankrolled</title>
+<meta name="description" content="A daily, sourced record of the money behind American sports betting: who pays whom, who loses, and who writes the rules.">
+<meta property="og:title" content="Bankrolled">
+<meta property="og:description" content="A daily, sourced record of the money behind American sports betting: who pays whom, who loses, and who writes the rules.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chrisqtruong.github.io/bankrolled/">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111513" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%231d6a45' d='M58.2 23.4C59.3 28.3 57.0 36.1 55.8 40.6C54.5 45.0 54.4 47.4 50.7 50.1C46.9 52.8 39.2 56.4 33.3 56.7C27.4 56.9 20.0 54.4 15.4 51.5C10.9 48.5 7.7 42.8 5.9 38.9C4.2 35.0 2.8 32.4 4.7 28.2C6.5 23.9 12.2 16.9 17.1 13.2C22.0 9.6 28.6 6.5 34.0 6.2C39.3 5.9 45.0 8.4 49.0 11.3C53.0 14.1 57.0 18.5 58.2 23.4Z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -23,6 +36,10 @@
   :root[data-theme="dark"] { --paper: #111513; --ink: #e8ebe7; --mute: #9ca49f; --rule: #2a312d; --wash: #181e1b; --bar: #4f5853; --accent: #6cc495; --on-accent: #0c1410; color-scheme: dark; }
 
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  img, svg { max-width: 100%; }
+  [hidden] { display: none !important; }
   body { background: var(--paper); color: var(--ink); font: 400 18px/1.6 var(--body); padding-inline: 20px; padding-block: 28px 80px; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   a:hover { color: var(--accent); }
@@ -222,6 +239,8 @@
   .empty { color: var(--mute); padding-block: 20px; }
   @media (prefers-reduced-motion: no-preference) { article.post { animation: none; } }
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header class="mast">
@@ -675,3 +694,5 @@
     .catch(() => { $('#feed-list').innerHTML = '<p class="empty">The feed could not load. Refresh the page to try again.</p>'; });
 })();
 </script>
+</body>
+</html>
