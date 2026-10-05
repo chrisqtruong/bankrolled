@@ -11,6 +11,8 @@ Bankrolled tracks four things:
 - **Enforcement.** Fines, lawsuits, court rulings, legislation and integrity cases.
 - **Harm.** How much bettors lose, who bets, and what peer-reviewed and official research finds.
 
+**Scope.** Sportsbooks and all prediction markets (Kalshi, Polymarket, DraftKings Predictions, FanDuel Predicts, Crypto.com, Robinhood, Coinbase and new entrants) are treated equally: lawsuits, state and CFTC action, partnerships, political spending, funding, insider-trading cases and research on who trades.
+
 The site is served from this repository with GitHub Pages and is checked for new information every two hours. This repository is also its public archive.
 
 ## What's here
