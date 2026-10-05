@@ -1,6 +1,6 @@
 # Bankrolled
 
-A daily, sourced record of the money behind American sports betting: who pays whom, who loses, and who writes the rules.
+A daily, sourced record of the money behind American gambling, from sportsbooks to prediction markets: who pays whom, who loses, and who writes the rules.
 
 ### → [Read Bankrolled: chrisqtruong.github.io/bankrolled](https://chrisqtruong.github.io/bankrolled/)
 
