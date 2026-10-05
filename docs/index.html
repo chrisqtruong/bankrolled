@@ -231,6 +231,20 @@
     @keyframes draw { to { stroke-dashoffset: 0; } }
   }
 
+  .mast-right { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; padding: 2px; gap: 2px; background: var(--paper); }
+  .seg button { font: 500 13px/1 var(--sans); padding: 7px 11px; border: 0; border-radius: 999px; background: none; color: var(--mute); cursor: pointer; white-space: nowrap; }
+  .seg button:hover { color: var(--ink); }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+  .feedtools { display: grid; gap: 12px; }
+  .feedbar { display: flex; align-items: center; gap: 10px 16px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid var(--rule); }
+  .chk { display: inline-flex; align-items: center; gap: 7px; font: 500 14px/1 var(--sans); color: var(--ink); cursor: pointer; }
+  .chk input { width: 16px; height: 16px; accent-color: var(--accent); margin: 0; }
+  .feedcount { font: 400 14px/1.3 var(--sans); color: var(--mute); margin-left: auto; }
+  .more { justify-self: start; }
+  .totop { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 15; font: 600 14px/1 var(--sans); padding: 11px 15px; border: 0; border-radius: 999px; background: var(--ink); color: var(--paper); cursor: pointer; box-shadow: 0 3px 14px rgba(0,0,0,.18); }
+  .totop:hover { background: var(--accent); color: var(--on-accent); }
+  @media (max-width: 480px) { .feedcount { margin-left: 0; width: 100%; } .seg button { padding: 7px 9px; } }
   footer { border-top: 3px double var(--ink); padding-top: 18px; display: grid; gap: 10px; }
   .foot-brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; justify-self: start; }
   .foot-brand svg { width: 26px; height: 26px; color: var(--accent); flex: none; }
@@ -249,7 +263,14 @@
         <svg class="logo" viewBox="0 0 64 64" aria-hidden="true"></svg>
         <h1>Bankrolled</h1>
       </a>
-      <span class="label num" id="dateline">Updated —</span>
+      <div class="mast-right">
+        <span class="label num" id="dateline">Updated —</span>
+        <div class="seg" id="theme" role="group" aria-label="Color theme">
+          <button type="button" data-t="auto" aria-pressed="true">Auto</button>
+          <button type="button" data-t="light" aria-pressed="false">Light</button>
+          <button type="button" data-t="dark" aria-pressed="false">Dark</button>
+        </div>
+      </div>
     </div>
     <p class="tagline">A daily record of the money behind American sports betting: who pays whom, who loses, and who writes the rules.</p>
     <nav class="tabs" aria-label="Sections">
@@ -277,8 +298,21 @@
           <figcaption id="cap-pac"></figcaption>
         </figure>
       </div>
-      <div class="filters" id="feed-filters" role="group" aria-label="Filter by topic"></div>
+      <div class="feedtools">
+        <div class="filters" id="feed-filters" role="group" aria-label="Filter by topic"></div>
+        <div class="feedbar">
+          <div class="seg" id="feed-time" role="group" aria-label="Filter by date">
+            <button type="button" data-days="0" aria-pressed="true">All time</button>
+            <button type="button" data-days="7" aria-pressed="false">Past week</button>
+            <button type="button" data-days="30" aria-pressed="false">Past month</button>
+            <button type="button" data-days="90" aria-pressed="false">Past 3 months</button>
+          </div>
+          <label class="chk" for="conf-only"><input type="checkbox" id="conf-only"> Confirmed only</label>
+          <span class="feedcount" id="feed-count" aria-live="polite"></span>
+        </div>
+      </div>
       <div id="feed-list" style="display:grid;gap:28px;min-width:0"><p class="empty">Loading the feed…</p></div>
+      <button class="plain more" id="feed-more" type="button" hidden>Show more</button>
     </section>
 
     <!-- LEDGER -->
@@ -369,6 +403,7 @@
     <a class="foot-brand" href="#feed"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"></svg><span>Bankrolled</span></a>
     <p>Bankrolled is an independent tracker. Sources open in a new tab. If gambling is causing problems for you or someone you know, the National Problem Gambling Helpline is 1-800-GAMBLER (call or text).</p>
   </footer>
+  <button class="totop" id="totop" type="button" hidden aria-label="Back to top">↑ Top</button>
 </div>
 
 <script>
@@ -406,6 +441,33 @@
     document.querySelectorAll('nav.tabs a').forEach(a => { if (a.dataset.tab === tab) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   }
   window.addEventListener('hashchange', () => { show(); window.scrollTo(0, 0); });
+
+  // ---- theme: auto follows the device; light/dark override it and are remembered on this device
+  const themeSeg = $('#theme');
+  function applyTheme(t) {
+    if (t === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t);
+    themeSeg.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.t === t)));
+  }
+  let savedTheme = 'auto';
+  try { savedTheme = localStorage.getItem('bankrolled-theme') || 'auto'; } catch (e) {}
+  applyTheme(savedTheme);
+  themeSeg.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    applyTheme(b.dataset.t);
+    try { localStorage.setItem('bankrolled-theme', b.dataset.t); } catch (e) {}
+  });
+
+  // ---- back to top
+  const toTop = $('#totop'); let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(() => { toTop.hidden = window.scrollY < 900; ticking = false; });
+  }, { passive: true });
+  toTop.addEventListener('click', () => {
+    const smooth = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
+    document.querySelector('nav.tabs a[aria-current]')?.focus({ preventScroll: true });
+  });
   show();
 
   // ---- formatting
@@ -615,13 +677,20 @@
     // feed
     const feed = [...data.feed].sort((a, b) => b.d.localeCompare(a.d));
     const cats = ['All', ...new Set(feed.map(f => f.c))];
-    let active = 'All';
+    let active = 'All', days = 0, confOnly = false, limit = 20;
+    const PAGE = 20;
+    const ref = new Date(data.updated + 'T12:00:00Z');
+    const dayOf = d => new Date((d.length === 4 ? d + '-01-01' : d.length === 7 ? d + '-01' : d) + 'T12:00:00Z');
     const ff = $('#feed-filters');
     ff.innerHTML = cats.map(c => `<button type="button" aria-pressed="${c === 'All'}" data-c="${esc(c)}">${esc(c)}</button>`).join('');
     function drawFeed() {
-      const items = feed.filter(f => active === 'All' || f.c === active);
+      const items = feed.filter(f => (active === 'All' || f.c === active)
+        && (!confOnly || f.s === 'confirmed')
+        && (!days || (ref - dayOf(f.d)) / 864e5 <= days));
+      const shown = items.slice(0, limit);
       const byDay = new Map();
-      items.forEach(f => { if (!byDay.has(f.d)) byDay.set(f.d, []); byDay.get(f.d).push(f); });
+      shown.forEach(f => { if (!byDay.has(f.d)) byDay.set(f.d, []); byDay.get(f.d).push(f); });
+      $('#feed-count').textContent = items.length ? `${items.length} post${items.length === 1 ? '' : 's'}` : '';
       $('#feed-list').innerHTML = items.length ? [...byDay].map(([d, posts]) => `
         <div class="day"><span class="label">${esc(longDate(d))}</span>
         ${posts.map(f => `<article class="post">
@@ -629,14 +698,26 @@
           <h3>${esc(f.h)}</h3>
           <p>${esc(f.b)}</p>
           <div class="sources">Sources: ${f.src.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener" title="${esc(s.t || '')}">${esc(s.o)}</a> <span class="ext" aria-hidden="true">↗</span>`).join('&ensp;·&ensp;')}</div>
-        </article>`).join('')}</div>`).join('') : '<p class="empty">No posts in this topic yet.</p>';
+        </article>`).join('')}</div>`).join('') : '<p class="empty">Nothing matches these filters. Try a longer time range or another topic.</p>';
+      const more = $('#feed-more'), left = items.length - shown.length;
+      more.hidden = left <= 0;
+      more.textContent = `Show ${Math.min(PAGE, left)} more of ${left}`;
     }
+    const reset = () => { limit = PAGE; drawFeed(); };
     ff.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       active = b.dataset.c;
       ff.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-      drawFeed();
+      reset();
     });
+    $('#feed-time').addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      days = +b.dataset.days;
+      $('#feed-time').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      reset();
+    });
+    $('#conf-only').addEventListener('change', e => { confOnly = e.target.checked; reset(); });
+    $('#feed-more').addEventListener('click', () => { limit += PAGE; drawFeed(); });
     drawFeed();
 
     // ledger
