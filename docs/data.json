@@ -1,2530 +1,2530 @@
 {
- "updated": "2026-10-05",
- "feed": [
-  {
-   "d": "2026-10-03",
-   "c": "Political money",
-   "s": "confirmed",
-   "h": "Prediction-market companies have spent at least $3 million influencing federal and state governments this year",
-   "b": "A Stateline analysis of OpenSecrets data found Kalshi has registered lobbyists in 41 states. In the first half of 2026 it gave $100,000 to the Republican Governors Association, $150,000 to the Democratic Governors Association, and more than $300,000 combined to the two parties' attorneys general associations.",
-   "src": [
-    {
-     "o": "Stateline via The Express",
-     "t": "Prediction markets spend millions to influence state, federal governments",
-     "u": "https://www.lockhaven.com/news/local-news/2026/10/prediction-markets-spend-millions-to-influence-state-federal-governments/"
-    },
-    {
-     "o": "Eurasia Review (Stateline)",
-     "t": "Prediction Markets Spend Millions To Influence State, Federal Governments",
-     "u": "https://www.eurasiareview.com/03102026-prediction-markets-spend-millions-to-influence-state-federal-governments/"
-    }
-   ],
-   "id": "2026-10-03-predictionmarket-companies-have-spent-at-least-3"
-  },
-  {
-   "d": "2026-10-02",
-   "added": "2026-10-05T07:55:00-04:00",
-   "id": "2026-10-02-federal-judge-blocks-illinois-from-enforcing-its",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "Federal judge blocks Illinois from enforcing its sports-betting license rules against Kalshi and Coinbase",
-   "b": "In consolidated suits brought by Kalshi, Coinbase and the federal government, U.S. District Judge Martha Pacold in Chicago issued a partial preliminary injunction on Oct. 2, finding Illinois's sports-wagering license requirements and related criminal provisions are likely preempted by federal commodities law. She held off on Illinois's 1.75% to 3.5% fee on prediction-market trades pending more briefing. The order is preliminary, and it runs opposite to recent Sixth and Ninth Circuit rulings that sided with states.",
-   "src": [
-    {
-     "o": "U.S. District Court, N.D. Illinois (CourtListener)",
-     "t": "Memorandum opinion and order, Coinbase Financial Markets v. Raoul et al.",
-     "u": "https://storage.courtlistener.com/recap/gov.uscourts.ilnd.498112/gov.uscourts.ilnd.498112.99.0.pdf"
-    },
-    {
-     "o": "DeFi Rate",
-     "t": "Kalshi, Coinbase Win Partial Injunction Against Illinois",
-     "u": "https://defirate.com/news/federal-judge-grants-kalshi-coinbase-partial-injunctions/"
-    }
-   ]
-  },
-  {
-   "d": "2026-10-02",
-   "c": "Athletes & deals",
-   "s": "confirmed",
-   "h": "Victor Wembanyama says he will not endorse betting companies",
-   "b": "Speaking at Spurs practice, Wembanyama called NBA players' gambling endorsements \"very sad\" and said athletes should use their influence to inspire people in a good way.",
-   "src": [
-    {
-     "o": "Texas Public Radio",
-     "t": "Spurs star Victor Wembanyama calls NBA players endorsing sports betting 'very sad'",
-     "u": "https://www.tpr.org/sports/2026-10-02/spurs-star-victor-wembanyama-calls-nba-players-endorsing-sports-betting-very-sad"
-    }
-   ],
-   "id": "2026-10-02-victor-wembanyama-says-he-will-not-endorse"
-  },
-  {
-   "d": "2026-10-01",
-   "c": "Lawsuits & fines",
-   "s": "confirmed",
-   "h": "Bettor sues DraftKings, alleging it used AI to target customers likely to lose",
-   "b": "West Virginia bettor Daniel Vest filed a proposed class action in federal court in Boston on Sept. 26. He says DraftKings broke Massachusetts law by not disclosing AI-driven targeting, and that he received about 70 messages from the company in one month. DraftKings says it does not use AI to target customers based on losses. These are allegations; nothing has been decided.",
-   "src": [
-    {
-     "o": "The Boston Globe",
-     "t": "DraftKings 'weaponized' AI to target gamblers, encouraging addiction, lawsuit says",
-     "u": "https://www.bostonglobe.com/2026/10/01/business/draftkings-lawsuit-ai-addiction/"
-    }
-   ],
-   "id": "2026-10-01-bettor-sues-draftkings-alleging-it-used-ai"
-  },
-  {
-   "d": "2026-09-28",
-   "c": "Regulation",
-   "s": "reported",
-   "h": "CFTC reportedly sends two prediction-market rules to the White House for review",
-   "b": "One trade outlet reports the CFTC sent the White House regulatory office a proposal defining event contracts as swaps and an interim rule excluding casino-style products. Neither has been published. A separate CFTC proposal on event-contract reviews ran in the Federal Register on June 12.",
-   "src": [
-    {
-     "o": "crypto.news",
-     "t": "The CFTC has sent prediction market rules to the White House. States are still in court",
-     "u": "https://crypto.news/the-cftc-has-sent-prediction-market-rules-to-the-white-house-states-are-still-in-court/"
-    },
-    {
-     "o": "Federal Register",
-     "t": "Prediction Markets; Public Interest Determinations",
-     "u": "https://www.federalregister.gov/documents/2026/06/12/2026-11854/prediction-markets-public-interest-determinations"
-    }
-   ],
-   "id": "2026-09-28-cftc-reportedly-sends-two-predictionmarket-rules-to"
-  },
-  {
-   "d": "2026-09-27",
-   "c": "Integrity",
-   "s": "confirmed",
-   "h": "Chauncey Billups's rigged-poker trial is set to begin Nov. 2",
-   "b": "The judge denied the government's request to push the trial to January. Fifteen of the 31 defendants in the poker case have pleaded guilty. Billups has pleaded not guilty. Prosecutors say victims lost at least $7 million.",
-   "src": [
-    {
-     "o": "Open Court Basketball",
-     "t": "Chauncey Billups Set For November 2 Trial In Federal Rigged-Poker Case",
-     "u": "https://www.opencourt-basketball.com/2026/09/27/chauncey-billups-set-for-november-2-trial-in-federal-rigged-poker-case/"
-    },
-    {
-     "o": "ESPN",
-     "t": "Trial date set for Chauncey Billups, others in rigged poker case",
-     "u": "https://www.espn.com/nba/story/_/id/48103259/trial-date-set-chauncey-billups-others-rigged-poker-case"
-    }
-   ],
-   "id": "2026-09-27-chauncey-billupss-riggedpoker-trial-is-set-to"
-  },
-  {
-   "d": "2026-09-25",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "Sixth Circuit rules Ohio and Tennessee can enforce betting laws against Kalshi",
-   "b": "The unanimous panel found Kalshi's sports contracts are not swaps under federal commodities law. Kalshi has now lost two of three federal appeals. On Oct. 2, Ohio Gov. Mike DeWine called the contracts illegal gambling and said the state will enforce its law.",
-   "src": [
-    {
-     "o": "CoinDesk",
-     "t": "Another appeals court rules against prediction market provider Kalshi",
-     "u": "https://www.coindesk.com/policy/2026/09/25/another-appeals-court-rules-against-prediction-market-provider-kalshi-says-sports-contracts-are-subject-to-state-regulations"
-    },
-    {
-     "o": "The Block",
-     "t": "Kalshi loses appeal over Ohio and Tennessee sports betting laws, widening circuit split",
-     "u": "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937"
-    },
-    {
-     "o": "Statehouse News Bureau",
-     "t": "Kalshi is illegal gambling and Ohio will enforce state law following ruling, says DeWine",
-     "u": "https://www.statenews.org/government-politics/2026-10-02/kalshi-is-illegal-gambling-and-ohio-will-enforce-state-law-following-ruling-says-dewine"
-    }
-   ],
-   "id": "2026-09-25-sixth-circuit-rules-ohio-and-tennessee-can"
-  },
-  {
-   "d": "2026-09-24",
-   "added": "2026-10-05T09:30:00-04:00",
-   "id": "2026-09-24-new-york-sues-polymarket-as-an-unlicensed",
-   "c": "Lawsuits & fines",
-   "s": "confirmed",
-   "h": "New York sues Polymarket as an unlicensed gambling operation; Polymarket countersues in federal court",
-   "b": "Attorney General Letitia James and Gov. Kathy Hochul sued Polymarket US in state court in Manhattan, alleging its sports markets are unlicensed gambling that is open to 18-to-20-year-olds, and seeking forfeiture of gains, restitution and fines of three times its gains. CNBC reports the suit also seeks $100,000 for each offer of sports wagering in the state. Polymarket moved to take the case to federal court and filed its own suit against James and Gaming Commission officials, arguing states cannot regulate federally overseen swaps; the claims are allegations. It follows New York's July suit against Kalshi.",
-   "src": [
-    {
-     "o": "New York Attorney General",
-     "t": "Attorney General James and Governor Hochul Announce Lawsuit Against Polymarket for Running Illegal Gambling Operation",
-     "u": "https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-lawsuit-against-polymarket"
-    },
-    {
-     "o": "CNBC",
-     "t": "Polymarket countersues New York state over 'unregulated gambling' allegation",
-     "u": "https://www.cnbc.com/2026/09/24/new-york-sues-polymarket-us-two-months-after-filing-suit-against-kalshi-.html"
-    }
-   ]
-  },
-  {
-   "d": "2026-09-24",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "Massachusetts regulators will review how sportsbooks use AI, starting with DraftKings",
-   "b": "Gaming Commission chair Jordan Maynard said the review will start with DraftKings and then cover every licensed sportsbook. The commission said it has not found wrongdoing.",
-   "src": [
-    {
-     "o": "Covers",
-     "t": "Massachusetts to Evaluate Sportsbooks' AI Practices",
-     "u": "https://www.covers.com/industry/massachusetts-gaming-commission-to-evaluate-sportsbooks-ai-practices-sept-24-2026"
-    },
-    {
-     "o": "Quartz",
-     "t": "Massachusetts gaming commission probes DraftKings AI practices",
-     "u": "https://qz.com/massachusetts-gaming-commission-draftkings-ai-gambling-092526"
-    }
-   ],
-   "id": "2026-09-24-massachusetts-regulators-will-review-how-sportsbooks-use"
-  },
-  {
-   "d": "2026-09-24",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "Indiana rejects the NCAA's request to ban all college player prop bets",
-   "b": "The Indiana Gaming Commission voted unanimously to keep its current rules, which allow pregame college player props and ban in-game ones. Commissioners said the legislature should decide.",
-   "src": [
-    {
-     "o": "Covers",
-     "t": "Indiana Regulators Reject NCAA's Request for Full Ban on College Player Props",
-     "u": "https://www.covers.com/industry/indiana-college-player-prop-ban-rejected-sports-betting-regulators-ncaa-september-2026"
-    },
-    {
-     "o": "InGame",
-     "t": "EndGame: Regulators Discuss College Prop Bets, Sportsbooks' Use Of AI To Target Gamblers",
-     "u": "https://www.ingame.com/endgame-9-25-2026/"
-    }
-   ],
-   "id": "2026-09-24-indiana-rejects-the-ncaas-request-to-ban"
-  },
-  {
-   "d": "2026-09-23",
-   "c": "Lawsuits & fines",
-   "s": "confirmed",
-   "h": "North Carolina fines Underdog $175,000 over underage accounts and bet365 $75,000 over self-excluded customers",
-   "b": "Regulators said Underdog failed to verify 38 underage accounts, eight of which placed bets, and bet365 sent push notifications to people on the self-exclusion list. Both companies reported the problems themselves.",
-   "src": [
-    {
-     "o": "Covers",
-     "t": "North Carolina Regulators Fine Underdog, bet365 for Sports Betting Violations",
-     "u": "https://www.covers.com/industry/north-carolina-regulators-fine-underdog-bet365-for-sports-betting-violations-sept-23-2026"
-    },
-    {
-     "o": "WSN",
-     "t": "North Carolina Fines bet365, Underdog for RG Violations",
-     "u": "https://www.wsn.com/betting/north-carolina-fines-bet365-underdog-for-responsible-gaming-violations/"
-    }
-   ],
-   "id": "2026-09-23-north-carolina-fines-underdog-175000-over-underage"
-  },
-  {
-   "d": "2026-09-23",
-   "c": "Industry",
-   "s": "confirmed",
-   "h": "Prediction-market trading doubled from May to July, driven by sports",
-   "b": "Pew's analysis of The Block's data shows combined Kalshi and Polymarket volume rose from $25.7 billion in May to $53.0 billion in July. Sports trading in June and July topped $58 billion on Kalshi and neared $22 billion on Polymarket. These are notional volumes, not directly comparable to sportsbook handle.",
-   "src": [
-    {
-     "o": "Pew Research Center",
-     "t": "Prediction markets' trading volume doubled between May and July, largely driven by sports",
-     "u": "https://www.pewresearch.org/short-reads/2026/09/23/prediction-markets-trading-volume-doubled-between-may-and-july-largely-driven-by-sports/"
-    }
-   ],
-   "id": "2026-09-23-predictionmarket-trading-doubled-from-may-to-july"
-  },
-  {
-   "d": "2026-09-23",
-   "c": "Industry",
-   "s": "confirmed",
-   "h": "Caesars shareholders approve Tilman Fertitta's $17.6 billion buyout",
-   "b": "The all-cash, $31-per-share deal includes Caesars Sportsbook. Fertitta also takes on about $12 billion of Caesars debt. Federal Trade Commission review is continuing.",
-   "src": [
-    {
-     "o": "FOX5 Vegas",
-     "t": "Caesars stockholders approve $17.6 billion Fertitta buyout",
-     "u": "https://www.fox5vegas.com/2026/09/23/caesars-stockholders-approve-merger-with-fertitta-gaming/"
-    },
-    {
-     "o": "iGaming Business",
-     "t": "Caesars shareholders approve Fertitta merger while FTC review continues",
-     "u": "https://igamingbusiness.com/casino/caesars-shareholders-approve-merger/"
-    }
-   ],
-   "id": "2026-09-23-caesars-shareholders-approve-tilman-fertittas-176-billion"
-  },
-  {
-   "d": "2026-09-22",
-   "c": "Research",
-   "s": "confirmed",
-   "h": "Problem-gambling council hardens its stance on prediction markets after a Kalshi funding backlash",
-   "b": "Axios reported Kalshi joined the National Council on Problem Gambling in May with $2 million in funding. The Nevada and Evergreen problem-gambling councils have since left, and Michigan's gaming regulator ended its membership.",
-   "src": [
-    {
-     "o": "Axios",
-     "t": "National gambling group takes firmer stance on prediction markets",
-     "u": "https://www.axios.com/2026/09/22/problem-gambling-national-council-kalshi-membership"
-    },
-    {
-     "o": "Yogonet",
-     "t": "NCPG takes firmer stance on prediction markets after Kalshi controversy",
-     "u": "https://www.yogonet.com/international/news/2026/09/23/126537-ncpg-takes-firmer-stance-on-prediction-markets-after-kalshi-controversy"
-    }
-   ],
-   "id": "2026-09-22-problemgambling-council-hardens-its-stance-on-prediction"
-  },
-  {
-   "d": "2026-09-22",
-   "added": "2026-10-05T09:57:56-04:00",
-   "id": "2026-09-22-cftc-staff-warn-that-mention-market-event",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "CFTC staff warn that 'mention market' event contracts carry a heightened risk of manipulation",
-   "b": "The CFTC's Division of Market Oversight issued an advisory on contracts that settle on whether a person will say certain words, attend an event or interact with someone. It says such contracts can be listed only in limited circumstances and reminds exchanges they must list only contracts not readily susceptible to manipulation. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
-   "src": [
-    {
-     "o": "CFTC",
-     "t": "CFTC Releases Staff Advisory on Mention Markets",
-     "u": "https://www.cftc.gov/PressRoom/PressReleases/9302-26"
-    }
-   ]
-  },
-  {
-   "d": "2026-09-19",
-   "c": "Research",
-   "s": "disputed",
-   "h": "New York Times reports DraftKings used machine learning to aim promotions at customers predicted to lose the most",
-   "b": "Citing former employees and internal documents, the Times reported a scoring system built in 2023, about $400 million in automated 2025 promotions, and a shelved model meant to detect harm. DraftKings disputes the reporting; its CEO called it slanderous. We have not seen the underlying documents.",
-   "src": [
-    {
-     "o": "Malwarebytes",
-     "t": "Losing gamblers pushed to bet more by DraftKings' AI, report says",
-     "u": "https://www.malwarebytes.com/blog/ai/2026/10/losing-gamblers-pushed-to-bet-more-by-draftkings-ai-report-says"
-    },
-    {
-     "o": "Tech Times",
-     "t": "DraftKings' Promotional AI Scored Bettors by Addiction Markers, NYT Investigation Finds",
-     "u": "https://www.techtimes.com/articles/327776/20260920/draftkings-promotional-ai-scored-bettors-addiction-markers-nyt-investigation-finds.htm"
-    },
-    {
-     "o": "TheWrap",
-     "t": "DraftKings CEO Says New York Times Has Been Writing 'Slanderous' Stories",
-     "u": "https://www.thewrap.com/industry-news/business/draftkings-ceo-jason-robins-responds-new-york-times-reporting/"
-    }
-   ],
-   "id": "2026-09-19-new-york-times-reports-draftkings-used-machine"
-  },
-  {
-   "d": "2026-09-18",
-   "added": "2026-10-05T09:38:33-04:00",
-   "id": "2026-09-18-missouri-attorney-general-orders-six-predictionmarket-companies",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "Missouri attorney general orders six prediction-market companies to stop offering sports contracts",
-   "b": "Missouri Attorney General Catherine Hanaway sent cease-and-desist letters to Polymarket, Kalshi, Crypto.com, Novig, Underdog and Robinhood, saying their sports event contracts amount to unlicensed sports wagering under state law. The letters give each company 30 days to comply and warn of enforcement action; the office also says the firms avoid the state's 10% tax on sports betting receipts and lack adequate under-21 safeguards. Polymarket's spokesperson said prediction markets fall under federal CFTC regulation rather than state rules.",
-   "src": [
-    {
-     "o": "Missouri Attorney General's Office",
-     "t": "Missouri Attorney General Hanaway Orders Unlicensed Prediction Markets To Cease And Desist Unlawful Sports Wagering",
-     "u": "https://ago.mo.gov/missouri-attorney-general-hanaway-orders-unlicensed-prediction-markets-to-cease-and-desist-unlawful-sports-wagering/"
-    },
-    {
-     "o": "KCTV5",
-     "t": "Missouri AG targets Polymarket, Kalshi, others in prediction market crackdown",
-     "u": "https://www.kctv5.com/2026/09/18/missouri-ag-sends-cease-desist-letters-prediction-market-operators/"
-    }
-   ]
-  },
-  {
-   "d": "2026-09-16",
-   "c": "Research",
-   "s": "confirmed",
-   "h": "Gambling-disorder ER visits roughly doubled in Ontario after online betting expanded",
-   "b": "A peer-reviewed study in the American Journal of Preventive Medicine covering 14 years of data found visits far above expected levels for young men, including 154% higher for males aged 10 to 29. The data is Canadian.",
-   "src": [
-    {
-     "o": "American Journal of Preventive Medicine",
-     "t": "Emergency Department Visits for Gambling Disorders After the Legalization of Single-Event Sports Betting",
-     "u": "https://www.ajpmonline.org/article/S0749-3797(26)00294-1/fulltext"
-    },
-    {
-     "o": "News-Medical",
-     "t": "Gambling disorder emergency visits increase following sports betting legalization",
-     "u": "https://www.news-medical.net/news/20260916/Gambling-disorder-emergency-visits-increase-following-sports-betting-legalization.aspx"
-    }
-   ],
-   "id": "2026-09-16-gamblingdisorder-er-visits-roughly-doubled-in-ontario"
-  },
-  {
-   "d": "2026-09-16",
-   "c": "Lawsuits & fines",
-   "s": "confirmed",
-   "h": "Pennsylvania bettor sues DraftKings and FanDuel over VIP managers",
-   "b": "Reynaldo Rivera alleges VIP hosts deepened his addiction. He says he wagered $1.6 million on DraftKings and lost about $97,000, and wagered $841,000 on FanDuel and lost about $40,000. These are allegations.",
-   "src": [
-    {
-     "o": "AboutLawsuits.com",
-     "t": "DraftKings, FanDuel Lawsuit Alleges VIP Managers Fueled More Than $130K in Gambling Losses",
-     "u": "https://www.aboutlawsuits.com/sports-betting-addiction-lawsuit/draftkings-fanduel-lawsuit-vip-managers-130k-gambling-losses"
-    }
-   ],
-   "id": "2026-09-16-pennsylvania-bettor-sues-draftkings-and-fanduel-over"
-  },
-  {
-   "d": "2026-09-16",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "Ninth Circuit sides with two California tribes against Kalshi",
-   "b": "The court found Kalshi's sports contracts likely count as gaming under federal Indian gaming law when traded from tribal land, and reversed a lower court's refusal to block them.",
-   "src": [
-    {
-     "o": "JURIST",
-     "t": "The Ninth Circuit finds Kalshi sports contracts on tribal lands likely violate federal law",
-     "u": "https://www.jurist.org/news/2026/09/the-ninth-circuit-rules-kalshi-sports-contracts-on-tribal-lands-likely-violate-federal-law/"
-    },
-    {
-     "o": "Covers",
-     "t": "Tribal Nations Step Up Fight Against Prediction Markets",
-     "u": "https://www.covers.com/industry/tribal-nations-strengthen-prediction-market-fight-october-1-2026"
-    }
-   ],
-   "id": "2026-09-16-ninth-circuit-sides-with-two-california-tribes"
-  },
-  {
-   "d": "2026-09-07",
-   "c": "Research",
-   "s": "confirmed",
-   "h": "Bank of America data: online bettors get back about 75 cents of every dollar they wager",
-   "b": "Fortune reported the Bank of America Institute's findings. Gen Z and millennials made up 88% of betting activity in July, and median deposit balances in betting households were 59% of those in non-betting households.",
-   "src": [
-    {
-     "o": "Fortune",
-     "t": "One in five Americans call sports betting an investment",
-     "u": "https://fortune.com/2026/09/07/americans-sports-gambling-investment-gen-z-75-cents-dollar-wagered/"
-    }
-   ],
-   "id": "2026-09-07-bank-of-america-data-online-bettors-get"
-  },
-  {
-   "d": "2026-09-05",
-   "c": "Athletes & deals",
-   "s": "confirmed",
-   "h": "LeBron James signs with Polymarket",
-   "b": "It is Polymarket's first individual athlete endorsement. The campaign also features Eli Manning, Derek Jeter, Spike Lee and Sue Bird. Terms were not disclosed.",
-   "src": [
-    {
-     "o": "CNBC",
-     "t": "LeBron James teases partnership with Polymarket",
-     "u": "https://www.cnbc.com/2026/09/05/lebron-james-polymarket-partnership.html"
-    },
-    {
-     "o": "Philadelphia Inquirer",
-     "t": "LeBron James is partnering with Polymarket",
-     "u": "https://www.inquirer.com/sixers/lebron-james-polymarket-gambling-prediction-market-20260908.html"
-    }
-   ],
-   "id": "2026-09-05-lebron-james-signs-with-polymarket"
-  },
-  {
-   "d": "2026-09-02",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "New Jersey asks the Supreme Court to let states regulate Kalshi's sports contracts",
-   "b": "It is the first state petition to the Court on prediction markets. New Jersey is challenging the Third Circuit's April ruling, which shielded Kalshi from state gambling law.",
-   "src": [
-    {
-     "o": "NJ Attorney General",
-     "t": "Petition for Writ of Certiorari",
-     "u": "https://www.njoag.gov/wp-content/uploads/2026/09/2026-0902_26-_PetitionForWritOfCertiorari.pdf"
-    },
-    {
-     "o": "NPR via Houston Public Media",
-     "t": "New Jersey asks Supreme Court to resolve fight over Kalshi's future",
-     "u": "https://www.houstonpublicmedia.org/npr/2026/09/02/nx-s1-5954230/new-jersey-asks-supreme-court-to-resolve-fight-over-kalshis-future/"
-    }
-   ],
-   "id": "2026-09-02-new-jersey-asks-the-supreme-court-to",
-   "img": {
-    "u": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Supreme_Court_Following_Facade_Restoration_%2810542206014%29.jpg/1280px-Supreme_Court_Following_Facade_Restoration_%2810542206014%29.jpg",
-    "alt": "The west facade of the U.S. Supreme Court building in Washington",
-    "credit": "Architect of the Capitol",
-    "lic": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_Following_Facade_Restoration_(10542206014).jpg"
-   }
-  },
-  {
-   "d": "2026-08-29",
-   "c": "Integrity",
-   "s": "confirmed",
-   "h": "Guardians pitchers Emmanuel Clase and Luis Ortiz will be tried together starting Nov. 2",
-   "b": "Prosecutors later narrowed the pitch-rigging case to 18 pitches by Clase and two by Ortiz. Both have pleaded not guilty.",
-   "src": [
-    {
-     "o": "The Source",
-     "t": "Federal Judge Rules Guardians Pitchers Will Face Pitch-Rigging Case Together",
-     "u": "https://thesource.com/2026/08/31/source-sports-federal-judge-rules-guardians-pitchers-luis-ortiz-emmanuel-clase-will-face-pitch-rigging-case-together/"
-    },
-    {
-     "o": "PlayUSA",
-     "t": "Prosecutors Narrow Emmanuel Clase Betting Case to 18 Pitches",
-     "u": "https://www.playusa.com/news/prosecutors-narrow-emmanuel-clase-betting-case-to-18-pitches-ahead-of-november-trial/"
-    }
-   ],
-   "id": "2026-08-29-guardians-pitchers-emmanuel-clase-and-luis-ortiz"
-  },
-  {
-   "d": "2026-08-28",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "Ninth Circuit rules Nevada can apply its gaming laws to Kalshi",
-   "b": "The panel found Kalshi's sports contracts likely are not swaps, so federal law does not block Nevada. The ruling also covers Crypto.com and Robinhood, and it split from the Third Circuit.",
-   "src": [
-    {
-     "o": "Nevada Current",
-     "t": "Ninth Circuit win for Nevada over Kalshi sets up potential Supreme Court showdown",
-     "u": "https://nevadacurrent.com/2026/08/28/ninth-circuit-win-for-nevada-over-kalshi-sets-up-potential-supreme-court-showdown/"
-    },
-    {
-     "o": "Nevada Gaming Control Board",
-     "t": "Ninth Circuit opinion, No. 25-7516",
-     "u": "https://www.gaming.nv.gov/siteassets/content/about/press-release/25-7516---kalshi-ninth-circuit-decision.pdf"
-    }
-   ],
-   "id": "2026-08-28-ninth-circuit-rules-nevada-can-apply-its"
-  },
-  {
-   "d": "2026-08-28",
-   "added": "2026-10-05T09:57:56-04:00",
-   "id": "2026-08-28-cftc-orders-former-white-house-teleprompter-operator",
-   "c": "Integrity",
-   "s": "confirmed",
-   "h": "CFTC orders former White House teleprompter operator to pay $172,000 for insider trading of prediction-market contracts",
-   "b": "In a settled order, the CFTC found that Gabriel Perez used nonpublic access to presidential speeches to trade 'mention market' event contracts between December 2025 and February 2026, earning about $107,500. He must give up $107,539.02 in profits and pay a $65,000 penalty, and is barred from trading for three years. The agency credited Kalshi for assisting. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
-   "src": [
-    {
-     "o": "CFTC",
-     "t": "CFTC Orders Gabriel Perez to Pay $172,000 for Insider Trading of Mention Market Event Contracts",
-     "u": "https://www.cftc.gov/PressRoom/PressReleases/9289-26"
-    }
-   ]
-  },
-  {
-   "d": "2026-08-27",
-   "c": "Political money",
-   "s": "confirmed",
-   "h": "Sportsbooks added $29 million to their super PAC in the second quarter, bringing it to $72 million",
-   "b": "DraftKings gave $14.5 million, FanDuel $7.5 million, bet365 $5.5 million and Fanatics $1.5 million to Win for America from April through June. The PAC grew 70% from $43 million at the end of March.",
-   "src": [
-    {
-     "o": "Public Citizen",
-     "t": "Corporate Money in the 2026 Midterms Surges to $650 Million",
-     "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
-    },
-    {
-     "o": "FEC",
-     "t": "Win for America committee overview",
-     "u": "https://www.fec.gov/data/committee/C00925586/"
-    }
-   ],
-   "id": "2026-08-27-sportsbooks-added-29-million-to-their-super"
-  },
-  {
-   "d": "2026-08-27",
-   "c": "Athletes & deals",
-   "s": "confirmed",
-   "h": "NFL renews DraftKings and FanDuel, adds Fanatics, and drops Caesars",
-   "b": "The multiyear deals drop the old exclusivity language, so the league can add more sportsbooks. Financial terms were not disclosed.",
-   "src": [
-    {
-     "o": "NFL.com",
-     "t": "NFL announces official partnerships with three leading sports betting operators",
-     "u": "https://www.nfl.com/news/nfl-draftkings-fanduel-fanatics-sports-betting-partners"
-    },
-    {
-     "o": "Yogonet",
-     "t": "NFL renews sportsbook deals with DraftKings and FanDuel, adds Fanatics",
-     "u": "https://www.yogonet.com/international/news/2026/08/31/126140-nfl-renews-sportsbook-deals-with-draftkings-and-fanduel-adds-fanatics-ahead-of-2026-season"
-    }
-   ],
-   "id": "2026-08-27-nfl-renews-draftkings-and-fanduel-adds-fanatics"
-  },
-  {
-   "d": "2026-08-27",
-   "c": "Lawsuits & fines",
-   "s": "confirmed",
-   "h": "Colorado fines Fanatics $20,000 after VIP staff twice marketed to a self-excluded customer",
-   "b": "Fanatics must also audit its self-exclusion compliance from January 2024 to March 2026 and retrain its VIP team.",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "t": "Colorado Fines Fanatics Sportsbook For Marketing Violations",
-     "u": "https://sbcamericas.com/2026/09/01/colorado-fines-fanatics-sportsbook/"
-    }
-   ],
-   "id": "2026-08-27-colorado-fines-fanatics-20000-after-vip-staff"
-  },
-  {
-   "d": "2026-08-25",
-   "c": "Athletes & deals",
-   "s": "confirmed",
-   "h": "Kalshi signs five MLB teams; Polymarket signs the Yankees",
-   "b": "Kalshi's deals are with the Braves, Red Sox, Dodgers, Padres and Giants. Fortune reported Kalshi's baseball volume at nearly $13 billion this year. A report that Kalshi is negotiating a league-wide MLB deal rests on one unnamed source.",
-   "src": [
-    {
-     "o": "Fortune",
-     "t": "Kalshi strikes deals with five MLB teams, eyes a separate league partnership",
-     "u": "https://fortune.com/2026/08/25/kalshi-deals-five-mlb-teams-separate-league-partnership/"
-    },
-    {
-     "o": "Kalshi",
-     "t": "Kalshi partners with 5 MLB teams",
-     "u": "https://news.kalshi.com/p/kalshi-partners-with-mlb-teams"
-    },
-    {
-     "o": "PR Newswire",
-     "t": "Polymarket Becomes An Official Prediction Market Partner of the New York Yankees",
-     "u": "https://www.prnewswire.com/news-releases/polymarket-becomes-an-official-prediction-market-partner-of-the-new-york-yankees-302844285.html"
-    }
-   ],
-   "id": "2026-08-25-kalshi-signs-five-mlb-teams-polymarket-signs"
-  },
-  {
-   "d": "2026-08-24",
-   "c": "Integrity",
-   "s": "confirmed",
-   "h": "MLB players' union tells Congress the league resisted a joint push to ban player prop bets",
-   "b": "Answering lawmakers' questions about VIP marketing tied to MLB, the union and FanDuel, the MLBPA said it is open to rules barring players from sportsbook VIP marketing.",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "t": "MLBPA says league 'balked' at lobbying to ban props",
-     "u": "https://sbcamericas.com/2026/08/26/mlbpa-players-sportsbook-prop-ban"
-    }
-   ],
-   "id": "2026-08-24-mlb-players-union-tells-congress-the-league"
-  },
-  {
-   "d": "2026-08-24",
-   "c": "Political money",
-   "s": "reported",
-   "h": "Nebraska will vote on online sports betting in November, in a campaign reportedly funded by FanDuel and DraftKings",
-   "b": "Two measures were certified for the Nov. 3 ballot. Trade outlets report the Tax Relief Nebraska campaign got about $3.5 million each from FanDuel and DraftKings. We have not yet checked state filings.",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "t": "Nebraska Online Sports Betting Will Go to November Ballot",
-     "u": "https://sbcamericas.com/2026/08/24/nebraska-online-sports-betting-ballot/"
-    },
-    {
-     "o": "Nebraska Examiner",
-     "t": "Backers of online sports betting in Nebraska submit signatures to get on 2026 ballot",
-     "u": "https://nebraskaexaminer.com/2026/07/01/backers-of-online-sports-betting-in-nebraska-submit-signatures-to-get-on-2026-ballot/"
-    }
-   ],
-   "id": "2026-08-24-nebraska-will-vote-on-online-sports-betting"
-  },
-  {
-   "d": "2026-08-20",
-   "c": "Political money",
-   "s": "reported",
-   "h": "Sportsbook-funded groups have spent nearly $12 million on Georgia's elections",
-   "b": "An update of Atlanta Journal-Constitution figures, as summarized by a trade outlet, says 32 of the 34 legislative candidates the network backed in primaries won.",
-   "src": [
-    {
-     "o": "CasinoBeats",
-     "t": "Sports Betting Groups Pour Millions Into Georgia Elections",
-     "u": "https://casinobeats.com/2026/08/20/sports-betting-advocates-splash-cash-on-georgia-elections/"
-    }
-   ],
-   "id": "2026-08-20-sportsbookfunded-groups-have-spent-nearly-12-million"
-  },
-  {
-   "d": "2026-08-17",
-   "c": "Research",
-   "s": "confirmed",
-   "h": "Gallup: 11% of adults bet on sports in the past year",
-   "b": "Overall gambling fell to 45% from 64% in 2016, by telephone survey. Gallup's sports figure is lower than Pew's 22%; question wording and method differ.",
-   "src": [
-    {
-     "o": "Gallup",
-     "t": "Fewer U.S. Adults Say They Gamble",
-     "u": "https://news.gallup.com/poll/713405/fewer-adults-say-gamble.aspx"
-    }
-   ],
-   "id": "2026-08-17-gallup-11-of-adults-bet-on-sports"
-  },
-  {
-   "d": "2026-08-13",
-   "c": "Industry",
-   "s": "reported",
-   "h": "Kalshi reportedly in talks to raise $750 million at a $40 billion valuation",
-   "b": "CoinDesk, citing The Information, reported that Sequoia and Wellington were in advanced talks to lead the round. Neither company confirmed. Kalshi was valued at $22 billion in March.",
-   "src": [
-    {
-     "o": "CoinDesk",
-     "t": "Sequoia and Wellington in talks to lead $750 million Kalshi funding round",
-     "u": "https://www.coindesk.com/business/2026/08/13/kalshi-in-talks-with-sequoia-wellington-for-usd750-million-fund-raise-at-usd40-billion-valuation"
-    }
-   ],
-   "id": "2026-08-13-kalshi-reportedly-in-talks-to-raise-750"
-  },
-  {
-   "d": "2026-08-13",
-   "added": "2026-10-05T09:53:52-04:00",
-   "id": "2026-08-13-baltimore-sues-kalshi-and-polymarket-alleging-unlicensed",
-   "c": "Lawsuits & fines",
-   "s": "confirmed",
-   "h": "Baltimore sues Kalshi and Polymarket, alleging unlicensed sports betting",
-   "b": "Mayor Brandon Scott and the Baltimore City Council filed consumer-protection suits in Baltimore City Circuit Court on Aug. 13 against Kalshi and Polymarket. The city alleges the companies run unlicensed sports betting under the label of event contracts and misstate their legal status; it seeks an injunction, penalties and restitution. The Kalshi suit also names Robinhood, Webull and Coinbase entities. These are allegations; the companies' federal-preemption defense has not been decided here. (Late catch, added Oct. 5.)",
-   "src": [
-    {
-     "o": "FOX Baltimore",
-     "t": "Baltimore sues Kalshi, Polymarket over alleged illegal sports betting, prediction markets",
-     "u": "https://foxbaltimore.com/news/local/baltimore-sues-kalshi-polymarket-over-alleged-illegal-sports-betting-prediction-markets"
-    },
-    {
-     "o": "Maryland Association of Counties",
-     "t": "Baltimore City Sues Prediction Markets Over Alleged Illegal Sports Betting",
-     "u": "https://conduitstreet.mdcounties.org/2026/08/18/baltimore-city-sues-prediction-markets-over-alleged-illegal-sports-betting/"
-    }
-   ]
-  },
-  {
-   "d": "2026-08-06",
-   "c": "Industry",
-   "s": "confirmed",
-   "h": "DraftKings revenue falls 5% while marketing spending jumps to $322.5 million",
-   "b": "Second-quarter revenue was $1.44 billion with a $67.6 million net loss. Monthly unique payers rose 9% to 3.6 million. The company said its prediction-market product has passed 600,000 customers this year.",
-   "src": [
-    {
-     "o": "Business Wire",
-     "t": "DraftKings Reports Second Quarter Results",
-     "u": "https://www.businesswire.com/news/home/20260806450577/en/DraftKings-Reports-Second-Quarter-Results"
-    },
-    {
-     "o": "The Motley Fool",
-     "t": "DraftKings (DKNG) Q2 2026 Earnings Call Transcript",
-     "u": "https://www.fool.com/earnings/call-transcripts/2026/08/13/draftkings-dkng-q2-2026-earnings-call-transcript/"
-    }
-   ],
-   "id": "2026-08-06-draftkings-revenue-falls-5-while-marketing-spending"
-  },
-  {
-   "d": "2026-08-05",
-   "c": "Industry",
-   "s": "confirmed",
-   "h": "FanDuel's owner posts a $296 million loss and replaces its CEO",
-   "b": "Flutter's U.S. revenue fell 6% to $1.68 billion even as average monthly players rose 9% to 3.8 million. U.S. marketing spending rose 61% year over year. Dan Taylor became CEO on Oct. 1.",
-   "src": [
-    {
-     "o": "GlobeNewswire",
-     "t": "Flutter Entertainment Announces Q2 2026 Financial Results",
-     "u": "https://www.globenewswire.com/news-release/2026/08/05/3339154/0/en/flutter-entertainment-announces-q2-2026-financial-results.html"
-    },
-    {
-     "o": "European Gaming",
-     "t": "Flutter posts $296m Q2 loss as Dan Taylor named next CEO",
-     "u": "https://europeangaming.eu/portal/latest-news/2026/08/06/210507/flutter-q2-2026-results-dan-taylor-ceo/"
-    }
-   ],
-   "id": "2026-08-05-fanduels-owner-posts-a-296-million-loss"
-  },
-  {
-   "d": "2026-08-05",
-   "c": "Lawsuits & fines",
-   "s": "confirmed",
-   "h": "New Jersey fines Caesars Sportsbook $251,250 over self-exclusion failures",
-   "b": "Regulators also required $45,465 in disgorgement. Problems included letting self-excluded players bet through other platforms.",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "t": "Caesars Sportsbook hit with $250k fine by New Jersey regulator",
-     "u": "https://sbcamericas.com/2026/08/27/caesars-sportsbook-nj-dge-fine/"
-    },
-    {
-     "o": "PlayNJ",
-     "t": "Caesars Sportsbook Fined $296,715 in New Jersey",
-     "u": "https://www.playnj.com/news/caesars-sportsbook-fined-296715-by-new-jersey-regulators/99619/"
-    }
-   ],
-   "id": "2026-08-05-new-jersey-fines-caesars-sportsbook-251250-over"
-  },
-  {
-   "d": "2026-07-31",
-   "c": "Lawsuits & fines",
-   "s": "confirmed",
-   "h": "New York's attorney general sues Kalshi, seeking about $36 billion",
-   "b": "Letitia James calls Kalshi an illegal gambling operation and wants it to stop offering contracts on sports and other events. The amount is what the state is asking for, not a judgment. Kalshi called the suit political theater.",
-   "src": [
-    {
-     "o": "Courthouse News Service",
-     "t": "New York sues Kalshi, claiming prediction contracts violate state gambling laws",
-     "u": "https://www.courthousenews.com/new-york-sues-kalshi-claiming-prediction-contracts-violate-state-gambling-laws/"
-    },
-    {
-     "o": "Reason",
-     "t": "New York A.G. Letitia James sues Kalshi for $36 billion over 'illegal gambling'",
-     "u": "https://reason.com/2026/07/31/new-york-wants-a-36-billion-cut-from-kalshi-calling-it-an-illegal-gambling-operation/"
-    }
-   ],
-   "id": "2026-07-31-new-yorks-attorney-general-sues-kalshi-seeking"
-  },
-  {
-   "d": "2026-07-31",
-   "c": "Industry",
-   "s": "confirmed",
-   "h": "IG Group agrees to buy Underdog in a deal worth up to $1.3 billion",
-   "b": "About $380 million is paid upfront; the rest depends on an earnout and incentive plan through 2029. Underdog later gave up fantasy licenses in seven states to focus on prediction markets.",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "t": "In Underdog $1.3B Sale, A Lesson In Weathering US Changes",
-     "u": "https://sbcamericas.com/2026/07/31/underdog-acquired-ig-group/"
-    },
-    {
-     "o": "Yahoo Finance (Reuters)",
-     "t": "UK's IG Group bets big on US prediction markets with $1.3 billion Underdog deal",
-     "u": "https://finance.yahoo.com/markets/stocks/articles/uks-ig-group-agrees-buy-164102084.html"
-    }
-   ],
-   "id": "2026-07-31-ig-group-agrees-to-buy-underdog-in"
-  },
-  {
-   "d": "2026-07-31",
-   "added": "2026-10-05T09:57:56-04:00",
-   "id": "2026-07-31-cftc-orders-george-santos-to-pay-35000",
-   "c": "Integrity",
-   "s": "confirmed",
-   "h": "CFTC orders George Santos to pay $35,000 for manipulating a State of the Union event contract",
-   "b": "In a settled order, the CFTC found that former Congressman George Santos traded a contract on whether he would attend the 2026 State of the Union while posting misleading social-media statements about his plans, moving prices in his favor. He must give up $17,569.98 in profits, pay a $17,500 penalty and is barred from trading for three years. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
-   "src": [
-    {
-     "o": "CFTC",
-     "t": "CFTC Orders George Santos to Pay $35,000 for Manipulative Trading of State-of-the-Union Event Contract",
-     "u": "https://www.cftc.gov/PressRoom/PressReleases/9276-26"
-    }
-   ]
-  },
-  {
-   "d": "2026-07-30",
-   "c": "Athletes & deals",
-   "s": "confirmed",
-   "h": "The Mets become the first MLB team with a prediction-market partner",
-   "b": "The team signed Novig. Terms were not disclosed.",
-   "src": [
-    {
-     "o": "PR Newswire",
-     "t": "Novig Named Exclusive Official Prediction Market Partner of the New York Mets",
-     "u": "https://www.prnewswire.com/news-releases/novig-named-exclusive-official-prediction-market-partner-of-the-new-york-mets-302838399.html"
-    }
-   ],
-   "id": "2026-07-30-the-mets-become-the-first-mlb-team"
-  },
-  {
-   "d": "2026-07-28",
-   "c": "Political money",
-   "s": "confirmed",
-   "h": "Betting industry's midterm spending passes $72 million, routed through two partisan affiliates",
-   "b": "Reuters reported Win for America moves money through the Republican-aligned American Conservative Fund and the Democratic-aligned American Future. FEC data shows $68.05 million passed to other committees through June.",
-   "src": [
-    {
-     "o": "KWSN (Reuters)",
-     "t": "Sports betting industry spending on US midterm elections surpasses $72 million",
-     "u": "https://kwsn.com/2026/07/28/sports-betting-industry-spending-on-us-midterm-elections-surpasses-72-million/"
-    },
-    {
-     "o": "FEC",
-     "t": "Win for America committee overview",
-     "u": "https://www.fec.gov/data/committee/C00925586/"
-    }
-   ],
-   "id": "2026-07-28-betting-industrys-midterm-spending-passes-72-million"
-  },
-  {
-   "d": "2026-07-23",
-   "c": "Regulation",
-   "s": "confirmed",
-   "h": "Bipartisan House bill would ban sports contracts on prediction markets",
-   "b": "Nevada Reps. Steven Horsford and Mark Amodei introduced the Prediction Markets Are Gambling Act. Sen. Catherine Cortez Masto introduced a Senate version in March.",
-   "src": [
-    {
-     "o": "Office of Rep. Horsford",
-     "t": "Horsford and Amodei Introduce Bipartisan Bill to Ban Sports Prediction Market Contracts",
-     "u": "https://horsford.house.gov/media/press-releases/horsford-and-amodei-introduce-bipartisan-bill-to-ban-sports-prediction-market-contracts-and-protect-jobs"
-    }
-   ],
-   "id": "2026-07-23-bipartisan-house-bill-would-ban-sports-contracts"
-  },
-  {
-   "d": "2026-07-20",
-   "c": "Political money",
-   "s": "confirmed",
-   "h": "Second-quarter lobbying: Kalshi $500,000, AGA $660,000, DraftKings $350,000",
-   "b": "These are in-house federal lobbying expenses from Senate disclosure filings. Outside firms report their fees separately.",
-   "src": [
-    {
-     "o": "Senate Lobbying Disclosure",
-     "t": "LDA filings, client Kalshi, 2026",
-     "u": "https://lda.gov/api/v1/filings/?client_name=kalshi&filing_year=2026"
-    },
-    {
-     "o": "Senate Lobbying Disclosure",
-     "t": "LDA filings, client DraftKings, 2026",
-     "u": "https://lda.gov/api/v1/filings/?client_name=draftkings&filing_year=2026"
-    },
-    {
-     "o": "BeInCrypto",
-     "t": "Prediction Markets and Casinos Are Both Betting Big on Washington",
-     "u": "https://beincrypto.com/kalshi-lobbying-prediction-markets-casinos/"
-    }
-   ],
-   "id": "2026-07-20-secondquarter-lobbying-kalshi-500000-aga-660000-draftkings"
-  },
-  {
-   "d": "2026-07-20",
-   "c": "Integrity",
-   "s": "confirmed",
-   "h": "NFL suspends Cardinals scouting director Ryan Gold for gambling",
-   "b": "The league said he placed parlays and allegedly shared nonpublic draft information. It found no sign that games were compromised. His lawyer denies the allegations.",
-   "src": [
-    {
-     "o": "ESPN",
-     "t": "NFL suspends Cardinals executive for violating gambling policy",
-     "u": "https://www.espn.com/nfl/story/_/id/49386067/nfl-suspends-cardinals-executive-violating-gambling-policy"
-    },
-    {
-     "o": "CBS Sports",
-     "t": "NFL suspends Cardinals scouting director Ryan Gold indefinitely",
-     "u": "https://www.cbssports.com/nfl/news/nfl-suspends-cardinals-executive-ryan-gold-indefinitely-gambling-policy/"
-    }
-   ],
-   "id": "2026-07-20-nfl-suspends-cardinals-scouting-director-ryan-gold"
-  }
- ],
- "ledger": [
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "DraftKings",
-   "to": "Win for America (super PAC)",
-   "amt": 14500000,
-   "note": "Q2 2026 contributions",
-   "src": [
-    {
-     "o": "Public Citizen",
-     "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "FanDuel",
-   "to": "Win for America (super PAC)",
-   "amt": 7500000,
-   "note": "Q2 2026 contributions",
-   "src": [
-    {
-     "o": "Public Citizen",
-     "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "bet365 (Hillside Shared Services US)",
-   "to": "Win for America (super PAC)",
-   "amt": 5500000,
-   "note": "Q2 2026 contributions",
-   "src": [
-    {
-     "o": "Public Citizen",
-     "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "Fanatics Betting and Gaming",
-   "to": "Win for America (super PAC)",
-   "amt": 1500000,
-   "note": "Q2 2026 contributions",
-   "src": [
-    {
-     "o": "Public Citizen",
-     "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "Online sportsbooks",
-   "to": "Win for America (super PAC)",
-   "amt": 72000000,
-   "note": "Total receipts, Nov. 5, 2025 to June 30, 2026 (all contributions)",
-   "src": [
-    {
-     "o": "FEC",
-     "u": "https://www.fec.gov/data/committee/C00925586/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "Win for America",
-   "to": "American Conservative Fund; American Future",
-   "amt": 68050000,
-   "note": "Transfers to other committees through June 30, 2026 ($50.6M and $17.45M)",
-   "src": [
-    {
-     "o": "FEC",
-     "u": "https://www.fec.gov/data/committee/C00925586/"
-    },
-    {
-     "o": "Daily Caller",
-     "u": "https://dailycaller.com/2026/08/31/sports-betting-super-pacs-spending-2026-elections/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06",
-   "t": "Political",
-   "from": "Blockratize (Polymarket parent)",
-   "to": "Congressional Leadership Fund",
-   "amt": 1000000,
-   "note": "House GOP super PAC; plus $10,000 to V-PAC in April",
-   "src": [
-    {
-     "o": "Public Citizen",
-     "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
-    },
-    {
-     "o": "Spokesman-Review (Reuters)",
-     "u": "https://www.spokesman.com/stories/2026/aug/27/corporate-political-donations-shatter-record-at-64/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "Kalshi",
-   "to": "Democratic Governors Association",
-   "amt": 150000,
-   "note": "First half of 2026",
-   "src": [
-    {
-     "o": "Stateline via The Express",
-     "u": "https://www.lockhaven.com/news/local-news/2026/10/prediction-markets-spend-millions-to-influence-state-federal-governments/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "Kalshi",
-   "to": "Republican Governors Association",
-   "amt": 100000,
-   "note": "2026",
-   "src": [
-    {
-     "o": "Stateline via The Express",
-     "u": "https://www.lockhaven.com/news/local-news/2026/10/prediction-markets-spend-millions-to-influence-state-federal-governments/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Political",
-   "from": "Kalshi",
-   "to": "RAGA and DAGA (attorneys general associations)",
-   "amt": 300000,
-   "note": "More than $300,000 combined",
-   "src": [
-    {
-     "o": "Stateline via The Express",
-     "u": "https://www.lockhaven.com/news/local-news/2026/10/prediction-markets-spend-millions-to-influence-state-federal-governments/"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Lobbying",
-   "from": "Kalshi",
-   "to": "Federal lobbying (in-house)",
-   "amt": 990000,
-   "note": "Q1 $490,000 (amended) + Q2 $500,000",
-   "src": [
-    {
-     "o": "Senate LDA",
-     "u": "https://lda.gov/api/v1/filings/?client_name=kalshi&filing_year=2026"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Lobbying",
-   "from": "American Gaming Association",
-   "to": "Federal lobbying (in-house)",
-   "amt": 1390000,
-   "note": "Q1 $730,000 + Q2 $660,000",
-   "src": [
-    {
-     "o": "Senate LDA",
-     "u": "https://lda.gov/api/v1/filings/?client_name=american%20gaming%20association&filing_year=2026"
-    }
-   ]
-  },
-  {
-   "d": "2026-06-30",
-   "t": "Lobbying",
-   "from": "DraftKings",
-   "to": "Federal lobbying (in-house)",
-   "amt": 640000,
-   "note": "Q1 $290,000 + Q2 $350,000",
-   "src": [
-    {
-     "o": "Senate LDA",
-     "u": "https://lda.gov/api/v1/filings/?client_name=draftkings&filing_year=2026"
-    }
-   ]
-  },
-  {
-   "d": "2026-05-31",
-   "t": "Political",
-   "from": "Kalshi",
-   "to": "Xavier Becerra for Governor",
-   "amt": 39200,
-   "note": "Days before the California primary",
-   "src": [
-    {
-     "o": "CalMatters",
-     "u": "https://calmatters.org/politics/2026/06/kalshi-becerra-prediction-governor/"
-    }
-   ]
-  },
-  {
-   "d": "2026-05-20",
-   "t": "Political",
-   "from": "Win for Pennsylvania",
-   "to": "PA Senate primaries (Baker, Bartolotta, Gebhard)",
-   "amt": 5000000,
-   "note": "More than $5 million in spending",
-   "src": [
-    {
-     "o": "Spotlight PA",
-     "u": "https://www.spotlightpa.org/news/2026/05/gambling-skill-games-sports-betting-pennsylvania-senate-races-funding-attack-incumbents-elections/"
-    }
-   ]
-  },
-  {
-   "d": "2026-05-14",
-   "t": "Political",
-   "from": "American Conservative Fund Action Georgia; American Future",
-   "to": "Georgia legislative primaries",
-   "amt": 10000000,
-   "note": "About $10 million total",
-   "src": [
-    {
-     "o": "Atlanta Journal-Constitution",
-     "u": "https://www.ajc.com/politics/2026/05/sports-betting-industry-pours-10m-into-georgia-campaigns/"
-    }
-   ]
-  },
-  {
-   "d": "2026-05",
-   "t": "Funding",
-   "from": "Kalshi",
-   "to": "National Council on Problem Gambling",
-   "amt": 2000000,
-   "note": "Membership funding",
-   "src": [
-    {
-     "o": "Axios",
-     "u": "https://www.axios.com/2026/09/22/problem-gambling-national-council-kalshi-membership"
-    }
-   ]
-  },
-  {
-   "d": "2026-03-31",
-   "t": "Political",
-   "from": "Online sportsbooks",
-   "to": "Win for America (super PAC)",
-   "amt": 43000000,
-   "note": "Total receipts through Q1 2026",
-   "src": [
-    {
-     "o": "Public Citizen",
-     "u": "https://www.citizen.org/article/corporate-supremacist-super-pacs-500-million-midterm-crypto-ai-sports-betting/"
-    }
-   ]
-  },
-  {
-   "d": "2025",
-   "t": "Lobbying",
-   "from": "FanDuel",
-   "to": "Federal lobbying (outside firms)",
-   "amt": 1030000,
-   "note": "2025, up from $160,000",
-   "src": [
-    {
-     "o": "LegiStorm",
-     "u": "https://www.legistorm.com/pro_news/4391/all-in-on-lobbying-sportsbooks-ramp-up-spending.html"
-    }
-   ]
-  },
-  {
-   "d": "2025",
-   "t": "Lobbying",
-   "from": "DraftKings",
-   "to": "Federal lobbying (outside firms)",
-   "amt": 950000,
-   "note": "2025",
-   "src": [
-    {
-     "o": "LegiStorm",
-     "u": "https://www.legistorm.com/pro_news/4391/all-in-on-lobbying-sportsbooks-ramp-up-spending.html"
-    }
-   ]
-  },
-  {
-   "d": "2025",
-   "t": "Lobbying",
-   "from": "PrizePicks",
-   "to": "Federal lobbying (outside firms)",
-   "amt": 828000,
-   "note": "2025",
-   "src": [
-    {
-     "o": "LegiStorm",
-     "u": "https://www.legistorm.com/pro_news/4391/all-in-on-lobbying-sportsbooks-ramp-up-spending.html"
-    }
-   ]
-  },
-  {
-   "d": "2025-12-24",
-   "t": "Political",
-   "from": "FanDuel",
-   "to": "SLF, CLF, Senate Majority PAC, House Majority PAC",
-   "amt": 2000000,
-   "note": "$500,000 to each",
-   "src": [
-    {
-     "o": "Popular Information",
-     "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
-    }
-   ]
-  },
-  {
-   "d": "2025-12-16",
-   "t": "Political",
-   "from": "DraftKings",
-   "to": "Senate Leadership Fund",
-   "amt": 500000,
-   "note": "",
-   "src": [
-    {
-     "o": "Popular Information",
-     "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
-    }
-   ]
-  },
-  {
-   "d": "2025-11",
-   "t": "Political",
-   "from": "Win for America",
-   "to": "American Conservative Fund; American Future",
-   "amt": 950000,
-   "note": "First transfers: $500,000 and $450,000",
-   "src": [
-    {
-     "o": "Popular Information",
-     "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
-    }
-   ]
-  },
-  {
-   "d": "2025-11-02",
-   "t": "Political",
-   "from": "DraftKings",
-   "to": "Win for America (super PAC)",
-   "amt": 2000000,
-   "note": "Seed contribution",
-   "src": [
-    {
-     "o": "Popular Information",
-     "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
-    }
-   ]
-  },
-  {
-   "d": "2025-12-31",
-   "t": "Political",
-   "from": "FanDuel employees",
-   "to": "FanDuel PAC",
-   "amt": 130000,
-   "note": "Approximate receipts through 2025",
-   "src": [
-    {
-     "o": "Popular Information",
-     "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
-    }
-   ]
-  },
-  {
-   "d": "2026-08-31",
-   "t": "Political",
-   "from": "DraftKings employees",
-   "to": "DraftKings PAC",
-   "amt": 142310,
-   "note": "2025-26 cycle receipts; $81,500 given to other committees",
-   "src": [
-    {
-     "o": "FEC",
-     "u": "https://www.fec.gov/data/committee/C00908699/"
-    }
-   ]
-  },
-  {
-   "d": "2024-11-05",
-   "t": "Ballot measure",
-   "from": "DK Crown Holdings (DraftKings)",
-   "to": "Winning for Missouri Education (Amendment 2)",
-   "amt": 20275000,
-   "note": "Measure passed with 50.05%",
-   "src": [
-    {
-     "o": "Ballotpedia",
-     "u": "https://ballotpedia.org/Missouri_Amendment_2,_Sports_Betting_Initiative_(2024)"
-    }
-   ]
-  },
-  {
-   "d": "2024-11-05",
-   "t": "Ballot measure",
-   "from": "BetFAIR Interactive US (FanDuel)",
-   "to": "Winning for Missouri Education (Amendment 2)",
-   "amt": 20275000,
-   "note": "Committee raised $45.55M total",
-   "src": [
-    {
-     "o": "Ballotpedia",
-     "u": "https://ballotpedia.org/Missouri_Amendment_2,_Sports_Betting_Initiative_(2024)"
-    }
-   ]
-  },
-  {
-   "d": "2024-11-05",
-   "t": "Ballot measure",
-   "from": "Caesars' Missouri casinos",
-   "to": "Missourians Against the Deceptive Online Gambling Amendment",
-   "amt": 14174123,
-   "note": "Opposition committee total",
-   "src": [
-    {
-     "o": "Ballotpedia",
-     "u": "https://ballotpedia.org/Missouri_Amendment_2,_Sports_Betting_Initiative_(2024)"
-    }
-   ]
-  },
-  {
-   "d": "2022-11-08",
-   "t": "Ballot measure",
-   "from": "All sides, California Props 26 and 27",
-   "to": "Support and opposition committees",
-   "amt": 463378417,
-   "note": "Costliest ballot fight in state history; both measures failed",
-   "src": [
-    {
-     "o": "Ballotpedia",
-     "u": "https://ballotpedia.org/What_were_the_most_expensive_ballot_measures_in_California"
-    },
-    {
-     "o": "NPR",
-     "u": "https://www.npr.org/2022/11/09/1133986282/california-gambling-prop-26-27-midterm-results"
-    }
-   ]
-  },
-  {
-   "d": "2022-06-30",
-   "t": "Ballot measure",
-   "from": "DraftKings, FanDuel, BetMGM",
-   "to": "Yes on 27 committee",
-   "amt": 50100000,
-   "note": "$16.7 million each as of June 30, 2022 filings",
-   "src": [
-    {
-     "o": "Ballotpedia News",
-     "u": "https://news.ballotpedia.org/2022/08/05/california-propositions-26-and-27-become-the-most-expensive-ballot-measures-in-california-since-1999/"
-    }
-   ]
-  },
-  {
-   "d": "2026-09-05",
-   "t": "Athlete",
-   "from": "Polymarket",
-   "to": "LeBron James",
-   "amt": null,
-   "note": "Endorsement; terms not disclosed",
-   "src": [
-    {
-     "o": "CNBC",
-     "u": "https://www.cnbc.com/2026/09/05/lebron-james-polymarket-partnership.html"
-    }
-   ]
-  },
-  {
-   "d": "2026-02-06",
-   "t": "Athlete",
-   "from": "Kalshi",
-   "to": "Giannis Antetokounmpo",
-   "amt": null,
-   "note": "Shareholder (under 1%) and marketing partner; size not disclosed",
-   "src": [
-    {
-     "o": "ESPN",
-     "u": "https://www.espn.com/nba/story/_/id/47853309/bucks-giannis-antetokounmpo-joins-kalshi-shareholder"
-    }
-   ]
-  },
-  {
-   "d": "2026-01-14",
-   "t": "Athlete",
-   "from": "Kalshi",
-   "to": "Bryson DeChambeau",
-   "amt": null,
-   "note": "Kalshi's first athlete endorser; terms not disclosed",
-   "src": [
-    {
-     "o": "Front Office Sports",
-     "u": "https://frontofficesports.com/kalshi-athlete-deal-bryson-dechambeau-liv-golf/"
-    }
-   ]
-  },
-  {
-   "d": "2024-10-16",
-   "t": "Athlete",
-   "from": "DraftKings",
-   "to": "Shaquille O'Neal",
-   "amt": null,
-   "note": "Brand ambassador; terms not disclosed",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "u": "https://sbcamericas.com/2024/10/16/draftkings-shaquille-oneal/"
-    }
-   ]
-  },
-  {
-   "d": "2025-08-29",
-   "t": "Athlete",
-   "from": "BetMGM",
-   "to": "Jon Hamm",
-   "amt": null,
-   "note": "Ambassador; terms not disclosed",
-   "src": [
-    {
-     "o": "CasinoBeats",
-     "u": "https://casinobeats.com/2025/08/29/jon-hamm-joins-betmgm-as-ambassador-in-companys-largest-rebrand/"
-    }
-   ]
-  },
-  {
-   "d": "2023-09-05",
-   "t": "Athlete",
-   "from": "BetMGM",
-   "to": "Jamie Foxx",
-   "amt": null,
-   "note": "Ad campaign; terms not disclosed",
-   "src": [
-    {
-     "o": "BetMGM",
-     "u": "https://sports.betmgm.com/en/blog/jamie-foxx-stars-in-new-betmgm-campaign-for-pro-football-season-debut/"
-    }
-   ]
-  },
-  {
-   "d": "2023-01-10",
-   "t": "Athlete",
-   "from": "FanDuel",
-   "to": "Rob Gronkowski",
-   "amt": null,
-   "note": "Exclusive brand partner; terms not disclosed",
-   "src": [
-    {
-     "o": "Flutter",
-     "u": "https://flutter.com/news-media/press-releases/fanduel-launches-kick-of-destiny-campaign-for-upcoming-super-bowl/"
-    }
-   ]
-  },
-  {
-   "d": "2021-11-09",
-   "t": "Athlete",
-   "from": "Caesars Sportsbook",
-   "to": "Archie, Peyton, Eli and Cooper Manning",
-   "amt": null,
-   "note": "Marketing partnership; terms not disclosed",
-   "src": [
-    {
-     "o": "Sports Handle",
-     "u": "https://sportshandle.com/manning-family-partnership-caesars-sportsbook/"
-    }
-   ]
-  },
-  {
-   "d": "2021-06-02",
-   "t": "Athlete",
-   "from": "BetMGM",
-   "to": "Wayne Gretzky",
-   "amt": null,
-   "note": "Multi-year ambassador; terms not disclosed",
-   "src": [
-    {
-     "o": "USA Today",
-     "u": "https://www.usatoday.com/story/sports/sports-betting/2021/06/02/hockey-legend-wayne-gretzky-and-betmgm-partner-on-multiyear-deal/116752486/"
-    }
-   ]
-  },
-  {
-   "d": "2020-12-21",
-   "t": "Athlete",
-   "from": "FanDuel",
-   "to": "Charles Barkley",
-   "amt": null,
-   "note": "Exclusive multi-year partnership; terms not disclosed",
-   "src": [
-    {
-     "o": "Business Wire",
-     "u": "https://www.businesswire.com/news/home/20201221005545/en/FanDuel-Group-Announces-Exclusive-Multi-Year-Partnership-with-Charles-Barkley"
-    }
-   ]
-  },
-  {
-   "d": "2026-08-27",
-   "t": "League",
-   "from": "DraftKings, FanDuel, Fanatics",
-   "to": "NFL",
-   "amt": null,
-   "note": "Official sportsbook partners; terms not disclosed",
-   "src": [
-    {
-     "o": "NFL.com",
-     "u": "https://www.nfl.com/news/nfl-draftkings-fanduel-fanatics-sports-betting-partners"
-    }
-   ]
-  },
-  {
-   "d": "2026-08-25",
-   "t": "League",
-   "from": "Kalshi",
-   "to": "Braves, Red Sox, Dodgers, Padres, Giants",
-   "amt": null,
-   "note": "Team marketing deals; terms not disclosed",
-   "src": [
-    {
-     "o": "Kalshi",
-     "u": "https://news.kalshi.com/p/kalshi-partners-with-mlb-teams"
-    }
-   ]
-  },
-  {
-   "d": "2026-08",
-   "t": "League",
-   "from": "Polymarket",
-   "to": "New York Yankees",
-   "amt": null,
-   "note": "Official prediction-market partner; terms not disclosed",
-   "src": [
-    {
-     "o": "PR Newswire",
-     "u": "https://www.prnewswire.com/news-releases/polymarket-becomes-an-official-prediction-market-partner-of-the-new-york-yankees-302844285.html"
-    }
-   ]
-  },
-  {
-   "d": "2026-07-30",
-   "t": "League",
-   "from": "Novig",
-   "to": "New York Mets",
-   "amt": null,
-   "note": "Exclusive prediction-market partner; terms not disclosed",
-   "src": [
-    {
-     "o": "PR Newswire",
-     "u": "https://www.prnewswire.com/news-releases/novig-named-exclusive-official-prediction-market-partner-of-the-new-york-mets-302838399.html"
-    }
-   ]
-  },
-  {
-   "d": "2026-04-07",
-   "t": "League",
-   "from": "PrizePicks",
-   "to": "NBA",
-   "amt": null,
-   "note": "Official daily fantasy partner; terms not disclosed",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "u": "https://sbcamericas.com/2026/04/07/nba-prize-picks-dfs-partner/"
-    }
-   ]
-  },
-  {
-   "d": "2026-03-19",
-   "t": "League",
-   "from": "Polymarket",
-   "to": "MLB",
-   "amt": null,
-   "note": "Exclusive prediction-market partner; reported value conflicts, so none recorded",
-   "src": [
-    {
-     "o": "ESPN",
-     "u": "https://www.espn.com/mlb/story/_/id/48248176/mlb-reaches-agreements-polymarket-federal-commission"
-    }
-   ]
-  },
-  {
-   "d": "2026-01-26",
-   "t": "League",
-   "from": "Polymarket",
-   "to": "MLS",
-   "amt": null,
-   "note": "Exclusive prediction-market partner; terms not disclosed",
-   "src": [
-    {
-     "o": "MLSSoccer.com",
-     "u": "https://www.mlssoccer.com/news/mls-enters-multi-year-partnership-with-polymarket"
-    }
-   ]
-  },
-  {
-   "d": "2025-11-13",
-   "t": "League",
-   "from": "Polymarket",
-   "to": "TKO (UFC, Zuffa Boxing)",
-   "amt": null,
-   "note": "Exclusive prediction-market partner; terms not disclosed",
-   "src": [
-    {
-     "o": "UFC.com",
-     "u": "https://www.ufc.com/news/tko-and-polymarket-announce-first-its-kind-sports-partnership"
-    }
-   ]
-  },
-  {
-   "d": "2025-10-22",
-   "t": "League",
-   "from": "Kalshi, Polymarket",
-   "to": "NHL",
-   "amt": null,
-   "note": "First major-league prediction-market partners; terms not disclosed",
-   "src": [
-    {
-     "o": "ESPN",
-     "u": "https://www.espn.com/nhl/story/_/id/46683244/nhl-inks-deal-prediction-markets-kalshi-polymarket"
-    }
-   ]
-  },
-  {
-   "d": "2021-11-04",
-   "t": "League",
-   "from": "DraftKings, FanDuel",
-   "to": "NBA",
-   "amt": null,
-   "note": "Co-official betting partners; terms not disclosed",
-   "src": [
-    {
-     "o": "DraftKings",
-     "u": "https://www.draftkings.com/news-2021-11-the-nba-announces-expanded-sports-betting-and-daily-fantasy-agreement-with-draftkings"
-    }
-   ]
-  },
-  {
-   "d": "2021-11-17",
-   "t": "League",
-   "from": "Sportradar",
-   "to": "NBA",
-   "amt": null,
-   "note": "Eight-year data deal including an equity stake; value not disclosed",
-   "src": [
-    {
-     "o": "Sportradar IR",
-     "u": "https://investors.sportradar.com/news-releases/news-release-details/nba-and-sportradar-announce-landmark-long-term-global"
-    }
-   ]
-  },
-  {
-   "d": "2025-12-01",
-   "t": "Media",
-   "from": "DraftKings",
-   "to": "ESPN",
-   "amt": null,
-   "note": "Official sportsbook and odds provider; terms not disclosed",
-   "src": [
-    {
-     "o": "The Walt Disney Company",
-     "u": "https://thewaltdisneycompany.com/news/espn-draftkings/"
-    }
-   ]
-  },
-  {
-   "d": "2025-11-06",
-   "t": "Media",
-   "from": "PENN Entertainment",
-   "to": "ESPN",
-   "amt": 38100000,
-   "note": "Final payment to end the ESPN Bet deal early",
-   "src": [
-    {
-     "o": "Sportico",
-     "u": "https://www.sportico.com/business/sports-betting/2025/penn-espn-bet-termination-draftkings-1234876039/"
-    }
-   ]
-  },
-  {
-   "d": "2025-12-04",
-   "t": "Media",
-   "from": "Kalshi",
-   "to": "CNBC; CNN",
-   "amt": null,
-   "note": "Data partnerships; terms not disclosed",
-   "src": [
-    {
-     "o": "CNBC",
-     "u": "https://www.cnbc.com/2025/12/04/cnbc-and-kalshi-strike-exclusive-partnership.html"
-    }
-   ]
-  },
-  {
-   "d": "2024-10-18",
-   "t": "Media",
-   "from": "FanDuel",
-   "to": "Diamond Sports Group",
-   "amt": null,
-   "note": "Naming rights to 16 regional sports networks; terms not disclosed",
-   "src": [
-    {
-     "o": "FanDuel",
-     "u": "https://www.fanduel.com/about/news/diamond-sports-group-and-fanduel-announce-broad-commercial-partnership"
-    }
-   ]
-  },
-  {
-   "d": "2023-08-08",
-   "t": "Media",
-   "from": "PENN Entertainment",
-   "to": "ESPN",
-   "amt": 1500000000,
-   "note": "ESPN Bet brand rights over 10 years, plus about $500M in warrants",
-   "src": [
-    {
-     "o": "SEC EDGAR",
-     "u": "https://www.sec.gov/Archives/edgar/data/921738/000110465923088855/tm2323045d1_ex99-1.htm"
-    }
-   ]
-  },
-  {
-   "d": "2021-09-17",
-   "t": "College",
-   "from": "Caesars Sportsbook",
-   "to": "LSU Athletics",
-   "amt": null,
-   "note": "Described only as multi-year, seven figures; ended 2023",
-   "src": [
-    {
-     "o": "LSUsports.net",
-     "u": "https://lsusports.net/news/2021/09/17/caesars-named-official-sportsbook-of-lsu-athletics"
-    }
-   ]
-  },
-  {
-   "d": "2020-09",
-   "t": "College",
-   "from": "PointsBet",
-   "to": "University of Colorado",
-   "amt": 1625000,
-   "note": "Over five years, plus $30 per referred customer; ended 2023",
-   "src": [
-    {
-     "o": "Front Office Sports",
-     "u": "https://frontofficesports.com/colorados-pointsbet-deal-worth-north-of-1-6-million-reports-say/"
-    }
-   ]
-  },
-  {
-   "d": "2026-09-23",
-   "t": "Fine",
-   "from": "Underdog",
-   "to": "North Carolina Lottery Commission",
-   "amt": 175000,
-   "note": "Underage accounts",
-   "src": [
-    {
-     "o": "Covers",
-     "u": "https://www.covers.com/industry/north-carolina-regulators-fine-underdog-bet365-for-sports-betting-violations-sept-23-2026"
-    }
-   ]
-  },
-  {
-   "d": "2026-09-23",
-   "t": "Fine",
-   "from": "bet365",
-   "to": "North Carolina Lottery Commission",
-   "amt": 75000,
-   "note": "Contacted self-excluded customers",
-   "src": [
-    {
-     "o": "Covers",
-     "u": "https://www.covers.com/industry/north-carolina-regulators-fine-underdog-bet365-for-sports-betting-violations-sept-23-2026"
-    }
-   ]
-  },
-  {
-   "d": "2026-08-27",
-   "t": "Fine",
-   "from": "Fanatics Sportsbook",
-   "to": "Colorado Limited Gaming Control Commission",
-   "amt": 20000,
-   "note": "Marketed to a self-excluded customer",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "u": "https://sbcamericas.com/2026/09/01/colorado-fines-fanatics-sportsbook/"
-    }
-   ]
-  },
-  {
-   "d": "2026-08-05",
-   "t": "Fine",
-   "from": "Caesars Sportsbook",
-   "to": "New Jersey Division of Gaming Enforcement",
-   "amt": 296715,
-   "note": "$251,250 fine plus $45,465 disgorgement",
-   "src": [
-    {
-     "o": "PlayNJ",
-     "u": "https://www.playnj.com/news/caesars-sportsbook-fined-296715-by-new-jersey-regulators/99619/"
-    }
-   ]
-  },
-  {
-   "d": "2026-09-23",
-   "t": "Acquisition",
-   "from": "Fertitta Entertainment",
-   "to": "Caesars Entertainment shareholders",
-   "amt": 17600000000,
-   "note": "Approved by shareholders; FTC review continuing",
-   "src": [
-    {
-     "o": "FOX5 Vegas",
-     "u": "https://www.fox5vegas.com/2026/09/23/caesars-stockholders-approve-merger-with-fertitta-gaming/"
-    }
-   ]
-  },
-  {
-   "d": "2026-07-31",
-   "t": "Acquisition",
-   "from": "IG Group",
-   "to": "Underdog",
-   "amt": 1300000000,
-   "note": "Up to $1.3B; about $380M upfront",
-   "src": [
-    {
-     "o": "SBC Americas",
-     "u": "https://sbcamericas.com/2026/07/31/underdog-acquired-ig-group/"
-    }
-   ]
-  },
-  {
-   "d": "2026-08-28",
-   "t": "Fine",
-   "from": "Gabriel Perez",
-   "to": "CFTC",
-   "amt": 172539.02,
-   "note": "Insider trading of presidential mention-market contracts: $107,539.02 disgorgement plus $65,000 penalty",
-   "src": [
-    {
-     "o": "CFTC",
-     "u": "https://www.cftc.gov/PressRoom/PressReleases/9289-26"
-    }
-   ]
-  },
-  {
-   "d": "2026-07-31",
-   "t": "Fine",
-   "from": "George Santos",
-   "to": "CFTC",
-   "amt": 35069.98,
-   "note": "Manipulating a State of the Union event contract: $17,569.98 disgorgement plus $17,500 penalty",
-   "src": [
-    {
-     "o": "CFTC",
-     "u": "https://www.cftc.gov/PressRoom/PressReleases/9276-26"
-    }
-   ]
-  }
- ],
- "losses": [
-  {
-   "y": "2021",
-   "v": 4.3,
-   "src": {
-    "o": "Metro Philadelphia (AGA data)",
-    "u": "https://metrophiladelphia.com/stories/sports-betting-posts-record-setting-2021-revenue-at-43-billion,90068"
-   }
-  },
-  {
-   "y": "2022",
-   "v": 7.5,
-   "src": {
-    "o": "Covers (AGA data)",
-    "u": "https://www.covers.com/industry/aga-reports-sports-betting-revenue-set-new-record-in-2022"
-   }
-  },
-  {
-   "y": "2023",
-   "v": 11.04,
-   "src": {
-    "o": "American Gaming Association",
-    "u": "https://www.americangaming.org/2024-commercial-gaming-revenue-reaches-71-9b-marking-fourth-straight-year-of-record-revenue/"
-   }
-  },
-  {
-   "y": "2024",
-   "v": 13.71,
-   "src": {
-    "o": "American Gaming Association",
-    "u": "https://www.americangaming.org/2024-commercial-gaming-revenue-reaches-71-9b-marking-fourth-straight-year-of-record-revenue/"
-   }
-  },
-  {
-   "y": "2025",
-   "v": 16.96,
-   "src": {
-    "o": "Yogonet (AGA data)",
-    "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
-   }
-  }
- ],
- "pac": [
-  {
-   "label": "Nov 5, 2025",
-   "sub": "Registered",
-   "v": 0
-  },
-  {
-   "label": "Mar 31, 2026",
-   "sub": "Q1 report",
-   "v": 43
-  },
-  {
-   "label": "Jun 30, 2026",
-   "sub": "Q2 report",
-   "v": 72
-  }
- ],
- "pacNext": "Next filing: Q3 report due Oct. 15, 2026",
- "numbers": [
-  {
-   "g": "The market",
-   "items": [
-    {
-     "k": "$166.9B",
-     "t": "wagered legally in the U.S. in 2025, up 11%",
-     "src": {
-      "o": "AGA via Yogonet",
-      "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
-     }
-    },
-    {
-     "k": "$16.96B",
-     "t": "kept by sportsbooks in 2025, meaning lost by bettors, up 22.8%",
-     "src": {
-      "o": "AGA via Yogonet",
-      "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
-     }
-    },
-    {
-     "k": "$1.27B",
-     "t": "lost by bettors in July 2026 alone, up 27% from a year earlier",
-     "src": {
-      "o": "AGA Revenue Tracker",
-      "u": "https://www.americangaming.org/resources/commercial-gaming-revenue-tracker/"
-     }
-    },
-    {
-     "k": "39 + DC",
-     "t": "states with legal sports betting at the end of 2025",
-     "src": {
-      "o": "AGA State of the States 2026",
-      "u": "https://www.americangaming.org/wp-content/uploads/2026/05/AGA-State-of-the-States-2026.pdf"
-     }
-    },
-    {
-     "k": "$3.71B",
-     "t": "in state sports betting taxes in 2025",
-     "src": {
-      "o": "AGA via Yogonet",
-      "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
-     }
-    }
-   ]
-  },
-  {
-   "g": "The companies",
-   "items": [
-    {
-     "k": "$1.38B",
-     "t": "DraftKings sales and marketing spending in 2025, on $6.05B in revenue",
-     "src": {
-      "o": "DraftKings IR",
-      "u": "https://ir.aboutdraftkings.com/news/news-details/2026/DraftKings-Reports-Fourth-Quarter-Revenue-Growth-of-43/default.aspx"
-     }
-    },
-    {
-     "k": "41%",
-     "t": "FanDuel's share of U.S. online sportsbook revenue in Q4 2025",
-     "src": {
-      "o": "Flutter results",
-      "u": "https://www.globenewswire.com/news-release/2026/02/26/3246102/0/en/Flutter-Entertainment-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results.html"
-     }
-    },
-    {
-     "k": "14.0%",
-     "t": "FanDuel's expected margin on each dollar bet in Q2 2026, which it credits to same-game parlays",
-     "src": {
-      "o": "Flutter Q2 2026",
-      "u": "https://www.globenewswire.com/news-release/2026/08/05/3339154/0/en/flutter-entertainment-announces-q2-2026-financial-results.html"
-     }
-    },
-    {
-     "k": "0.64%",
-     "t": "of Massachusetts bettors had their bet limits cut, typically the ones who win",
-     "src": {
-      "o": "SBC Americas (MGC data)",
-      "u": "https://sbcamericas.com/2025/09/30/mgc-data-limiting-bettors-ma/"
-     }
-    }
-   ]
-  },
-  {
-   "g": "Who bets",
-   "items": [
-    {
-     "k": "22%",
-     "t": "of U.S. adults bet on sports in the past year (2025), up from 19% in 2022",
-     "src": {
-      "o": "Pew Research Center",
-      "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
-     }
-    },
-    {
-     "k": "31%",
-     "t": "of adults under 30 bet on sports in the past year",
-     "src": {
-      "o": "Pew Research Center",
-      "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
-     }
-    },
-    {
-     "k": "52%",
-     "t": "of men aged 18 to 49 have an active online sportsbook account",
-     "src": {
-      "o": "Siena Research Institute",
-      "u": "https://sri.siena.edu/wp-content/uploads/2026/04/ASFS2026-Release-2-Sports-Betting-Final.pdf"
-     }
-    },
-    {
-     "k": "30%",
-     "t": "of Black adults and 27% of Hispanic adults bet on sports in the past year, versus 19% of white adults",
-     "src": {
-      "o": "Pew Research Center",
-      "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
-     }
-    },
-    {
-     "k": "36%",
-     "t": "of boys aged 11 to 17 gambled in the past year",
-     "src": {
-      "o": "Common Sense Media",
-      "u": "https://www.commonsensemedia.org/press-releases/common-sense-media-releases-new-research-on-adolescent-boys-gambling-habits"
-     }
-    },
-    {
-     "k": "43%",
-     "t": "of adults now say legal sports betting is bad for society, up from 34% in 2022",
-     "src": {
-      "o": "Pew Research Center",
-      "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
-     }
-    }
-   ]
-  },
-  {
-   "g": "What it costs people",
-   "items": [
-    {
-     "k": "+25–30%",
-     "t": "higher likelihood of bankruptcy within 3–4 years of online betting legalization",
-     "src": {
-      "o": "Hollenbeck, Larsen & Proserpio, Management Science",
-      "u": "https://doi.org/10.1287/mnsc.2025.02515"
-     }
-    },
-    {
-     "k": "−14%",
-     "t": "drop in net investment among betting households; about $2 less invested for every $1 bet",
-     "src": {
-      "o": "Baker et al., NBER w33108",
-      "u": "https://www.nber.org/papers/w33108"
-     }
-    },
-    {
-     "k": "+1.02 pts",
-     "t": "credit-card delinquency among people under 40 after legalization",
-     "src": {
-      "o": "Federal Reserve Bank of New York",
-      "u": "https://libertystreeteconomics.newyorkfed.org/2026/03/sports-betting-is-everywhere-especially-on-credit-reports/"
-     }
-    },
-    {
-     "k": "−10.5%",
-     "t": "food sufficiency among non-college adults who bet, after legalization",
-     "src": {
-      "o": "Guo, Peng & Meyerhoefer, NBER w35305",
-      "u": "https://www.nber.org/papers/w35305"
-     }
-    },
-    {
-     "k": "75¢",
-     "t": "returned for every $1 wagered online, by bank payment data",
-     "src": {
-      "o": "Bank of America Institute via Fortune",
-      "u": "https://fortune.com/2026/09/07/americans-sports-gambling-investment-gen-z-75-cents-dollar-wagered/"
-     }
-    },
-    {
-     "k": "20%",
-     "t": "of online bettors say they lost enough to struggle to meet financial obligations",
-     "src": {
-      "o": "Siena Research Institute",
-      "u": "https://sri.siena.edu/2025/02/18/22-of-all-americans-half-of-men-18-49-have-active-online-sports-betting-account/"
-     }
-    },
-    {
-     "k": "27.3%",
-     "t": "of 2025 national helpline contacts named sports betting as the main problem, up from 22.3%",
-     "src": {
-      "o": "NCPG",
-      "u": "https://www.ncpgambling.org/news/2025-national-problem-gambling-helpline-annual-report/"
-     }
-    },
-    {
-     "k": "+23%",
-     "t": "rise in Google searches for gambling addiction help after the 2018 Supreme Court ruling",
-     "src": {
-      "o": "JAMA Internal Medicine via UC San Diego",
-      "u": "https://today.ucsd.edu/story/study-reveals-surge-in-gambling-addiction-following-legalization-of-sports-betting"
-     }
-    },
-    {
-     "k": "~9–10%",
-     "t": "larger rise in intimate partner violence after upset NFL losses where betting is legal",
-     "src": {
-      "o": "Arnesen & Matsuzawa, SDSU working paper",
-      "u": "https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf"
-     }
-    },
-    {
-     "k": "1,972",
-     "t": "alleged cases of underage sportsbook account access in New York in 2025, up from 54 in 2023",
-     "src": {
-      "o": "NY State Comptroller",
-      "u": "https://www.osc.ny.gov/files/reports/pdf/sports-wagering-in-new-york.pdf"
-     }
-    }
-   ]
-  }
- ],
- "charts": [
-  {
-   "sec": "The money",
-   "id": "take",
-   "type": "bars",
-   "kicker": "The house take",
-   "title": "Bettors lost $17 billion to legal sportsbooks last year, nearly four times as much as in 2021",
-   "deck": "Sportsbook revenue, which is the money bettors lost, in the legal U.S. market each year.",
-   "unit": "$B",
-   "dp": 1,
-   "rows": [
-    {
-     "l": "2021",
-     "v": 4.3
-    },
-    {
-     "l": "2022",
-     "v": 7.5
-    },
-    {
-     "l": "2023",
-     "v": 11.04
-    },
-    {
-     "l": "2024",
-     "v": 13.71
-    },
-    {
-     "l": "2025",
-     "v": 16.96
-    }
-   ],
-   "src": [
-    {
-     "o": "Metro Philadelphia (AGA data)",
-     "u": "https://metrophiladelphia.com/stories/sports-betting-posts-record-setting-2021-revenue-at-43-billion,90068"
-    },
-    {
-     "o": "Covers (AGA data)",
-     "u": "https://www.covers.com/industry/aga-reports-sports-betting-revenue-set-new-record-in-2022"
-    },
-    {
-     "o": "Yogonet (AGA data)",
-     "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
-    },
-    {
-     "o": "American Gaming Association",
-     "u": "https://www.americangaming.org/2024-commercial-gaming-revenue-reaches-71-9b-marking-fourth-straight-year-of-record-revenue/"
-    }
-   ]
-  },
-  {
-   "sec": "The money",
-   "id": "donors",
-   "type": "hbar",
-   "kicker": "Political money",
-   "title": "DraftKings supplied half of the super PAC's second-quarter money",
-   "deck": "Contributions to Win for America, the online sportsbooks' super PAC, April through June 2026.",
-   "unit": "$M",
-   "dp": 1,
-   "hi": 0,
-   "rows": [
-    {
-     "l": "DraftKings",
-     "v": 14.5
-    },
-    {
-     "l": "FanDuel",
-     "v": 7.5
-    },
-    {
-     "l": "bet365",
-     "v": 5.5
-    },
-    {
-     "l": "Fanatics",
-     "v": 1.5
-    }
-   ],
-   "note": "The PAC had raised $72 million in total by June 30.",
-   "src": [
-    {
-     "o": "Public Citizen",
-     "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
-    },
-    {
-     "o": "FEC",
-     "u": "https://www.fec.gov/data/committee/C00925586/"
-    }
-   ]
-  },
-  {
-   "sec": "The money",
-   "id": "split",
-   "type": "split",
-   "kicker": "Political money",
-   "title": "The super PAC spreads its money across both parties",
-   "deck": "Where Win for America's $68 million in transfers went through June 30, 2026.",
-   "unit": "$M",
-   "dp": 1,
-   "parts": [
-    {
-     "l": "American Conservative Fund (Republican-aligned)",
-     "v": 50.6
-    },
-    {
-     "l": "American Future (Democratic-aligned)",
-     "v": 17.45
-    }
-   ],
-   "src": [
-    {
-     "o": "FEC",
-     "u": "https://www.fec.gov/data/committee/C00925586/"
-    },
-    {
-     "o": "Daily Caller",
-     "u": "https://dailycaller.com/2026/08/31/sports-betting-super-pacs-spending-2026-elections/"
-    }
-   ]
-  },
-  {
-   "sec": "The money",
-   "id": "diverge",
-   "type": "diverge",
-   "kicker": "The companies",
-   "title": "Revenue fell, but marketing spending kept climbing",
-   "deck": "Change from a year earlier, second quarter of 2026.",
-   "unit": "%",
-   "max": 70,
-   "groups": [
-    {
-     "g": "DraftKings",
-     "rows": [
-      {
-       "l": "Revenue",
-       "v": -5
-      },
-      {
-       "l": "Monthly paying customers",
-       "v": 9
-      },
-      {
-       "l": "Sales and marketing spending",
-       "v": 38
+  "updated": "2026-10-05",
+  "feed": [
+    {
+      "d": "2026-10-03",
+      "c": "Political money",
+      "s": "confirmed",
+      "h": "Prediction-market companies have spent at least $3 million influencing federal and state governments this year",
+      "b": "A Stateline analysis of OpenSecrets data found Kalshi has registered lobbyists in 41 states. In the first half of 2026 it gave $100,000 to the Republican Governors Association, $150,000 to the Democratic Governors Association, and more than $300,000 combined to the two parties' attorneys general associations.",
+      "src": [
+        {
+          "o": "Stateline via The Express",
+          "t": "Prediction markets spend millions to influence state, federal governments",
+          "u": "https://www.lockhaven.com/news/local-news/2026/10/prediction-markets-spend-millions-to-influence-state-federal-governments/"
+        },
+        {
+          "o": "Eurasia Review (Stateline)",
+          "t": "Prediction Markets Spend Millions To Influence State, Federal Governments",
+          "u": "https://www.eurasiareview.com/03102026-prediction-markets-spend-millions-to-influence-state-federal-governments/"
+        }
+      ],
+      "id": "2026-10-03-predictionmarket-companies-have-spent-at-least-3"
+    },
+    {
+      "d": "2026-10-02",
+      "added": "2026-10-05T07:55:00-04:00",
+      "id": "2026-10-02-federal-judge-blocks-illinois-from-enforcing-its",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Federal judge blocks Illinois from enforcing its sports-betting license rules against Kalshi and Coinbase",
+      "b": "In consolidated suits brought by Kalshi, Coinbase and the federal government, U.S. District Judge Martha Pacold in Chicago issued a partial preliminary injunction on Oct. 2, finding Illinois's sports-wagering license requirements and related criminal provisions are likely preempted by federal commodities law. She held off on Illinois's 1.75% to 3.5% fee on prediction-market trades pending more briefing. The order is preliminary, and it runs opposite to recent Sixth and Ninth Circuit rulings that sided with states.",
+      "src": [
+        {
+          "o": "U.S. District Court, N.D. Illinois (CourtListener)",
+          "t": "Memorandum opinion and order, Coinbase Financial Markets v. Raoul et al.",
+          "u": "https://storage.courtlistener.com/recap/gov.uscourts.ilnd.498112/gov.uscourts.ilnd.498112.99.0.pdf"
+        },
+        {
+          "o": "DeFi Rate",
+          "t": "Kalshi, Coinbase Win Partial Injunction Against Illinois",
+          "u": "https://defirate.com/news/federal-judge-grants-kalshi-coinbase-partial-injunctions/"
+        }
+      ]
+    },
+    {
+      "d": "2026-10-02",
+      "c": "Athletes & deals",
+      "s": "confirmed",
+      "h": "Victor Wembanyama says he will not endorse betting companies",
+      "b": "Speaking at Spurs practice, Wembanyama called NBA players' gambling endorsements \"very sad\" and said athletes should use their influence to inspire people in a good way.",
+      "src": [
+        {
+          "o": "Texas Public Radio",
+          "t": "Spurs star Victor Wembanyama calls NBA players endorsing sports betting 'very sad'",
+          "u": "https://www.tpr.org/sports/2026-10-02/spurs-star-victor-wembanyama-calls-nba-players-endorsing-sports-betting-very-sad"
+        }
+      ],
+      "id": "2026-10-02-victor-wembanyama-says-he-will-not-endorse"
+    },
+    {
+      "d": "2026-10-01",
+      "c": "Lawsuits & fines",
+      "s": "confirmed",
+      "h": "Bettor sues DraftKings, alleging it used AI to target customers likely to lose",
+      "b": "West Virginia bettor Daniel Vest filed a proposed class action in federal court in Boston on Sept. 26. He says DraftKings broke Massachusetts law by not disclosing AI-driven targeting, and that he received about 70 messages from the company in one month. DraftKings says it does not use AI to target customers based on losses. These are allegations; nothing has been decided.",
+      "src": [
+        {
+          "o": "The Boston Globe",
+          "t": "DraftKings 'weaponized' AI to target gamblers, encouraging addiction, lawsuit says",
+          "u": "https://www.bostonglobe.com/2026/10/01/business/draftkings-lawsuit-ai-addiction/"
+        }
+      ],
+      "id": "2026-10-01-bettor-sues-draftkings-alleging-it-used-ai"
+    },
+    {
+      "d": "2026-09-28",
+      "c": "Regulation",
+      "s": "reported",
+      "h": "CFTC reportedly sends two prediction-market rules to the White House for review",
+      "b": "One trade outlet reports the CFTC sent the White House regulatory office a proposal defining event contracts as swaps and an interim rule excluding casino-style products. Neither has been published. A separate CFTC proposal on event-contract reviews ran in the Federal Register on June 12.",
+      "src": [
+        {
+          "o": "crypto.news",
+          "t": "The CFTC has sent prediction market rules to the White House. States are still in court",
+          "u": "https://crypto.news/the-cftc-has-sent-prediction-market-rules-to-the-white-house-states-are-still-in-court/"
+        },
+        {
+          "o": "Federal Register",
+          "t": "Prediction Markets; Public Interest Determinations",
+          "u": "https://www.federalregister.gov/documents/2026/06/12/2026-11854/prediction-markets-public-interest-determinations"
+        }
+      ],
+      "id": "2026-09-28-cftc-reportedly-sends-two-predictionmarket-rules-to"
+    },
+    {
+      "d": "2026-09-27",
+      "c": "Integrity",
+      "s": "confirmed",
+      "h": "Chauncey Billups's rigged-poker trial is set to begin Nov. 2",
+      "b": "The judge denied the government's request to push the trial to January. Fifteen of the 31 defendants in the poker case have pleaded guilty. Billups has pleaded not guilty. Prosecutors say victims lost at least $7 million.",
+      "src": [
+        {
+          "o": "Open Court Basketball",
+          "t": "Chauncey Billups Set For November 2 Trial In Federal Rigged-Poker Case",
+          "u": "https://www.opencourt-basketball.com/2026/09/27/chauncey-billups-set-for-november-2-trial-in-federal-rigged-poker-case/"
+        },
+        {
+          "o": "ESPN",
+          "t": "Trial date set for Chauncey Billups, others in rigged poker case",
+          "u": "https://www.espn.com/nba/story/_/id/48103259/trial-date-set-chauncey-billups-others-rigged-poker-case"
+        }
+      ],
+      "id": "2026-09-27-chauncey-billupss-riggedpoker-trial-is-set-to"
+    },
+    {
+      "d": "2026-09-25",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Sixth Circuit rules Ohio and Tennessee can enforce betting laws against Kalshi",
+      "b": "The unanimous panel found Kalshi's sports contracts are not swaps under federal commodities law. Kalshi has now lost two of three federal appeals. On Oct. 2, Ohio Gov. Mike DeWine called the contracts illegal gambling and said the state will enforce its law.",
+      "src": [
+        {
+          "o": "CoinDesk",
+          "t": "Another appeals court rules against prediction market provider Kalshi",
+          "u": "https://www.coindesk.com/policy/2026/09/25/another-appeals-court-rules-against-prediction-market-provider-kalshi-says-sports-contracts-are-subject-to-state-regulations"
+        },
+        {
+          "o": "The Block",
+          "t": "Kalshi loses appeal over Ohio and Tennessee sports betting laws, widening circuit split",
+          "u": "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937"
+        },
+        {
+          "o": "Statehouse News Bureau",
+          "t": "Kalshi is illegal gambling and Ohio will enforce state law following ruling, says DeWine",
+          "u": "https://www.statenews.org/government-politics/2026-10-02/kalshi-is-illegal-gambling-and-ohio-will-enforce-state-law-following-ruling-says-dewine"
+        }
+      ],
+      "id": "2026-09-25-sixth-circuit-rules-ohio-and-tennessee-can"
+    },
+    {
+      "d": "2026-09-24",
+      "added": "2026-10-05T09:30:00-04:00",
+      "id": "2026-09-24-new-york-sues-polymarket-as-an-unlicensed",
+      "c": "Lawsuits & fines",
+      "s": "confirmed",
+      "h": "New York sues Polymarket as an unlicensed gambling operation; Polymarket countersues in federal court",
+      "b": "Attorney General Letitia James and Gov. Kathy Hochul sued Polymarket US in state court in Manhattan, alleging its sports markets are unlicensed gambling that is open to 18-to-20-year-olds, and seeking forfeiture of gains, restitution and fines of three times its gains. CNBC reports the suit also seeks $100,000 for each offer of sports wagering in the state. Polymarket moved to take the case to federal court and filed its own suit against James and Gaming Commission officials, arguing states cannot regulate federally overseen swaps; the claims are allegations. It follows New York's July suit against Kalshi.",
+      "src": [
+        {
+          "o": "New York Attorney General",
+          "t": "Attorney General James and Governor Hochul Announce Lawsuit Against Polymarket for Running Illegal Gambling Operation",
+          "u": "https://ag.ny.gov/press-release/2026/attorney-general-james-and-governor-hochul-announce-lawsuit-against-polymarket"
+        },
+        {
+          "o": "CNBC",
+          "t": "Polymarket countersues New York state over 'unregulated gambling' allegation",
+          "u": "https://www.cnbc.com/2026/09/24/new-york-sues-polymarket-us-two-months-after-filing-suit-against-kalshi-.html"
+        }
+      ]
+    },
+    {
+      "d": "2026-09-24",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Massachusetts regulators will review how sportsbooks use AI, starting with DraftKings",
+      "b": "Gaming Commission chair Jordan Maynard said the review will start with DraftKings and then cover every licensed sportsbook. The commission said it has not found wrongdoing.",
+      "src": [
+        {
+          "o": "Covers",
+          "t": "Massachusetts to Evaluate Sportsbooks' AI Practices",
+          "u": "https://www.covers.com/industry/massachusetts-gaming-commission-to-evaluate-sportsbooks-ai-practices-sept-24-2026"
+        },
+        {
+          "o": "Quartz",
+          "t": "Massachusetts gaming commission probes DraftKings AI practices",
+          "u": "https://qz.com/massachusetts-gaming-commission-draftkings-ai-gambling-092526"
+        }
+      ],
+      "id": "2026-09-24-massachusetts-regulators-will-review-how-sportsbooks-use"
+    },
+    {
+      "d": "2026-09-24",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Indiana rejects the NCAA's request to ban all college player prop bets",
+      "b": "The Indiana Gaming Commission voted unanimously to keep its current rules, which allow pregame college player props and ban in-game ones. Commissioners said the legislature should decide.",
+      "src": [
+        {
+          "o": "Covers",
+          "t": "Indiana Regulators Reject NCAA's Request for Full Ban on College Player Props",
+          "u": "https://www.covers.com/industry/indiana-college-player-prop-ban-rejected-sports-betting-regulators-ncaa-september-2026"
+        },
+        {
+          "o": "InGame",
+          "t": "EndGame: Regulators Discuss College Prop Bets, Sportsbooks' Use Of AI To Target Gamblers",
+          "u": "https://www.ingame.com/endgame-9-25-2026/"
+        }
+      ],
+      "id": "2026-09-24-indiana-rejects-the-ncaas-request-to-ban"
+    },
+    {
+      "d": "2026-09-23",
+      "c": "Lawsuits & fines",
+      "s": "confirmed",
+      "h": "North Carolina fines Underdog $175,000 over underage accounts and bet365 $75,000 over self-excluded customers",
+      "b": "Regulators said Underdog failed to verify 38 underage accounts, eight of which placed bets, and bet365 sent push notifications to people on the self-exclusion list. Both companies reported the problems themselves.",
+      "src": [
+        {
+          "o": "Covers",
+          "t": "North Carolina Regulators Fine Underdog, bet365 for Sports Betting Violations",
+          "u": "https://www.covers.com/industry/north-carolina-regulators-fine-underdog-bet365-for-sports-betting-violations-sept-23-2026"
+        },
+        {
+          "o": "WSN",
+          "t": "North Carolina Fines bet365, Underdog for RG Violations",
+          "u": "https://www.wsn.com/betting/north-carolina-fines-bet365-underdog-for-responsible-gaming-violations/"
+        }
+      ],
+      "id": "2026-09-23-north-carolina-fines-underdog-175000-over-underage"
+    },
+    {
+      "d": "2026-09-23",
+      "c": "Industry",
+      "s": "confirmed",
+      "h": "Prediction-market trading doubled from May to July, driven by sports",
+      "b": "Pew's analysis of The Block's data shows combined Kalshi and Polymarket volume rose from $25.7 billion in May to $53.0 billion in July. Sports trading in June and July topped $58 billion on Kalshi and neared $22 billion on Polymarket. These are notional volumes, not directly comparable to sportsbook handle.",
+      "src": [
+        {
+          "o": "Pew Research Center",
+          "t": "Prediction markets' trading volume doubled between May and July, largely driven by sports",
+          "u": "https://www.pewresearch.org/short-reads/2026/09/23/prediction-markets-trading-volume-doubled-between-may-and-july-largely-driven-by-sports/"
+        }
+      ],
+      "id": "2026-09-23-predictionmarket-trading-doubled-from-may-to-july"
+    },
+    {
+      "d": "2026-09-23",
+      "c": "Industry",
+      "s": "confirmed",
+      "h": "Caesars shareholders approve Tilman Fertitta's $17.6 billion buyout",
+      "b": "The all-cash, $31-per-share deal includes Caesars Sportsbook. Fertitta also takes on about $12 billion of Caesars debt. Federal Trade Commission review is continuing.",
+      "src": [
+        {
+          "o": "FOX5 Vegas",
+          "t": "Caesars stockholders approve $17.6 billion Fertitta buyout",
+          "u": "https://www.fox5vegas.com/2026/09/23/caesars-stockholders-approve-merger-with-fertitta-gaming/"
+        },
+        {
+          "o": "iGaming Business",
+          "t": "Caesars shareholders approve Fertitta merger while FTC review continues",
+          "u": "https://igamingbusiness.com/casino/caesars-shareholders-approve-merger/"
+        }
+      ],
+      "id": "2026-09-23-caesars-shareholders-approve-tilman-fertittas-176-billion"
+    },
+    {
+      "d": "2026-09-22",
+      "c": "Research",
+      "s": "confirmed",
+      "h": "Problem-gambling council hardens its stance on prediction markets after a Kalshi funding backlash",
+      "b": "Axios reported Kalshi joined the National Council on Problem Gambling in May with $2 million in funding. The Nevada and Evergreen problem-gambling councils have since left, and Michigan's gaming regulator ended its membership.",
+      "src": [
+        {
+          "o": "Axios",
+          "t": "National gambling group takes firmer stance on prediction markets",
+          "u": "https://www.axios.com/2026/09/22/problem-gambling-national-council-kalshi-membership"
+        },
+        {
+          "o": "Yogonet",
+          "t": "NCPG takes firmer stance on prediction markets after Kalshi controversy",
+          "u": "https://www.yogonet.com/international/news/2026/09/23/126537-ncpg-takes-firmer-stance-on-prediction-markets-after-kalshi-controversy"
+        }
+      ],
+      "id": "2026-09-22-problemgambling-council-hardens-its-stance-on-prediction"
+    },
+    {
+      "d": "2026-09-22",
+      "added": "2026-10-05T09:57:56-04:00",
+      "id": "2026-09-22-cftc-staff-warn-that-mention-market-event",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "CFTC staff warn that 'mention market' event contracts carry a heightened risk of manipulation",
+      "b": "The CFTC's Division of Market Oversight issued an advisory on contracts that settle on whether a person will say certain words, attend an event or interact with someone. It says such contracts can be listed only in limited circumstances and reminds exchanges they must list only contracts not readily susceptible to manipulation. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
+      "src": [
+        {
+          "o": "CFTC",
+          "t": "CFTC Releases Staff Advisory on Mention Markets",
+          "u": "https://www.cftc.gov/PressRoom/PressReleases/9302-26"
+        }
+      ]
+    },
+    {
+      "d": "2026-09-19",
+      "c": "Research",
+      "s": "disputed",
+      "h": "New York Times reports DraftKings used machine learning to aim promotions at customers predicted to lose the most",
+      "b": "Citing former employees and internal documents, the Times reported a scoring system built in 2023, about $400 million in automated 2025 promotions, and a shelved model meant to detect harm. DraftKings disputes the reporting; its CEO called it slanderous. We have not seen the underlying documents.",
+      "src": [
+        {
+          "o": "Malwarebytes",
+          "t": "Losing gamblers pushed to bet more by DraftKings' AI, report says",
+          "u": "https://www.malwarebytes.com/blog/ai/2026/10/losing-gamblers-pushed-to-bet-more-by-draftkings-ai-report-says"
+        },
+        {
+          "o": "Tech Times",
+          "t": "DraftKings' Promotional AI Scored Bettors by Addiction Markers, NYT Investigation Finds",
+          "u": "https://www.techtimes.com/articles/327776/20260920/draftkings-promotional-ai-scored-bettors-addiction-markers-nyt-investigation-finds.htm"
+        },
+        {
+          "o": "TheWrap",
+          "t": "DraftKings CEO Says New York Times Has Been Writing 'Slanderous' Stories",
+          "u": "https://www.thewrap.com/industry-news/business/draftkings-ceo-jason-robins-responds-new-york-times-reporting/"
+        }
+      ],
+      "id": "2026-09-19-new-york-times-reports-draftkings-used-machine"
+    },
+    {
+      "d": "2026-09-18",
+      "added": "2026-10-05T09:38:33-04:00",
+      "id": "2026-09-18-missouri-attorney-general-orders-six-predictionmarket-companies",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Missouri attorney general orders six prediction-market companies to stop offering sports contracts",
+      "b": "Missouri Attorney General Catherine Hanaway sent cease-and-desist letters to Polymarket, Kalshi, Crypto.com, Novig, Underdog and Robinhood, saying their sports event contracts amount to unlicensed sports wagering under state law. The letters give each company 30 days to comply and warn of enforcement action; the office also says the firms avoid the state's 10% tax on sports betting receipts and lack adequate under-21 safeguards. Polymarket's spokesperson said prediction markets fall under federal CFTC regulation rather than state rules.",
+      "src": [
+        {
+          "o": "Missouri Attorney General's Office",
+          "t": "Missouri Attorney General Hanaway Orders Unlicensed Prediction Markets To Cease And Desist Unlawful Sports Wagering",
+          "u": "https://ago.mo.gov/missouri-attorney-general-hanaway-orders-unlicensed-prediction-markets-to-cease-and-desist-unlawful-sports-wagering/"
+        },
+        {
+          "o": "KCTV5",
+          "t": "Missouri AG targets Polymarket, Kalshi, others in prediction market crackdown",
+          "u": "https://www.kctv5.com/2026/09/18/missouri-ag-sends-cease-desist-letters-prediction-market-operators/"
+        }
+      ]
+    },
+    {
+      "d": "2026-09-16",
+      "c": "Research",
+      "s": "confirmed",
+      "h": "Gambling-disorder ER visits roughly doubled in Ontario after online betting expanded",
+      "b": "A peer-reviewed study in the American Journal of Preventive Medicine covering 14 years of data found visits far above expected levels for young men, including 154% higher for males aged 10 to 29. The data is Canadian.",
+      "src": [
+        {
+          "o": "American Journal of Preventive Medicine",
+          "t": "Emergency Department Visits for Gambling Disorders After the Legalization of Single-Event Sports Betting",
+          "u": "https://www.ajpmonline.org/article/S0749-3797(26)00294-1/fulltext"
+        },
+        {
+          "o": "News-Medical",
+          "t": "Gambling disorder emergency visits increase following sports betting legalization",
+          "u": "https://www.news-medical.net/news/20260916/Gambling-disorder-emergency-visits-increase-following-sports-betting-legalization.aspx"
+        }
+      ],
+      "id": "2026-09-16-gamblingdisorder-er-visits-roughly-doubled-in-ontario"
+    },
+    {
+      "d": "2026-09-16",
+      "c": "Lawsuits & fines",
+      "s": "confirmed",
+      "h": "Pennsylvania bettor sues DraftKings and FanDuel over VIP managers",
+      "b": "Reynaldo Rivera alleges VIP hosts deepened his addiction. He says he wagered $1.6 million on DraftKings and lost about $97,000, and wagered $841,000 on FanDuel and lost about $40,000. These are allegations.",
+      "src": [
+        {
+          "o": "AboutLawsuits.com",
+          "t": "DraftKings, FanDuel Lawsuit Alleges VIP Managers Fueled More Than $130K in Gambling Losses",
+          "u": "https://www.aboutlawsuits.com/sports-betting-addiction-lawsuit/draftkings-fanduel-lawsuit-vip-managers-130k-gambling-losses"
+        }
+      ],
+      "id": "2026-09-16-pennsylvania-bettor-sues-draftkings-and-fanduel-over"
+    },
+    {
+      "d": "2026-09-16",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Ninth Circuit sides with two California tribes against Kalshi",
+      "b": "The court found Kalshi's sports contracts likely count as gaming under federal Indian gaming law when traded from tribal land, and reversed a lower court's refusal to block them.",
+      "src": [
+        {
+          "o": "JURIST",
+          "t": "The Ninth Circuit finds Kalshi sports contracts on tribal lands likely violate federal law",
+          "u": "https://www.jurist.org/news/2026/09/the-ninth-circuit-rules-kalshi-sports-contracts-on-tribal-lands-likely-violate-federal-law/"
+        },
+        {
+          "o": "Covers",
+          "t": "Tribal Nations Step Up Fight Against Prediction Markets",
+          "u": "https://www.covers.com/industry/tribal-nations-strengthen-prediction-market-fight-october-1-2026"
+        }
+      ],
+      "id": "2026-09-16-ninth-circuit-sides-with-two-california-tribes"
+    },
+    {
+      "d": "2026-09-07",
+      "c": "Research",
+      "s": "confirmed",
+      "h": "Bank of America data: online bettors get back about 75 cents of every dollar they wager",
+      "b": "Fortune reported the Bank of America Institute's findings. Gen Z and millennials made up 88% of betting activity in July, and median deposit balances in betting households were 59% of those in non-betting households.",
+      "src": [
+        {
+          "o": "Fortune",
+          "t": "One in five Americans call sports betting an investment",
+          "u": "https://fortune.com/2026/09/07/americans-sports-gambling-investment-gen-z-75-cents-dollar-wagered/"
+        }
+      ],
+      "id": "2026-09-07-bank-of-america-data-online-bettors-get"
+    },
+    {
+      "d": "2026-09-05",
+      "c": "Athletes & deals",
+      "s": "confirmed",
+      "h": "LeBron James signs with Polymarket",
+      "b": "It is Polymarket's first individual athlete endorsement. The campaign also features Eli Manning, Derek Jeter, Spike Lee and Sue Bird. Terms were not disclosed.",
+      "src": [
+        {
+          "o": "CNBC",
+          "t": "LeBron James teases partnership with Polymarket",
+          "u": "https://www.cnbc.com/2026/09/05/lebron-james-polymarket-partnership.html"
+        },
+        {
+          "o": "Philadelphia Inquirer",
+          "t": "LeBron James is partnering with Polymarket",
+          "u": "https://www.inquirer.com/sixers/lebron-james-polymarket-gambling-prediction-market-20260908.html"
+        }
+      ],
+      "id": "2026-09-05-lebron-james-signs-with-polymarket"
+    },
+    {
+      "d": "2026-09-02",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "New Jersey asks the Supreme Court to let states regulate Kalshi's sports contracts",
+      "b": "It is the first state petition to the Court on prediction markets. New Jersey is challenging the Third Circuit's April ruling, which shielded Kalshi from state gambling law.",
+      "src": [
+        {
+          "o": "NJ Attorney General",
+          "t": "Petition for Writ of Certiorari",
+          "u": "https://www.njoag.gov/wp-content/uploads/2026/09/2026-0902_26-_PetitionForWritOfCertiorari.pdf"
+        },
+        {
+          "o": "NPR via Houston Public Media",
+          "t": "New Jersey asks Supreme Court to resolve fight over Kalshi's future",
+          "u": "https://www.houstonpublicmedia.org/npr/2026/09/02/nx-s1-5954230/new-jersey-asks-supreme-court-to-resolve-fight-over-kalshis-future/"
+        }
+      ],
+      "id": "2026-09-02-new-jersey-asks-the-supreme-court-to",
+      "img": {
+        "u": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Supreme_Court_Following_Facade_Restoration_%2810542206014%29.jpg/1280px-Supreme_Court_Following_Facade_Restoration_%2810542206014%29.jpg",
+        "alt": "The west facade of the U.S. Supreme Court building in Washington",
+        "credit": "Architect of the Capitol",
+        "lic": "Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_Following_Facade_Restoration_(10542206014).jpg"
       }
-     ]
     },
     {
-     "g": "FanDuel (U.S.)",
-     "rows": [
-      {
-       "l": "Revenue",
-       "v": -6
-      },
-      {
-       "l": "Monthly players",
-       "v": 9
-      },
-      {
-       "l": "Marketing spending",
-       "v": 61
+      "d": "2026-08-29",
+      "c": "Integrity",
+      "s": "confirmed",
+      "h": "Guardians pitchers Emmanuel Clase and Luis Ortiz will be tried together starting Nov. 2",
+      "b": "Prosecutors later narrowed the pitch-rigging case to 18 pitches by Clase and two by Ortiz. Both have pleaded not guilty.",
+      "src": [
+        {
+          "o": "The Source",
+          "t": "Federal Judge Rules Guardians Pitchers Will Face Pitch-Rigging Case Together",
+          "u": "https://thesource.com/2026/08/31/source-sports-federal-judge-rules-guardians-pitchers-luis-ortiz-emmanuel-clase-will-face-pitch-rigging-case-together/"
+        },
+        {
+          "o": "PlayUSA",
+          "t": "Prosecutors Narrow Emmanuel Clase Betting Case to 18 Pitches",
+          "u": "https://www.playusa.com/news/prosecutors-narrow-emmanuel-clase-betting-case-to-18-pitches-ahead-of-november-trial/"
+        }
+      ],
+      "id": "2026-08-29-guardians-pitchers-emmanuel-clase-and-luis-ortiz"
+    },
+    {
+      "d": "2026-08-28",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Ninth Circuit rules Nevada can apply its gaming laws to Kalshi",
+      "b": "The panel found Kalshi's sports contracts likely are not swaps, so federal law does not block Nevada. The ruling also covers Crypto.com and Robinhood, and it split from the Third Circuit.",
+      "src": [
+        {
+          "o": "Nevada Current",
+          "t": "Ninth Circuit win for Nevada over Kalshi sets up potential Supreme Court showdown",
+          "u": "https://nevadacurrent.com/2026/08/28/ninth-circuit-win-for-nevada-over-kalshi-sets-up-potential-supreme-court-showdown/"
+        },
+        {
+          "o": "Nevada Gaming Control Board",
+          "t": "Ninth Circuit opinion, No. 25-7516",
+          "u": "https://www.gaming.nv.gov/siteassets/content/about/press-release/25-7516---kalshi-ninth-circuit-decision.pdf"
+        }
+      ],
+      "id": "2026-08-28-ninth-circuit-rules-nevada-can-apply-its"
+    },
+    {
+      "d": "2026-08-28",
+      "added": "2026-10-05T09:57:56-04:00",
+      "id": "2026-08-28-cftc-orders-former-white-house-teleprompter-operator",
+      "c": "Integrity",
+      "s": "confirmed",
+      "h": "CFTC orders former White House teleprompter operator to pay $172,000 for insider trading of prediction-market contracts",
+      "b": "In a settled order, the CFTC found that Gabriel Perez used nonpublic access to presidential speeches to trade 'mention market' event contracts between December 2025 and February 2026, earning about $107,500. He must give up $107,539.02 in profits and pay a $65,000 penalty, and is barred from trading for three years. The agency credited Kalshi for assisting. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
+      "src": [
+        {
+          "o": "CFTC",
+          "t": "CFTC Orders Gabriel Perez to Pay $172,000 for Insider Trading of Mention Market Event Contracts",
+          "u": "https://www.cftc.gov/PressRoom/PressReleases/9289-26"
+        }
+      ]
+    },
+    {
+      "d": "2026-08-27",
+      "c": "Political money",
+      "s": "confirmed",
+      "h": "Sportsbooks added $29 million to their super PAC in the second quarter, bringing it to $72 million",
+      "b": "DraftKings gave $14.5 million, FanDuel $7.5 million, bet365 $5.5 million and Fanatics $1.5 million to Win for America from April through June. The PAC grew 70% from $43 million at the end of March.",
+      "src": [
+        {
+          "o": "Public Citizen",
+          "t": "Corporate Money in the 2026 Midterms Surges to $650 Million",
+          "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
+        },
+        {
+          "o": "FEC",
+          "t": "Win for America committee overview",
+          "u": "https://www.fec.gov/data/committee/C00925586/"
+        }
+      ],
+      "id": "2026-08-27-sportsbooks-added-29-million-to-their-super"
+    },
+    {
+      "d": "2026-08-27",
+      "c": "Athletes & deals",
+      "s": "confirmed",
+      "h": "NFL renews DraftKings and FanDuel, adds Fanatics, and drops Caesars",
+      "b": "The multiyear deals drop the old exclusivity language, so the league can add more sportsbooks. Financial terms were not disclosed.",
+      "src": [
+        {
+          "o": "NFL.com",
+          "t": "NFL announces official partnerships with three leading sports betting operators",
+          "u": "https://www.nfl.com/news/nfl-draftkings-fanduel-fanatics-sports-betting-partners"
+        },
+        {
+          "o": "Yogonet",
+          "t": "NFL renews sportsbook deals with DraftKings and FanDuel, adds Fanatics",
+          "u": "https://www.yogonet.com/international/news/2026/08/31/126140-nfl-renews-sportsbook-deals-with-draftkings-and-fanduel-adds-fanatics-ahead-of-2026-season"
+        }
+      ],
+      "id": "2026-08-27-nfl-renews-draftkings-and-fanduel-adds-fanatics"
+    },
+    {
+      "d": "2026-08-27",
+      "c": "Lawsuits & fines",
+      "s": "confirmed",
+      "h": "Colorado fines Fanatics $20,000 after VIP staff twice marketed to a self-excluded customer",
+      "b": "Fanatics must also audit its self-exclusion compliance from January 2024 to March 2026 and retrain its VIP team.",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "t": "Colorado Fines Fanatics Sportsbook For Marketing Violations",
+          "u": "https://sbcamericas.com/2026/09/01/colorado-fines-fanatics-sportsbook/"
+        }
+      ],
+      "id": "2026-08-27-colorado-fines-fanatics-20000-after-vip-staff"
+    },
+    {
+      "d": "2026-08-25",
+      "c": "Athletes & deals",
+      "s": "confirmed",
+      "h": "Kalshi signs five MLB teams; Polymarket signs the Yankees",
+      "b": "Kalshi's deals are with the Braves, Red Sox, Dodgers, Padres and Giants. Fortune reported Kalshi's baseball volume at nearly $13 billion this year. A report that Kalshi is negotiating a league-wide MLB deal rests on one unnamed source.",
+      "src": [
+        {
+          "o": "Fortune",
+          "t": "Kalshi strikes deals with five MLB teams, eyes a separate league partnership",
+          "u": "https://fortune.com/2026/08/25/kalshi-deals-five-mlb-teams-separate-league-partnership/"
+        },
+        {
+          "o": "Kalshi",
+          "t": "Kalshi partners with 5 MLB teams",
+          "u": "https://news.kalshi.com/p/kalshi-partners-with-mlb-teams"
+        },
+        {
+          "o": "PR Newswire",
+          "t": "Polymarket Becomes An Official Prediction Market Partner of the New York Yankees",
+          "u": "https://www.prnewswire.com/news-releases/polymarket-becomes-an-official-prediction-market-partner-of-the-new-york-yankees-302844285.html"
+        }
+      ],
+      "id": "2026-08-25-kalshi-signs-five-mlb-teams-polymarket-signs"
+    },
+    {
+      "d": "2026-08-24",
+      "c": "Integrity",
+      "s": "confirmed",
+      "h": "MLB players' union tells Congress the league resisted a joint push to ban player prop bets",
+      "b": "Answering lawmakers' questions about VIP marketing tied to MLB, the union and FanDuel, the MLBPA said it is open to rules barring players from sportsbook VIP marketing.",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "t": "MLBPA says league 'balked' at lobbying to ban props",
+          "u": "https://sbcamericas.com/2026/08/26/mlbpa-players-sportsbook-prop-ban"
+        }
+      ],
+      "id": "2026-08-24-mlb-players-union-tells-congress-the-league"
+    },
+    {
+      "d": "2026-08-24",
+      "c": "Political money",
+      "s": "reported",
+      "h": "Nebraska will vote on online sports betting in November, in a campaign reportedly funded by FanDuel and DraftKings",
+      "b": "Two measures were certified for the Nov. 3 ballot. Trade outlets report the Tax Relief Nebraska campaign got about $3.5 million each from FanDuel and DraftKings. We have not yet checked state filings.",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "t": "Nebraska Online Sports Betting Will Go to November Ballot",
+          "u": "https://sbcamericas.com/2026/08/24/nebraska-online-sports-betting-ballot/"
+        },
+        {
+          "o": "Nebraska Examiner",
+          "t": "Backers of online sports betting in Nebraska submit signatures to get on 2026 ballot",
+          "u": "https://nebraskaexaminer.com/2026/07/01/backers-of-online-sports-betting-in-nebraska-submit-signatures-to-get-on-2026-ballot/"
+        }
+      ],
+      "id": "2026-08-24-nebraska-will-vote-on-online-sports-betting"
+    },
+    {
+      "d": "2026-08-20",
+      "c": "Political money",
+      "s": "reported",
+      "h": "Sportsbook-funded groups have spent nearly $12 million on Georgia's elections",
+      "b": "An update of Atlanta Journal-Constitution figures, as summarized by a trade outlet, says 32 of the 34 legislative candidates the network backed in primaries won.",
+      "src": [
+        {
+          "o": "CasinoBeats",
+          "t": "Sports Betting Groups Pour Millions Into Georgia Elections",
+          "u": "https://casinobeats.com/2026/08/20/sports-betting-advocates-splash-cash-on-georgia-elections/"
+        }
+      ],
+      "id": "2026-08-20-sportsbookfunded-groups-have-spent-nearly-12-million"
+    },
+    {
+      "d": "2026-08-17",
+      "c": "Research",
+      "s": "confirmed",
+      "h": "Gallup: 11% of adults bet on sports in the past year",
+      "b": "Overall gambling fell to 45% from 64% in 2016, by telephone survey. Gallup's sports figure is lower than Pew's 22%; question wording and method differ.",
+      "src": [
+        {
+          "o": "Gallup",
+          "t": "Fewer U.S. Adults Say They Gamble",
+          "u": "https://news.gallup.com/poll/713405/fewer-adults-say-gamble.aspx"
+        }
+      ],
+      "id": "2026-08-17-gallup-11-of-adults-bet-on-sports"
+    },
+    {
+      "d": "2026-08-13",
+      "c": "Industry",
+      "s": "reported",
+      "h": "Kalshi reportedly in talks to raise $750 million at a $40 billion valuation",
+      "b": "CoinDesk, citing The Information, reported that Sequoia and Wellington were in advanced talks to lead the round. Neither company confirmed. Kalshi was valued at $22 billion in March.",
+      "src": [
+        {
+          "o": "CoinDesk",
+          "t": "Sequoia and Wellington in talks to lead $750 million Kalshi funding round",
+          "u": "https://www.coindesk.com/business/2026/08/13/kalshi-in-talks-with-sequoia-wellington-for-usd750-million-fund-raise-at-usd40-billion-valuation"
+        }
+      ],
+      "id": "2026-08-13-kalshi-reportedly-in-talks-to-raise-750"
+    },
+    {
+      "d": "2026-08-13",
+      "added": "2026-10-05T09:53:52-04:00",
+      "id": "2026-08-13-baltimore-sues-kalshi-and-polymarket-alleging-unlicensed",
+      "c": "Lawsuits & fines",
+      "s": "confirmed",
+      "h": "Baltimore sues Kalshi and Polymarket, alleging unlicensed sports betting",
+      "b": "Mayor Brandon Scott and the Baltimore City Council filed consumer-protection suits in Baltimore City Circuit Court on Aug. 13 against Kalshi and Polymarket. The city alleges the companies run unlicensed sports betting under the label of event contracts and misstate their legal status; it seeks an injunction, penalties and restitution. The Kalshi suit also names Robinhood, Webull and Coinbase entities. These are allegations; the companies' federal-preemption defense has not been decided here. (Late catch, added Oct. 5.)",
+      "src": [
+        {
+          "o": "FOX Baltimore",
+          "t": "Baltimore sues Kalshi, Polymarket over alleged illegal sports betting, prediction markets",
+          "u": "https://foxbaltimore.com/news/local/baltimore-sues-kalshi-polymarket-over-alleged-illegal-sports-betting-prediction-markets"
+        },
+        {
+          "o": "Maryland Association of Counties",
+          "t": "Baltimore City Sues Prediction Markets Over Alleged Illegal Sports Betting",
+          "u": "https://conduitstreet.mdcounties.org/2026/08/18/baltimore-city-sues-prediction-markets-over-alleged-illegal-sports-betting/"
+        }
+      ]
+    },
+    {
+      "d": "2026-08-06",
+      "c": "Industry",
+      "s": "confirmed",
+      "h": "DraftKings revenue falls 5% while marketing spending jumps to $322.5 million",
+      "b": "Second-quarter revenue was $1.44 billion with a $67.6 million net loss. Monthly unique payers rose 9% to 3.6 million. The company said its prediction-market product has passed 600,000 customers this year.",
+      "src": [
+        {
+          "o": "Business Wire",
+          "t": "DraftKings Reports Second Quarter Results",
+          "u": "https://www.businesswire.com/news/home/20260806450577/en/DraftKings-Reports-Second-Quarter-Results"
+        },
+        {
+          "o": "The Motley Fool",
+          "t": "DraftKings (DKNG) Q2 2026 Earnings Call Transcript",
+          "u": "https://www.fool.com/earnings/call-transcripts/2026/08/13/draftkings-dkng-q2-2026-earnings-call-transcript/"
+        }
+      ],
+      "id": "2026-08-06-draftkings-revenue-falls-5-while-marketing-spending"
+    },
+    {
+      "d": "2026-08-05",
+      "c": "Industry",
+      "s": "confirmed",
+      "h": "FanDuel's owner posts a $296 million loss and replaces its CEO",
+      "b": "Flutter's U.S. revenue fell 6% to $1.68 billion even as average monthly players rose 9% to 3.8 million. U.S. marketing spending rose 61% year over year. Dan Taylor became CEO on Oct. 1.",
+      "src": [
+        {
+          "o": "GlobeNewswire",
+          "t": "Flutter Entertainment Announces Q2 2026 Financial Results",
+          "u": "https://www.globenewswire.com/news-release/2026/08/05/3339154/0/en/flutter-entertainment-announces-q2-2026-financial-results.html"
+        },
+        {
+          "o": "European Gaming",
+          "t": "Flutter posts $296m Q2 loss as Dan Taylor named next CEO",
+          "u": "https://europeangaming.eu/portal/latest-news/2026/08/06/210507/flutter-q2-2026-results-dan-taylor-ceo/"
+        }
+      ],
+      "id": "2026-08-05-fanduels-owner-posts-a-296-million-loss"
+    },
+    {
+      "d": "2026-08-05",
+      "c": "Lawsuits & fines",
+      "s": "confirmed",
+      "h": "New Jersey fines Caesars Sportsbook $251,250 over self-exclusion failures",
+      "b": "Regulators also required $45,465 in disgorgement. Problems included letting self-excluded players bet through other platforms.",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "t": "Caesars Sportsbook hit with $250k fine by New Jersey regulator",
+          "u": "https://sbcamericas.com/2026/08/27/caesars-sportsbook-nj-dge-fine/"
+        },
+        {
+          "o": "PlayNJ",
+          "t": "Caesars Sportsbook Fined $296,715 in New Jersey",
+          "u": "https://www.playnj.com/news/caesars-sportsbook-fined-296715-by-new-jersey-regulators/99619/"
+        }
+      ],
+      "id": "2026-08-05-new-jersey-fines-caesars-sportsbook-251250-over"
+    },
+    {
+      "d": "2026-07-31",
+      "c": "Lawsuits & fines",
+      "s": "confirmed",
+      "h": "New York's attorney general sues Kalshi, seeking about $36 billion",
+      "b": "Letitia James calls Kalshi an illegal gambling operation and wants it to stop offering contracts on sports and other events. The amount is what the state is asking for, not a judgment. Kalshi called the suit political theater.",
+      "src": [
+        {
+          "o": "Courthouse News Service",
+          "t": "New York sues Kalshi, claiming prediction contracts violate state gambling laws",
+          "u": "https://www.courthousenews.com/new-york-sues-kalshi-claiming-prediction-contracts-violate-state-gambling-laws/"
+        },
+        {
+          "o": "Reason",
+          "t": "New York A.G. Letitia James sues Kalshi for $36 billion over 'illegal gambling'",
+          "u": "https://reason.com/2026/07/31/new-york-wants-a-36-billion-cut-from-kalshi-calling-it-an-illegal-gambling-operation/"
+        }
+      ],
+      "id": "2026-07-31-new-yorks-attorney-general-sues-kalshi-seeking"
+    },
+    {
+      "d": "2026-07-31",
+      "c": "Industry",
+      "s": "confirmed",
+      "h": "IG Group agrees to buy Underdog in a deal worth up to $1.3 billion",
+      "b": "About $380 million is paid upfront; the rest depends on an earnout and incentive plan through 2029. Underdog later gave up fantasy licenses in seven states to focus on prediction markets.",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "t": "In Underdog $1.3B Sale, A Lesson In Weathering US Changes",
+          "u": "https://sbcamericas.com/2026/07/31/underdog-acquired-ig-group/"
+        },
+        {
+          "o": "Yahoo Finance (Reuters)",
+          "t": "UK's IG Group bets big on US prediction markets with $1.3 billion Underdog deal",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/uks-ig-group-agrees-buy-164102084.html"
+        }
+      ],
+      "id": "2026-07-31-ig-group-agrees-to-buy-underdog-in"
+    },
+    {
+      "d": "2026-07-31",
+      "added": "2026-10-05T09:57:56-04:00",
+      "id": "2026-07-31-cftc-orders-george-santos-to-pay-35000",
+      "c": "Integrity",
+      "s": "confirmed",
+      "h": "CFTC orders George Santos to pay $35,000 for manipulating a State of the Union event contract",
+      "b": "In a settled order, the CFTC found that former Congressman George Santos traded a contract on whether he would attend the 2026 State of the Union while posting misleading social-media statements about his plans, moving prices in his favor. He must give up $17,569.98 in profits, pay a $17,500 penalty and is barred from trading for three years. (Late catch, added Oct. 5 from a sweep of the CFTC press page.)",
+      "src": [
+        {
+          "o": "CFTC",
+          "t": "CFTC Orders George Santos to Pay $35,000 for Manipulative Trading of State-of-the-Union Event Contract",
+          "u": "https://www.cftc.gov/PressRoom/PressReleases/9276-26"
+        }
+      ]
+    },
+    {
+      "d": "2026-07-30",
+      "c": "Athletes & deals",
+      "s": "confirmed",
+      "h": "The Mets become the first MLB team with a prediction-market partner",
+      "b": "The team signed Novig. Terms were not disclosed.",
+      "src": [
+        {
+          "o": "PR Newswire",
+          "t": "Novig Named Exclusive Official Prediction Market Partner of the New York Mets",
+          "u": "https://www.prnewswire.com/news-releases/novig-named-exclusive-official-prediction-market-partner-of-the-new-york-mets-302838399.html"
+        }
+      ],
+      "id": "2026-07-30-the-mets-become-the-first-mlb-team"
+    },
+    {
+      "d": "2026-07-28",
+      "c": "Political money",
+      "s": "confirmed",
+      "h": "Betting industry's midterm spending passes $72 million, routed through two partisan affiliates",
+      "b": "Reuters reported Win for America moves money through the Republican-aligned American Conservative Fund and the Democratic-aligned American Future. FEC data shows $68.05 million passed to other committees through June.",
+      "src": [
+        {
+          "o": "KWSN (Reuters)",
+          "t": "Sports betting industry spending on US midterm elections surpasses $72 million",
+          "u": "https://kwsn.com/2026/07/28/sports-betting-industry-spending-on-us-midterm-elections-surpasses-72-million/"
+        },
+        {
+          "o": "FEC",
+          "t": "Win for America committee overview",
+          "u": "https://www.fec.gov/data/committee/C00925586/"
+        }
+      ],
+      "id": "2026-07-28-betting-industrys-midterm-spending-passes-72-million"
+    },
+    {
+      "d": "2026-07-23",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Bipartisan House bill would ban sports contracts on prediction markets",
+      "b": "Nevada Reps. Steven Horsford and Mark Amodei introduced the Prediction Markets Are Gambling Act. Sen. Catherine Cortez Masto introduced a Senate version in March.",
+      "src": [
+        {
+          "o": "Office of Rep. Horsford",
+          "t": "Horsford and Amodei Introduce Bipartisan Bill to Ban Sports Prediction Market Contracts",
+          "u": "https://horsford.house.gov/media/press-releases/horsford-and-amodei-introduce-bipartisan-bill-to-ban-sports-prediction-market-contracts-and-protect-jobs"
+        }
+      ],
+      "id": "2026-07-23-bipartisan-house-bill-would-ban-sports-contracts"
+    },
+    {
+      "d": "2026-07-20",
+      "c": "Political money",
+      "s": "confirmed",
+      "h": "Second-quarter lobbying: Kalshi $500,000, AGA $660,000, DraftKings $350,000",
+      "b": "These are in-house federal lobbying expenses from Senate disclosure filings. Outside firms report their fees separately.",
+      "src": [
+        {
+          "o": "Senate Lobbying Disclosure",
+          "t": "LDA filings, client Kalshi, 2026",
+          "u": "https://lda.gov/api/v1/filings/?client_name=kalshi&filing_year=2026"
+        },
+        {
+          "o": "Senate Lobbying Disclosure",
+          "t": "LDA filings, client DraftKings, 2026",
+          "u": "https://lda.gov/api/v1/filings/?client_name=draftkings&filing_year=2026"
+        },
+        {
+          "o": "BeInCrypto",
+          "t": "Prediction Markets and Casinos Are Both Betting Big on Washington",
+          "u": "https://beincrypto.com/kalshi-lobbying-prediction-markets-casinos/"
+        }
+      ],
+      "id": "2026-07-20-secondquarter-lobbying-kalshi-500000-aga-660000-draftkings"
+    },
+    {
+      "d": "2026-07-20",
+      "c": "Integrity",
+      "s": "confirmed",
+      "h": "NFL suspends Cardinals scouting director Ryan Gold for gambling",
+      "b": "The league said he placed parlays and allegedly shared nonpublic draft information. It found no sign that games were compromised. His lawyer denies the allegations.",
+      "src": [
+        {
+          "o": "ESPN",
+          "t": "NFL suspends Cardinals executive for violating gambling policy",
+          "u": "https://www.espn.com/nfl/story/_/id/49386067/nfl-suspends-cardinals-executive-violating-gambling-policy"
+        },
+        {
+          "o": "CBS Sports",
+          "t": "NFL suspends Cardinals scouting director Ryan Gold indefinitely",
+          "u": "https://www.cbssports.com/nfl/news/nfl-suspends-cardinals-executive-ryan-gold-indefinitely-gambling-policy/"
+        }
+      ],
+      "id": "2026-07-20-nfl-suspends-cardinals-scouting-director-ryan-gold"
+    }
+  ],
+  "ledger": [
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "DraftKings",
+      "to": "Win for America (super PAC)",
+      "amt": 14500000,
+      "note": "Q2 2026 contributions",
+      "src": [
+        {
+          "o": "Public Citizen",
+          "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "FanDuel",
+      "to": "Win for America (super PAC)",
+      "amt": 7500000,
+      "note": "Q2 2026 contributions",
+      "src": [
+        {
+          "o": "Public Citizen",
+          "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "bet365 (Hillside Shared Services US)",
+      "to": "Win for America (super PAC)",
+      "amt": 5500000,
+      "note": "Q2 2026 contributions",
+      "src": [
+        {
+          "o": "Public Citizen",
+          "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "Fanatics Betting and Gaming",
+      "to": "Win for America (super PAC)",
+      "amt": 1500000,
+      "note": "Q2 2026 contributions",
+      "src": [
+        {
+          "o": "Public Citizen",
+          "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "Online sportsbooks",
+      "to": "Win for America (super PAC)",
+      "amt": 72000000,
+      "note": "Total receipts, Nov. 5, 2025 to June 30, 2026 (all contributions)",
+      "src": [
+        {
+          "o": "FEC",
+          "u": "https://www.fec.gov/data/committee/C00925586/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "Win for America",
+      "to": "American Conservative Fund; American Future",
+      "amt": 68050000,
+      "note": "Transfers to other committees through June 30, 2026 ($50.6M and $17.45M)",
+      "src": [
+        {
+          "o": "FEC",
+          "u": "https://www.fec.gov/data/committee/C00925586/"
+        },
+        {
+          "o": "Daily Caller",
+          "u": "https://dailycaller.com/2026/08/31/sports-betting-super-pacs-spending-2026-elections/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06",
+      "t": "Political",
+      "from": "Blockratize (Polymarket parent)",
+      "to": "Congressional Leadership Fund",
+      "amt": 1000000,
+      "note": "House GOP super PAC; plus $10,000 to V-PAC in April",
+      "src": [
+        {
+          "o": "Public Citizen",
+          "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
+        },
+        {
+          "o": "Spokesman-Review (Reuters)",
+          "u": "https://www.spokesman.com/stories/2026/aug/27/corporate-political-donations-shatter-record-at-64/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "Kalshi",
+      "to": "Democratic Governors Association",
+      "amt": 150000,
+      "note": "First half of 2026",
+      "src": [
+        {
+          "o": "Stateline via The Express",
+          "u": "https://www.lockhaven.com/news/local-news/2026/10/prediction-markets-spend-millions-to-influence-state-federal-governments/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "Kalshi",
+      "to": "Republican Governors Association",
+      "amt": 100000,
+      "note": "2026",
+      "src": [
+        {
+          "o": "Stateline via The Express",
+          "u": "https://www.lockhaven.com/news/local-news/2026/10/prediction-markets-spend-millions-to-influence-state-federal-governments/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Political",
+      "from": "Kalshi",
+      "to": "RAGA and DAGA (attorneys general associations)",
+      "amt": 300000,
+      "note": "More than $300,000 combined",
+      "src": [
+        {
+          "o": "Stateline via The Express",
+          "u": "https://www.lockhaven.com/news/local-news/2026/10/prediction-markets-spend-millions-to-influence-state-federal-governments/"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Lobbying",
+      "from": "Kalshi",
+      "to": "Federal lobbying (in-house)",
+      "amt": 990000,
+      "note": "Q1 $490,000 (amended) + Q2 $500,000",
+      "src": [
+        {
+          "o": "Senate LDA",
+          "u": "https://lda.gov/api/v1/filings/?client_name=kalshi&filing_year=2026"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Lobbying",
+      "from": "American Gaming Association",
+      "to": "Federal lobbying (in-house)",
+      "amt": 1390000,
+      "note": "Q1 $730,000 + Q2 $660,000",
+      "src": [
+        {
+          "o": "Senate LDA",
+          "u": "https://lda.gov/api/v1/filings/?client_name=american%20gaming%20association&filing_year=2026"
+        }
+      ]
+    },
+    {
+      "d": "2026-06-30",
+      "t": "Lobbying",
+      "from": "DraftKings",
+      "to": "Federal lobbying (in-house)",
+      "amt": 640000,
+      "note": "Q1 $290,000 + Q2 $350,000",
+      "src": [
+        {
+          "o": "Senate LDA",
+          "u": "https://lda.gov/api/v1/filings/?client_name=draftkings&filing_year=2026"
+        }
+      ]
+    },
+    {
+      "d": "2026-05-31",
+      "t": "Political",
+      "from": "Kalshi",
+      "to": "Xavier Becerra for Governor",
+      "amt": 39200,
+      "note": "Days before the California primary",
+      "src": [
+        {
+          "o": "CalMatters",
+          "u": "https://calmatters.org/politics/2026/06/kalshi-becerra-prediction-governor/"
+        }
+      ]
+    },
+    {
+      "d": "2026-05-20",
+      "t": "Political",
+      "from": "Win for Pennsylvania",
+      "to": "PA Senate primaries (Baker, Bartolotta, Gebhard)",
+      "amt": 5000000,
+      "note": "More than $5 million in spending",
+      "src": [
+        {
+          "o": "Spotlight PA",
+          "u": "https://www.spotlightpa.org/news/2026/05/gambling-skill-games-sports-betting-pennsylvania-senate-races-funding-attack-incumbents-elections/"
+        }
+      ]
+    },
+    {
+      "d": "2026-05-14",
+      "t": "Political",
+      "from": "American Conservative Fund Action Georgia; American Future",
+      "to": "Georgia legislative primaries",
+      "amt": 10000000,
+      "note": "About $10 million total",
+      "src": [
+        {
+          "o": "Atlanta Journal-Constitution",
+          "u": "https://www.ajc.com/politics/2026/05/sports-betting-industry-pours-10m-into-georgia-campaigns/"
+        }
+      ]
+    },
+    {
+      "d": "2026-05",
+      "t": "Funding",
+      "from": "Kalshi",
+      "to": "National Council on Problem Gambling",
+      "amt": 2000000,
+      "note": "Membership funding",
+      "src": [
+        {
+          "o": "Axios",
+          "u": "https://www.axios.com/2026/09/22/problem-gambling-national-council-kalshi-membership"
+        }
+      ]
+    },
+    {
+      "d": "2026-03-31",
+      "t": "Political",
+      "from": "Online sportsbooks",
+      "to": "Win for America (super PAC)",
+      "amt": 43000000,
+      "note": "Total receipts through Q1 2026",
+      "src": [
+        {
+          "o": "Public Citizen",
+          "u": "https://www.citizen.org/article/corporate-supremacist-super-pacs-500-million-midterm-crypto-ai-sports-betting/"
+        }
+      ]
+    },
+    {
+      "d": "2025",
+      "t": "Lobbying",
+      "from": "FanDuel",
+      "to": "Federal lobbying (outside firms)",
+      "amt": 1030000,
+      "note": "2025, up from $160,000",
+      "src": [
+        {
+          "o": "LegiStorm",
+          "u": "https://www.legistorm.com/pro_news/4391/all-in-on-lobbying-sportsbooks-ramp-up-spending.html"
+        }
+      ]
+    },
+    {
+      "d": "2025",
+      "t": "Lobbying",
+      "from": "DraftKings",
+      "to": "Federal lobbying (outside firms)",
+      "amt": 950000,
+      "note": "2025",
+      "src": [
+        {
+          "o": "LegiStorm",
+          "u": "https://www.legistorm.com/pro_news/4391/all-in-on-lobbying-sportsbooks-ramp-up-spending.html"
+        }
+      ]
+    },
+    {
+      "d": "2025",
+      "t": "Lobbying",
+      "from": "PrizePicks",
+      "to": "Federal lobbying (outside firms)",
+      "amt": 828000,
+      "note": "2025",
+      "src": [
+        {
+          "o": "LegiStorm",
+          "u": "https://www.legistorm.com/pro_news/4391/all-in-on-lobbying-sportsbooks-ramp-up-spending.html"
+        }
+      ]
+    },
+    {
+      "d": "2025-12-24",
+      "t": "Political",
+      "from": "FanDuel",
+      "to": "SLF, CLF, Senate Majority PAC, House Majority PAC",
+      "amt": 2000000,
+      "note": "$500,000 to each",
+      "src": [
+        {
+          "o": "Popular Information",
+          "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
+        }
+      ]
+    },
+    {
+      "d": "2025-12-16",
+      "t": "Political",
+      "from": "DraftKings",
+      "to": "Senate Leadership Fund",
+      "amt": 500000,
+      "note": "",
+      "src": [
+        {
+          "o": "Popular Information",
+          "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
+        }
+      ]
+    },
+    {
+      "d": "2025-11",
+      "t": "Political",
+      "from": "Win for America",
+      "to": "American Conservative Fund; American Future",
+      "amt": 950000,
+      "note": "First transfers: $500,000 and $450,000",
+      "src": [
+        {
+          "o": "Popular Information",
+          "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
+        }
+      ]
+    },
+    {
+      "d": "2025-11-02",
+      "t": "Political",
+      "from": "DraftKings",
+      "to": "Win for America (super PAC)",
+      "amt": 2000000,
+      "note": "Seed contribution",
+      "src": [
+        {
+          "o": "Popular Information",
+          "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
+        }
+      ]
+    },
+    {
+      "d": "2025-12-31",
+      "t": "Political",
+      "from": "FanDuel employees",
+      "to": "FanDuel PAC",
+      "amt": 130000,
+      "note": "Approximate receipts through 2025",
+      "src": [
+        {
+          "o": "Popular Information",
+          "u": "https://popular.info/p/draftkings-and-fanduel-spending-millions"
+        }
+      ]
+    },
+    {
+      "d": "2026-08-31",
+      "t": "Political",
+      "from": "DraftKings employees",
+      "to": "DraftKings PAC",
+      "amt": 142310,
+      "note": "2025-26 cycle receipts; $81,500 given to other committees",
+      "src": [
+        {
+          "o": "FEC",
+          "u": "https://www.fec.gov/data/committee/C00908699/"
+        }
+      ]
+    },
+    {
+      "d": "2024-11-05",
+      "t": "Ballot measure",
+      "from": "DK Crown Holdings (DraftKings)",
+      "to": "Winning for Missouri Education (Amendment 2)",
+      "amt": 20275000,
+      "note": "Measure passed with 50.05%",
+      "src": [
+        {
+          "o": "Ballotpedia",
+          "u": "https://ballotpedia.org/Missouri_Amendment_2,_Sports_Betting_Initiative_(2024)"
+        }
+      ]
+    },
+    {
+      "d": "2024-11-05",
+      "t": "Ballot measure",
+      "from": "BetFAIR Interactive US (FanDuel)",
+      "to": "Winning for Missouri Education (Amendment 2)",
+      "amt": 20275000,
+      "note": "Committee raised $45.55M total",
+      "src": [
+        {
+          "o": "Ballotpedia",
+          "u": "https://ballotpedia.org/Missouri_Amendment_2,_Sports_Betting_Initiative_(2024)"
+        }
+      ]
+    },
+    {
+      "d": "2024-11-05",
+      "t": "Ballot measure",
+      "from": "Caesars' Missouri casinos",
+      "to": "Missourians Against the Deceptive Online Gambling Amendment",
+      "amt": 14174123,
+      "note": "Opposition committee total",
+      "src": [
+        {
+          "o": "Ballotpedia",
+          "u": "https://ballotpedia.org/Missouri_Amendment_2,_Sports_Betting_Initiative_(2024)"
+        }
+      ]
+    },
+    {
+      "d": "2022-11-08",
+      "t": "Ballot measure",
+      "from": "All sides, California Props 26 and 27",
+      "to": "Support and opposition committees",
+      "amt": 463378417,
+      "note": "Costliest ballot fight in state history; both measures failed",
+      "src": [
+        {
+          "o": "Ballotpedia",
+          "u": "https://ballotpedia.org/What_were_the_most_expensive_ballot_measures_in_California"
+        },
+        {
+          "o": "NPR",
+          "u": "https://www.npr.org/2022/11/09/1133986282/california-gambling-prop-26-27-midterm-results"
+        }
+      ]
+    },
+    {
+      "d": "2022-06-30",
+      "t": "Ballot measure",
+      "from": "DraftKings, FanDuel, BetMGM",
+      "to": "Yes on 27 committee",
+      "amt": 50100000,
+      "note": "$16.7 million each as of June 30, 2022 filings",
+      "src": [
+        {
+          "o": "Ballotpedia News",
+          "u": "https://news.ballotpedia.org/2022/08/05/california-propositions-26-and-27-become-the-most-expensive-ballot-measures-in-california-since-1999/"
+        }
+      ]
+    },
+    {
+      "d": "2026-09-05",
+      "t": "Athlete",
+      "from": "Polymarket",
+      "to": "LeBron James",
+      "amt": null,
+      "note": "Endorsement; terms not disclosed",
+      "src": [
+        {
+          "o": "CNBC",
+          "u": "https://www.cnbc.com/2026/09/05/lebron-james-polymarket-partnership.html"
+        }
+      ]
+    },
+    {
+      "d": "2026-02-06",
+      "t": "Athlete",
+      "from": "Kalshi",
+      "to": "Giannis Antetokounmpo",
+      "amt": null,
+      "note": "Shareholder (under 1%) and marketing partner; size not disclosed",
+      "src": [
+        {
+          "o": "ESPN",
+          "u": "https://www.espn.com/nba/story/_/id/47853309/bucks-giannis-antetokounmpo-joins-kalshi-shareholder"
+        }
+      ]
+    },
+    {
+      "d": "2026-01-14",
+      "t": "Athlete",
+      "from": "Kalshi",
+      "to": "Bryson DeChambeau",
+      "amt": null,
+      "note": "Kalshi's first athlete endorser; terms not disclosed",
+      "src": [
+        {
+          "o": "Front Office Sports",
+          "u": "https://frontofficesports.com/kalshi-athlete-deal-bryson-dechambeau-liv-golf/"
+        }
+      ]
+    },
+    {
+      "d": "2024-10-16",
+      "t": "Athlete",
+      "from": "DraftKings",
+      "to": "Shaquille O'Neal",
+      "amt": null,
+      "note": "Brand ambassador; terms not disclosed",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "u": "https://sbcamericas.com/2024/10/16/draftkings-shaquille-oneal/"
+        }
+      ]
+    },
+    {
+      "d": "2025-08-29",
+      "t": "Athlete",
+      "from": "BetMGM",
+      "to": "Jon Hamm",
+      "amt": null,
+      "note": "Ambassador; terms not disclosed",
+      "src": [
+        {
+          "o": "CasinoBeats",
+          "u": "https://casinobeats.com/2025/08/29/jon-hamm-joins-betmgm-as-ambassador-in-companys-largest-rebrand/"
+        }
+      ]
+    },
+    {
+      "d": "2023-09-05",
+      "t": "Athlete",
+      "from": "BetMGM",
+      "to": "Jamie Foxx",
+      "amt": null,
+      "note": "Ad campaign; terms not disclosed",
+      "src": [
+        {
+          "o": "BetMGM",
+          "u": "https://sports.betmgm.com/en/blog/jamie-foxx-stars-in-new-betmgm-campaign-for-pro-football-season-debut/"
+        }
+      ]
+    },
+    {
+      "d": "2023-01-10",
+      "t": "Athlete",
+      "from": "FanDuel",
+      "to": "Rob Gronkowski",
+      "amt": null,
+      "note": "Exclusive brand partner; terms not disclosed",
+      "src": [
+        {
+          "o": "Flutter",
+          "u": "https://flutter.com/news-media/press-releases/fanduel-launches-kick-of-destiny-campaign-for-upcoming-super-bowl/"
+        }
+      ]
+    },
+    {
+      "d": "2021-11-09",
+      "t": "Athlete",
+      "from": "Caesars Sportsbook",
+      "to": "Archie, Peyton, Eli and Cooper Manning",
+      "amt": null,
+      "note": "Marketing partnership; terms not disclosed",
+      "src": [
+        {
+          "o": "Sports Handle",
+          "u": "https://sportshandle.com/manning-family-partnership-caesars-sportsbook/"
+        }
+      ]
+    },
+    {
+      "d": "2021-06-02",
+      "t": "Athlete",
+      "from": "BetMGM",
+      "to": "Wayne Gretzky",
+      "amt": null,
+      "note": "Multi-year ambassador; terms not disclosed",
+      "src": [
+        {
+          "o": "USA Today",
+          "u": "https://www.usatoday.com/story/sports/sports-betting/2021/06/02/hockey-legend-wayne-gretzky-and-betmgm-partner-on-multiyear-deal/116752486/"
+        }
+      ]
+    },
+    {
+      "d": "2020-12-21",
+      "t": "Athlete",
+      "from": "FanDuel",
+      "to": "Charles Barkley",
+      "amt": null,
+      "note": "Exclusive multi-year partnership; terms not disclosed",
+      "src": [
+        {
+          "o": "Business Wire",
+          "u": "https://www.businesswire.com/news/home/20201221005545/en/FanDuel-Group-Announces-Exclusive-Multi-Year-Partnership-with-Charles-Barkley"
+        }
+      ]
+    },
+    {
+      "d": "2026-08-27",
+      "t": "League",
+      "from": "DraftKings, FanDuel, Fanatics",
+      "to": "NFL",
+      "amt": null,
+      "note": "Official sportsbook partners; terms not disclosed",
+      "src": [
+        {
+          "o": "NFL.com",
+          "u": "https://www.nfl.com/news/nfl-draftkings-fanduel-fanatics-sports-betting-partners"
+        }
+      ]
+    },
+    {
+      "d": "2026-08-25",
+      "t": "League",
+      "from": "Kalshi",
+      "to": "Braves, Red Sox, Dodgers, Padres, Giants",
+      "amt": null,
+      "note": "Team marketing deals; terms not disclosed",
+      "src": [
+        {
+          "o": "Kalshi",
+          "u": "https://news.kalshi.com/p/kalshi-partners-with-mlb-teams"
+        }
+      ]
+    },
+    {
+      "d": "2026-08",
+      "t": "League",
+      "from": "Polymarket",
+      "to": "New York Yankees",
+      "amt": null,
+      "note": "Official prediction-market partner; terms not disclosed",
+      "src": [
+        {
+          "o": "PR Newswire",
+          "u": "https://www.prnewswire.com/news-releases/polymarket-becomes-an-official-prediction-market-partner-of-the-new-york-yankees-302844285.html"
+        }
+      ]
+    },
+    {
+      "d": "2026-07-30",
+      "t": "League",
+      "from": "Novig",
+      "to": "New York Mets",
+      "amt": null,
+      "note": "Exclusive prediction-market partner; terms not disclosed",
+      "src": [
+        {
+          "o": "PR Newswire",
+          "u": "https://www.prnewswire.com/news-releases/novig-named-exclusive-official-prediction-market-partner-of-the-new-york-mets-302838399.html"
+        }
+      ]
+    },
+    {
+      "d": "2026-04-07",
+      "t": "League",
+      "from": "PrizePicks",
+      "to": "NBA",
+      "amt": null,
+      "note": "Official daily fantasy partner; terms not disclosed",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "u": "https://sbcamericas.com/2026/04/07/nba-prize-picks-dfs-partner/"
+        }
+      ]
+    },
+    {
+      "d": "2026-03-19",
+      "t": "League",
+      "from": "Polymarket",
+      "to": "MLB",
+      "amt": null,
+      "note": "Exclusive prediction-market partner; reported value conflicts, so none recorded",
+      "src": [
+        {
+          "o": "ESPN",
+          "u": "https://www.espn.com/mlb/story/_/id/48248176/mlb-reaches-agreements-polymarket-federal-commission"
+        }
+      ]
+    },
+    {
+      "d": "2026-01-26",
+      "t": "League",
+      "from": "Polymarket",
+      "to": "MLS",
+      "amt": null,
+      "note": "Exclusive prediction-market partner; terms not disclosed",
+      "src": [
+        {
+          "o": "MLSSoccer.com",
+          "u": "https://www.mlssoccer.com/news/mls-enters-multi-year-partnership-with-polymarket"
+        }
+      ]
+    },
+    {
+      "d": "2025-11-13",
+      "t": "League",
+      "from": "Polymarket",
+      "to": "TKO (UFC, Zuffa Boxing)",
+      "amt": null,
+      "note": "Exclusive prediction-market partner; terms not disclosed",
+      "src": [
+        {
+          "o": "UFC.com",
+          "u": "https://www.ufc.com/news/tko-and-polymarket-announce-first-its-kind-sports-partnership"
+        }
+      ]
+    },
+    {
+      "d": "2025-10-22",
+      "t": "League",
+      "from": "Kalshi, Polymarket",
+      "to": "NHL",
+      "amt": null,
+      "note": "First major-league prediction-market partners; terms not disclosed",
+      "src": [
+        {
+          "o": "ESPN",
+          "u": "https://www.espn.com/nhl/story/_/id/46683244/nhl-inks-deal-prediction-markets-kalshi-polymarket"
+        }
+      ]
+    },
+    {
+      "d": "2021-11-04",
+      "t": "League",
+      "from": "DraftKings, FanDuel",
+      "to": "NBA",
+      "amt": null,
+      "note": "Co-official betting partners; terms not disclosed",
+      "src": [
+        {
+          "o": "DraftKings",
+          "u": "https://www.draftkings.com/news-2021-11-the-nba-announces-expanded-sports-betting-and-daily-fantasy-agreement-with-draftkings"
+        }
+      ]
+    },
+    {
+      "d": "2021-11-17",
+      "t": "League",
+      "from": "Sportradar",
+      "to": "NBA",
+      "amt": null,
+      "note": "Eight-year data deal including an equity stake; value not disclosed",
+      "src": [
+        {
+          "o": "Sportradar IR",
+          "u": "https://investors.sportradar.com/news-releases/news-release-details/nba-and-sportradar-announce-landmark-long-term-global"
+        }
+      ]
+    },
+    {
+      "d": "2025-12-01",
+      "t": "Media",
+      "from": "DraftKings",
+      "to": "ESPN",
+      "amt": null,
+      "note": "Official sportsbook and odds provider; terms not disclosed",
+      "src": [
+        {
+          "o": "The Walt Disney Company",
+          "u": "https://thewaltdisneycompany.com/news/espn-draftkings/"
+        }
+      ]
+    },
+    {
+      "d": "2025-11-06",
+      "t": "Media",
+      "from": "PENN Entertainment",
+      "to": "ESPN",
+      "amt": 38100000,
+      "note": "Final payment to end the ESPN Bet deal early",
+      "src": [
+        {
+          "o": "Sportico",
+          "u": "https://www.sportico.com/business/sports-betting/2025/penn-espn-bet-termination-draftkings-1234876039/"
+        }
+      ]
+    },
+    {
+      "d": "2025-12-04",
+      "t": "Media",
+      "from": "Kalshi",
+      "to": "CNBC; CNN",
+      "amt": null,
+      "note": "Data partnerships; terms not disclosed",
+      "src": [
+        {
+          "o": "CNBC",
+          "u": "https://www.cnbc.com/2025/12/04/cnbc-and-kalshi-strike-exclusive-partnership.html"
+        }
+      ]
+    },
+    {
+      "d": "2024-10-18",
+      "t": "Media",
+      "from": "FanDuel",
+      "to": "Diamond Sports Group",
+      "amt": null,
+      "note": "Naming rights to 16 regional sports networks; terms not disclosed",
+      "src": [
+        {
+          "o": "FanDuel",
+          "u": "https://www.fanduel.com/about/news/diamond-sports-group-and-fanduel-announce-broad-commercial-partnership"
+        }
+      ]
+    },
+    {
+      "d": "2023-08-08",
+      "t": "Media",
+      "from": "PENN Entertainment",
+      "to": "ESPN",
+      "amt": 1500000000,
+      "note": "ESPN Bet brand rights over 10 years, plus about $500M in warrants",
+      "src": [
+        {
+          "o": "SEC EDGAR",
+          "u": "https://www.sec.gov/Archives/edgar/data/921738/000110465923088855/tm2323045d1_ex99-1.htm"
+        }
+      ]
+    },
+    {
+      "d": "2021-09-17",
+      "t": "College",
+      "from": "Caesars Sportsbook",
+      "to": "LSU Athletics",
+      "amt": null,
+      "note": "Described only as multi-year, seven figures; ended 2023",
+      "src": [
+        {
+          "o": "LSUsports.net",
+          "u": "https://lsusports.net/news/2021/09/17/caesars-named-official-sportsbook-of-lsu-athletics"
+        }
+      ]
+    },
+    {
+      "d": "2020-09",
+      "t": "College",
+      "from": "PointsBet",
+      "to": "University of Colorado",
+      "amt": 1625000,
+      "note": "Over five years, plus $30 per referred customer; ended 2023",
+      "src": [
+        {
+          "o": "Front Office Sports",
+          "u": "https://frontofficesports.com/colorados-pointsbet-deal-worth-north-of-1-6-million-reports-say/"
+        }
+      ]
+    },
+    {
+      "d": "2026-09-23",
+      "t": "Fine",
+      "from": "Underdog",
+      "to": "North Carolina Lottery Commission",
+      "amt": 175000,
+      "note": "Underage accounts",
+      "src": [
+        {
+          "o": "Covers",
+          "u": "https://www.covers.com/industry/north-carolina-regulators-fine-underdog-bet365-for-sports-betting-violations-sept-23-2026"
+        }
+      ]
+    },
+    {
+      "d": "2026-09-23",
+      "t": "Fine",
+      "from": "bet365",
+      "to": "North Carolina Lottery Commission",
+      "amt": 75000,
+      "note": "Contacted self-excluded customers",
+      "src": [
+        {
+          "o": "Covers",
+          "u": "https://www.covers.com/industry/north-carolina-regulators-fine-underdog-bet365-for-sports-betting-violations-sept-23-2026"
+        }
+      ]
+    },
+    {
+      "d": "2026-08-27",
+      "t": "Fine",
+      "from": "Fanatics Sportsbook",
+      "to": "Colorado Limited Gaming Control Commission",
+      "amt": 20000,
+      "note": "Marketed to a self-excluded customer",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "u": "https://sbcamericas.com/2026/09/01/colorado-fines-fanatics-sportsbook/"
+        }
+      ]
+    },
+    {
+      "d": "2026-08-05",
+      "t": "Fine",
+      "from": "Caesars Sportsbook",
+      "to": "New Jersey Division of Gaming Enforcement",
+      "amt": 296715,
+      "note": "$251,250 fine plus $45,465 disgorgement",
+      "src": [
+        {
+          "o": "PlayNJ",
+          "u": "https://www.playnj.com/news/caesars-sportsbook-fined-296715-by-new-jersey-regulators/99619/"
+        }
+      ]
+    },
+    {
+      "d": "2026-09-23",
+      "t": "Acquisition",
+      "from": "Fertitta Entertainment",
+      "to": "Caesars Entertainment shareholders",
+      "amt": 17600000000,
+      "note": "Approved by shareholders; FTC review continuing",
+      "src": [
+        {
+          "o": "FOX5 Vegas",
+          "u": "https://www.fox5vegas.com/2026/09/23/caesars-stockholders-approve-merger-with-fertitta-gaming/"
+        }
+      ]
+    },
+    {
+      "d": "2026-07-31",
+      "t": "Acquisition",
+      "from": "IG Group",
+      "to": "Underdog",
+      "amt": 1300000000,
+      "note": "Up to $1.3B; about $380M upfront",
+      "src": [
+        {
+          "o": "SBC Americas",
+          "u": "https://sbcamericas.com/2026/07/31/underdog-acquired-ig-group/"
+        }
+      ]
+    },
+    {
+      "d": "2026-08-28",
+      "t": "Fine",
+      "from": "Gabriel Perez",
+      "to": "CFTC",
+      "amt": 172539.02,
+      "note": "Insider trading of presidential mention-market contracts: $107,539.02 disgorgement plus $65,000 penalty",
+      "src": [
+        {
+          "o": "CFTC",
+          "u": "https://www.cftc.gov/PressRoom/PressReleases/9289-26"
+        }
+      ]
+    },
+    {
+      "d": "2026-07-31",
+      "t": "Fine",
+      "from": "George Santos",
+      "to": "CFTC",
+      "amt": 35069.98,
+      "note": "Manipulating a State of the Union event contract: $17,569.98 disgorgement plus $17,500 penalty",
+      "src": [
+        {
+          "o": "CFTC",
+          "u": "https://www.cftc.gov/PressRoom/PressReleases/9276-26"
+        }
+      ]
+    }
+  ],
+  "losses": [
+    {
+      "y": "2021",
+      "v": 4.3,
+      "src": {
+        "o": "Metro Philadelphia (AGA data)",
+        "u": "https://metrophiladelphia.com/stories/sports-betting-posts-record-setting-2021-revenue-at-43-billion,90068"
       }
-     ]
-    }
-   ],
-   "note": "DraftKings' marketing change is computed from its reported $322.5 million, up from $233.2 million.",
-   "src": [
-    {
-     "o": "DraftKings Q2 2026",
-     "u": "https://www.businesswire.com/news/home/20260806450577/en/DraftKings-Reports-Second-Quarter-Results"
     },
     {
-     "o": "Flutter Q2 2026",
-     "u": "https://www.globenewswire.com/news-release/2026/08/05/3339154/0/en/flutter-entertainment-announces-q2-2026-financial-results.html"
-    }
-   ]
-  },
-  {
-   "sec": "The bettors",
-   "id": "who",
-   "type": "dots",
-   "kicker": "Who bets",
-   "title": "Young adults, men, and Black and Hispanic Americans bet at the highest rates",
-   "deck": "Share of U.S. adults who bet money on sports in the past year, 2025.",
-   "unit": "%",
-   "max": 40,
-   "ref": {
-    "l": "All adults",
-    "v": 22
-   },
-   "groups": [
-    {
-     "g": "Age",
-     "rows": [
-      {
-       "l": "Under 30",
-       "v": 31
+      "y": "2022",
+      "v": 7.5,
+      "src": {
+        "o": "Covers (AGA data)",
+        "u": "https://www.covers.com/industry/aga-reports-sports-betting-revenue-set-new-record-in-2022"
       }
-     ]
     },
     {
-     "g": "Gender",
-     "rows": [
-      {
-       "l": "Men",
-       "v": 25
-      },
-      {
-       "l": "Women",
-       "v": 19
+      "y": "2023",
+      "v": 11.04,
+      "src": {
+        "o": "American Gaming Association",
+        "u": "https://www.americangaming.org/2024-commercial-gaming-revenue-reaches-71-9b-marking-fourth-straight-year-of-record-revenue/"
       }
-     ]
     },
     {
-     "g": "Race and ethnicity",
-     "rows": [
-      {
-       "l": "Black",
-       "v": 30
-      },
-      {
-       "l": "Hispanic",
-       "v": 27
-      },
-      {
-       "l": "Asian",
-       "v": 22
-      },
-      {
-       "l": "White",
-       "v": 19
+      "y": "2024",
+      "v": 13.71,
+      "src": {
+        "o": "American Gaming Association",
+        "u": "https://www.americangaming.org/2024-commercial-gaming-revenue-reaches-71-9b-marking-fourth-straight-year-of-record-revenue/"
       }
-     ]
-    }
-   ],
-   "src": [
-    {
-     "o": "Pew Research Center",
-     "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
-    }
-   ]
-  },
-  {
-   "sec": "The bettors",
-   "id": "accounts",
-   "type": "slope",
-   "kicker": "Who bets",
-   "title": "More than half of men aged 18 to 49 now have a sportsbook account",
-   "deck": "Share with an active online sportsbook account.",
-   "unit": "%",
-   "from": "Jan. 2025",
-   "to": "Feb. 2026",
-   "hi": 0,
-   "rows": [
-    {
-     "l": "Men 18–49",
-     "a": 48,
-     "b": 52
     },
     {
-     "l": "All adults",
-     "a": 22,
-     "b": 27
+      "y": "2025",
+      "v": 16.96,
+      "src": {
+        "o": "Yogonet (AGA data)",
+        "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
+      }
     }
-   ],
-   "src": [
+  ],
+  "pac": [
     {
-     "o": "Siena Research Institute",
-     "u": "https://sri.siena.edu/wp-content/uploads/2026/04/ASFS2026-Release-2-Sports-Betting-Final.pdf"
-    }
-   ]
-  },
-  {
-   "sec": "The bettors",
-   "id": "opinion",
-   "type": "slope",
-   "kicker": "Public opinion",
-   "title": "Young men have turned sharply against legal sports betting",
-   "deck": "Share who say legal sports betting is a bad thing for society.",
-   "unit": "%",
-   "from": "2022",
-   "to": "2025",
-   "hi": 0,
-   "rows": [
-    {
-     "l": "Men under 30",
-     "a": 22,
-     "b": 47
+      "label": "Nov 5, 2025",
+      "sub": "Registered",
+      "v": 0
     },
     {
-     "l": "All adults",
-     "a": 34,
-     "b": 43
+      "label": "Mar 31, 2026",
+      "sub": "Q1 report",
+      "v": 43
     },
     {
-     "l": "Women under 30",
-     "a": 25,
-     "b": 35
+      "label": "Jun 30, 2026",
+      "sub": "Q2 report",
+      "v": 72
     }
-   ],
-   "src": [
+  ],
+  "pacNext": "Next filing: Q3 report due Oct. 15, 2026",
+  "numbers": [
     {
-     "o": "Pew Research Center",
-     "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
-    }
-   ]
-  },
-  {
-   "sec": "The cost",
-   "id": "coins",
-   "type": "coins",
-   "kicker": "The cost",
-   "title": "For every dollar bet online, bettors got back about 75 cents",
-   "deck": "Each dot is one cent of a dollar wagered, from Bank of America payment data, 2026.",
-   "kept": 25,
-   "src": [
-    {
-     "o": "Bank of America Institute via Fortune",
-     "u": "https://fortune.com/2026/09/07/americans-sports-gambling-investment-gen-z-75-cents-dollar-wagered/"
-    }
-   ]
-  },
-  {
-   "sec": "The cost",
-   "id": "helpline",
-   "type": "slope",
-   "kicker": "The cost",
-   "title": "Sports betting is a growing share of calls to the national gambling helpline",
-   "deck": "Share of National Problem Gambling Helpline contacts where sports betting was the main problem.",
-   "unit": "%",
-   "dp": 1,
-   "from": "2024",
-   "to": "2025",
-   "hi": 0,
-   "rows": [
-    {
-     "l": "Sports betting",
-     "a": 22.3,
-     "b": 27.3
-    }
-   ],
-   "src": [
-    {
-     "o": "NCPG",
-     "u": "https://www.ncpgambling.org/news/2025-national-problem-gambling-helpline-annual-report/"
-    }
-   ]
-  },
-  {
-   "sec": "The new frontier",
-   "id": "pm",
-   "type": "bars",
-   "kicker": "Prediction markets",
-   "title": "Prediction-market trading doubled in two months, driven by sports",
-   "deck": "Combined monthly trading volume on Kalshi and Polymarket. Notional value, which is not comparable to sportsbook handle.",
-   "unit": "$B",
-   "dp": 1,
-   "rows": [
-    {
-     "l": "May 2026",
-     "v": 25.7
+      "g": "The market",
+      "items": [
+        {
+          "k": "$166.9B",
+          "t": "wagered legally in the U.S. in 2025, up 11%",
+          "src": {
+            "o": "AGA via Yogonet",
+            "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
+          }
+        },
+        {
+          "k": "$16.96B",
+          "t": "kept by sportsbooks in 2025, meaning lost by bettors, up 22.8%",
+          "src": {
+            "o": "AGA via Yogonet",
+            "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
+          }
+        },
+        {
+          "k": "$1.27B",
+          "t": "lost by bettors in July 2026 alone, up 27% from a year earlier",
+          "src": {
+            "o": "AGA Revenue Tracker",
+            "u": "https://www.americangaming.org/resources/commercial-gaming-revenue-tracker/"
+          }
+        },
+        {
+          "k": "39 + DC",
+          "t": "states with legal sports betting at the end of 2025",
+          "src": {
+            "o": "AGA State of the States 2026",
+            "u": "https://www.americangaming.org/wp-content/uploads/2026/05/AGA-State-of-the-States-2026.pdf"
+          }
+        },
+        {
+          "k": "$3.71B",
+          "t": "in state sports betting taxes in 2025",
+          "src": {
+            "o": "AGA via Yogonet",
+            "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
+          }
+        }
+      ]
     },
     {
-     "l": "July 2026",
-     "v": 53.0
-    }
-   ],
-   "src": [
+      "g": "The companies",
+      "items": [
+        {
+          "k": "$1.38B",
+          "t": "DraftKings sales and marketing spending in 2025, on $6.05B in revenue",
+          "src": {
+            "o": "DraftKings IR",
+            "u": "https://ir.aboutdraftkings.com/news/news-details/2026/DraftKings-Reports-Fourth-Quarter-Revenue-Growth-of-43/default.aspx"
+          }
+        },
+        {
+          "k": "41%",
+          "t": "FanDuel's share of U.S. online sportsbook revenue in Q4 2025",
+          "src": {
+            "o": "Flutter results",
+            "u": "https://www.globenewswire.com/news-release/2026/02/26/3246102/0/en/Flutter-Entertainment-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results.html"
+          }
+        },
+        {
+          "k": "14.0%",
+          "t": "FanDuel's expected margin on each dollar bet in Q2 2026, which it credits to same-game parlays",
+          "src": {
+            "o": "Flutter Q2 2026",
+            "u": "https://www.globenewswire.com/news-release/2026/08/05/3339154/0/en/flutter-entertainment-announces-q2-2026-financial-results.html"
+          }
+        },
+        {
+          "k": "0.64%",
+          "t": "of Massachusetts bettors had their bet limits cut, typically the ones who win",
+          "src": {
+            "o": "SBC Americas (MGC data)",
+            "u": "https://sbcamericas.com/2025/09/30/mgc-data-limiting-bettors-ma/"
+          }
+        }
+      ]
+    },
     {
-     "o": "Pew Research Center",
-     "u": "https://www.pewresearch.org/short-reads/2026/09/23/prediction-markets-trading-volume-doubled-between-may-and-july-largely-driven-by-sports/"
+      "g": "Who bets",
+      "items": [
+        {
+          "k": "22%",
+          "t": "of U.S. adults bet on sports in the past year (2025), up from 19% in 2022",
+          "src": {
+            "o": "Pew Research Center",
+            "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
+          }
+        },
+        {
+          "k": "31%",
+          "t": "of adults under 30 bet on sports in the past year",
+          "src": {
+            "o": "Pew Research Center",
+            "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
+          }
+        },
+        {
+          "k": "52%",
+          "t": "of men aged 18 to 49 have an active online sportsbook account",
+          "src": {
+            "o": "Siena Research Institute",
+            "u": "https://sri.siena.edu/wp-content/uploads/2026/04/ASFS2026-Release-2-Sports-Betting-Final.pdf"
+          }
+        },
+        {
+          "k": "30%",
+          "t": "of Black adults and 27% of Hispanic adults bet on sports in the past year, versus 19% of white adults",
+          "src": {
+            "o": "Pew Research Center",
+            "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
+          }
+        },
+        {
+          "k": "36%",
+          "t": "of boys aged 11 to 17 gambled in the past year",
+          "src": {
+            "o": "Common Sense Media",
+            "u": "https://www.commonsensemedia.org/press-releases/common-sense-media-releases-new-research-on-adolescent-boys-gambling-habits"
+          }
+        },
+        {
+          "k": "43%",
+          "t": "of adults now say legal sports betting is bad for society, up from 34% in 2022",
+          "src": {
+            "o": "Pew Research Center",
+            "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
+          }
+        }
+      ]
+    },
+    {
+      "g": "What it costs people",
+      "items": [
+        {
+          "k": "+25–30%",
+          "t": "higher likelihood of bankruptcy within 3–4 years of online betting legalization",
+          "src": {
+            "o": "Hollenbeck, Larsen & Proserpio, Management Science",
+            "u": "https://doi.org/10.1287/mnsc.2025.02515"
+          }
+        },
+        {
+          "k": "−14%",
+          "t": "drop in net investment among betting households; about $2 less invested for every $1 bet",
+          "src": {
+            "o": "Baker et al., NBER w33108",
+            "u": "https://www.nber.org/papers/w33108"
+          }
+        },
+        {
+          "k": "+1.02 pts",
+          "t": "credit-card delinquency among people under 40 after legalization",
+          "src": {
+            "o": "Federal Reserve Bank of New York",
+            "u": "https://libertystreeteconomics.newyorkfed.org/2026/03/sports-betting-is-everywhere-especially-on-credit-reports/"
+          }
+        },
+        {
+          "k": "−10.5%",
+          "t": "food sufficiency among non-college adults who bet, after legalization",
+          "src": {
+            "o": "Guo, Peng & Meyerhoefer, NBER w35305",
+            "u": "https://www.nber.org/papers/w35305"
+          }
+        },
+        {
+          "k": "75¢",
+          "t": "returned for every $1 wagered online, by bank payment data",
+          "src": {
+            "o": "Bank of America Institute via Fortune",
+            "u": "https://fortune.com/2026/09/07/americans-sports-gambling-investment-gen-z-75-cents-dollar-wagered/"
+          }
+        },
+        {
+          "k": "20%",
+          "t": "of online bettors say they lost enough to struggle to meet financial obligations",
+          "src": {
+            "o": "Siena Research Institute",
+            "u": "https://sri.siena.edu/2025/02/18/22-of-all-americans-half-of-men-18-49-have-active-online-sports-betting-account/"
+          }
+        },
+        {
+          "k": "27.3%",
+          "t": "of 2025 national helpline contacts named sports betting as the main problem, up from 22.3%",
+          "src": {
+            "o": "NCPG",
+            "u": "https://www.ncpgambling.org/news/2025-national-problem-gambling-helpline-annual-report/"
+          }
+        },
+        {
+          "k": "+23%",
+          "t": "rise in Google searches for gambling addiction help after the 2018 Supreme Court ruling",
+          "src": {
+            "o": "JAMA Internal Medicine via UC San Diego",
+            "u": "https://today.ucsd.edu/story/study-reveals-surge-in-gambling-addiction-following-legalization-of-sports-betting"
+          }
+        },
+        {
+          "k": "~9–10%",
+          "t": "larger rise in intimate partner violence after upset NFL losses where betting is legal",
+          "src": {
+            "o": "Arnesen & Matsuzawa, SDSU working paper",
+            "u": "https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf"
+          }
+        },
+        {
+          "k": "1,972",
+          "t": "alleged cases of underage sportsbook account access in New York in 2025, up from 54 in 2023",
+          "src": {
+            "o": "NY State Comptroller",
+            "u": "https://www.osc.ny.gov/files/reports/pdf/sports-wagering-in-new-york.pdf"
+          }
+        }
+      ]
     }
-   ]
-  }
- ],
- "lastCheck": "2026-10-05T10:04:57-04:00",
- "archiveAfterDays": 90
+  ],
+  "charts": [
+    {
+      "sec": "The money",
+      "id": "take",
+      "type": "bars",
+      "kicker": "The house take",
+      "title": "Bettors lost $17 billion to legal sportsbooks last year, nearly four times as much as in 2021",
+      "deck": "Sportsbook revenue, which is the money bettors lost, in the legal U.S. market each year.",
+      "unit": "$B",
+      "dp": 1,
+      "rows": [
+        {
+          "l": "2021",
+          "v": 4.3
+        },
+        {
+          "l": "2022",
+          "v": 7.5
+        },
+        {
+          "l": "2023",
+          "v": 11.04
+        },
+        {
+          "l": "2024",
+          "v": 13.71
+        },
+        {
+          "l": "2025",
+          "v": 16.96
+        }
+      ],
+      "src": [
+        {
+          "o": "Metro Philadelphia (AGA data)",
+          "u": "https://metrophiladelphia.com/stories/sports-betting-posts-record-setting-2021-revenue-at-43-billion,90068"
+        },
+        {
+          "o": "Covers (AGA data)",
+          "u": "https://www.covers.com/industry/aga-reports-sports-betting-revenue-set-new-record-in-2022"
+        },
+        {
+          "o": "Yogonet (AGA data)",
+          "u": "https://www.yogonet.com/international/news/2026/02/27/117807-us-commercial-gaming-revenue-hits-record-7872-billion-in-2025-aga-reports"
+        },
+        {
+          "o": "American Gaming Association",
+          "u": "https://www.americangaming.org/2024-commercial-gaming-revenue-reaches-71-9b-marking-fourth-straight-year-of-record-revenue/"
+        }
+      ]
+    },
+    {
+      "sec": "The money",
+      "id": "donors",
+      "type": "hbar",
+      "kicker": "Political money",
+      "title": "DraftKings supplied half of the super PAC's second-quarter money",
+      "deck": "Contributions to Win for America, the online sportsbooks' super PAC, April through June 2026.",
+      "unit": "$M",
+      "dp": 1,
+      "hi": 0,
+      "rows": [
+        {
+          "l": "DraftKings",
+          "v": 14.5
+        },
+        {
+          "l": "FanDuel",
+          "v": 7.5
+        },
+        {
+          "l": "bet365",
+          "v": 5.5
+        },
+        {
+          "l": "Fanatics",
+          "v": 1.5
+        }
+      ],
+      "note": "The PAC had raised $72 million in total by June 30.",
+      "src": [
+        {
+          "o": "Public Citizen",
+          "u": "https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/"
+        },
+        {
+          "o": "FEC",
+          "u": "https://www.fec.gov/data/committee/C00925586/"
+        }
+      ]
+    },
+    {
+      "sec": "The money",
+      "id": "split",
+      "type": "split",
+      "kicker": "Political money",
+      "title": "The super PAC spreads its money across both parties",
+      "deck": "Where Win for America's $68 million in transfers went through June 30, 2026.",
+      "unit": "$M",
+      "dp": 1,
+      "parts": [
+        {
+          "l": "American Conservative Fund (Republican-aligned)",
+          "v": 50.6
+        },
+        {
+          "l": "American Future (Democratic-aligned)",
+          "v": 17.45
+        }
+      ],
+      "src": [
+        {
+          "o": "FEC",
+          "u": "https://www.fec.gov/data/committee/C00925586/"
+        },
+        {
+          "o": "Daily Caller",
+          "u": "https://dailycaller.com/2026/08/31/sports-betting-super-pacs-spending-2026-elections/"
+        }
+      ]
+    },
+    {
+      "sec": "The money",
+      "id": "diverge",
+      "type": "diverge",
+      "kicker": "The companies",
+      "title": "Revenue fell, but marketing spending kept climbing",
+      "deck": "Change from a year earlier, second quarter of 2026.",
+      "unit": "%",
+      "max": 70,
+      "groups": [
+        {
+          "g": "DraftKings",
+          "rows": [
+            {
+              "l": "Revenue",
+              "v": -5
+            },
+            {
+              "l": "Monthly paying customers",
+              "v": 9
+            },
+            {
+              "l": "Sales and marketing spending",
+              "v": 38
+            }
+          ]
+        },
+        {
+          "g": "FanDuel (U.S.)",
+          "rows": [
+            {
+              "l": "Revenue",
+              "v": -6
+            },
+            {
+              "l": "Monthly players",
+              "v": 9
+            },
+            {
+              "l": "Marketing spending",
+              "v": 61
+            }
+          ]
+        }
+      ],
+      "note": "DraftKings' marketing change is computed from its reported $322.5 million, up from $233.2 million.",
+      "src": [
+        {
+          "o": "DraftKings Q2 2026",
+          "u": "https://www.businesswire.com/news/home/20260806450577/en/DraftKings-Reports-Second-Quarter-Results"
+        },
+        {
+          "o": "Flutter Q2 2026",
+          "u": "https://www.globenewswire.com/news-release/2026/08/05/3339154/0/en/flutter-entertainment-announces-q2-2026-financial-results.html"
+        }
+      ]
+    },
+    {
+      "sec": "The bettors",
+      "id": "who",
+      "type": "dots",
+      "kicker": "Who bets",
+      "title": "Young adults, men, and Black and Hispanic Americans bet at the highest rates",
+      "deck": "Share of U.S. adults who bet money on sports in the past year, 2025.",
+      "unit": "%",
+      "max": 40,
+      "ref": {
+        "l": "All adults",
+        "v": 22
+      },
+      "groups": [
+        {
+          "g": "Age",
+          "rows": [
+            {
+              "l": "Under 30",
+              "v": 31
+            }
+          ]
+        },
+        {
+          "g": "Gender",
+          "rows": [
+            {
+              "l": "Men",
+              "v": 25
+            },
+            {
+              "l": "Women",
+              "v": 19
+            }
+          ]
+        },
+        {
+          "g": "Race and ethnicity",
+          "rows": [
+            {
+              "l": "Black",
+              "v": 30
+            },
+            {
+              "l": "Hispanic",
+              "v": 27
+            },
+            {
+              "l": "Asian",
+              "v": 22
+            },
+            {
+              "l": "White",
+              "v": 19
+            }
+          ]
+        }
+      ],
+      "src": [
+        {
+          "o": "Pew Research Center",
+          "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
+        }
+      ]
+    },
+    {
+      "sec": "The bettors",
+      "id": "accounts",
+      "type": "slope",
+      "kicker": "Who bets",
+      "title": "More than half of men aged 18 to 49 now have a sportsbook account",
+      "deck": "Share with an active online sportsbook account.",
+      "unit": "%",
+      "from": "Jan. 2025",
+      "to": "Feb. 2026",
+      "hi": 0,
+      "rows": [
+        {
+          "l": "Men 18–49",
+          "a": 48,
+          "b": 52
+        },
+        {
+          "l": "All adults",
+          "a": 22,
+          "b": 27
+        }
+      ],
+      "src": [
+        {
+          "o": "Siena Research Institute",
+          "u": "https://sri.siena.edu/wp-content/uploads/2026/04/ASFS2026-Release-2-Sports-Betting-Final.pdf"
+        }
+      ]
+    },
+    {
+      "sec": "The bettors",
+      "id": "opinion",
+      "type": "slope",
+      "kicker": "Public opinion",
+      "title": "Young men have turned sharply against legal sports betting",
+      "deck": "Share who say legal sports betting is a bad thing for society.",
+      "unit": "%",
+      "from": "2022",
+      "to": "2025",
+      "hi": 0,
+      "rows": [
+        {
+          "l": "Men under 30",
+          "a": 22,
+          "b": 47
+        },
+        {
+          "l": "All adults",
+          "a": 34,
+          "b": 43
+        },
+        {
+          "l": "Women under 30",
+          "a": 25,
+          "b": 35
+        }
+      ],
+      "src": [
+        {
+          "o": "Pew Research Center",
+          "u": "https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/"
+        }
+      ]
+    },
+    {
+      "sec": "The cost",
+      "id": "coins",
+      "type": "coins",
+      "kicker": "The cost",
+      "title": "For every dollar bet online, bettors got back about 75 cents",
+      "deck": "Each dot is one cent of a dollar wagered, from Bank of America payment data, 2026.",
+      "kept": 25,
+      "src": [
+        {
+          "o": "Bank of America Institute via Fortune",
+          "u": "https://fortune.com/2026/09/07/americans-sports-gambling-investment-gen-z-75-cents-dollar-wagered/"
+        }
+      ]
+    },
+    {
+      "sec": "The cost",
+      "id": "helpline",
+      "type": "slope",
+      "kicker": "The cost",
+      "title": "Sports betting is a growing share of calls to the national gambling helpline",
+      "deck": "Share of National Problem Gambling Helpline contacts where sports betting was the main problem.",
+      "unit": "%",
+      "dp": 1,
+      "from": "2024",
+      "to": "2025",
+      "hi": 0,
+      "rows": [
+        {
+          "l": "Sports betting",
+          "a": 22.3,
+          "b": 27.3
+        }
+      ],
+      "src": [
+        {
+          "o": "NCPG",
+          "u": "https://www.ncpgambling.org/news/2025-national-problem-gambling-helpline-annual-report/"
+        }
+      ]
+    },
+    {
+      "sec": "The new frontier",
+      "id": "pm",
+      "type": "bars",
+      "kicker": "Prediction markets",
+      "title": "Prediction-market trading doubled in two months, driven by sports",
+      "deck": "Combined monthly trading volume on Kalshi and Polymarket. Notional value, which is not comparable to sportsbook handle.",
+      "unit": "$B",
+      "dp": 1,
+      "rows": [
+        {
+          "l": "May 2026",
+          "v": 25.7
+        },
+        {
+          "l": "July 2026",
+          "v": 53.0
+        }
+      ],
+      "src": [
+        {
+          "o": "Pew Research Center",
+          "u": "https://www.pewresearch.org/short-reads/2026/09/23/prediction-markets-trading-volume-doubled-between-may-and-july-largely-driven-by-sports/"
+        }
+      ]
+    }
+  ],
+  "lastCheck": "2026-10-05T10:10:56-04:00",
+  "archiveAfterDays": 90
 }
