@@ -59,6 +59,7 @@ def main():
     data = {"updated": today, "feed": [], "ledger": [], "losses": [], "pac": [], "pacNext": "", "numbers": [], "charts": [],
             "lastCheck": now, "archiveAfterDays": days}
     open(os.path.join(a.out, "docs", "data.json"), "w").write(json.dumps(data, indent=1))
+    os.makedirs(os.path.join(a.out, "docs", "archive"), exist_ok=True)
     open(os.path.join(a.out, "docs", "archive", "index.json"), "w").write(json.dumps({"months": [], "total": 0}))
     prompt = fill(open(os.path.join(KIT, "routine-prompt.template.md")).read())
     open(os.path.join(a.out, "ROUTINE-PROMPT.md"), "w").write(prompt)
