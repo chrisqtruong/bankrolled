@@ -23,6 +23,18 @@ The site is served from this repository with GitHub Pages and is checked for new
 | `docs/archive/` | Feed posts older than 90 days, one file per month. Posts are archived, never deleted. |
 | `reports/YYYY-MM-DD.md` | One report per daily run, listing what was added or corrected, or noting that nothing met the bar |
 
+## Built with
+
+| Part | Tool |
+|---|---|
+| Site | One static page: HTML, CSS and plain JavaScript. No framework or build step. |
+| Charts | Hand-drawn SVG and HTML, with no charting library, so the page stays fast |
+| Type | [Young Serif](https://fonts.google.com/specimen/Young+Serif), [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4) and [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) from Google Fonts |
+| Data | JSON files (`docs/data.json` plus monthly archives) and `ledger.csv` |
+| Hosting | [GitHub Pages](https://pages.github.com/), served from `docs/` |
+| Comments | [giscus](https://giscus.app/), backed by GitHub Discussions |
+| Research and updates | A scheduled [Claude](https://claude.ai) task that runs every two hours, checks public records and the news, verifies each item, and commits the results here |
+
 ## Rules for what gets published
 
 Every item has one of three labels:
