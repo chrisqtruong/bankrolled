@@ -9,14 +9,14 @@ Bankrolled tracks four things:
 - **Enforcement.** Fines, lawsuits, court rulings, legislation and integrity cases.
 - **Harm.** How much bettors lose, who bets, and what peer-reviewed and official research finds.
 
-The live site is published on claude.ai and updated every morning. This repository is its public archive.
+The site is served from this repository with GitHub Pages and is updated every morning. This repository is also its public archive.
 
 ## What's here
 
 | Path | What it is |
 |---|---|
-| `site/index.html` | The page itself |
-| `site/data.json` | All content: feed posts, ledger rows, chart series and key figures |
+| `docs/index.html` | The page itself |
+| `docs/data.json` | All content: feed posts, ledger rows, chart series and key figures |
 | `ledger.csv` | The confirmed ledger as a spreadsheet |
 | `reports/YYYY-MM-DD.md` | One report per daily run, listing what was added or corrected, or noting that nothing met the bar |
 
