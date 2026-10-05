@@ -84,6 +84,12 @@ Each post has its own comment thread, stored in this repository's [Discussions](
 - Prediction-market volume is notional (the face value of contracts traded) and is not directly comparable to sportsbook handle.
 - Super PAC totals move only when quarterly FEC reports are filed.
 
+## Credits
+
+- Typefaces: Young Serif, Source Serif 4 and IBM Plex Sans, all under the SIL Open Font License, served by Google Fonts.
+- Comments: [giscus](https://github.com/giscus/giscus) (MIT License).
+- Facts are drawn from public records and news reporting, linked from each entry. Summaries are written in Bankrolled's own words.
+
 ## Help
 
 If gambling is causing problems for you or someone you know, the National Problem Gambling Helpline is **1-800-GAMBLER** (call or text).
