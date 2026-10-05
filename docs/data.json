@@ -2,6 +2,27 @@
   "updated": "2026-10-05",
   "feed": [
     {
+      "d": "2026-10-02",
+      "added": "2026-10-05T16:11:34-04:00",
+      "id": "2026-10-02-ohio-orders-10-predictionmarket-companies-to-stop",
+      "c": "Regulation",
+      "s": "confirmed",
+      "h": "Ohio orders 10 prediction-market companies to stop offering sports contracts by Oct. 16",
+      "b": "The Ohio Casino Control Commission sent cease-and-desist letters dated Oct. 2 to Polymarket, Coinbase, Robinhood, Underdog, Novig, ProphetX and four other companies, saying their sports event contracts amount to unlicensed sports gaming. Recipients must confirm compliance in writing by Oct. 16, and the commission warned of civil penalties and other legal remedies. The letters follow the Sixth Circuit's Sept. 25 ruling for Ohio against Kalshi, which was not among the recipients because its dispute with the state is ongoing.",
+      "src": [
+        {
+          "o": "Covers",
+          "t": "Ohio Regulator Sends Cease-and-Desist Notices to 10 Prediction Market Companies",
+          "u": "https://www.covers.com/industry/ohio-regulator-sends-cease-and-desist-notices-to-10-prediction-market-companies-oct-5-2026"
+        },
+        {
+          "o": "SBC Americas",
+          "t": "Ohio expands prediction markets crackdown after Sixth Circuit win",
+          "u": "https://sbcamericas.com/2026/10/05/ohio-prediction-markets-crackdown-win/"
+        }
+      ]
+    },
+    {
       "d": "2026-10-03",
       "c": "Political money",
       "s": "confirmed",
@@ -2539,6 +2560,6 @@
       ]
     }
   ],
-  "lastCheck": "2026-10-05T15:10:38-04:00",
+  "lastCheck": "2026-10-05T16:11:34-04:00",
   "archiveAfterDays": 90
 }
