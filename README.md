@@ -86,6 +86,17 @@ Each post has its own comment thread, stored in this repository's [Discussions](
 - Prediction-market volume is notional (the face value of contracts traded) and is not directly comparable to sportsbook handle.
 - Super PAC totals move only when quarterly FEC reports are filed.
 
+## Known blind spots
+
+An automated check cannot read everything. See the About tab of the site for the public version. In short:
+
+- Some sites block automated readers (the CFTC and ESPN pages are blocked on the first try; a second reading tool has worked). A page that blocks both is skipped and noted in that day's report.
+- Paywalled outlets (NYT, WSJ, Bloomberg) often show only a headline, which is not enough to verify; items then rest on a primary record or a second outlet, or are labeled "reported".
+- Very large records (FEC committee pages) are too big for the page reader; the FEC data feed is the planned fix.
+- Court dockets, the Senate lobbying database, the Supreme Court docket and the Federal Register are on the checklist but not yet confirmed to open reliably.
+- Social media is not used as a source.
+- Hourly checks, search lag and under-coverage of small or local outlets mean some stories arrive late. The October 2026 audit found four items six to ten weeks late; late finds keep their true date and are marked in the report.
+
 ## Credits
 
 - Typefaces: Young Serif, Source Serif 4 and IBM Plex Sans, all under the SIL Open Font License, served by Google Fonts.
@@ -103,8 +114,8 @@ If gambling is causing problems for you or someone you know, the National Proble
 
 ## Why it exists
 
-Powerful institutions count on the public record being scattered and easy to forget. Bankrolled uses AI for public good: it gathers what is already public, checks it against primary sources, and keeps it in one searchable, permanent, freely reusable place. Sports betting is the first subject. The method (sourced facts, honest labels, nothing deleted) is intended to extend to other matters of public concern, such as money in politics, corruption, corporate conduct, environmental harm and the documentation of abuses.
+Powerful institutions count on the public record being scattered and easy to forget. Bankrolled uses AI for public good: it gathers what is already public, checks it against primary sources, and keeps it in one searchable, permanent, freely reusable place. Sports gambling, from sportsbooks to prediction markets, is the first subject. The method (sourced facts, honest labels, nothing deleted) is intended to extend to other matters of public concern, such as money in politics, corruption, corporate conduct, environmental harm and the documentation of abuses.
 
 ## Maintainer
 
-Bankrolled is maintained by Chris Truong, who wants a fairer, more equitable world and started this project to track how large corporations use their money and power. Sports betting is the first industry it covers.
+Bankrolled is maintained by Chris Truong, who wants a fairer, more equitable world and started this project to track how large corporations use their money and power. Sports gambling, covering both sportsbooks and prediction markets, is the first industry it covers.

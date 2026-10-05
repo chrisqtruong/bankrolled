@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{NAME}}</title>
+<meta name="description" content="{{TAGLINE}}">
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1b19;--mut:#6b675f;--line:#e2ded5;--card:#fff;--ok:#1f6b3a;--rep:#8a5a00;--dis:#a1261c;--link:#0b4f8a}
+@media (prefers-color-scheme:dark){:root{--bg:#161512;--fg:#ece9e2;--mut:#a29d92;--line:#35322b;--card:#1e1c18;--ok:#6fcf93;--rep:#e2b45a;--dis:#f08a80;--link:#8cc2f2}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,serif}
+a{color:var(--link)}header,main,footer{max-width:860px;margin:0 auto;padding:0 16px}
+header{padding-top:28px}h1{margin:0;font-size:2rem}.tag{color:var(--mut);margin:.2rem 0 1rem}
+nav{display:flex;gap:16px;border-bottom:1px solid var(--line);padding-bottom:8px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--mut);font:600 .9rem system-ui,sans-serif}nav a.on{color:var(--fg);border-bottom:2px solid var(--fg)}
+.live{font:.8rem system-ui,sans-serif;color:var(--mut);margin:.6rem 0}
+input[type=search]{width:100%;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font:1rem system-ui,sans-serif;margin:8px 0}
+.post{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0}
+.post:target{outline:2px solid var(--link)}
+.meta{font:.78rem system-ui,sans-serif;color:var(--mut);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.chip{font-weight:700;text-transform:uppercase;letter-spacing:.04em}.confirmed{color:var(--ok)}.reported{color:var(--rep)}.disputed{color:var(--dis)}
+.post h3{margin:.3rem 0;font-size:1.15rem;line-height:1.3}.post p{margin:.3rem 0}.src{font:.85rem system-ui,sans-serif}
+table{border-collapse:collapse;width:100%;font:.88rem system-ui,sans-serif}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.wrap{overflow-x:auto}footer{padding:24px 16px 48px;color:var(--mut);font:.85rem system-ui,sans-serif}
+section[hidden]{display:none}.pin{border-left:4px solid var(--rep)}.upd{font:.85rem system-ui,sans-serif;margin:.4rem 0 0 1rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>{{NAME}}</h1>
+  <p class="tag">{{TAGLINE}}</p>
+  <nav id="nav"><a href="#feed" data-t="feed">Feed</a><a href="#ledger" data-t="ledger">Ledger</a><a href="#archive" data-t="archive">Archive</a><a href="#about" data-t="about">About</a></nav>
+  <div class="live" id="live"></div>
+</header>
+<main>
+  <section id="s-feed"><div id="pins"></div><input type="search" id="q" placeholder="Search posts"><div id="feed"></div></section>
+  <section id="s-ledger" hidden><div class="wrap"><table><thead><tr><th>Date</th><th>Type</th><th>From</th><th>To</th><th>Amount</th><th>Note</th></tr></thead><tbody id="ledger"></tbody></table></div></section>
+  <section id="s-archive" hidden><p>Posts older than {{ARCHIVE_DAYS}} days are moved here, never deleted, and keep their permanent links.</p><div id="months"></div><div id="archived"></div></section>
+  <section id="s-about" hidden>
+    <h2>About</h2>
+    <p>{{SCOPE}}</p>
+    <h3>Confirmed, reported, disputed</h3>
+    <p><b class="confirmed">Confirmed</b>: backed by a primary record or by reputable reporting that cites one. <b class="reported">Reported</b>: credible but not yet verifiable. <b class="disputed">Disputed</b>: reported and publicly denied by the subject. Only confirmed items enter the ledger. Lawsuits and charges are allegations. When sources disagree on a number, the number is left out.</p>
+    <h3>Known blind spots</h3>
+    <ul>
+      <li>Some websites block automated readers; we retry through a second tool and note any page we could not open in the daily report.</li>
+      <li>Paywalled outlets often show only a headline. We then look for a primary record or a second outlet, or label the item reported.</li>
+      <li>Very large public records can be too big to read in full; we use official data feeds where they exist.</li>
+      <li>We do not use social media posts as sources.</li>
+      <li>Hourly checks and search lag mean some stories arrive late; late finds keep their true date and are marked in the report. Small and local outlets are the likeliest to be missed.</li>
+    </ul>
+    <p>If a story is missing here but reported elsewhere, it should surface from a second source or a primary record. Tips with a source are welcome.</p>
+    <h3>How it updates</h3>
+    <p>A scheduled research run checks primary sources and the news every hour, verifies each item at its source, and commits the result to the project repository. Nothing is deleted; corrections are made in place and noted.</p>
+    <p>Full documentation: <a href="https://github.com/{{OWNER}}/{{REPO}}#readme">project README on GitHub</a>.</p>
+  </section>
+</main>
+<footer>{{NAME}} is an open, sourced record. Text and data are free to reuse with credit (CC BY 4.0).</footer>
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  let data = null, archive = [];
+  const fmtAmt = a => a == null ? 'Not disclosed' : '$' + Number(a).toLocaleString('en-US', { maximumFractionDigits: 2 });
+  function ago(ms) { const m = Math.round(ms / 6e4); if (m < 1) return 'just now'; if (m < 60) return m + ' min ago'; const h = Math.round(m / 60); if (h < 24) return h + (h === 1 ? ' hour ago' : ' hours ago'); const d = Math.round(h / 24); return d + (d === 1 ? ' day ago' : ' days ago'); }
+  function post(p) {
+    const a = el('article', 'post' + (p.pin ? ' pin' : '')); a.id = 'p-' + p.id;
+    const m = el('div', 'meta'); m.append(el('span', 'chip ' + p.s, p.s), el('span', '', p.d), el('span', '', p.c));
+    const link = el('a', '', 'Permalink'); link.href = '#p-' + p.id; m.append(link);
+    a.append(m, el('h3', '', p.h), el('p', '', p.b));
+    (p.updates || []).forEach(u => { const d = el('div', 'upd'); d.append(el('b', '', u.d + ': '), document.createTextNode(u.t + ' ')); if (u.u) { const l = el('a', '', u.o || 'source'); l.href = u.u; l.rel = 'noopener'; d.append(l); } a.append(d); });
+    const s = el('div', 'src', 'Sources: ');
+    (p.src || []).forEach((x, i) => { if (i) s.append(', '); const l = el('a', '', x.o + (x.t ? ': ' + x.t : '')); l.href = x.u; l.target = '_blank'; l.rel = 'noopener'; s.append(l); });
+    a.append(s); return a;
+  }
+  function renderFeed() {
+    const q = $('#q').value.trim().toLowerCase(), box = $('#feed'), pins = $('#pins'); box.replaceChildren(); pins.replaceChildren();
+    const now = new Date().toISOString().slice(0, 10), hit = p => !q || (p.h + ' ' + p.b + ' ' + p.c + ' ' + (p.src || []).map(s => s.o).join(' ')).toLowerCase().includes(q);
+    data.feed.filter(p => p.pin && p.pinUntil >= now && !q).forEach(p => pins.append(post(p)));
+    data.feed.filter(p => !(p.pin && p.pinUntil >= now && !q)).filter(hit).forEach(p => box.append(post(p)));
+    if (!box.children.length) box.append(el('p', '', 'No posts match.'));
+  }
+  function renderLedger() {
+    const t = $('#ledger'); t.replaceChildren();
+    [...data.ledger].sort((a, b) => b.d.localeCompare(a.d)).forEach(r => { const tr = el('tr'); [r.d, r.t, r.from, r.to, fmtAmt(r.amt)].forEach(v => tr.append(el('td', '', v))); const n = el('td', '', r.note + ' '); (r.src || []).forEach(s => { const l = el('a', '', '[' + s.o + ']'); l.href = s.u; l.target = '_blank'; l.rel = 'noopener'; n.append(l, ' '); }); tr.append(n); t.append(tr); });
+  }
+  async function renderArchive() {
+    const box = $('#months'); if (box.dataset.done) return; box.dataset.done = 1;
+    try { const idx = await (await fetch('archive/index.json')).json(); if (!idx.months.length) { box.append(el('p', '', 'Nothing archived yet.')); return; }
+      for (const m of idx.months) { const b = el('button', '', m.m + ' (' + m.n + ')'); b.onclick = async () => { const j = await (await fetch('archive/' + m.m + '.json')).json(); $('#archived').replaceChildren(...j.feed.map(post)); }; box.append(b, ' '); } } catch (e) { box.append(el('p', '', 'Archive unavailable.')); }
+  }
+  function tab() { const t = (location.hash.match(/^#(feed|ledger|archive|about)/) || [])[1] || 'feed'; const isPost = location.hash.startsWith('#p-');
+    ['feed', 'ledger', 'archive', 'about'].forEach(k => { $('#s-' + k).hidden = k !== (isPost ? 'feed' : t); document.querySelector('[data-t=' + k + ']').classList.toggle('on', k === (isPost ? 'feed' : t)); });
+    if (t === 'archive') renderArchive(); if (isPost) { const n = document.getElementById(location.hash.slice(1)); if (n) n.scrollIntoView(); } }
+  function live() { if (!data) return; const age = Date.now() - Date.parse(data.lastCheck); $('#live').textContent = 'Checked ' + ago(age) + ' · checks every hour'; }
+  fetch('data.json', { cache: 'no-cache' }).then(r => r.json()).then(d => { data = d; renderFeed(); renderLedger(); tab(); live(); setInterval(live, 30000); });
+  $('#q').addEventListener('input', renderFeed); window.addEventListener('hashchange', tab);
+})();
+</script>
+</body>
+</html>
