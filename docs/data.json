@@ -637,6 +637,27 @@
    "id": "2026-08-13-kalshi-reportedly-in-talks-to-raise-750"
   },
   {
+   "d": "2026-08-13",
+   "added": "2026-10-05T09:53:52-04:00",
+   "id": "2026-08-13-baltimore-sues-kalshi-and-polymarket-alleging-unlicensed",
+   "c": "Lawsuits & fines",
+   "s": "confirmed",
+   "h": "Baltimore sues Kalshi and Polymarket, alleging unlicensed sports betting",
+   "b": "Mayor Brandon Scott and the Baltimore City Council filed consumer-protection suits in Baltimore City Circuit Court on Aug. 13 against Kalshi and Polymarket. The city alleges the companies run unlicensed sports betting under the label of event contracts and misstate their legal status; it seeks an injunction, penalties and restitution. The Kalshi suit also names Robinhood, Webull and Coinbase entities. These are allegations; the companies' federal-preemption defense has not been decided here. (Late catch, added Oct. 5.)",
+   "src": [
+    {
+     "o": "FOX Baltimore",
+     "t": "Baltimore sues Kalshi, Polymarket over alleged illegal sports betting, prediction markets",
+     "u": "https://foxbaltimore.com/news/local/baltimore-sues-kalshi-polymarket-over-alleged-illegal-sports-betting-prediction-markets"
+    },
+    {
+     "o": "Maryland Association of Counties",
+     "t": "Baltimore City Sues Prediction Markets Over Alleged Illegal Sports Betting",
+     "u": "https://conduitstreet.mdcounties.org/2026/08/18/baltimore-city-sues-prediction-markets-over-alleged-illegal-sports-betting/"
+    }
+   ]
+  },
+  {
    "d": "2026-08-06",
    "c": "Industry",
    "s": "confirmed",
@@ -2428,6 +2449,6 @@
    ]
   }
  ],
- "lastCheck": "2026-10-05T09:47:12-04:00",
+ "lastCheck": "2026-10-05T09:53:52-04:00",
  "archiveAfterDays": 90
 }
