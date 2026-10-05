@@ -267,6 +267,12 @@
   .pbtn { background: none; border: 0; padding: 4px 0; font: 500 14px/1 var(--sans); color: var(--mute); cursor: pointer; border-bottom: 1px solid transparent; }
   .pbtn:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .pbtn[aria-expanded="true"] { color: var(--ink); }
+  .pimg { margin: 2px 0 6px; }
+  .pimg img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--wash); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .pimg figcaption { font: 400 12.5px/1.4 var(--sans); color: var(--mute); padding-top: 6px; }
+  .pimg figcaption a { color: inherit; }
+  :root[data-theme="dark"] .pimg img { filter: brightness(.88); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pimg img { filter: brightness(.88); } }
   .fsearch { display: grid; gap: 6px; margin-top: 14px; }
   #feed-q, #arch-q { width: 100%; box-sizing: border-box; font: 400 16px/1.2 var(--sans); padding: 8px 0 8px 26px; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23888' stroke-width='1.6' stroke-linecap='round'%3E%3Ccircle cx='6.5' cy='6.5' r='4.5'/%3E%3Cpath d='M10 10l4.5 4.5'/%3E%3C/svg%3E") no-repeat 0 50%; color: var(--ink); -webkit-appearance: none; appearance: none; }
   #feed-q:focus, #arch-q:focus { outline: none; border-bottom-color: var(--accent); }
@@ -570,6 +576,7 @@
     return '$' + n.toLocaleString('en-US');
   }
   const link = s => `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.o)}</a>`;
+    const imgFig = f => { const i = f.img; if (!i || !/^https:\/\//.test(i.u || '')) return ''; return `<figure class="pimg"><img src="${esc(i.u)}" alt="${esc(i.alt || '')}" loading="lazy" decoding="async"><figcaption>${esc(i.credit)}${i.lic ? ' \u00b7 ' + esc(i.lic) : ''}${i.page ? ` \u00b7 <a href="${esc(i.page)}" target="_blank" rel="noopener">Source</a>` : ''}</figcaption></figure>`; };
   const statusChip = s => `<span class="chip ${esc(s)}">${esc(s)}</span>`;
 
   // ---- chart engine: small, dependency-free, redraws to the container's width
@@ -852,7 +859,7 @@
         ${posts.map(f => { const isNew = f.added && Date.now() - Date.parse(f.added) < 864e5; return `<article class="post${isNew ? ' fresh' : ''}" id="p-${esc(f.id)}" data-id="${esc(f.id)}">
           <div class="meta">${statusChip(f.s)}<span class="label">${esc(f.c)}</span>${isNew ? `<span class="newtag" data-added="${esc(f.added)}">New · ${ago(Date.now() - Date.parse(f.added))}</span>` : ''}</div>
           <h3>${esc(f.h)}</h3>
-          <p>${esc(f.b)}</p>
+          ${imgFig(f)}<p>${esc(f.b)}</p>
           <div class="sources">Sources: ${f.src.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener" title="${esc(s.t || '')}">${esc(s.o)}</a> <span class="ext" aria-hidden="true">↗</span>`).join('&ensp;·&ensp;')}</div>
           <div class="postfoot"><button type="button" class="pbtn" data-act="discuss" aria-expanded="false">Comments</button><button type="button" class="pbtn" data-act="copy">Copy link</button><button type="button" class="pbtn rx" data-act="discuss" hidden aria-label="Open comments and reactions"></button></div>
           <div class="discuss" hidden></div>
@@ -904,7 +911,7 @@
         n += posts.length;
         return posts.length ? `<div class="day"><span class="label">${MON[mo - 1]} ${y}</span>` + posts.map(f => `<article class="post" id="p-${esc(f.id)}">
           <div class="meta">${statusChip(f.s)}<span class="label">${esc(f.c)}</span><span class="label">${esc(longDate(f.d))}</span></div>
-          <h3>${esc(f.h)}</h3><p>${esc(f.b)}</p>
+          <h3>${esc(f.h)}</h3>${imgFig(f)}<p>${esc(f.b)}</p>
           <div class="sources">Sources: ${f.src.map(x => `<a href="${esc(x.u)}" target="_blank" rel="noopener" title="${esc(x.t || '')}">${esc(x.o)}</a> <span class="ext" aria-hidden="true">\u2197</span>`).join('&ensp;\u00b7&ensp;')}</div>
         </article>`).join('') + '</div>' : '';
       }).join('');
