@@ -445,7 +445,7 @@
       const pct = v => (v / s.max * 100).toFixed(2) + '%';
       const row = r => {
         const above = r.v >= s.ref.v;
-        const lab = r.v >= s.max * .82 ? `right:calc(100% - ${pct(r.v)} + 12px)` : `left:calc(${pct(r.v)} + 12px)`;
+        const lab = (r.v >= s.max * .82 || r.v < s.ref.v) ? `right:calc(100% - ${pct(r.v)} + 12px)` : `left:calc(${pct(r.v)} + 12px)`;
         return `<div class="drow" tabindex="0" data-tip="${tipText(r.l, r.v + '% bet on sports · ' + (r.v === s.ref.v ? 'same as' : Math.abs(r.v - s.ref.v) + ' pts ' + (above ? 'above' : 'below')) + ' all adults')}">
           <span class="hl">${esc(r.l)}</span>
           <span class="dtrack"><span class="dref" style="left:${pct(s.ref.v)}"></span><span class="ddot${above ? '' : ' lo'}" style="left:${pct(r.v)}"></span><span class="dval" style="${lab}">${fmtv(r.v, s.unit)}</span></span></div>`;
