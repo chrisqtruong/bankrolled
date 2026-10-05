@@ -9,7 +9,7 @@ Bankrolled tracks four things:
 - **Enforcement.** Fines, lawsuits, court rulings, legislation and integrity cases.
 - **Harm.** How much bettors lose, who bets, and what peer-reviewed and official research finds.
 
-The site is served from this repository with GitHub Pages and is updated every morning. This repository is also its public archive.
+The site is served from this repository with GitHub Pages and is checked for new information every two hours. This repository is also its public archive.
 
 ## What's here
 
