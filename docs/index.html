@@ -268,8 +268,8 @@
   .pbtn:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .pbtn[aria-expanded="true"] { color: var(--ink); }
   .fsearch { display: grid; gap: 6px; margin-top: 14px; }
-  #feed-q { width: 100%; box-sizing: border-box; font: 400 16px/1.2 var(--sans); padding: 8px 0 8px 26px; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23888' stroke-width='1.6' stroke-linecap='round'%3E%3Ccircle cx='6.5' cy='6.5' r='4.5'/%3E%3Cpath d='M10 10l4.5 4.5'/%3E%3C/svg%3E") no-repeat 0 50%; color: var(--ink); -webkit-appearance: none; appearance: none; }
-  #feed-q:focus { outline: none; border-bottom-color: var(--accent); }
+  #feed-q, #arch-q { width: 100%; box-sizing: border-box; font: 400 16px/1.2 var(--sans); padding: 8px 0 8px 26px; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23888' stroke-width='1.6' stroke-linecap='round'%3E%3Ccircle cx='6.5' cy='6.5' r='4.5'/%3E%3Cpath d='M10 10l4.5 4.5'/%3E%3C/svg%3E") no-repeat 0 50%; color: var(--ink); -webkit-appearance: none; appearance: none; }
+  #feed-q:focus, #arch-q:focus { outline: none; border-bottom-color: var(--accent); }
   .fhints { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; font: 400 13.5px/1.3 var(--sans); color: var(--mute); }
   .fhints button { background: none; border: 0; padding: 2px 0; font: inherit; color: var(--accent); cursor: pointer; border-bottom: 1px solid transparent; }
   .fhints button:hover { border-bottom-color: var(--accent); }
@@ -368,6 +368,7 @@
         <p>The <a href="#feed">Feed</a> holds the last 90 days of posts, because that is the news still moving: open lawsuits, pending rulings, deals and filings that readers are likely to look for. On the first check of each day, any post whose event date is more than 90 days old moves to this archive.</p>
         <p>Nothing is deleted. Archived posts keep their wording, sources and status, and their permanent links keep working. If an archived story is later corrected or its status changes (for example from reported to confirmed), it is updated here in place. The <a href="#ledger">Ledger</a> of confirmed money and deals is never archived. Searching the Feed also searches the archive.</p>
       </div>
+      <div class="fsearch"><input type="search" id="arch-q" placeholder="Search the archive by company, person or topic" aria-label="Search the archive" autocomplete="off"></div>
       <p class="ledger-note" id="arch-stat"></p>
       <div id="arch-list" style="display:grid;gap:28px;min-width:0"><p class="empty">Loading the archive…</p></div>
     </section>
@@ -891,17 +892,27 @@
       if (!archiveIndex.total) { box.innerHTML = '<p class="empty">Nothing has been archived yet. The first posts will move here once they are more than 90 days old.</p>'; $('#arch-stat').textContent = ''; return; }
       $('#arch-stat').textContent = `${archiveIndex.total} archived post${archiveIndex.total === 1 ? '' : 's'}, newest first.`;
       Promise.all(archiveIndex.months.map(m => fetch(`archive/${m.m}.json`).then(r => r.ok ? r.json() : { feed: [] }).catch(() => ({ feed: [] }))))
-        .then(parts => {
-          box.innerHTML = parts.map((pt, i) => {
-            const [y, mo] = archiveIndex.months[i].m.split('-').map(Number);
-            return `<div class="day"><span class="label">${MON[mo - 1]} ${y}</span>` + pt.feed.map(f => `<article class="post" id="p-${esc(f.id)}">
-              <div class="meta">${statusChip(f.s)}<span class="label">${esc(f.c)}</span><span class="label">${esc(longDate(f.d))}</span></div>
-              <h3>${esc(f.h)}</h3><p>${esc(f.b)}</p>
-              <div class="sources">Sources: ${f.src.map(x => `<a href="${esc(x.u)}" target="_blank" rel="noopener" title="${esc(x.t || '')}">${esc(x.o)}</a> <span class="ext" aria-hidden="true">↗</span>`).join('&ensp;·&ensp;')}</div>
-            </article>`).join('') + '</div>';
-          }).join('');
-        });
+        .then(parts => { archParts = parts; paintArchive(); });
     }
+    let archParts = [];
+    function paintArchive() {
+      const box = $('#arch-list'), terms = $('#arch-q').value.toLowerCase().split(/\s+/).filter(Boolean);
+      let n = 0;
+      const html = archParts.map((pt, i) => {
+        const [y, mo] = archiveIndex.months[i].m.split('-').map(Number);
+        const posts = pt.feed.filter(f => terms.every(t => hay(f).includes(t)));
+        n += posts.length;
+        return posts.length ? `<div class="day"><span class="label">${MON[mo - 1]} ${y}</span>` + posts.map(f => `<article class="post" id="p-${esc(f.id)}">
+          <div class="meta">${statusChip(f.s)}<span class="label">${esc(f.c)}</span><span class="label">${esc(longDate(f.d))}</span></div>
+          <h3>${esc(f.h)}</h3><p>${esc(f.b)}</p>
+          <div class="sources">Sources: ${f.src.map(x => `<a href="${esc(x.u)}" target="_blank" rel="noopener" title="${esc(x.t || '')}">${esc(x.o)}</a> <span class="ext" aria-hidden="true">\u2197</span>`).join('&ensp;\u00b7&ensp;')}</div>
+        </article>`).join('') + '</div>' : '';
+      }).join('');
+      box.innerHTML = n ? html : '<p class="empty">Nothing in the archive matches that search.</p>';
+      $('#arch-stat').textContent = terms.length ? `${n} of ${archiveIndex.total} archived posts match.` : `${archiveIndex.total} archived post${archiveIndex.total === 1 ? '' : 's'}, newest first.`;
+    }
+    let archT = null;
+    $('#arch-q').addEventListener('input', () => { clearTimeout(archT); archT = setTimeout(paintArchive, 200); });
     window.addEventListener('hashchange', () => { if (location.hash === '#archive') drawArchiveTab(); });
     fetch('archive/index.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(ix => { if (!archiveIndex) archiveIndex = ix; if (location.hash === '#archive') drawArchiveTab(); }).catch(() => {});
 
