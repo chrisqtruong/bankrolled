@@ -450,7 +450,21 @@
     "credit": "Architect of the Capitol",
     "lic": "Public domain",
     "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_Following_Facade_Restoration_(10542206014).jpg"
-   }
+   },
+   "updates": [
+    {
+     "d": "2026-09-22",
+     "t": "The Court granted Kalshi's request for more time, moving its response in Flaherty v. KalshiEX (No. 26-299) from Oct. 8 to Nov. 9; the gaming-legislators' council filed a supporting amicus brief the same day.",
+     "o": "Supreme Court docket",
+     "u": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-299.html"
+    },
+    {
+     "d": "2026-10-02",
+     "t": "The International Association of Gaming Regulators and the North American Gaming Regulators Association filed an amicus brief in the case.",
+     "o": "Supreme Court docket",
+     "u": "https://www.supremecourt.gov/docket/docketfiles/html/public/26-299.html"
+    }
+   ]
   },
   {
    "d": "2026-08-29",
@@ -2525,6 +2539,6 @@
    ]
   }
  ],
- "lastCheck": "2026-10-05T10:11:18-04:00",
+ "lastCheck": "2026-10-05T10:12:42-04:00",
  "archiveAfterDays": 90
 }

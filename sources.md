@@ -38,3 +38,22 @@ sportsbook fined; sports betting indicted OR pleads guilty OR sentenced; Kalshi 
 ## Reports
 
 Write one section per check, but for a check with no changes write a single line ("### Check at HH:MM ET: nothing new. Read: <sources>.") instead of a full block.
+
+## Verified fetch recipes (tested 2026-10-05; use exactly these, via Firecrawl `firecrawl_scrape`, markdown)
+
+| Source | Recipe | Notes |
+|---|---|---|
+| CFTC press releases | `https://www.cftc.gov/PressRoom/PressReleases` then each new release `.../PressReleases/<number>` | WebFetch is blocked; Firecrawl works. Read every release since last check. |
+| DOJ EDNY / EDPA | `https://www.justice.gov/usao-edny/pr` and `.../usao-edpa/pr`, `maxAge: 0` | Lists newest first. |
+| Supreme Court docket | `https://www.supremecourt.gov/docket/docketfiles/html/public/26-299.html` (Flaherty v. KalshiEX), `maxAge: 0` | Kalshi response due Nov 9, 2026. Add developments to the post's `updates`. Search `firecrawl_search` for new petitions. |
+| FEC totals | `https://api.open.fec.gov/v1/committee/C00925586/totals/?api_key=DEMO_KEY&sort=-cycle&per_page=2` (also C00908699) | Check `coverage_end_date` and `last_report_type_full`; as of 2026-10-05 it shows the July quarterly ($72.0M raised through Jun 30, $2.13M cash). A newer coverage date means the Q3 report posted: update `pac`, `pacNext`, `donors`, `split`. Use the `/schedules/schedule_a/` endpoint for donors. |
+| Federal Register | `https://www.federalregister.gov/api/v1/documents.json?conditions[term]="event contracts"&order=newest&per_page=5` | Also search "prediction markets". |
+| Senate LDA | `https://lda.gov/api/v1/filings/?filing_year=2026&filing_period=third_quarter&client_name=<name>&format=json` | Empty `results` means not yet filed (Q3 due ~Oct 20). |
+| AGA tracker | `https://www.americangaming.org/resources/commercial-gaming-revenue-tracker/` | July 2026 posted Sept 24; August expected late Oct. |
+| Reader tips | `https://github.com/chrisqtruong/bankrolled/discussions` | Reads fine; only the giscus-created threads exist, 0 comments as of 2026-10-05. |
+| ESPN, NBC Sports, other blocked news | Firecrawl scrape of the article URL | WebFetch blocked. |
+
+## Standing watch items with fixed dates
+- Oct 8: original SCOTUS response date (now extended to Nov 9).
+- Oct 15: Win for America Q3 FEC report due. Oct 22: pre-general. ~Oct 20: LDA Q3.
+- Nov 2: Clase/Ortiz and Billups trials begin. Nov 3: Nebraska ballot measures. Early Nov: DraftKings, Flutter, MGM, Caesars, Penn Q3 earnings.

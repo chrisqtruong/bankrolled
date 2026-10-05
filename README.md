@@ -92,8 +92,8 @@ An automated check cannot read everything. See the About tab of the site for the
 
 - Some sites block automated readers (the CFTC and ESPN pages are blocked on the first try; a second reading tool has worked). A page that blocks both is skipped and noted in that day's report.
 - Paywalled outlets (NYT, WSJ, Bloomberg) often show only a headline, which is not enough to verify; items then rest on a primary record or a second outlet, or are labeled "reported".
-- Very large records (FEC committee pages) are too big for the page reader; the FEC data feed is the planned fix.
-- Court dockets, the Senate lobbying database, the Supreme Court docket and the Federal Register are on the checklist but not yet confirmed to open reliably.
+- Very large records (FEC committee pages) are too big for the page reader; the FEC data feed is used instead.
+- The Supreme Court docket, Senate lobbying database, Federal Register, FEC data feed and DOJ press pages open reliably through a second reading tool (tested 2026-10-05). Lower-court dockets are read mostly through DOJ releases and reporting.
 - Social media is not used as a source.
 - Hourly checks, search lag and under-coverage of small or local outlets mean some stories arrive late. The October 2026 audit found four items six to ten weeks late; late finds keep their true date and are marked in the report.
 
