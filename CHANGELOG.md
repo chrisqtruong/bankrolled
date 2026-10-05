@@ -4,6 +4,7 @@ A record of changes to the Bankrolled site and project. Daily content updates (n
 
 ## 2026-10-05
 
+- **Archive search.** A search box on the Archive tab filters archived posts by company, person or topic, with a live match count.
 - **Archive tab.** New tab explaining the 90-day rule (the feed holds the last 90 days; older posts move to the archive, are never deleted, and keep their links) and listing archived posts by month. The feed's archive button now opens it. ([9df0778](../../commit/9df0778))
 - **Search moved above the posts.** The feed search sits directly above the list with a lighter underline style. ([836e38d](../../commit/836e38d))
 - **Feed keyword search.** Search by company, person or topic across headlines, summaries, topics and sources, with quick links. Typing also searches the archive. ([00af9b9](../../commit/00af9b9))
