@@ -2,6 +2,48 @@
  "month": "2026-05",
  "feed": [
   {
+   "d": "2026-05-28",
+   "added": "2026-10-05T12:12:03-04:00",
+   "id": "2026-05-28-prosecutors-add-bribery-and-honestservices-fraud-counts",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "Prosecutors add bribery and honest-services fraud counts against Terry Rozier in NBA betting case",
+   "b": "A superseding indictment made public May 28 adds two counts against the former NBA guard, bringing the total to four, including honest-services wire fraud conspiracy. It alleges he agreed to leave a March 2023 game early for a payment of about $100,000 and received about $70,000. It adds no new games. Rozier is charged and has pleaded not guilty to the original counts; his lawyer called the new charges a misplaced effort. (Late catch added Oct. 5.)",
+   "src": [
+    {
+     "o": "Front Office Sports",
+     "t": "Feds Say Terry Rozier Took $70K Bribe in Sports Betting Case",
+     "u": "https://frontofficesports.com/feds-say-terry-rozier-took-70k-bribe-in-sports-betting-case/"
+    },
+    {
+     "o": "ESPN",
+     "t": "Prosecutors plan to file new charges against Terry Rozier",
+     "u": "https://www.espn.com/nba/story/_/id/48613917/prosecutors-plan-file-new-charges-terry-rozier"
+    }
+   ]
+  },
+  {
+   "d": "2026-05-28",
+   "added": "2026-10-05T12:12:03-04:00",
+   "id": "2026-05-28-sports-bettor-marves-fairley-pleads-guilty-in",
+   "c": "Integrity",
+   "s": "confirmed",
+   "h": "Sports bettor Marves Fairley pleads guilty in NBA betting case, saying he paid a player to change performance",
+   "b": "Fairley changed his plea to guilty on one count of wire fraud conspiracy and one count of money laundering conspiracy, according to Front Office Sports, and said he agreed to pay a player to alter performance. Prosecutors say the player was Rozier, who is charged and has pleaded not guilty. Fairley is the second defendant to plead guilty in the case after Damon Jones. (Late catch added Oct. 5.)",
+   "src": [
+    {
+     "o": "Front Office Sports",
+     "t": "Feds Say Terry Rozier Took $70K Bribe in Sports Betting Case",
+     "u": "https://frontofficesports.com/feds-say-terry-rozier-took-70k-bribe-in-sports-betting-case/"
+    },
+    {
+     "o": "ESPN",
+     "t": "Key figure in alleged hoops gambling schemes to plead guilty",
+     "u": "https://www.espn.com/mens-college-basketball/story/_/id/48619026/key-figure-alleged-hoops-gambling-schemes-plead-guilty"
+    }
+   ]
+  },
+  {
    "d": "2026-05-22",
    "c": "Research",
    "s": "confirmed",
