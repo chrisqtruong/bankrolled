@@ -202,7 +202,7 @@
   },
   {
    "d": "2026-09-22",
-   "c": "Harm & research",
+   "c": "Research",
    "s": "confirmed",
    "h": "Problem-gambling council hardens its stance on prediction markets after a Kalshi funding backlash",
    "b": "Axios reported Kalshi joined the National Council on Problem Gambling in May with $2 million in funding. The Nevada and Evergreen problem-gambling councils have since left, and Michigan's gaming regulator ended its membership.",
@@ -221,7 +221,7 @@
   },
   {
    "d": "2026-09-19",
-   "c": "Harm & research",
+   "c": "Research",
    "s": "disputed",
    "h": "New York Times reports DraftKings used machine learning to aim promotions at customers predicted to lose the most",
    "b": "Citing former employees and internal documents, the Times reported a scoring system built in 2023, about $400 million in automated 2025 promotions, and a shelved model meant to detect harm. DraftKings disputes the reporting; its CEO called it slanderous. We have not seen the underlying documents.",
@@ -245,7 +245,7 @@
   },
   {
    "d": "2026-09-16",
-   "c": "Harm & research",
+   "c": "Research",
    "s": "confirmed",
    "h": "Gambling-disorder ER visits roughly doubled in Ontario after online betting expanded",
    "b": "A peer-reviewed study in the American Journal of Preventive Medicine covering 14 years of data found visits far above expected levels for young men, including 154% higher for males aged 10 to 29. The data is Canadian.",
@@ -297,7 +297,7 @@
   },
   {
    "d": "2026-09-07",
-   "c": "Harm & research",
+   "c": "Research",
    "s": "confirmed",
    "h": "Bank of America data: online bettors get back about 75 cents of every dollar they wager",
    "b": "Fortune reported the Bank of America Institute's findings. Gen Z and millennials made up 88% of betting activity in July, and median deposit balances in betting households were 59% of those in non-betting households.",
@@ -510,7 +510,7 @@
   },
   {
    "d": "2026-08-17",
-   "c": "Who bets",
+   "c": "Research",
    "s": "confirmed",
    "h": "Gallup: 11% of adults bet on sports in the past year",
    "b": "Overall gambling fell to 45% from 64% in 2016, by telephone survey. Gallup's sports figure is lower than Pew's 22%; question wording and method differ.",
@@ -779,7 +779,7 @@
   },
   {
    "d": "2026-05-22",
-   "c": "Harm & research",
+   "c": "Research",
    "s": "confirmed",
    "h": "Sports betting is now the main problem in more than a quarter of national helpline contacts",
    "b": "Sports betting was the primary gambling type in 27.3% of 2025 helpline conversations, up from 22.3% in 2024.",
@@ -840,7 +840,7 @@
   },
   {
    "d": "2026-04-28",
-   "c": "Who bets",
+   "c": "Research",
    "s": "confirmed",
    "h": "Test accounts set up as 15-year-olds were shown gambling promotions on TikTok, YouTube and Instagram",
    "b": "The Institute for Strategic Dialogue found all three platforms surfaced betting and prediction-market content, mostly through influencers and athletes.",
@@ -854,7 +854,7 @@
   },
   {
    "d": "2026-04-13",
-   "c": "Who bets",
+   "c": "Research",
    "s": "confirmed",
    "h": "More than half of men aged 18 to 49 have an active online sportsbook account",
    "b": "Siena's survey found 27% of all Americans and 52% of men 18 to 49 had an active account, up from 22% and 48% a year earlier.",
@@ -882,7 +882,7 @@
   },
   {
    "d": "2026-03-25",
-   "c": "Harm & research",
+   "c": "Research",
    "s": "confirmed",
    "h": "New York Fed: legal betting raises credit delinquencies, most among people under 40",
    "b": "Delinquency rose about 0.3 points overall after legalization, and credit-card delinquency rose 1.02 points among borrowers under 40.",
@@ -929,7 +929,7 @@
   },
   {
    "d": "2026-01-29",
-   "c": "Who bets",
+   "c": "Research",
    "s": "confirmed",
    "h": "36% of boys aged 11 to 17 gambled in the past year",
    "b": "Common Sense Media found nearly one in eight bet on sports and 60% saw gambling ads on YouTube or social media.",
@@ -2626,5 +2626,6 @@
     }
    ]
   }
- ]
+ ],
+ "lastCheck": "2026-10-04T22:27:51-04:00"
 }

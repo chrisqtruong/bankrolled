@@ -39,7 +39,7 @@ Other standards:
 
 ## How the daily update works
 
-A scheduled run starts each morning (7:52 a.m. Eastern) without anyone prompting it. It:
+A scheduled run checks every two hours from 7:52 a.m. to 11:52 p.m. Eastern without anyone prompting it. Each check:
 
 1. Loads the current `data.json`.
 2. Checks primary sources first: FEC, Senate lobbying disclosures, DOJ, CFTC, court dockets, state gaming regulators, and company investor pages.
@@ -68,3 +68,7 @@ If nothing meets the bar, nothing new is posted, and the day's report says so.
 ## Help
 
 If gambling is causing problems for you or someone you know, the National Problem Gambling Helpline is **1-800-GAMBLER** (call or text).
+
+## Maintainer
+
+Bankrolled is maintained by Chris Truong, who wants a fairer, more equitable world and started this project to track how large corporations use their money and power. Sports betting is the first industry it covers.
