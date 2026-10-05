@@ -299,6 +299,27 @@
    "id": "2026-09-19-new-york-times-reports-draftkings-used-machine"
   },
   {
+   "d": "2026-09-18",
+   "added": "2026-10-05T09:38:33-04:00",
+   "id": "2026-09-18-missouri-attorney-general-orders-six-predictionmarket-companies",
+   "c": "Regulation",
+   "s": "confirmed",
+   "h": "Missouri attorney general orders six prediction-market companies to stop offering sports contracts",
+   "b": "Missouri Attorney General Catherine Hanaway sent cease-and-desist letters to Polymarket, Kalshi, Crypto.com, Novig, Underdog and Robinhood, saying their sports event contracts amount to unlicensed sports wagering under state law. The letters give each company 30 days to comply and warn of enforcement action; the office also says the firms avoid the state's 10% tax on sports betting receipts and lack adequate under-21 safeguards. Polymarket's spokesperson said prediction markets fall under federal CFTC regulation rather than state rules.",
+   "src": [
+    {
+     "o": "Missouri Attorney General's Office",
+     "t": "Missouri Attorney General Hanaway Orders Unlicensed Prediction Markets To Cease And Desist Unlawful Sports Wagering",
+     "u": "https://ago.mo.gov/missouri-attorney-general-hanaway-orders-unlicensed-prediction-markets-to-cease-and-desist-unlawful-sports-wagering/"
+    },
+    {
+     "o": "KCTV5",
+     "t": "Missouri AG targets Polymarket, Kalshi, others in prediction market crackdown",
+     "u": "https://www.kctv5.com/2026/09/18/missouri-ag-sends-cease-desist-letters-prediction-market-operators/"
+    }
+   ]
+  },
+  {
    "d": "2026-09-16",
    "c": "Research",
    "s": "confirmed",
@@ -2407,6 +2428,6 @@
    ]
   }
  ],
- "lastCheck": "2026-10-05T09:36:46-04:00",
+ "lastCheck": "2026-10-05T09:38:33-04:00",
  "archiveAfterDays": 90
 }
