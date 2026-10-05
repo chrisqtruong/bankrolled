@@ -267,6 +267,7 @@
   .pbtn { background: none; border: 0; padding: 4px 0; font: 500 14px/1 var(--sans); color: var(--mute); cursor: pointer; border-bottom: 1px solid transparent; }
   .pbtn:hover { color: var(--accent); border-bottom-color: var(--accent); }
   .pbtn[aria-expanded="true"] { color: var(--ink); }
+  .pbtn.rx { margin-left: auto; font-variant-numeric: tabular-nums; }
   .discuss { display: grid; gap: 10px; padding: 14px 0 4px; border-top: 1px dashed var(--rule); margin-top: 6px; min-width: 0; }
   .discuss-note { margin: 0; font: 400 14px/1.45 var(--body); color: var(--mute); }
   .discuss .giscus, .discuss iframe { width: 100%; min-width: 0; }
@@ -311,7 +312,7 @@
     <!-- FEED -->
     <section id="s-feed" style="display:grid;gap:24px;min-width:0">
       <div class="pace" id="pace" hidden>
-        <p>Since you opened this page, Americans have lost about <b id="pace-n" class="num">$0</b> to legal sportsbooks.</p>
+        <p>Since you arrived on this site, Americans have lost about <b id="pace-n" class="num">$0</b> to legal sportsbooks.</p>
         <span id="pace-note"></span>
       </div>
       <button class="newbanner" id="newbanner" type="button" hidden></button>
@@ -740,11 +741,14 @@
   // pace: honest arithmetic, last full year's losses spread evenly over the year
   function startPace(losses) {
     const last = losses[losses.length - 1]; if (!last) return;
-    const perSec = last.v * 1e9 / (365 * 86400), t0 = performance.now();
+    const perSec = last.v * 1e9 / (365 * 86400);
+    // the clock starts on the first page of the visit and keeps running across pages and reloads in this tab
+    let start = Date.now();
+    try { const k = 'bankrolled-pace-start', saved = Number(sessionStorage.getItem(k)); if (saved > 0 && saved <= start) start = saved; else sessionStorage.setItem(k, String(start)); } catch (e) {}
     $('#pace-note').textContent = `An estimate at ${last.y}'s pace: $${last.v.toFixed(2)} billion lost in a year is about $${Math.round(perSec * 60).toLocaleString('en-US')} a minute. Source: American Gaming Association.`;
     $('#pace').hidden = false;
     const n = $('#pace-n');
-    const step = () => { n.textContent = '$' + Math.round((performance.now() - t0) / 1000 * perSec).toLocaleString('en-US'); };
+    const step = () => { n.textContent = '$' + Math.round((Date.now() - start) / 1000 * perSec).toLocaleString('en-US'); };
     step(); setInterval(step, 1000);
   }
 
@@ -824,9 +828,10 @@
           <h3>${esc(f.h)}</h3>
           <p>${esc(f.b)}</p>
           <div class="sources">Sources: ${f.src.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener" title="${esc(s.t || '')}">${esc(s.o)}</a> <span class="ext" aria-hidden="true">↗</span>`).join('&ensp;·&ensp;')}</div>
-          <div class="postfoot"><button type="button" class="pbtn" data-act="discuss" aria-expanded="false">Comments</button><button type="button" class="pbtn" data-act="copy">Copy link</button></div>
+          <div class="postfoot"><button type="button" class="pbtn" data-act="discuss" aria-expanded="false">Comments</button><button type="button" class="pbtn" data-act="copy">Copy link</button><button type="button" class="pbtn rx" data-act="discuss" hidden aria-label="Open comments and reactions"></button></div>
           <div class="discuss" hidden></div>
         </article>`; }).join('')}</div>`).join('') : '<p class="empty">Nothing matches these filters. Try a longer time range or another topic.</p>';
+      if (typeof rxObs !== 'undefined' && rxObs) document.querySelectorAll('#feed-list article.post').forEach(a => rxObs.observe(a));
       const more = $('#feed-more'), left = items.length - shown.length;
       more.hidden = left <= 0;
       more.textContent = `Show ${Math.min(PAGE, left)} more of ${left}`;
@@ -873,6 +878,24 @@
         'data-input-position': 'top', 'data-theme': giscusTheme(), 'data-lang': 'en', 'data-loading': 'lazy' }).forEach(([k, v]) => s.setAttribute(k, v));
       box.appendChild(s);
     }
+
+    // reaction and comment counts shown beside the Comments button (read from the same GitHub Discussion giscus uses); stays hidden if unavailable
+    var RX = { THUMBS_UP: '\u{1F44D}', THUMBS_DOWN: '\u{1F44E}', LAUGH: '\u{1F604}', HOORAY: '\u{1F389}', CONFUSED: '\u{1F615}', HEART: '\u2764\uFE0F', ROCKET: '\u{1F680}', EYES: '\u{1F440}' };
+    var rxCache = new Map();
+    function paintRx(art, d) {
+      const b = art.querySelector('.rx'); if (!b || !d) return;
+      const parts = Object.entries(d.reactions || {}).filter(([k, v]) => v && v.count > 0 && RX[k]).map(([k, v]) => `${RX[k]} ${v.count}`);
+      const c = (d.totalCommentCount || 0) + (d.totalReplyCount || 0);
+      if (c) parts.unshift(`${c} comment${c === 1 ? '' : 's'}`);
+      b.textContent = parts.join('  \u00b7  '); b.hidden = !parts.length;
+    }
+    function loadRx(art) {
+      const id = art.dataset.id;
+      if (rxCache.has(id)) { paintRx(art, rxCache.get(id)); return; }
+      const q = new URLSearchParams({ repo: GISCUS.repo, term: id, category: GISCUS.category, number: '0', strict: 'true', first: '1' });
+      fetch('https://giscus.app/api/discussions?' + q).then(r => r.ok ? r.json() : null).then(j => { const d = j && j.discussion; rxCache.set(id, d || null); paintRx(art, d); }).catch(() => {});
+    }
+    var rxObs = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { rxObs.unobserve(e.target); loadRx(e.target); } }), { rootMargin: '200px' }) : null;
     $('#feed-list').addEventListener('click', e => {
       const b = e.target.closest('.pbtn'); if (!b) return;
       const art = b.closest('article.post');
