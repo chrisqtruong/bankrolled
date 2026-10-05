@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-05",
  "feed": [
   {
    "d": "2026-10-03",
@@ -20,6 +20,27 @@
     }
    ],
    "id": "2026-10-03-predictionmarket-companies-have-spent-at-least-3"
+  },
+  {
+   "d": "2026-10-02",
+   "added": "2026-10-05T07:55:00-04:00",
+   "id": "2026-10-02-federal-judge-blocks-illinois-from-enforcing-its",
+   "c": "Regulation",
+   "s": "confirmed",
+   "h": "Federal judge blocks Illinois from enforcing its sports-betting license rules against Kalshi and Coinbase",
+   "b": "In consolidated suits brought by Kalshi, Coinbase and the federal government, U.S. District Judge Martha Pacold in Chicago issued a partial preliminary injunction on Oct. 2, finding Illinois's sports-wagering license requirements and related criminal provisions are likely preempted by federal commodities law. She held off on Illinois's 1.75% to 3.5% fee on prediction-market trades pending more briefing. The order is preliminary, and it runs opposite to recent Sixth and Ninth Circuit rulings that sided with states.",
+   "src": [
+    {
+     "o": "U.S. District Court, N.D. Illinois (CourtListener)",
+     "t": "Memorandum opinion and order, Coinbase Financial Markets v. Raoul et al.",
+     "u": "https://storage.courtlistener.com/recap/gov.uscourts.ilnd.498112/gov.uscourts.ilnd.498112.99.0.pdf"
+    },
+    {
+     "o": "DeFi Rate",
+     "t": "Kalshi, Coinbase Win Partial Injunction Against Illinois",
+     "u": "https://defirate.com/news/federal-judge-grants-kalshi-coinbase-partial-injunctions/"
+    }
+   ]
   },
   {
    "d": "2026-10-02",
@@ -2358,6 +2379,6 @@
    ]
   }
  ],
- "lastCheck": "2026-10-04T22:27:51-04:00",
+ "lastCheck": "2026-10-05T07:55:00-04:00",
  "archiveAfterDays": 90
 }
