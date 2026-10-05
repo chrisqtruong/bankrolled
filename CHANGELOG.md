@@ -4,7 +4,7 @@ A record of changes to the Bankrolled site and project. Daily content updates (n
 
 ## 2026-10-05
 
-- **Tracker Kit: Tracewire example and a generator fix.** `new-tracker.py` no longer crashes when `template/docs/archive/` is missing (git does not keep empty folders). Added `tracker-kit/examples/tech-power.json`. Used to generate Tracewire (formerly Rackwatch; tech, AI and data-center power), which lives in its own repository: https://github.com/chrisqtruong/rackwatch. Bankrolled itself is unchanged.
+- **Tracker Kit: Tracewire example and a generator fix.** `new-tracker.py` no longer crashes when `template/docs/archive/` is missing (git does not keep empty folders). Added `tracker-kit/examples/tech-power.json`. Used to generate Tracewire (formerly Rackwatch; tech, AI and data-center power), which lives in its own repository: https://github.com/chrisqtruong/tracewire. Bankrolled itself is unchanged.
 
 - **Tracker Kit.** New `tracker-kit/` folder: a scaffold and generator for starting sourced, hourly-updated trackers on other subjects (see `tracker-kit/README.md`). About tab gained a "Known blind spots" section, a purpose statement, and wording that covers prediction markets alongside sportsbooks.
 
