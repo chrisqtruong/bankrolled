@@ -90,6 +90,11 @@ Each post has its own comment thread, stored in this repository's [Discussions](
 - Comments: [giscus](https://github.com/giscus/giscus) (MIT License).
 - Facts are drawn from public records and news reporting, linked from each entry. Summaries are written in Bankrolled's own words.
 
+## License
+
+- **Code** (the site itself): [MIT](LICENSE).
+- **Content and data** (posts, ledger, archive, reports): [CC BY 4.0](LICENSE-CONTENT). Reuse it freely; credit "Bankrolled" with a link to https://chrisqtruong.github.io/bankrolled/.
+
 ## Help
 
 If gambling is causing problems for you or someone you know, the National Problem Gambling Helpline is **1-800-GAMBLER** (call or text).
