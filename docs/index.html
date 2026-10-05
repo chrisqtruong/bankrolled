@@ -310,6 +310,7 @@
       <a href="#feed" data-tab="feed">Feed</a>
       <a href="#ledger" data-tab="ledger">Ledger</a>
       <a href="#numbers" data-tab="numbers">Numbers</a>
+      <a href="#archive" data-tab="archive">Archive</a>
       <a href="#method" data-tab="method">About</a>
     </nav>
   </header>
@@ -357,6 +358,18 @@
       <button class="plain more" id="feed-more" type="button" hidden>Show more</button>
       <button class="plain more" id="archive-btn" type="button" hidden>Open the archive</button>
       <p class="exportnote" id="archive-note" hidden>You've reached the start of the archive. The feed keeps the last 90 days; older posts move into the archive and are never deleted.</p>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section id="s-archive" hidden style="display:grid;gap:20px;min-width:0">
+      <h2 class="sec">Archive</h2>
+      <div class="prose">
+        <h3>What is in the feed, and what is here</h3>
+        <p>The <a href="#feed">Feed</a> holds the last 90 days of posts, because that is the news still moving: open lawsuits, pending rulings, deals and filings that readers are likely to look for. On the first check of each day, any post whose event date is more than 90 days old moves to this archive.</p>
+        <p>Nothing is deleted. Archived posts keep their wording, sources and status, and their permanent links keep working. If an archived story is later corrected or its status changes (for example from reported to confirmed), it is updated here in place. The <a href="#ledger">Ledger</a> of confirmed money and deals is never archived. Searching the Feed also searches the archive.</p>
+      </div>
+      <p class="ledger-note" id="arch-stat"></p>
+      <div id="arch-list" style="display:grid;gap:28px;min-width:0"><p class="empty">Loading the archive…</p></div>
     </section>
 
     <!-- LEDGER -->
@@ -485,7 +498,7 @@
   document.querySelectorAll('svg.logo').forEach(drawLogo);
 
   // ---- tabs
-  const TABS = ['feed', 'ledger', 'numbers', 'method'];
+  const TABS = ['feed', 'ledger', 'numbers', 'archive', 'method'];
   function show() {
     const h = (location.hash || '#feed').slice(1);
     const tab = TABS.includes(h) ? h : 'feed';  // post links (#p-...) open the feed
@@ -852,7 +865,7 @@
       if (archiveIndex && archiveIndex.total) {
         const ms = archiveIndex.months, first = ms[ms.length - 1].m, last = ms[0].m;
         const mname = m => { const [y, mo] = m.split('-').map(Number); return `${MON[mo - 1]} ${y}`; };
-        ab.textContent = `Open the archive: ${archiveIndex.total} older posts, ${mname(first)} to ${mname(last)}`;
+        ab.textContent = `See the archive: ${archiveIndex.total} older posts, ${mname(first)} to ${mname(last)}`;
       }
       $('#archive-note').hidden = !archiveLoaded;
     }
@@ -866,11 +879,31 @@
           archiveLoaded = true; buildCats();
         });
     }
-    $('#archive-btn').addEventListener('click', () => {
-      const before = limit;
-      loadArchive().then(() => { days = 0; $('#feed-time').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.days === '0'))); limit = Math.max(before, feed.length); drawFeed(); });
-    });
+    $('#archive-btn').addEventListener('click', () => { location.hash = '#archive'; });
     fetch('archive/index.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(ix => { archiveIndex = ix; drawFeed(); }).catch(() => {});
+
+
+    // archive tab: older posts, grouped by month, read from archive/*.json the first time the tab is opened
+    let archShown = false;
+    function drawArchiveTab() {
+      if (archShown || !archiveIndex) return; archShown = true;
+      const box = $('#arch-list');
+      if (!archiveIndex.total) { box.innerHTML = '<p class="empty">Nothing has been archived yet. The first posts will move here once they are more than 90 days old.</p>'; $('#arch-stat').textContent = ''; return; }
+      $('#arch-stat').textContent = `${archiveIndex.total} archived post${archiveIndex.total === 1 ? '' : 's'}, newest first.`;
+      Promise.all(archiveIndex.months.map(m => fetch(`archive/${m.m}.json`).then(r => r.ok ? r.json() : { feed: [] }).catch(() => ({ feed: [] }))))
+        .then(parts => {
+          box.innerHTML = parts.map((pt, i) => {
+            const [y, mo] = archiveIndex.months[i].m.split('-').map(Number);
+            return `<div class="day"><span class="label">${MON[mo - 1]} ${y}</span>` + pt.feed.map(f => `<article class="post" id="p-${esc(f.id)}">
+              <div class="meta">${statusChip(f.s)}<span class="label">${esc(f.c)}</span><span class="label">${esc(longDate(f.d))}</span></div>
+              <h3>${esc(f.h)}</h3><p>${esc(f.b)}</p>
+              <div class="sources">Sources: ${f.src.map(x => `<a href="${esc(x.u)}" target="_blank" rel="noopener" title="${esc(x.t || '')}">${esc(x.o)}</a> <span class="ext" aria-hidden="true">↗</span>`).join('&ensp;·&ensp;')}</div>
+            </article>`).join('') + '</div>';
+          }).join('');
+        });
+    }
+    window.addEventListener('hashchange', () => { if (location.hash === '#archive') drawArchiveTab(); });
+    fetch('archive/index.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(ix => { if (!archiveIndex) archiveIndex = ix; if (location.hash === '#archive') drawArchiveTab(); }).catch(() => {});
 
     // per-post comments (GitHub Discussions through giscus), loaded only when opened, one thread at a time
     const GISCUS = { repo: 'chrisqtruong/bankrolled', repoId: 'R_kgDOU76HSA', category: 'Announcements', categoryId: 'DIC_kwDOU76HSM4DHDmy' };
