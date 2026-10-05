@@ -107,6 +107,90 @@
   .tiers td { padding: 9px 12px 9px 0; }
   .tiers td:first-child { white-space: nowrap; }
 
+  /* charts */
+  .plot { position: relative; min-width: 0; width: 100%; }
+  .plot svg { display: block; overflow: visible; }
+  .plot text { font-family: var(--mono); font-size: 11px; fill: var(--mute); }
+  .plot text.v { fill: var(--ink); font-weight: 500; }
+  .plot text.hi { fill: var(--ink); font-weight: 500; }
+  .plot .grid { stroke: var(--rule); stroke-width: 1; }
+  .plot .base { stroke: var(--ink); stroke-width: 1; }
+  .plot .vbar { fill: var(--mute); }
+  .plot .vbar.hi { fill: var(--ink); }
+  .plot [data-tip] { cursor: default; outline: none; }
+  .plot [data-tip]:hover .vbar, .plot .vbar[data-tip]:hover, .plot [data-tip]:focus-visible { opacity: .82; }
+  .chartmod { display: grid; gap: 10px; padding-block: 22px 26px; border-top: 1px solid var(--rule); min-width: 0; }
+  .chartmod h3 { margin: 0; font: 600 22px/1.25 var(--body); text-wrap: balance; max-width: 34ch; }
+  .chartmod .deck { margin: 0; color: var(--mute); font-size: 16px; max-width: 60ch; }
+  .chartmod figcaption, .chartnote { font: 400 13.5px/1.45 var(--body); color: var(--mute); }
+  .chartmod figcaption a { color: var(--mute); }
+  .secband { display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--ink); padding-bottom: 8px; margin-top: 10px; }
+  .secband h3 { margin: 0; font: italic 500 26px/1.1 var(--display); }
+
+  /* html bar rows */
+  .hrow { display: grid; grid-template-columns: minmax(6.5rem, 9rem) 1fr; gap: 12px; align-items: center; padding-block: 5px; }
+  .hrow .hl { font-size: 15px; line-height: 1.25; }
+  .htrack { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  .hfill { height: 20px; background: var(--mute); transform-origin: left center; flex: none; }
+  .hrow.hi .hfill { background: var(--ink); }
+  .hv { font: 500 12px/1 var(--mono); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .hrow:hover .hfill, .hrow:focus-visible .hfill { opacity: .8; }
+
+  .splitbar { display: flex; height: 34px; gap: 2px; }
+  .splitbar span { display: block; transform-origin: left center; }
+  .splitbar .a { background: var(--ink); }
+  .splitbar .b { background: var(--mute); }
+  .splitleg { display: grid; gap: 6px; margin-top: 10px; }
+  .splitleg div { display: grid; grid-template-columns: 14px 1fr auto; gap: 10px; align-items: baseline; font-size: 15px; }
+  .splitleg i { width: 12px; height: 12px; display: inline-block; }
+  .splitleg b { font: 500 12.5px/1 var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .dgroup { display: grid; gap: 2px; margin-bottom: 10px; }
+  .dgroup .label { padding-bottom: 2px; }
+  .drow { display: grid; grid-template-columns: minmax(5.5rem, 8rem) 1fr; gap: 12px; align-items: center; height: 30px; }
+  .drow .hl { font-size: 15px; }
+  .dtrack { position: relative; height: 30px; border-bottom: 1px solid var(--rule); }
+  .dref { position: absolute; top: 0; bottom: -1px; width: 0; border-left: 1px dashed var(--ink); }
+  .ddot { position: absolute; top: 50%; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%; background: var(--ink); }
+  .ddot.lo { background: var(--paper); border: 2px solid var(--mute); }
+  .dval { position: absolute; top: 50%; transform: translateY(-50%); font: 500 12px/1 var(--mono); white-space: nowrap; }
+  .dlegend { font: 400 13.5px/1.4 var(--body); color: var(--mute); margin-top: 4px; }
+
+  .vrow { display: grid; grid-template-columns: minmax(7rem, 12rem) 1fr; gap: 12px; align-items: center; padding-block: 4px; }
+  .vrow .hl { font-size: 15px; line-height: 1.25; }
+  .vtrack { position: relative; height: 22px; }
+  .vtrack::before { content: ""; position: absolute; left: 50%; top: -4px; bottom: -4px; border-left: 1px solid var(--ink); }
+  .vbarh { position: absolute; top: 3px; height: 16px; }
+  .vbarh.pos { background: var(--ink); transform-origin: left center; }
+  .vbarh.neg { background: var(--mute); transform-origin: right center; }
+  .vval { position: absolute; top: 50%; transform: translateY(-50%); font: 500 12px/1 var(--mono); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .vgroup + .vgroup { margin-top: 14px; }
+  .vgroup .label { display: block; padding-bottom: 4px; }
+
+  .coins { display: grid; grid-template-columns: repeat(20, 1fr); gap: 5px; max-width: 520px; }
+  .coins i { aspect-ratio: 1; border-radius: 50%; background: var(--ink); display: block; }
+  .coins i.out { background: transparent; border: 1.5px solid var(--mute); }
+  @media (max-width: 520px) { .coins { grid-template-columns: repeat(10, 1fr); max-width: 300px; } }
+  .coinleg { display: flex; gap: 18px; flex-wrap: wrap; font-size: 15px; margin-top: 8px; }
+  .coinleg span { display: inline-flex; align-items: center; gap: 8px; }
+  .coinleg i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; background: var(--ink); }
+  .coinleg i.out { background: transparent; border: 1.5px solid var(--mute); }
+
+  .tip { position: fixed; z-index: 20; pointer-events: none; background: var(--paper); color: var(--ink); border: 1px solid var(--ink); padding: 7px 9px; font: 400 14px/1.35 var(--body); max-width: 240px; box-shadow: 0 2px 10px rgba(0,0,0,.12); }
+  .tip b { font: 500 12px/1.3 var(--mono); display: block; letter-spacing: .03em; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .anim .hfill, .anim .splitbar span, .anim .vbarh.pos, .anim .vbarh.neg { animation: gx .7s cubic-bezier(.2,.7,.2,1) both; }
+    .anim .vbar { transform-box: fill-box; transform-origin: center bottom; animation: gy .7s cubic-bezier(.2,.7,.2,1) both; }
+    .anim .ddot, .anim .slope-dot { animation: pop .5s ease-out both; }
+    .anim .slope-line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw .8s ease-out .1s forwards; }
+    .anim .coins i { animation: pop .35s ease-out both; }
+    @keyframes gx { from { transform: scaleX(0); } }
+    @keyframes gy { from { transform: scaleY(0); } }
+    @keyframes pop { from { transform: scale(.2); opacity: 0; } }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+  }
+
   footer { border-top: 3px double var(--ink); padding-top: 14px; display: flex; gap: 14px; justify-content: space-between; flex-wrap: wrap; align-items: center; }
   footer .brand svg { width: 28px; height: 28px; }
   footer p { margin: 0; font-size: 14px; color: var(--mute); max-width: 52ch; }
@@ -139,13 +223,13 @@
         <figure class="chart">
           <span class="label">The house take</span>
           <h3>What bettors lost to legal U.S. sportsbooks, per year</h3>
-          <svg id="ch-loss" viewBox="0 0 320 170" role="img" aria-label="Annual sportsbook revenue, 2021 to 2025"></svg>
+          <div class="plot" id="ch-loss" role="img" aria-label="Annual sportsbook revenue, 2021 to 2025"></div>
           <figcaption id="cap-loss"></figcaption>
         </figure>
         <figure class="chart">
           <span class="label">Political money</span>
           <h3>Sportsbooks' super PAC, cumulative receipts</h3>
-          <svg id="ch-pac" viewBox="0 0 320 170" role="img" aria-label="Win for America cumulative receipts"></svg>
+          <div class="plot" id="ch-pac" role="img" aria-label="Win for America cumulative receipts"></div>
           <figcaption id="cap-pac"></figcaption>
         </figure>
       </div>
@@ -178,7 +262,9 @@
     <!-- NUMBERS -->
     <section id="s-numbers" hidden style="display:grid;gap:28px;min-width:0">
       <h2 class="sec">The numbers</h2>
-      <p class="lede">The size of the industry and what it does to the people who use it. Every figure links to its source, and each one states the period it covers.</p>
+      <p class="lede">The size of the industry, who it reaches, and what it costs them. Hover over or tap any chart for exact values. Every chart names its source and the period it covers.</p>
+      <div id="charts" style="display:grid;gap:0;min-width:0"></div>
+      <div class="secband"><h3>All figures</h3></div>
       <div id="numbers-list" style="display:grid;gap:32px"></div>
     </section>
 
@@ -301,21 +387,165 @@
   const link = s => `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.o)}</a>`;
   const statusChip = s => `<span class="chip ${esc(s)}">${esc(s)}</span>`;
 
-  // ---- charts (hand-drawn SVG, one scale per chart)
-  function barChart(svg, rows, { fmt, max }) {
-    const W = 320, H = 170, top = 18, base = 140, left = 4, right = 4;
-    const n = rows.length, gap = 14, bw = (W - left - right - gap * (n - 1)) / n;
-    let g = `<line x1="0" x2="${W}" y1="${base}" y2="${base}" stroke="var(--ink)" stroke-width="1"/>`;
-    [0.5, 1].forEach(f => { const y = base - (base - top) * f; g += `<line x1="0" x2="${W}" y1="${y}" y2="${y}" stroke="var(--rule)" stroke-width="1"/>`; });
-    rows.forEach((r, i) => {
-      const x = left + i * (bw + gap), h = (base - top) * (r.v / max), y = base - h;
-      const last = i === n - 1;
-      g += `<rect x="${x}" y="${y}" width="${bw}" height="${Math.max(h, r.v ? 1 : 0)}" fill="${last ? 'var(--ink)' : 'var(--mute)'}"/>`;
-      g += `<text x="${x + bw/2}" y="${y - 6}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink)">${fmt(r.v)}</text>`;
-      g += `<text x="${x + bw/2}" y="${base + 15}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--mute)">${esc(r.label)}</text>`;
-      if (r.sub) g += `<text x="${x + bw/2}" y="${base + 28}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="var(--mute)">${esc(r.sub)}</text>`;
-    });
-    svg.innerHTML = g;
+  // ---- chart engine: small, dependency-free, redraws to the container's width
+  const NSV = 'http://www.w3.org/2000/svg';
+  function fmtv(v, unit, dp) {
+    const d = dp ?? (Number.isInteger(v) ? 0 : 1);
+    const s = Math.abs(v).toFixed(d);
+    if (unit === '$B') return '$' + s + 'B';
+    if (unit === '$M') return '$' + s + 'M';
+    if (unit === '%') return s + '%';
+    return s;
+  }
+  function niceStep(max, n) {
+    const raw = max / n, p = Math.pow(10, Math.floor(Math.log10(raw)));
+    const m = [1, 2, 2.5, 5, 10].find(k => k * p >= raw);
+    return m * p;
+  }
+  const tipText = (title, line) => `<b>${esc(title)}</b>${esc(line)}`;
+
+  const DRAW = {
+    bars(plot, s, W) {
+      const rows = s.rows, n = rows.length;
+      const H = s.h || (W < 420 ? 200 : 230), top = 24, bottom = rows.some(r => r.sub) ? 40 : 26, left = 0;
+      const base = H - bottom;
+      const max0 = Math.max(...rows.map(r => r.v)) || 1, step = niceStep(max0, 3), max = Math.ceil(max0 / step) * step;
+      const y = v => base - (base - top) * (v / max);
+      const gap = Math.max(8, Math.min(28, W / n * 0.28)), bw = Math.min(90, (W - left - gap * (n - 1)) / n);
+      const span = n * bw + (n - 1) * gap, x0 = left + (W - left - span) / 2;
+      let g = '';
+      for (let t = step; t <= max + 1e-9; t += step) {
+        g += `<line class="grid" x1="0" x2="${W}" y1="${y(t)}" y2="${y(t)}"/><text x="0" y="${y(t) - 4}">${fmtv(t, s.unit, 0)}</text>`;
+      }
+      g += `<line class="base" x1="0" x2="${W}" y1="${base}" y2="${base}"/>`;
+      rows.forEach((r, i) => {
+        const x = x0 + i * (bw + gap), last = i === n - 1, yy = y(r.v);
+        g += `<g data-tip="${tipText(r.l + (r.sub ? ' · ' + r.sub : ''), fmtv(r.v, s.unit, s.dp))}" tabindex="0">`;
+        g += `<rect class="vbar${last ? ' hi' : ''}" x="${x}" y="${yy}" width="${bw}" height="${Math.max(base - yy, r.v ? 1 : 0)}" style="animation-delay:${i * 70}ms"/>`;
+        g += `<rect x="${x}" y="${top}" width="${bw}" height="${base - top}" fill="transparent"/>`;
+        g += `<text class="${last ? 'hi' : 'v'}" x="${x + bw / 2}" y="${yy - 6}" text-anchor="middle">${fmtv(r.v, s.unit, s.dp)}</text>`;
+        g += `<text x="${x + bw / 2}" y="${base + 15}" text-anchor="middle">${esc(r.l)}</text>`;
+        if (r.sub) g += `<text x="${x + bw / 2}" y="${base + 28}" text-anchor="middle" font-size="10">${esc(r.sub)}</text>`;
+        g += `</g>`;
+      });
+      plot.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${g}</svg>`;
+    },
+    hbar(plot, s) {
+      const max = Math.max(...s.rows.map(r => r.v)) * 1.3;
+      plot.innerHTML = s.rows.map((r, i) => `<div class="hrow${i === (s.hi ?? -1) ? ' hi' : ''}" tabindex="0" data-tip="${tipText(r.l, fmtv(r.v, s.unit, s.dp))}">
+        <span class="hl">${esc(r.l)}</span>
+        <span class="htrack"><span class="hfill" style="width:${(r.v / max * 100).toFixed(2)}%;animation-delay:${i * 80}ms"></span><span class="hv">${fmtv(r.v, s.unit, s.dp)}</span></span></div>`).join('');
+    },
+    split(plot, s) {
+      const tot = s.parts.reduce((a, p) => a + p.v, 0);
+      plot.innerHTML = `<div class="splitbar">${s.parts.map((p, i) => `<span class="${i ? 'b' : 'a'}" style="flex:${p.v} 1 0;animation-delay:${i * 120}ms" tabindex="0" data-tip="${tipText(p.l, fmtv(p.v, s.unit, s.dp) + ' · ' + Math.round(p.v / tot * 100) + '% of transfers')}"></span>`).join('')}</div>
+        <div class="splitleg">${s.parts.map((p, i) => `<div><i style="background:var(--${i ? 'mute' : 'ink'})"></i><span>${esc(p.l)}</span><b>${fmtv(p.v, s.unit, s.dp)} · ${Math.round(p.v / tot * 100)}%</b></div>`).join('')}</div>`;
+    },
+    dots(plot, s) {
+      const pct = v => (v / s.max * 100).toFixed(2) + '%';
+      const row = r => {
+        const above = r.v >= s.ref.v;
+        const lab = r.v >= s.max * .82 ? `right:calc(100% - ${pct(r.v)} + 12px)` : `left:calc(${pct(r.v)} + 12px)`;
+        return `<div class="drow" tabindex="0" data-tip="${tipText(r.l, r.v + '% bet on sports · ' + (r.v === s.ref.v ? 'same as' : Math.abs(r.v - s.ref.v) + ' pts ' + (above ? 'above' : 'below')) + ' all adults')}">
+          <span class="hl">${esc(r.l)}</span>
+          <span class="dtrack"><span class="dref" style="left:${pct(s.ref.v)}"></span><span class="ddot${above ? '' : ' lo'}" style="left:${pct(r.v)}"></span><span class="dval" style="${lab}">${fmtv(r.v, s.unit)}</span></span></div>`;
+      };
+      plot.innerHTML = s.groups.map(g => `<div class="dgroup"><span class="label">${esc(g.g)}</span>${g.rows.map(row).join('')}</div>`).join('')
+        + `<p class="dlegend">Dashed line: ${esc(s.ref.l.toLowerCase())}, ${fmtv(s.ref.v, s.unit)}. Filled dots are at or above it; open dots are below it.</p>`;
+    },
+    diverge(plot, s) {
+      const half = v => (Math.abs(v) / s.max * 50).toFixed(2) + '%';
+      plot.innerHTML = s.groups.map(g => `<div class="vgroup"><span class="label">${esc(g.g)}</span>${g.rows.map((r, i) => {
+        const pos = r.v >= 0, sign = pos ? '+' : '−';
+        const bar = pos ? `left:50%;width:${half(r.v)}` : `right:50%;width:${half(r.v)}`;
+        const val = pos ? `left:calc(50% + ${half(r.v)} + 6px)` : `right:calc(50% + ${half(r.v)} + 6px)`;
+        return `<div class="vrow" tabindex="0" data-tip="${tipText(g.g + ' · ' + r.l, sign + Math.abs(r.v) + '% from a year earlier')}"><span class="hl">${esc(r.l)}</span>
+          <span class="vtrack"><span class="vbarh ${pos ? 'pos' : 'neg'}" style="${bar};animation-delay:${i * 90}ms"></span><span class="vval" style="${val}">${sign}${Math.abs(r.v)}%</span></span></div>`;
+      }).join('')}</div>`).join('');
+    },
+    slope(plot, s, W) {
+      const rows = s.rows, H = s.h || Math.max(150, 90 + rows.length * 40);
+      const labW = Math.min(170, W * 0.4), xL = 44, xR = W - labW - 8, top = 34, bot = H - 14;
+      const vals = rows.flatMap(r => [r.a, r.b]), lo = Math.min(...vals), hi = Math.max(...vals);
+      const pad = Math.max(2, (hi - lo) * 0.08), dlo = lo - pad, dhi = hi + pad;
+      const y = v => bot - (bot - top) * ((v - dlo) / ((dhi - dlo) || 1));
+      const spread = (pts) => { // keep labels at least 15px apart
+        const o = pts.map((p, i) => ({ i, y: p })).sort((a, b) => a.y - b.y);
+        for (let k = 1; k < o.length; k++) if (o[k].y - o[k - 1].y < 15) o[k].y = o[k - 1].y + 15;
+        const r = []; o.forEach(p => r[p.i] = p.y); return r;
+      };
+      const ya = spread(rows.map(r => y(r.a))), yb = spread(rows.map(r => y(r.b)));
+      let g = `<text x="${xL}" y="14" text-anchor="middle" class="v">${esc(s.from)}</text><text x="${xR}" y="14" text-anchor="middle" class="v">${esc(s.to)}</text>`;
+      g += `<line class="grid" x1="${xL}" x2="${xL}" y1="22" y2="${bot + 6}"/><line class="grid" x1="${xR}" x2="${xR}" y1="22" y2="${bot + 6}"/>`;
+      rows.forEach((r, i) => {
+        const h = i === (s.hi ?? 0), col = h ? 'var(--ink)' : 'var(--mute)', d = +(r.b - r.a).toFixed(1);
+        g += `<g tabindex="0" data-tip="${tipText(r.l, fmtv(r.a, s.unit, s.dp) + ' in ' + s.from + ' → ' + fmtv(r.b, s.unit, s.dp) + ' in ' + s.to + ' (' + (d >= 0 ? '+' : '−') + Math.abs(d) + ' pts)')}">`;
+        g += `<line x1="${xL}" x2="${xR}" y1="${y(r.a)}" y2="${y(r.b)}" stroke="transparent" stroke-width="16"/>`;
+        g += `<line class="slope-line" pathLength="1" x1="${xL}" x2="${xR}" y1="${y(r.a)}" y2="${y(r.b)}" stroke="${col}" stroke-width="${h ? 2.5 : 1.5}"/>`;
+        g += `<circle class="slope-dot" cx="${xL}" cy="${y(r.a)}" r="${h ? 4.5 : 3.5}" fill="${col}"/><circle class="slope-dot" cx="${xR}" cy="${y(r.b)}" r="${h ? 4.5 : 3.5}" fill="${col}" style="animation-delay:.6s"/>`;
+        g += `<text x="${xL - 9}" y="${ya[i] + 4}" text-anchor="end" class="${h ? 'hi' : ''}">${fmtv(r.a, s.unit, s.dp)}</text>`;
+        g += `<text x="${xR + 9}" y="${yb[i] + 4}" class="${h ? 'hi' : ''}">${fmtv(r.b, s.unit, s.dp)}  <tspan font-family="Newsreader, Georgia, serif" font-size="14" style="fill:${col}">${esc(r.l)}</tspan></text>`;
+        g += `</g>`;
+      });
+      plot.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${g}</svg>`;
+    },
+    coins(plot, s) {
+      let c = '';
+      for (let i = 0; i < 100; i++) c += `<i class="${i >= 100 - s.kept ? 'out' : ''}" style="animation-delay:${i * 6}ms"></i>`;
+      plot.innerHTML = `<div class="coins" tabindex="0" data-tip="${tipText('Of every $1 wagered online', (100 - s.kept) + '¢ came back to bettors; ' + s.kept + '¢ stayed with the sportsbook')}">${c}</div>
+        <div class="coinleg"><span><i></i>${100 - s.kept}¢ returned to bettors</span><span><i class="out"></i>${s.kept}¢ kept by the sportsbook</span></div>`;
+    }
+  };
+
+  const mounted = new Map();
+  function mount(plot, spec) {
+    mounted.set(plot, { spec, w: 0, first: true });
+    if (window.ResizeObserver) ro.observe(plot); else draw(plot);
+  }
+  function draw(plot) {
+    const m = mounted.get(plot); if (!m) return;
+    const W = Math.floor(plot.clientWidth);
+    if (!W || W === m.w) return;
+    m.w = W;
+    DRAW[m.spec.type](plot, m.spec, W);
+    if (m.first) { m.first = false; plot.classList.add('anim'); setTimeout(() => plot.classList.remove('anim'), 1600); }
+  }
+  const ro = window.ResizeObserver ? new ResizeObserver(es => requestAnimationFrame(() => es.forEach(e => draw(e.target)))) : null;
+  if (!ro) window.addEventListener('resize', () => mounted.forEach((_, p) => draw(p)));
+
+  // tooltip: one shared element, pointer and keyboard
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; tip.setAttribute('role', 'status'); document.body.appendChild(tip);
+  let tipEl = null;
+  function place(x, y) {
+    const r = tip.getBoundingClientRect();
+    let left = Math.min(Math.max(8, x - r.width / 2), innerWidth - r.width - 8), top = y - r.height - 14;
+    if (top < 8) top = y + 18;
+    tip.style.left = left + 'px'; tip.style.top = top + 'px';
+  }
+  function showTip(el, x, y) { tipEl = el; tip.innerHTML = el.getAttribute('data-tip'); tip.hidden = false; place(x, y); }
+  function hideTip() { tip.hidden = true; tipEl = null; }
+  document.addEventListener('pointermove', e => {
+    const el = e.target.closest && e.target.closest('.plot [data-tip]');
+    if (el) showTip(el, e.clientX, e.clientY); else if (tipEl && e.pointerType === 'mouse') hideTip();
+  });
+  document.addEventListener('pointerdown', e => {
+    const el = e.target.closest && e.target.closest('.plot [data-tip]');
+    if (el && e.pointerType !== 'mouse') showTip(el, e.clientX, e.clientY); else if (!el) hideTip();
+  });
+  document.addEventListener('focusin', e => {
+    const el = e.target.closest && e.target.closest('.plot [data-tip]');
+    if (el) { const r = el.getBoundingClientRect(); showTip(el, r.left + r.width / 2, r.top); }
+  });
+  document.addEventListener('focusout', hideTip);
+  window.addEventListener('scroll', () => { if (tipEl) hideTip(); }, { passive: true });
+
+  function chartModule(spec) {
+    const fig = document.createElement('figure'); fig.className = 'chartmod'; fig.style.margin = '0';
+    fig.innerHTML = `<span class="label">${esc(spec.kicker || '')}</span><h3>${esc(spec.title)}</h3>${spec.deck ? `<p class="deck">${esc(spec.deck)}</p>` : ''}
+      <div class="plot" role="img" aria-label="${esc(spec.title)}"></div>
+      <figcaption>${spec.note ? esc(spec.note) + ' ' : ''}Source: ${(spec.src || []).map(link).join(', ')}.</figcaption>`;
+    mount(fig.querySelector('.plot'), spec);
+    return fig;
   }
 
   // ---- render
@@ -323,13 +553,18 @@
     $('#dateline').textContent = 'Updated ' + shortDate(data.updated);
 
     const L = data.losses;
-    barChart($('#ch-loss'), L.map(r => ({ label: r.y, v: r.v })), { fmt: v => '$' + (v >= 10 ? v.toFixed(1) : v.toFixed(1)) + 'B', max: Math.ceil(Math.max(...L.map(r => r.v)) / 5) * 5 });
-    const lastL = L[L.length - 1], firstL = L[0];
-    $('#cap-loss').innerHTML = `Gross gaming revenue, the money bettors lost: ${esc(firstL.y)}–${esc(lastL.y)}, nearly four times larger. Source: ${[...new Map(L.map(r => [r.src.o, r.src])).values()].map(link).join(', ')}.`;
+    mount($('#ch-loss'), { type: 'bars', unit: '$B', dp: 1, h: 190, rows: L.map(r => ({ l: r.y, v: r.v })) });
+    $('#cap-loss').innerHTML = `Gross gaming revenue, which is the money bettors lost, ${esc(L[0].y)} to ${esc(L[L.length - 1].y)}. Source: ${[...new Map(L.map(r => [r.src.o, r.src])).values()].map(link).join(', ')}.`;
 
     const P = data.pac;
-    barChart($('#ch-pac'), P.map(r => ({ label: r.label, sub: r.sub, v: r.v })), { fmt: v => '$' + v + 'M', max: Math.ceil(Math.max(...P.map(r => r.v)) / 20) * 20 });
+    mount($('#ch-pac'), { type: 'bars', unit: '$M', dp: 0, h: 190, rows: P.map(r => ({ l: r.label, sub: r.sub, v: r.v })) });
     $('#cap-pac').innerHTML = `Win for America, funded by DraftKings, FanDuel, bet365 and Fanatics. ${esc(data.pacNext)}. Source: <a href="https://www.fec.gov/data/committee/C00925586/" target="_blank" rel="noopener">FEC</a>, <a href="https://www.citizen.org/article/corporate-money-2026-midterms-surges-to-650-million/" target="_blank" rel="noopener">Public Citizen</a>.`;
+
+    const box = $('#charts'); let sec = null;
+    (data.charts || []).forEach(c => {
+      if (c.sec !== sec) { sec = c.sec; const b = document.createElement('div'); b.className = 'secband'; b.innerHTML = `<h3>${esc(sec)}</h3>`; box.appendChild(b); }
+      box.appendChild(chartModule(c));
+    });
 
     // feed
     const feed = [...data.feed].sort((a, b) => b.d.localeCompare(a.d));
