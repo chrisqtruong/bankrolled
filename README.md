@@ -4,6 +4,9 @@ A daily, sourced record of the money behind American gambling, from sportsbooks 
 
 ### → [Read Bankrolled: chrisqtruong.github.io/bankrolled](https://chrisqtruong.github.io/bankrolled/)
 
+> [!WARNING]
+> **Bankrolled is currently unplugged.** The hourly updates are paused because we've run out of Firecrawl credits. Everything published so far stays up, but nothing new is being added until the updates are switched back on.
+
 Bankrolled tracks four things:
 
 - **Political money.** Super PACs, corporate PACs, ballot measure committees and lobbying by sportsbooks and sports prediction markets.
@@ -13,7 +16,7 @@ Bankrolled tracks four things:
 
 **Scope.** Sportsbooks and all prediction markets (Kalshi, Polymarket, DraftKings Predictions, FanDuel Predicts, Crypto.com, Robinhood, Coinbase and new entrants) are treated equally: lawsuits, state and CFTC action, partnerships, political spending, funding, insider-trading cases and research on who trades.
 
-The site is served from this repository with GitHub Pages and is checked for new information every hour. This repository is also its public archive.
+The site is served from this repository with GitHub Pages and is normally checked for new information every hour (paused for now; see above). This repository is also its public archive.
 
 ## What's here
 
