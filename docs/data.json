@@ -2561,5 +2561,6 @@
     }
   ],
   "lastCheck": "2026-10-05T22:10:41-04:00",
-  "archiveAfterDays": 90
+  "archiveAfterDays": 90,
+  "paused": "Updates are switched off because we've run out of Firecrawl credits, so nothing new is being added for now. Everything already published stays up, and we plan to bring updates back."
 }

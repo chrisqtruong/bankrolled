@@ -259,6 +259,8 @@
   .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--bar); flex: none; position: relative; }
   .live.on .pulse { background: var(--accent); }
   .live.on #dateline { color: var(--ink); }
+  .paused { border: 1px solid var(--rule); border-left: 3px solid var(--ink); background: var(--wash); padding: 12px 16px; margin: 0; font: 400 15px/1.5 var(--sans); color: var(--ink); }
+  .paused b { font-weight: 600; }
   @media (prefers-reduced-motion: no-preference) {
     .live.on .pulse::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--accent); animation: ping 2.4s ease-out infinite; }
     @keyframes ping { 0% { transform: scale(1); opacity: .6; } 80%, 100% { transform: scale(3); opacity: 0; } }
@@ -338,6 +340,7 @@
   <main style="display:grid;gap:28px;min-width:0">
     <!-- FEED -->
     <section id="s-feed" style="display:grid;gap:24px;min-width:0">
+      <p class="paused" id="paused" role="status" hidden></p>
       <div class="pace" id="pace" hidden>
         <p>Since you arrived on this site, Americans have lost about <b id="pace-n" class="num">$0</b> to legal sportsbooks.</p>
         <span id="pace-note"></span>
@@ -800,9 +803,15 @@
     if (hrs < 24) return hrs + (hrs === 1 ? ' hour ago' : ' hours ago');
     const d = Math.round(hrs / 24); return d + (d === 1 ? ' day ago' : ' days ago');
   }
-  let lastCheck = null, updated = null;
+  let lastCheck = null, updated = null, paused = null;
   function tickLive() {
     const el = $('#live'), t = $('#dateline');
+    if (paused) {
+      el.classList.remove('on');
+      t.textContent = 'Updates paused · last checked ' + shortDate(updated);
+      el.title = 'Bankrolled is not checking for new information right now.';
+      return;
+    }
     if (!lastCheck) { t.textContent = 'Updated ' + shortDate(updated); return; }
     const age = Date.now() - lastCheck;
     el.classList.toggle('on', age < 2.5 * 36e5);
@@ -848,6 +857,8 @@
   function render(data) {
     updated = data.updated;
     lastCheck = data.lastCheck ? Date.parse(data.lastCheck) : null;
+    paused = data.paused || null;
+    if (paused) { const p = $('#paused'); p.innerHTML = `<b>Bankrolled is paused.</b> ${esc(paused)}`; p.hidden = false; }
     knownHeads = new Set(data.feed.map(f => f.h));
     tickLive();
     startPace(data.losses);
