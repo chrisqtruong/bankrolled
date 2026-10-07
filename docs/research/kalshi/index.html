@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Following the Money: Kalshi · Bankrolled Research</title>
+<meta name="description" content="A Bankrolled research project: where Kalshi's money came from, how it makes money, and what it spends on lobbying, politics and ads, with the court fights and the research on harm. As of October 7, 2026.">
+<meta property="og:title" content="Following the Money: Kalshi">
+<meta property="og:description" content="A Bankrolled research project on Kalshi's investors, revenue, lobbying, political giving, advertising, court fights and the research on harm.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://chrisqtruong.github.io/bankrolled/research/kalshi/">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111513" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<script>
+  // follow the theme chosen on the main Bankrolled page (same key)
+  try { const t = localStorage.getItem('bankrolled-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>
+  /* same paper, ink and ledger-green tokens as the main Bankrolled page */
+  :root {
+    --paper: #fafaf7; --ink: #17191a; --mute: #5a605c; --rule: #dde1dc; --wash: #eff2ee; --bar: #a9afaa;
+    --accent: #1d6a45; --on-accent: #ffffff;
+    --display: "Young Serif", "Iowan Old Style", Georgia, serif;
+    --body: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+    --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --paper: #111513; --ink: #e8ebe7; --mute: #9ca49f; --rule: #2a312d; --wash: #181e1b; --bar: #4f5853; --accent: #6cc495; --on-accent: #0c1410; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --paper: #111513; --ink: #e8ebe7; --mute: #9ca49f; --rule: #2a312d; --wash: #181e1b; --bar: #4f5853; --accent: #6cc495; --on-accent: #0c1410; color-scheme: dark; }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 18px/1.6 var(--body); padding-inline: 20px; padding-block: 28px 80px; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  img, svg { max-width: 100%; }
+  .wrap { max-width: 720px; margin-inline: auto; display: grid; gap: 28px; min-width: 0; }
+  .label { font: 600 12px/1.4 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--mute); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  header.mast { display: grid; gap: 14px; border-bottom: 3px double var(--ink); padding-bottom: 18px; }
+  .crumbs { display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; font: 500 14px/1.4 var(--sans); color: var(--mute); }
+  .crumbs a { color: var(--mute); }
+  .kicker { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .chip { font: 600 11px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border: 1px solid var(--ink); border-radius: 2px; }
+  .chip.research { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .chip.reported { border-style: dashed; }
+  h1 { margin: 0; font: 400 clamp(36px, 7.5vw, 54px)/1.05 var(--display); letter-spacing: -.015em; text-wrap: balance; }
+  .lede { margin: 0; font-size: 20px; line-height: 1.5; max-width: 60ch; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr)); gap: 0; border-top: 1px solid var(--ink); }
+  .stats div { padding: 14px 14px 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 4px; align-content: start; }
+  .stats b { font: 400 30px/1.1 var(--display); color: var(--accent); font-variant-numeric: tabular-nums; }
+  .stats span { font: 400 14px/1.4 var(--sans); color: var(--mute); }
+
+  section { display: grid; gap: 16px; min-width: 0; }
+  .secband { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--ink); padding-bottom: 8px; margin-top: 12px; }
+  .secband h2 { margin: 0; font: 400 30px/1.15 var(--display); text-wrap: balance; }
+  .secband .label { white-space: nowrap; }
+  .prose { display: grid; gap: 14px; max-width: 65ch; }
+  .prose p, .prose ul, .prose ol { margin: 0; }
+  .prose ul, .prose ol { padding-left: 1.2em; }
+  .prose li + li { margin-top: 6px; }
+  .prose h3 { margin: 8px 0 0; font: 600 19px/1.3 var(--body); }
+  .src { font-size: 15px; color: var(--mute); }
+  .src a { color: var(--mute); }
+
+  figure.viz { margin: 0; display: grid; gap: 10px; padding-block: 18px 22px; border-top: 1px solid var(--rule); min-width: 0; }
+  figure.viz h3 { margin: 0; font: 600 21px/1.25 var(--body); text-wrap: balance; max-width: 46ch; }
+  figure.viz .deck { margin: 0; color: var(--mute); font-size: 16px; max-width: 60ch; }
+  figure.viz figcaption { font: 400 14px/1.5 var(--body); color: var(--mute); }
+  figure.viz figcaption a { color: var(--mute); }
+  .plot { width: 100%; min-width: 0; }
+  .plot svg { display: block; overflow: visible; }
+  .plot text { font-family: var(--sans); font-size: 12.5px; fill: var(--mute); font-variant-numeric: tabular-nums; }
+  .plot text.v { fill: var(--ink); font-weight: 600; }
+  .plot text.hi { fill: var(--accent); font-weight: 600; }
+  .plot text.ink { fill: var(--ink); }
+  .plot text.big { font-size: 15px; }
+  .plot .base { stroke: var(--ink); stroke-width: 1; }
+  .plot .grid { stroke: var(--rule); stroke-width: 1; }
+  .plot .bar { fill: var(--bar); }
+  .plot .bar.hi { fill: var(--accent); }
+  .plot .ghost { fill: none; stroke: var(--mute); stroke-width: 1.2; stroke-dasharray: 4 4; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font: 400 14px/1.3 var(--sans); color: var(--mute); }
+  .legend i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
+  .legend i.hi { background: var(--accent); }
+  .legend i.bar { background: var(--bar); }
+  .legend i.out { border: 1.5px solid var(--ink); background: var(--ink); }
+  .legend i.fight { background: var(--accent); opacity: .35; }
+  .legend i.none { border: 1px solid var(--rule); }
+
+  table { border-collapse: collapse; width: 100%; font: 400 15px/1.45 var(--body); }
+  .tablebox { overflow-x: auto; border-top: 1px solid var(--ink); }
+  .tablebox table { min-width: 560px; }
+  th { text-align: left; font: 600 12px/1.2 var(--sans); letter-spacing: .05em; text-transform: uppercase; color: var(--mute); padding: 10px 10px 8px 0; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  td { padding: 10px 10px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  td.d { font: 400 13.5px/1.45 var(--sans); color: var(--mute); white-space: nowrap; }
+  td.r { font: 600 13px/1.45 var(--sans); white-space: nowrap; }
+  td.r.against { color: var(--ink); }
+  td.r.for { color: var(--accent); }
+  td.r.pending { color: var(--mute); font-weight: 400; }
+
+  ol.tl { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--rule); margin-left: 6px; }
+  ol.tl li { position: relative; padding: 0 0 16px 22px; }
+  ol.tl li::before { content: ""; position: absolute; left: -7px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 2px solid var(--mute); }
+  ol.tl li.money::before { background: var(--accent); border-color: var(--accent); }
+  ol.tl li.courts::before { background: var(--ink); border-color: var(--ink); }
+  ol.tl .when { font: 600 12px/1.4 var(--sans); letter-spacing: .05em; text-transform: uppercase; color: var(--mute); display: block; }
+  ol.tl .what { font-size: 16.5px; line-height: 1.45; }
+  .tlkey { display: flex; flex-wrap: wrap; gap: 6px 18px; font: 400 14px/1.3 var(--sans); color: var(--mute); }
+  .tlkey i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; border: 2px solid var(--mute); }
+  .tlkey i.money { background: var(--accent); border-color: var(--accent); }
+  .tlkey i.courts { background: var(--ink); border-color: var(--ink); }
+
+  .checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .checks li { padding-left: 26px; position: relative; }
+  .checks li::before { content: ""; position: absolute; left: 0; top: 6px; width: 14px; height: 14px; border: 1.5px solid var(--mute); border-radius: 2px; }
+
+  footer { border-top: 3px double var(--ink); padding-top: 18px; display: grid; gap: 10px; }
+  footer p { margin: 0; font-size: 15px; color: var(--mute); max-width: 62ch; }
+  .help { background: var(--wash); padding: 14px 16px; font-size: 16px; }
+  .aiuse { margin: 0; font: 400 15px/1.5 var(--body); color: var(--mute); border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; max-width: 62ch; }
+  .aiuse a { color: var(--mute); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div class="crumbs"><a href="../../">Bankrolled</a><span aria-hidden="true">/</span><a href="../../#research">Research</a></div>
+    <div class="kicker"><span class="chip research">Research project</span><span class="label">Published October 7, 2026 · facts as of that date</span></div>
+    <h1>Following the money: Kalshi</h1>
+    <p class="lede">In about 18 months Kalshi went from a niche federally licensed exchange to a $22 billion business built mostly on sports bets. This project traces where its money came from, how it makes money, and what it spends to win over regulators, politicians and young customers.</p>
+    <p class="aiuse"><b>How this was made:</b> researched and written with <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>, Anthropic's AI assistant, which gathered public records and reporting, drafted the text and drew the charts. Chris Truong chose the subject, directed the work and reviewed it before publishing. Every figure links to its source so you can check it yourself.</p>
+  </header>
+
+  <div class="stats" aria-label="Key figures">
+    <div><b class="num">$22B</b><span>valuation, May 2026 (Series F)</span></div>
+    <div><b class="num">~$3.6B</b><span>raised from investors since 2019</span></div>
+    <div><b class="num">89%</b><span>of 2025 fee revenue came from sports (estimate)</span></div>
+    <div><b class="num">$3.9M</b><span>federal lobbying, late 2021 to June 2026</span></div>
+    <div><b class="num">3–1</b><span>federal appeals rulings against its sports contracts</span></div>
+  </div>
+
+  <!-- MONEY MAP -->
+  <section aria-labelledby="h-map">
+    <div class="secband"><h2 id="h-map">The money map</h2></div>
+    <figure class="viz">
+      <h3>Investors and traders pay in; lobbyists, politicians and advertisers get paid</h3>
+      <p class="deck">Each box shows the most recent verified figure for that flow. Boxes are not drawn to scale: the amounts differ by a factor of a thousand.</p>
+      <div class="plot" id="map" role="img" aria-label="Diagram: venture investors ($3.6 billion raised) and traders' fees ($263.5 million in 2025) flow into Kalshi, valued at $22 billion. Kalshi pays for marketing ($41.4 million on national TV in January to August 2026), federal lobbying ($3.9 million since 2021) and political giving (about $1 million from the founders and $567,500 to governors' and attorneys general associations)."></div>
+      <figcaption>Sources: funding from <a href="https://www.cooley.com/news/coverage/2026/2026-05-07-kalshi-raises-$1-billion-series-f" target="_blank" rel="noopener">Cooley</a> and Clay; 2025 fees, an estimate from trade data, via <a href="https://cdcgaming.com/brief/kalshis-2025-fee-revenue-was-263-5m-with-89-coming-from-sports/" target="_blank" rel="noopener">CDC Gaming</a>; TV spend from iSpot via <a href="https://www.mediapost.com/publications/article/417626/" target="_blank" rel="noopener">MediaPost</a>; lobbying from <a href="https://lda.senate.gov/" target="_blank" rel="noopener">Senate disclosures</a>; donations from the FEC, <a href="https://www.notus.org/2026-election/kalshi-donations-midterms" target="_blank" rel="noopener">NOTUS</a> and <a href="https://www.opensecrets.org/news/2026/09/kalshi-leads-prediction-markets-3-million-effort-to-fight-off-state-regulations/" target="_blank" rel="noopener">OpenSecrets</a>.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ORIGINS + MONEY IN -->
+  <section aria-labelledby="h-in">
+    <div class="secband"><h2 id="h-in">Money in</h2><span class="label">Origins and investors</span></div>
+    <div class="prose">
+      <p>Kalshi came from Wall Street's quant side, not from gambling. Founders Tarek Mansour and Luana Lopes Lara, MIT graduates who worked at Citadel Securities, Bridgewater and Goldman Sachs, came up with the idea in 2018 while interning at the trading firm Five Rings, then joined Y Combinator in 2019 (<a href="https://research.contrary.com/company/kalshi" target="_blank" rel="noopener">Contrary</a>, <a href="https://www.forbes.com.au/?p=179358" target="_blank" rel="noopener">Forbes</a>).</p>
+      <p>The license was the business. On November 4, 2020, the CFTC approved Kalshi as the first federally regulated exchange for event contracts (<a href="https://cftc.gov/PressRoom/PressReleases/8302-20" target="_blank" rel="noopener">CFTC</a>). That federal license is now Kalshi's shield against state gambling laws.</p>
+    </div>
+    <figure class="viz">
+      <h3>The valuation rose elevenfold in under a year</h3>
+      <p class="deck">Valuation at each funding round since sports contracts launched in January 2025. Almost all of the roughly $3.6 billion Kalshi has raised came in these rounds.</p>
+      <div class="plot" id="valuation" role="img" aria-label="Bar chart: Kalshi's valuation was $2 billion in June 2025, $5 billion in October 2025, $11 billion in December 2025 and $22 billion in May 2026. A round at about $40 billion was reported in talks in September 2026."></div>
+      <figcaption>Sources: <a href="https://theblock.co/post/359661/" target="_blank" rel="noopener">The Block</a> (Series C, D), TechCrunch (Series E), <a href="https://www.cooley.com/news/coverage/2026/2026-05-07-kalshi-raises-$1-billion-series-f" target="_blank" rel="noopener">Cooley</a> (Series F), <a href="https://kfgo.com/?p=1357765" target="_blank" rel="noopener">Reuters</a> and Bloomberg (round in talks, not confirmed closed). Earlier valuations are left out because sources disagree on them.</figcaption>
+    </figure>
+    <div class="prose">
+      <h3>Who backs and steers it</h3>
+      <ul>
+        <li><b>Investors:</b> Sequoia (since the 2021 Series A), Paradigm, Andreessen Horowitz, Coatue, Alphabet's CapitalG, Coinbase Ventures, Morgan Stanley and ARK Invest, among others.</li>
+        <li><b>Board:</b> five members, including Sequoia's Alfred Lin (<a href="https://kfgo.com/?p=1357765" target="_blank" rel="noopener">Reuters</a>).</li>
+        <li><b>Brian Quintenz:</b> a former CFTC commissioner on Kalshi's board, nominated to chair the CFTC in 2025. The nomination was withdrawn, and in July 2026 he became an adviser to the industry's lobbying coalition (<a href="https://sbcamericas.com/2025/10/01/white-house-ditches-quintenz-cftc-chair/" target="_blank" rel="noopener">SBC Americas</a>).</li>
+        <li><b>Donald Trump Jr.:</b> a paid strategic adviser since January 2025. <span class="chip reported">Reported</span> The Financial Times, citing unnamed sources, reported he was granted about $300,000 in Kalshi stock without investing his own money; neither he nor Kalshi commented (<a href="https://covers.com/industry/kalshi-facing-scrutiny-over-trump-jr-300k-share-gift-june-30-2026" target="_blank" rel="noopener">Covers</a>). His venture firm has also invested in rival Polymarket.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MONEY MADE -->
+  <section aria-labelledby="h-made">
+    <div class="secband"><h2 id="h-made">Money made</h2><span class="label">Fees, revenue, volume</span></div>
+    <div class="prose">
+      <p>Kalshi takes a fee on almost every trade, largest on near coin-flip events. It is private, so every revenue figure is an estimate or the company's own unaudited claim.</p>
+    </div>
+    <figure class="viz">
+      <h3>Nearly nine of every ten fee dollars in 2025 came from sports</h3>
+      <div class="plot" id="feemix" role="img" aria-label="Bar showing that sports contracts produced 89 percent of Kalshi's estimated $263.5 million in 2025 fee revenue; everything else produced 11 percent."></div>
+      <figcaption>Source: estimate from Kalshi trade data, via <a href="https://cdcgaming.com/brief/kalshis-2025-fee-revenue-was-263-5m-with-89-coming-from-sports/" target="_blank" rel="noopener">CDC Gaming</a> (January 2026). Estimated total: $263.5 million.</figcaption>
+    </figure>
+    <div class="prose">
+      <ul>
+        <li><b>Growth:</b> about $23.8 billion was traded on Kalshi in 2025, roughly twelve times 2024's total, and about $40 billion in July 2026 alone, during the World Cup (<a href="https://www.theblock.co/news/business/2026-09-02-kalshi-polymarkets-volume-falls-august-413309" target="_blank" rel="noopener">The Block</a>).</li>
+        <li><span class="chip reported">Reported</span> <b>Revenue pace:</b> The Information, citing people familiar, reported a pace of about $4 billion a year by July 2026, with June operating costs near $300 million, mostly marketing (via <a href="https://dealroom.co/news/144595-kalshi-eyes-40b-valuation-as-revenue-doubles-to-4b-annualized/" target="_blank" rel="noopener">Dealroom</a>).</li>
+        <li><b>Traders mostly lose:</b> economists at University College Dublin studied about 314,000 Kalshi contract prices and found traders lost about 20% on average before fees; buyers of long shots priced at 10 cents or less lost more than 60% (<a href="https://cepr.org/voxeu/columns/economics-kalshi-prediction-market" target="_blank" rel="noopener">Burgi, Deng and Whelan</a>).</li>
+        <li><b>Distribution:</b> Robinhood (March 2025), Webull and Coinbase (all 50 states, January 2026) sell Kalshi contracts inside apps people already use. CNN, CNBC and Fox News show its odds on air, and the NHL, the US Open and five MLB teams are partners (<a href="https://www.fortune.com/2026/08/25/kalshi-deals-five-mlb-teams-separate-league-partnership/" target="_blank" rel="noopener">Fortune</a>).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INFLUENCE -->
+  <section aria-labelledby="h-inf">
+    <div class="secband"><h2 id="h-inf">Money for influence</h2><span class="label">Lobbying and politics</span></div>
+    <figure class="viz">
+      <h3>Lobbying in the first half of 2026 alone topped all of 2025</h3>
+      <p class="deck">Kalshi hired outside lobbyists in December 2021, years before it registered its own in July 2025.</p>
+      <div class="legend"><span><i class="hi"></i>Kalshi's own lobbyists</span><span><i class="bar"></i>Outside lobbying firms</span></div>
+      <div class="plot" id="lobby" role="img" aria-label="Stacked bar chart of Kalshi's federal lobbying spending: $20,000 in late 2021, $180,000 in 2022, $240,000 in 2023, $640,000 in 2024, $1.04 million in 2025 and $1.78 million in January to June 2026."></div>
+      <figcaption>Source: <a href="https://lda.senate.gov/" target="_blank" rel="noopener">Senate lobbying disclosures</a>, client "Kalshi," amended filings used where they exist. 2021 covers October to December only; 2026 covers January to June. Third-quarter 2026 reports are due October 20.</figcaption>
+    </figure>
+    <figure class="viz">
+      <h3>Kalshi gave to the groups that elect both parties' attorneys general and governors</h3>
+      <p class="deck">Attorneys general in many states are suing Kalshi. In the first half of 2026 it gave $567,500 to the four national associations that back their campaigns.</p>
+      <div class="plot" id="assoc" role="img" aria-label="Bar chart of Kalshi's donations in the first half of 2026: $170,000 to the Democratic Attorneys General Association, $150,000 to the Democratic Governors Association, $147,500 to the Republican Attorneys General Association and $100,000 to the Republican Governors Association."></div>
+      <figcaption>Source: IRS 527 reports, via <a href="https://www.opensecrets.org/news/2026/09/kalshi-leads-prediction-markets-3-million-effort-to-fight-off-state-regulations/" target="_blank" rel="noopener">OpenSecrets</a> (September 30, 2026).</figcaption>
+    </figure>
+    <div class="prose">
+      <h3>Who it hired</h3>
+      <ul>
+        <li><b>Former regulators:</b> De'Ana Dow, once counsel to two CFTC chairmen, has lobbied for Kalshi since 2022. Former CFTC official Jeff Bandman now runs Kalshi Prime, its futures broker (<a href="https://news.kalshi.com/p/kalshi-prime-jeff-bandman-ceo" target="_blank" rel="noopener">Kalshi</a>).</li>
+        <li><b>The CFTC's overseers:</b> former Sen. Blanche Lincoln, who chaired the Senate Agriculture Committee, which oversees the CFTC.</li>
+        <li><b>Both parties' insiders:</b> two former legislative directors to Chuck Schumer; a former Senate Republican floor staffer; the finance chair of Trump's second inaugural committee, through Miller Strategies; and a former Biden administration liaison, John Bivona, as head of federal relations.</li>
+        <li><b>The states:</b> registered lobbyists in 41 states by September 2026, nearly all hired since April (<a href="https://www.opensecrets.org/news/2026/09/kalshi-leads-prediction-markets-3-million-effort-to-fight-off-state-regulations/" target="_blank" rel="noopener">OpenSecrets</a>).</li>
+        <li><b>The trade group:</b> the Coalition for Prediction Markets (Kalshi, Coinbase, Robinhood, Crypto.com, Underdog) is led by former Rep. Sean Patrick Maloney (<a href="https://www.axios.com/2026/01/13/coalition-for-prediction-markets-maloney-mchenry" target="_blank" rel="noopener">Axios</a>).</li>
+      </ul>
+      <h3>Political giving</h3>
+      <p>The founders gave about $1 million to candidates and party committees in 2025 and 2026, roughly $615,000 to Republicans and $377,000 to Democrats, including $250,000 each to NRSC Victory in April 2026 (<a href="https://www.notus.org/2026-election/kalshi-donations-midterms" target="_blank" rel="noopener">NOTUS</a>). Recipients include sponsors of bills to restrict prediction markets as well as sponsors of the Kalshi-backed Prediction Market Act. Kalshi has no PAC of its own.</p>
+      <p>The opposition spends too. The American Gaming Association spent about as much on federal lobbying as Kalshi in the first half of 2026, and a super PAC funded by FanDuel, DraftKings and Fanatics has raised $70 million (<a href="https://www.notus.org/money/prediction-markets-kalshi-polymarket-lobbying-congress" target="_blank" rel="noopener">NOTUS</a>). Sportsbooks see Kalshi as a competitor.</p>
+    </div>
+  </section>
+
+  <!-- MARKETING -->
+  <section aria-labelledby="h-ads">
+    <div class="secband"><h2 id="h-ads">Money for attention</h2><span class="label">Ads and who they reach</span></div>
+    <figure class="viz">
+      <h3>Kalshi outspent Polymarket on national TV more than five to one</h3>
+      <p class="deck">Estimated national TV ad spending, January through late August 2026. Social media, streaming, in-app ads and sponsorships are not counted here, and are likely most of Kalshi's budget.</p>
+      <div class="plot" id="tvads" role="img" aria-label="Bar chart of estimated national TV ad spending in 2026 through late August: DraftKings $111.4 million, FanDuel $57.9 million, Kalshi $41.4 million, Polymarket $7.4 million."></div>
+      <figcaption>Source: iSpot estimates via <a href="https://www.mediapost.com/publications/article/417626/" target="_blank" rel="noopener">MediaPost</a> (September 2, 2026). Kalshi's $41.4 million bought about 4.3 billion impressions.</figcaption>
+    </figure>
+    <div class="prose">
+      <ul>
+        <li><b>Stars:</b> Timothée Chalamet spots in June 2026, and a World Cup sponsorship of Argentina's national team that included a paid Instagram post by Lionel Messi (<a href="https://www.gamblinginsider.com/news/167193/lionel-messi-kalshi-argentina-world-cup-partnership" target="_blank" rel="noopener">Gambling Insider</a>).</li>
+        <li><b>Influencers:</b> in June 2026 the BBB's National Advertising Division referred Kalshi to the FTC and state attorneys general after Kalshi declined to take part in a review of paid posts that did not disclose the relationship (<a href="https://www.mediapost.com/publications/article/415623/nad-will-refer-kalshi-to-regulators-over-ads-on-in.html" target="_blank" rel="noopener">MediaPost</a>).</li>
+        <li><b>Young customers:</b> Kalshi lets 18-year-olds trade; most state sportsbooks require bettors to be 21. Creators pitched it as a "money hack," and a 2025 college ambassador program was deleted after backlash. Ohio cited that framing and underage access in a proposed $5 million fine (<a href="https://covers.com/industry/ohio-gaming-regulator-fines-kalshi-5-million-april-14-2026" target="_blank" rel="noopener">Covers</a>).</li>
+        <li><span class="chip reported">Reported</span> CNN estimated that 18- to 20-year-olds traded about $5.4 billion on Kalshi in 2026; Kalshi says the age group is about 3% of volume. CNN did not publish its method and is a Kalshi data partner (<a href="https://keyt.com/news/money-and-business/cnn-business-consumer/2026/08/28/young-adults-under-21-traded-5-billion-on-kalshi-this-year-amid-prediction-market-frenzy/" target="_blank" rel="noopener">CNN via KEYT</a>).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COURTS -->
+  <section aria-labelledby="h-law">
+    <div class="secband"><h2 id="h-law">The legal fight</h2><span class="label">States, courts, the CFTC</span></div>
+    <div class="prose">
+      <p>Kalshi's whole model rests on one argument: its contracts are federally regulated swaps, so state gambling laws do not apply. The CFTC fought Kalshi until May 2025, when it dropped its appeal under the new administration (<a href="https://www.financemagnates.com/forex/cftc-folds-its-hand-in-election-betting-showdown-with-kalshi" target="_blank" rel="noopener">Finance Magnates</a>). Since April 2026 the CFTC and the Justice Department have sued states on Kalshi's side of the argument (<a href="https://www.cftc.gov/PressRoom/PressReleases/9206-26" target="_blank" rel="noopener">CFTC</a>).</p>
+    </div>
+    <figure class="viz">
+      <h3>At least 17 states are fighting Kalshi, and three have forced it to stop sports contracts</h3>
+      <div class="legend"><span><i class="out"></i>Ordered to stop sports contracts</span><span><i class="fight"></i>Legal fight under way</span><span><i class="none"></i>No case found</span></div>
+      <div class="plot" id="states" role="img" aria-label="Map of US states. Nevada, Michigan and Washington have ordered Kalshi to stop sports contracts. Maryland, New Jersey, Ohio, Tennessee, Massachusetts, New York, Connecticut, Illinois, Arizona, Montana, Wisconsin, Utah, Iowa and Minnesota have legal fights under way."></div>
+      <figcaption>Maryland is outlined. Each state counted has a cease-and-desist order, a lawsuit by or against Kalshi, or a court order on record as of October 7, 2026. Case trackers list a few more states that we have not yet verified. Sources: court records and coverage compiled from <a href="https://defirate.com/prediction-markets/legal/" target="_blank" rel="noopener">DeFiRate</a>, <a href="https://wsn.com/prediction-markets/legal" target="_blank" rel="noopener">WSN</a> and state press releases.</figcaption>
+    </figure>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Appeals court</th><th>Case</th><th>Date</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>Sixth Circuit</td><td>Ohio and Tennessee (<a href="https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937" target="_blank" rel="noopener">The Block</a>)</td><td class="d">Sept. 2026</td><td class="r against">Against Kalshi</td></tr>
+          <tr><td>Ninth Circuit</td><td>California tribes (<a href="https://www.buchalter.com/insights/ninth-circuit-kalshis-sports-contracts-are-class-iii-gaming-on-tribal-land-and-tribes-can-sue-to-stop-them/" target="_blank" rel="noopener">Buchalter</a>)</td><td class="d">Sept. 16, 2026</td><td class="r against">Against Kalshi</td></tr>
+          <tr><td>Ninth Circuit</td><td>Nevada (rehearing requested)</td><td class="d">Aug. 28, 2026</td><td class="r against">Against Kalshi</td></tr>
+          <tr><td>Third Circuit</td><td>New Jersey (<a href="https://www.lowenstein.com/news-insights/publications/client-alerts/third-circuit-affirms-preliminary-injunction-in-favor-of-kalshi-fctm" target="_blank" rel="noopener">Lowenstein</a>)</td><td class="d">Apr. 6, 2026</td><td class="r for">For Kalshi, 2–1</td></tr>
+          <tr><td>Fourth Circuit</td><td>Maryland</td><td class="d">Argued May 7, 2026</td><td class="r pending">Pending</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <p>New Jersey asked the Supreme Court to settle the split on September 2, 2026 (<a href="https://www.supremecourt.gov/docket/docketfiles/html/public/26-299.html" target="_blank" rel="noopener">No. 26-299</a>). Kalshi's response is due November 9.</p>
+      <h3>Maryland</h3>
+      <p>Maryland ordered Kalshi to stop in April 2025. A federal judge refused to block the state's law that August, but Maryland agreed not to enforce it until the Fourth Circuit rules, so Kalshi still operates in Maryland (<a href="https://www.covers.com/industry/kalshi-withdraws-maryland-injunction-request-after-agreement-august-2025" target="_blank" rel="noopener">Covers</a>). In April 2026 Gov. Wes Moore barred state employees from trading on inside information (<a href="https://www.thebanner.com/politics-power/state-government/wes-moore-bans-maryland-workers-prediction-market-apps-QTPTY3GVI5FFPDTHVALC73ZASU/" target="_blank" rel="noopener">Baltimore Banner</a>), and in August Baltimore City sued Kalshi, Robinhood, Webull and Coinbase under its consumer protection law (<a href="https://www.theblock.co/news/business/2026-08-13-baltimore-sues-kalshi-polymarket-roping-coinbase-robinhood-webull-into-fight-411746" target="_blank" rel="noopener">The Block</a>). The lawsuit's claims are allegations.</p>
+      <h3>Other cases</h3>
+      <p>Arizona filed criminal charges, which a federal judge blocked at the CFTC's request. New York's lawsuit seeks about $36 billion. Gamblers have filed class actions and suits to recover losses; none has produced a ruling against Kalshi yet (<a href="https://frontofficesports.com/article/kalshi-hit-with-nationwide-class-action-over-illegal-sports-betting/" target="_blank" rel="noopener">Front Office Sports</a>). Kalshi says it has opened about 200 insider-trading investigations of its own users (<a href="https://www.npr.org/2026/02/25/nx-s1-5726050/kalshi-insider-trading-enforcement-actions" target="_blank" rel="noopener">NPR</a>).</p>
+    </div>
+  </section>
+
+  <!-- HARM -->
+  <section aria-labelledby="h-harm">
+    <div class="secband"><h2 id="h-harm">Who pays</h2><span class="label">What the research finds</span></div>
+    <div class="prose">
+      <p>No study yet measures harm among prediction-market users directly. Because sports make up most of Kalshi's business, the research on online sports betting is the closest evidence.</p>
+    </div>
+    <figure class="viz">
+      <h3>Gambling-disorder diagnoses rose where sports betting became legal, and fell where it did not</h3>
+      <p class="deck">Diagnosed gambling disorder per 100,000 patients, first quarter of 2018 vs first quarter of 2026.</p>
+      <div class="plot" id="epic" role="img" aria-label="Slope chart: in states with legal sports betting, diagnosed gambling disorder rose from 3.0 to 4.8 per 100,000 patients between early 2018 and early 2026. In states without it, the rate fell from 3.1 to 2.2."></div>
+      <figcaption>Source: <a href="https://media.epic.com/epicresearch/wordpressmedia/pdfs/gambling-disorder-diagnoses-have-risen-more-than-60-in-states-that-legalized-sports-betting.pdf" target="_blank" rel="noopener">Epic Research</a>, health records of about 197 million adults (June 2026). Not peer-reviewed; shows a pattern, not cause. Among 18- to 29-year-olds the rate more than doubled.</figcaption>
+    </figure>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Study</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2025.02515" target="_blank" rel="noopener">Hollenbeck, Larsen and Proserpio</a>, <i>Management Science</i> (peer-reviewed)</td><td>Online sports betting lowered credit scores; an earlier version of the study found bankruptcy risk up 25–30%.</td></tr>
+          <tr><td><a href="https://www.nber.org/papers/w33108" target="_blank" rel="noopener">Baker and colleagues</a>, <i>Journal of Financial Economics</i>, 2026 (peer-reviewed)</td><td>Betting cut savings and investment; households already short of money took on more credit card debt and overdrafts.</td></tr>
+          <tr><td><a href="https://pubsonline.informs.org/doi/10.1287/isre.2024.1526" target="_blank" rel="noopener">Ozer, Greenwood and Gopal</a>, <i>Information Systems Research</i>, 2026 (peer-reviewed)</td><td>Legal online betting raised calls to the problem-gambling helpline and was linked to more suicides among young, unmarried men.</td></tr>
+          <tr><td><a href="https://www.powershealth.org/about-us/newsroom/health-library/2025/02/17/us-gambling-addiction-searches-soar-with-legal-sports-betting" target="_blank" rel="noopener">Ayers and colleagues</a>, <i>JAMA Internal Medicine</i>, 2025 (peer-reviewed)</td><td>Searches for help with gambling addiction rose 23% nationally after 2018.</td></tr>
+          <tr><td><a href="https://cheps.sdsu.edu/_resources/docs/working-papers/cheps-wp-20251001.pdf" target="_blank" rel="noopener">Arnesen and Matsuzawa</a>, 2025 (working paper)</td><td>Domestic violence after home-team NFL upsets rose roughly 9–10% where betting is legal.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <p>A 2026 policy article in <i>Science</i> argues that prediction markets use gambling-style design while calling bets "trading," which keeps users from seeing themselves as gamblers (<a href="https://www.gamblinginsider.com/news/156260/science-journal-research-community-prediction-markets-political-public-health-risks" target="_blank" rel="noopener">Gambling Insider</a>). Kalshi is not connected to the state self-exclusion lists that licensed sportsbooks must honor. In May 2026 it pledged $2 million to the National Council on Problem Gambling (<a href="https://covers.com/industry/kalshi-collaborates-with-ncpg-to-form-responsible-trading-initiative-may-18-2026" target="_blank" rel="noopener">Covers</a>).</p>
+      <p><b>The other side:</b> Federal Reserve economists found Kalshi's prices forecast Fed decisions and economic data about as well as professional surveys (<a href="https://www.nber.org/papers/w34702" target="_blank" rel="noopener">NBER</a>). Kalshi argues it is federally supervised, does not bet against its users and polices insider trading. Its forecasting value comes mostly from economic and political markets, though, while most of its money comes from sports.</p>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section aria-labelledby="h-tl">
+    <div class="secband"><h2 id="h-tl">Timeline</h2></div>
+    <div class="tlkey"><span><i class="money"></i>Money</span><span><i class="courts"></i>Courts and regulators</span><span><i></i>Politics and business</span></div>
+    <ol class="tl">
+      <li class="courts"><span class="when">September 2026</span><span class="what">Sixth and Ninth Circuits rule against Kalshi; New Jersey asks the Supreme Court to decide.</span></li>
+      <li class="money"><span class="when">September 2026</span><span class="what">A round of about $1 billion at about $40 billion is reported in talks.</span></li>
+      <li class="courts"><span class="when">August 2026</span><span class="what">Baltimore sues; Michigan and Washington order Kalshi to block sports contracts under daily fines.</span></li>
+      <li class="money"><span class="when">May 7, 2026</span><span class="what">$1 billion Series F at $22 billion, led by Coatue.</span></li>
+      <li class="courts"><span class="when">April 2026</span><span class="what">Third Circuit rules for Kalshi in New Jersey; the CFTC and DOJ begin suing states on Kalshi's side.</span></li>
+      <li class="courts"><span class="when">March 2026</span><span class="what">Arizona files criminal charges; Nevada forces Kalshi out.</span></li>
+      <li><span class="when">January 2026</span><span class="what">Kalshi opens a Washington office; Coinbase launches Kalshi markets in all 50 states.</span></li>
+      <li class="money"><span class="when">December 2025</span><span class="what">$1 billion Series E at $11 billion.</span></li>
+      <li class="money"><span class="when">October 2025</span><span class="what">More than $300 million at $5 billion.</span></li>
+      <li><span class="when">July 2025</span><span class="what">Kalshi registers its own lobbyists.</span></li>
+      <li class="money"><span class="when">June 2025</span><span class="what">$185 million Series C at $2 billion.</span></li>
+      <li class="courts"><span class="when">May 2025</span><span class="what">The CFTC drops its appeal against Kalshi.</span></li>
+      <li><span class="when">March 2025</span><span class="what">Robinhood launches Kalshi-powered markets; the first states order Kalshi to stop.</span></li>
+      <li><span class="when">January 2025</span><span class="what">Sports contracts launch; Donald Trump Jr. joins as an adviser.</span></li>
+      <li class="courts"><span class="when">September 2024</span><span class="what">Kalshi beats the CFTC in court over election contracts.</span></li>
+      <li><span class="when">December 2021</span><span class="what">First outside lobbyists hired.</span></li>
+      <li class="money"><span class="when">February 2021</span><span class="what">$30 million Series A, led by Sequoia.</span></li>
+      <li class="courts"><span class="when">November 4, 2020</span><span class="what">The CFTC licenses Kalshi as an exchange.</span></li>
+      <li><span class="when">2018–2019</span><span class="what">Founded; joins Y Combinator.</span></li>
+    </ol>
+  </section>
+
+  <!-- OPEN -->
+  <section aria-labelledby="h-open">
+    <div class="secband"><h2 id="h-open">Still to check</h2></div>
+    <ul class="checks">
+      <li>Third-quarter 2026 lobbying reports, due October 20, including FTP's fee and new in-house hires</li>
+      <li>FEC filings after July 14, 2026, and the Trump inaugural committee's donor list</li>
+      <li>Kalshi's SEC Form D filings, to confirm directors and amounts raised</li>
+      <li>Kalshi's state lobbying spending in Maryland, Nevada, New Jersey, Ohio and Illinois</li>
+      <li>Whether Brian Quintenz is still on Kalshi's board</li>
+      <li>Rulings in the Fourth Circuit (Maryland), the Massachusetts high court and the Supreme Court petitions</li>
+    </ul>
+    <p class="src"><b>Method:</b> compiled by Claude, Anthropic's AI assistant, from public records (Senate lobbying disclosures, FEC and IRS filings, court dockets, CFTC releases) and from reporting, under the same rules as the rest of Bankrolled, and reviewed by Chris Truong. AI can make mistakes, which is why every claim is linked to its source. Revenue figures are estimates or company claims; items marked Reported rest on a single outlet or unnamed sources. Spot an error? <a href="https://github.com/chrisqtruong/bankrolled/discussions" target="_blank" rel="noopener">Tell us on GitHub</a>.</p>
+  </section>
+
+  <footer>
+    <p class="help">If gambling is causing problems for you or someone you know, the National Problem Gambling Helpline is 1-800-GAMBLER (call or text).</p>
+    <p><a href="../../">Back to Bankrolled</a>. Text and data are free to reuse with credit under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>; the code is <a href="https://github.com/chrisqtruong/bankrolled" target="_blank" rel="noopener">MIT-licensed on GitHub</a>.</p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const NS = 'http://www.w3.org/2000/svg';
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const svg = (w, h, inner) => `<svg xmlns="${NS}" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${inner}</svg>`;
+  const T = (x, y, s, cls = '', anchor = 'start', extra = '') => `<text x="${x}" y="${y}" class="${cls}" text-anchor="${anchor}" ${extra}>${esc(s)}</text>`;
+
+  // ---- data (every number below is cited in the figure caption beside it)
+  const VAL = [
+    { r: 'Series C', d: 'Jun 2025', v: 2 },
+    { r: 'Series D', d: 'Oct 2025', v: 5 },
+    { r: 'Series E', d: 'Dec 2025', v: 11 },
+    { r: 'Series F', d: 'May 2026', v: 22, hi: true },
+    { r: 'In talks', d: 'Sep 2026', v: 40, ghost: true },
+  ];
+  const LOBBY = [
+    { y: '2021', n: 'Oct–Dec', out: 20, own: 0 },
+    { y: '2022', n: '', out: 180, own: 0 },
+    { y: '2023', n: '', out: 240, own: 0 },
+    { y: '2024', n: '', out: 640, own: 0 },
+    { y: '2025', n: '', out: 670, own: 365 },
+    { y: '2026', n: 'Jan–Jun', out: 790, own: 990 },
+  ];
+  const ASSOC = [
+    { k: 'Democratic Attorneys General Assn.', v: 170000 },
+    { k: 'Democratic Governors Assn.', v: 150000 },
+    { k: 'Republican Attorneys General Assn.', v: 147500 },
+    { k: 'Republican Governors Assn.', v: 100000 },
+  ];
+  const TV = [
+    { k: 'DraftKings', v: 111.4 },
+    { k: 'FanDuel', v: 57.9 },
+    { k: 'Kalshi', v: 41.4, hi: true },
+    { k: 'Polymarket', v: 7.4 },
+  ];
+  const OUT = ['NV', 'MI', 'WA'];
+  const FIGHT = ['MD', 'NJ', 'OH', 'TN', 'MA', 'NY', 'CT', 'IL', 'AZ', 'MT', 'WI', 'UT', 'IA', 'MN'];
+  // tile-grid map: [state, column, row]
+  const TILES = [['AK',0,0],['ME',11,0],['VT',10,1],['NH',11,1],['WA',1,2],['ID',2,2],['MT',3,2],['ND',4,2],['MN',5,2],['IL',6,2],['WI',7,2],['MI',8,2],['NY',9,2],['RI',10,2],['MA',11,2],['OR',1,3],['NV',2,3],['WY',3,3],['SD',4,3],['IA',5,3],['IN',6,3],['OH',7,3],['PA',8,3],['NJ',9,3],['CT',10,3],['CA',1,4],['UT',2,4],['CO',3,4],['NE',4,4],['MO',5,4],['KY',6,4],['WV',7,4],['VA',8,4],['MD',9,4],['DE',10,4],['AZ',2,5],['NM',3,5],['KS',4,5],['AR',5,5],['TN',6,5],['NC',7,5],['SC',8,5],['DC',9,5],['OK',4,6],['LA',5,6],['MS',6,6],['AL',7,6],['GA',8,6],['HI',0,7],['TX',4,7],['FL',9,7]];
+
+  const money = k => k >= 1000 ? `$${Math.round(k / 10) / 100}M` : `$${k}K`;
+
+  // ---- charts, drawn at the container's real width so text stays readable on phones
+  function drawMap(el) {
+    const W = el.clientWidth, narrow = W < 560;
+    const ins = [
+      { t: 'Venture investors', a: '$3.6B raised', s: 'Sequoia, Paradigm, a16z, Coatue' },
+      { t: 'Traders’ fees', a: '$263.5M in 2025', s: '89% from sports (estimate)' },
+    ];
+    const outs = [
+      { t: 'Marketing', a: '$41.4M national TV', s: 'Jan–Aug 2026; social not counted' },
+      { t: 'Federal lobbying', a: '$3.9M since 2021', s: '$1.78M in Jan–Jun 2026' },
+      { t: 'Political giving', a: '~$1M from founders', s: '+$567.5K to AG, governor groups' },
+    ];
+    let s = '';
+    const box = (x, y, w, h, b, hi) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="${hi ? 'var(--accent)' : 'var(--paper)'}" fill-opacity="${hi ? 0.12 : 1}" stroke="${hi ? 'var(--accent)' : 'var(--ink)'}" stroke-width="${hi ? 2 : 1}"/>`;
+    const node = (x, y, w, h, b, hi) => box(x, y, w, h, b, hi) + T(x + 12, y + 22, b.t, 'ink', 'start', 'font-weight="600"') + T(x + 12, y + 42, b.a, hi ? 'hi big' : 'v big') + T(x + 12, y + 60, b.s);
+    if (!narrow) {
+      const bw = Math.min(236, (W - 40) / 3 - 4), bh = 72, cx = W / 2, kw = Math.min(170, W - 2 * bw - 80), kh = 96;
+      const H = 3 * bh + 2 * 18 + 40;
+      const leftY = i => 40 + (H - 40 - (2 * bh + 30)) / 2 + i * (bh + 30), rightY = i => 40 + i * (bh + 18);
+      const ky = 40 + (H - 40 - kh) / 2;
+      s += T(0, 16, 'MONEY IN', 'label', 'start', 'font-weight="600" letter-spacing=".06em"') + T(W, 16, 'MONEY OUT', 'label', 'end', 'font-weight="600" letter-spacing=".06em"');
+      ins.forEach((b, i) => { const y = leftY(i) + bh / 2; s += `<path d="M${bw} ${y} C ${bw + 40} ${y}, ${cx - kw / 2 - 40} ${ky + kh / 2}, ${cx - kw / 2} ${ky + kh / 2}" fill="none" stroke="var(--accent)" stroke-width="${i ? 3 : 6}" stroke-opacity=".55"/>`; });
+      outs.forEach((b, i) => { const y = rightY(i) + bh / 2; s += `<path d="M${cx + kw / 2} ${ky + kh / 2} C ${cx + kw / 2 + 40} ${ky + kh / 2}, ${W - bw - 40} ${y}, ${W - bw} ${y}" fill="none" stroke="var(--bar)" stroke-width="2.5"/>`; });
+      ins.forEach((b, i) => { s += node(0, leftY(i), bw, bh, b, false); });
+      outs.forEach((b, i) => { s += node(W - bw, rightY(i), bw, bh, b, false); });
+      s += box(cx - kw / 2, ky, kw, kh, null, true) + T(cx, ky + 34, 'Kalshi', 'ink', 'middle', 'font-weight="600" style="font-family:var(--display);font-size:22px"') + T(cx, ky + 58, '$22B valuation', 'hi big', 'middle') + T(cx, ky + 78, 'May 2026', '', 'middle');
+      el.innerHTML = svg(W, H, s);
+    } else {
+      // stacked vertically on phones
+      const bw = W, bh = 72, gap = 12;
+      let y = 0;
+      s += T(0, 14, 'MONEY IN', 'label', 'start', 'font-weight="600"'); y = 24;
+      ins.forEach(b => { s += node(0, y, bw, bh, b, false); y += bh + gap; });
+      s += `<path d="M${W / 2} ${y - gap} V ${y + 14}" stroke="var(--accent)" stroke-width="4" stroke-opacity=".55"/>`; y += 16;
+      s += box(0, y, bw, 76, null, true) + T(12, y + 30, 'Kalshi', 'ink', 'start', 'style="font-family:var(--display);font-size:22px"') + T(12, y + 56, '$22B valuation, May 2026', 'hi big'); y += 76;
+      s += `<path d="M${W / 2} ${y} V ${y + 28}" stroke="var(--bar)" stroke-width="2.5"/>`; y += 30;
+      s += T(0, y + 12, 'MONEY OUT', 'label', 'start', 'font-weight="600"'); y += 22;
+      outs.forEach(b => { s += node(0, y, bw, bh, b, false); y += bh + gap; });
+      el.innerHTML = svg(W, y, s);
+    }
+  }
+
+  function drawValuation(el) {
+    const W = el.clientWidth, H = 260, b0 = 210, top = 30, peak = Math.max(...VAL.map(d => d.v));
+    const band = W / VAL.length, bw = Math.min(64, band * 0.6), y = v => b0 - v / peak * (b0 - top);
+    let s = `<line class="base" x1="0" x2="${W}" y1="${b0}" y2="${b0}"/>`;
+    VAL.forEach((d, i) => {
+      const x = i * band + (band - bw) / 2, cx = x + bw / 2;
+      s += d.ghost
+        ? `<rect class="ghost" x="${x}" y="${y(d.v)}" width="${bw}" height="${b0 - y(d.v)}"><title>${esc(`Reported in talks, ${d.d}: about $${d.v}B`)}</title></rect>`
+        : `<rect class="bar${d.hi ? ' hi' : ''}" x="${x}" y="${y(d.v)}" width="${bw}" height="${b0 - y(d.v)}"><title>${esc(`${d.r}, ${d.d}: $${d.v}B`)}</title></rect>`;
+      s += T(cx, y(d.v) - 8, (d.ghost ? '~' : '') + `$${d.v}B`, d.hi ? 'hi' : 'v', 'middle');
+      s += T(cx, b0 + 20, d.r, 'ink', 'middle') + T(cx, b0 + 38, d.ghost ? 'Reported' : d.d, '', 'middle');
+    });
+    el.innerHTML = svg(W, H, s);
+  }
+
+  function drawFeeMix(el) {
+    const W = el.clientWidth, H = 74, sp = 0.89;
+    let s = `<rect class="bar hi" x="0" y="0" width="${W * sp}" height="34"><title>Sports: 89%</title></rect><rect class="bar" x="${W * sp + 2}" y="0" width="${W * (1 - sp) - 2}" height="34"><title>Everything else: 11%</title></rect>`;
+    s += T(10, 22, 'Sports  89%', '', 'start', 'style="fill:var(--on-accent);font-weight:600"');
+    s += T(W, 56, 'Elections, economics, culture and more  11%', '', 'end');
+    el.innerHTML = svg(W, H, s);
+  }
+
+  function drawLobby(el) {
+    const W = el.clientWidth, H = 270, b0 = 220, top = 28, tot = d => d.out + d.own, peak = Math.max(...LOBBY.map(tot));
+    const band = W / LOBBY.length, bw = Math.min(64, band * 0.6), h = v => v / peak * (b0 - top);
+    let s = `<line class="base" x1="0" x2="${W}" y1="${b0}" y2="${b0}"/>`;
+    LOBBY.forEach((d, i) => {
+      const x = i * band + (band - bw) / 2, cx = x + bw / 2, last = i === LOBBY.length - 1;
+      s += `<rect class="bar" x="${x}" y="${b0 - h(d.out)}" width="${bw}" height="${h(d.out)}"><title>${esc(`${d.y}: outside firms ${money(d.out)}`)}</title></rect>`;
+      if (d.own) s += `<rect class="bar hi" x="${x}" y="${b0 - h(tot(d))}" width="${bw}" height="${h(d.own)}"><title>${esc(`${d.y}: Kalshi's own lobbyists ${money(d.own)}`)}</title></rect>`;
+      s += T(cx, b0 - h(tot(d)) - 8, money(tot(d)), last ? 'hi' : 'v', 'middle');
+      s += T(cx, b0 + 20, d.y, 'ink', 'middle') + (d.n ? T(cx, b0 + 38, d.n, '', 'middle') : '');
+    });
+    el.innerHTML = svg(W, H, s);
+  }
+
+  function hbars(el, data, fmt, opts = {}) {
+    const W = el.clientWidth, narrow = W < 520, rowH = narrow ? 50 : 34, lw = narrow ? 0 : Math.min(250, W * 0.42);
+    const peak = Math.max(...data.map(d => d.v)), room = W - lw - 70;
+    let s = '';
+    data.forEach((d, i) => {
+      const y0 = i * rowH, by = narrow ? y0 + 20 : y0 + 6, w = Math.max(2, d.v / peak * room);
+      s += T(narrow ? 0 : lw - 12, narrow ? y0 + 13 : y0 + 21, d.k, d.hi ? 'hi' : 'ink', narrow ? 'start' : 'end');
+      s += `<rect class="bar${d.hi ? ' hi' : ''}" x="${lw}" y="${by}" width="${w}" height="20"><title>${esc(`${d.k}: ${fmt(d.v)}`)}</title></rect>`;
+      s += T(lw + w + 8, by + 15, fmt(d.v), d.hi ? 'hi' : 'v');
+    });
+    el.innerHTML = svg(W, data.length * rowH + 4, s);
+  }
+
+  function drawStates(el) {
+    const W = el.clientWidth, cols = 12, gap = 3, cell = Math.min(52, (W - gap * (cols - 1)) / cols), H = 8 * (cell + gap);
+    let s = '';
+    TILES.forEach(([st, c, r]) => {
+      const x = c * (cell + gap), y = r * (cell + gap), out = OUT.includes(st), fight = FIGHT.includes(st);
+      const fill = out ? 'var(--ink)' : fight ? 'var(--accent)' : 'none', op = out ? 1 : fight ? 0.35 : 1;
+      const lab = out ? 'ordered to stop sports contracts' : fight ? 'legal fight under way' : 'no case found';
+      s += `<g><rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="3" fill="${fill}" fill-opacity="${op}" stroke="${out || fight ? 'none' : 'var(--rule)'}"/><title>${esc(`${st}: ${lab}`)}</title>`;
+      s += `<text x="${x + cell / 2}" y="${y + cell / 2 + 4}" text-anchor="middle" style="font-size:${cell < 30 ? 10 : 12.5}px;font-weight:${out || fight ? 600 : 400};fill:${out ? 'var(--paper)' : fight ? 'var(--ink)' : 'var(--mute)'}">${st}</text></g>`;
+      if (st === 'MD') s += `<rect x="${x - 1.5}" y="${y - 1.5}" width="${cell + 3}" height="${cell + 3}" rx="4" fill="none" stroke="var(--accent)" stroke-width="2"/>`;
+    });
+    el.innerHTML = svg(W, H, s);
+  }
+
+  function drawEpic(el) {
+    const W = el.clientWidth, H = 240, lx = Math.min(150, W * 0.28), rx = W - Math.min(150, W * 0.28), y0 = 24, y1 = 200, max = 5.5;
+    const y = v => y1 - v / max * (y1 - y0);
+    const lines = [
+      { k: 'Legal sports betting', a: 3.0, b: 4.8, hi: true },
+      { k: 'No legal betting', a: 3.1, b: 2.2 },
+    ];
+    let s = T(lx, y1 + 30, 'Early 2018', 'ink', 'middle') + T(rx, y1 + 30, 'Early 2026', 'ink', 'middle');
+    s += `<line class="grid" x1="${lx}" x2="${lx}" y1="${y0}" y2="${y1}"/><line class="grid" x1="${rx}" x2="${rx}" y1="${y0}" y2="${y1}"/>`;
+    lines.forEach(l => {
+      const c = l.hi ? 'var(--accent)' : 'var(--bar)';
+      s += `<line x1="${lx}" y1="${y(l.a)}" x2="${rx}" y2="${y(l.b)}" stroke="${c}" stroke-width="${l.hi ? 3 : 2.5}"/>`;
+      s += `<circle cx="${lx}" cy="${y(l.a)}" r="5" fill="${c}"><title>${esc(`${l.k}, early 2018: ${l.a}`)}</title></circle><circle cx="${rx}" cy="${y(l.b)}" r="5" fill="${c}"><title>${esc(`${l.k}, early 2026: ${l.b}`)}</title></circle>`;
+      s += T(lx - 10, y(l.a) + (l.hi ? 14 : -4), l.a.toFixed(1), l.hi ? 'hi' : 'v', 'end');
+      s += T(rx + 10, y(l.b) + 4, l.b.toFixed(1), l.hi ? 'hi' : 'v', 'start');
+      const pct = Math.round((l.b - l.a) / l.a * 100);
+      s += T(rx + 10, y(l.b) + 22, `${l.k} (${pct > 0 ? '+' : ''}${pct}%)`, l.hi ? 'hi' : '', 'start');
+    });
+    el.innerHTML = svg(W, H, s);
+  }
+
+  const DRAW = [
+    ['map', drawMap], ['valuation', drawValuation], ['feemix', drawFeeMix], ['lobby', drawLobby],
+    ['assoc', el => hbars(el, ASSOC, v => `$${v.toLocaleString('en-US')}`)],
+    ['tvads', el => hbars(el, TV, v => `$${v}M`)],
+    ['states', drawStates], ['epic', drawEpic],
+  ];
+  const drawAll = () => DRAW.forEach(([id, f]) => { const el = document.getElementById(id); if (el && el.clientWidth) f(el); });
+  drawAll();
+  let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawAll, 120); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawAll);
+})();
+</script>
+</body>
+</html>

@@ -7,6 +7,8 @@ A daily, sourced record of the money behind American gambling, from sportsbooks 
 > [!WARNING]
 > **Bankrolled is currently unplugged.** The hourly updates are paused because we've run out of Firecrawl credits. Everything published so far stays up, but nothing new is being added until the updates are switched back on.
 
+**Made with Claude.** Bankrolled is researched, written and charted with [Claude](https://claude.ai), Anthropic's AI assistant. Hourly updates are published automatically under the rules below; longer research projects are reviewed by Chris Truong before publishing. Every item links to its source so it can be checked.
+
 Bankrolled tracks four things:
 
 - **Political money.** Super PACs, corporate PACs, ballot measure committees and lobbying by sportsbooks and sports prediction markets.
@@ -25,6 +27,7 @@ The site is served from this repository with GitHub Pages and is normally checke
 | `docs/index.html` | The page itself |
 | `docs/data.json` | All content: feed posts, ledger rows, chart series and key figures |
 | `ledger.csv` | The confirmed ledger as a spreadsheet |
+| `docs/research/` | Longer, dated research projects, one folder each (first: `docs/research/kalshi/`) |
 | `docs/archive/` | Feed posts older than 90 days, one file per month. Posts are archived, never deleted. |
 | `reports/YYYY-MM-DD.md` | One report per daily run, listing what was added or corrected, or noting that nothing met the bar |
 
