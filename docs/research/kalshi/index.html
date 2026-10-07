@@ -60,6 +60,17 @@
   .stats span { font: 400 14px/1.4 var(--sans); color: var(--mute); }
 
   section { display: grid; gap: 16px; min-width: 0; }
+  .sbody { display: grid; gap: 16px; min-width: 0; }
+  /* wide screens: each section's title sits in a left column, like the chapter labels on chrisqtruong.com,
+     and stays in view while you read that section */
+  @media (min-width: 1040px) {
+    .wrap { max-width: 980px; }
+    section { grid-template-columns: 200px minmax(0, 1fr); column-gap: 40px; align-items: start; }
+    .secband { position: sticky; top: 24px; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 6px; border-bottom: 0; border-top: 1px solid var(--ink); padding: 12px 0 0; margin-top: 12px; }
+    .secband h2 { font-size: 26px; }
+    .secband .label { white-space: normal; }
+    .sbody { padding-top: 12px; margin-top: 12px; }
+  }
   .secband { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--ink); padding-bottom: 8px; margin-top: 12px; }
   .secband h2 { margin: 0; font: 400 30px/1.15 var(--display); text-wrap: balance; }
   .secband .label { white-space: nowrap; }
@@ -152,17 +163,20 @@
   <!-- MONEY MAP -->
   <section aria-labelledby="h-map">
     <div class="secband"><h2 id="h-map">The money map</h2></div>
+    <div class="sbody">
     <figure class="viz">
       <h3>Investors and traders pay in; lobbyists, politicians and advertisers get paid</h3>
       <p class="deck">Each box shows the most recent verified figure for that flow. Boxes are not drawn to scale: the amounts differ by a factor of a thousand.</p>
       <div class="plot" id="map" role="img" aria-label="Diagram: venture investors ($3.6 billion raised) and traders' fees ($263.5 million in 2025) flow into Kalshi, valued at $22 billion. Kalshi pays for marketing ($41.4 million on national TV in January to August 2026), federal lobbying ($3.9 million since 2021) and political giving (about $1 million from the founders and $567,500 to governors' and attorneys general associations)."></div>
       <figcaption>Sources: funding from <a href="https://www.cooley.com/news/coverage/2026/2026-05-07-kalshi-raises-$1-billion-series-f" target="_blank" rel="noopener">Cooley</a> and Clay; 2025 fees, an estimate from trade data, via <a href="https://cdcgaming.com/brief/kalshis-2025-fee-revenue-was-263-5m-with-89-coming-from-sports/" target="_blank" rel="noopener">CDC Gaming</a>; TV spend from iSpot via <a href="https://www.mediapost.com/publications/article/417626/" target="_blank" rel="noopener">MediaPost</a>; lobbying from <a href="https://lda.senate.gov/" target="_blank" rel="noopener">Senate disclosures</a>; donations from the FEC, <a href="https://www.notus.org/2026-election/kalshi-donations-midterms" target="_blank" rel="noopener">NOTUS</a> and <a href="https://www.opensecrets.org/news/2026/09/kalshi-leads-prediction-markets-3-million-effort-to-fight-off-state-regulations/" target="_blank" rel="noopener">OpenSecrets</a>.</figcaption>
     </figure>
+    </div>
   </section>
 
   <!-- ORIGINS + MONEY IN -->
   <section aria-labelledby="h-in">
     <div class="secband"><h2 id="h-in">Money in</h2><span class="label">Origins and investors</span></div>
+    <div class="sbody">
     <div class="prose">
       <p>Kalshi came from Wall Street's quant side, not from gambling. Founders Tarek Mansour and Luana Lopes Lara, MIT graduates who worked at Citadel Securities, Bridgewater and Goldman Sachs, came up with the idea in 2018 while interning at the trading firm Five Rings, then joined Y Combinator in 2019 (<a href="https://research.contrary.com/company/kalshi" target="_blank" rel="noopener">Contrary</a>, <a href="https://www.forbes.com.au/?p=179358" target="_blank" rel="noopener">Forbes</a>).</p>
       <p>The license was the business. On November 4, 2020, the CFTC approved Kalshi as the first federally regulated exchange for event contracts (<a href="https://cftc.gov/PressRoom/PressReleases/8302-20" target="_blank" rel="noopener">CFTC</a>). That federal license is now Kalshi's shield against state gambling laws.</p>
@@ -182,11 +196,13 @@
         <li><b>Donald Trump Jr.:</b> a paid strategic adviser since January 2025. <span class="chip reported">Reported</span> The Financial Times, citing unnamed sources, reported he was granted about $300,000 in Kalshi stock without investing his own money; neither he nor Kalshi commented (<a href="https://covers.com/industry/kalshi-facing-scrutiny-over-trump-jr-300k-share-gift-june-30-2026" target="_blank" rel="noopener">Covers</a>). His venture firm has also invested in rival Polymarket.</li>
       </ul>
     </div>
+    </div>
   </section>
 
   <!-- MONEY MADE -->
   <section aria-labelledby="h-made">
     <div class="secband"><h2 id="h-made">Money made</h2><span class="label">Fees, revenue, volume</span></div>
+    <div class="sbody">
     <div class="prose">
       <p>Kalshi takes a fee on almost every trade, largest on near coin-flip events. It is private, so every revenue figure is an estimate or the company's own unaudited claim.</p>
     </div>
@@ -203,11 +219,13 @@
         <li><b>Distribution:</b> Robinhood (March 2025), Webull and Coinbase (all 50 states, January 2026) sell Kalshi contracts inside apps people already use. CNN, CNBC and Fox News show its odds on air, and the NHL, the US Open and five MLB teams are partners (<a href="https://www.fortune.com/2026/08/25/kalshi-deals-five-mlb-teams-separate-league-partnership/" target="_blank" rel="noopener">Fortune</a>).</li>
       </ul>
     </div>
+    </div>
   </section>
 
   <!-- INFLUENCE -->
   <section aria-labelledby="h-inf">
     <div class="secband"><h2 id="h-inf">Money for influence</h2><span class="label">Lobbying and politics</span></div>
+    <div class="sbody">
     <figure class="viz">
       <h3>Lobbying in the first half of 2026 alone topped all of 2025</h3>
       <p class="deck">Kalshi hired outside lobbyists in December 2021, years before it registered its own in July 2025.</p>
@@ -234,11 +252,13 @@
       <p>The founders gave about $1 million to candidates and party committees in 2025 and 2026, roughly $615,000 to Republicans and $377,000 to Democrats, including $250,000 each to NRSC Victory in April 2026 (<a href="https://www.notus.org/2026-election/kalshi-donations-midterms" target="_blank" rel="noopener">NOTUS</a>). Recipients include sponsors of bills to restrict prediction markets as well as sponsors of the Kalshi-backed Prediction Market Act. Kalshi has no PAC of its own.</p>
       <p>The opposition spends too. The American Gaming Association spent about as much on federal lobbying as Kalshi in the first half of 2026, and a super PAC funded by FanDuel, DraftKings and Fanatics has raised $70 million (<a href="https://www.notus.org/money/prediction-markets-kalshi-polymarket-lobbying-congress" target="_blank" rel="noopener">NOTUS</a>). Sportsbooks see Kalshi as a competitor.</p>
     </div>
+    </div>
   </section>
 
   <!-- MARKETING -->
   <section aria-labelledby="h-ads">
     <div class="secband"><h2 id="h-ads">Money for attention</h2><span class="label">Ads and who they reach</span></div>
+    <div class="sbody">
     <figure class="viz">
       <h3>Kalshi outspent Polymarket on national TV more than five to one</h3>
       <p class="deck">Estimated national TV ad spending, January through late August 2026. Social media, streaming, in-app ads and sponsorships are not counted here, and are likely most of Kalshi's budget.</p>
@@ -253,11 +273,13 @@
         <li><span class="chip reported">Reported</span> CNN estimated that 18- to 20-year-olds traded about $5.4 billion on Kalshi in 2026; Kalshi says the age group is about 3% of volume. CNN did not publish its method and is a Kalshi data partner (<a href="https://keyt.com/news/money-and-business/cnn-business-consumer/2026/08/28/young-adults-under-21-traded-5-billion-on-kalshi-this-year-amid-prediction-market-frenzy/" target="_blank" rel="noopener">CNN via KEYT</a>).</li>
       </ul>
     </div>
+    </div>
   </section>
 
   <!-- COURTS -->
   <section aria-labelledby="h-law">
     <div class="secband"><h2 id="h-law">The legal fight</h2><span class="label">States, courts, the CFTC</span></div>
+    <div class="sbody">
     <div class="prose">
       <p>Kalshi's whole model rests on one argument: its contracts are federally regulated swaps, so state gambling laws do not apply. The CFTC fought Kalshi until May 2025, when it dropped its appeal under the new administration (<a href="https://www.financemagnates.com/forex/cftc-folds-its-hand-in-election-betting-showdown-with-kalshi" target="_blank" rel="noopener">Finance Magnates</a>). Since April 2026 the CFTC and the Justice Department have sued states on Kalshi's side of the argument (<a href="https://www.cftc.gov/PressRoom/PressReleases/9206-26" target="_blank" rel="noopener">CFTC</a>).</p>
     </div>
@@ -286,11 +308,13 @@
       <h3>Other cases</h3>
       <p>Arizona filed criminal charges, which a federal judge blocked at the CFTC's request. New York's lawsuit seeks about $36 billion. Gamblers have filed class actions and suits to recover losses; none has produced a ruling against Kalshi yet (<a href="https://frontofficesports.com/article/kalshi-hit-with-nationwide-class-action-over-illegal-sports-betting/" target="_blank" rel="noopener">Front Office Sports</a>). Kalshi says it has opened about 200 insider-trading investigations of its own users (<a href="https://www.npr.org/2026/02/25/nx-s1-5726050/kalshi-insider-trading-enforcement-actions" target="_blank" rel="noopener">NPR</a>).</p>
     </div>
+    </div>
   </section>
 
   <!-- HARM -->
   <section aria-labelledby="h-harm">
     <div class="secband"><h2 id="h-harm">Who pays</h2><span class="label">What the research finds</span></div>
+    <div class="sbody">
     <div class="prose">
       <p>No study yet measures harm among prediction-market users directly. Because sports make up most of Kalshi's business, the research on online sports betting is the closest evidence.</p>
     </div>
@@ -316,11 +340,13 @@
       <p>A 2026 policy article in <i>Science</i> argues that prediction markets use gambling-style design while calling bets "trading," which keeps users from seeing themselves as gamblers (<a href="https://www.gamblinginsider.com/news/156260/science-journal-research-community-prediction-markets-political-public-health-risks" target="_blank" rel="noopener">Gambling Insider</a>). Kalshi is not connected to the state self-exclusion lists that licensed sportsbooks must honor. In May 2026 it pledged $2 million to the National Council on Problem Gambling (<a href="https://covers.com/industry/kalshi-collaborates-with-ncpg-to-form-responsible-trading-initiative-may-18-2026" target="_blank" rel="noopener">Covers</a>).</p>
       <p><b>The other side:</b> Federal Reserve economists found Kalshi's prices forecast Fed decisions and economic data about as well as professional surveys (<a href="https://www.nber.org/papers/w34702" target="_blank" rel="noopener">NBER</a>). Kalshi argues it is federally supervised, does not bet against its users and polices insider trading. Its forecasting value comes mostly from economic and political markets, though, while most of its money comes from sports.</p>
     </div>
+    </div>
   </section>
 
   <!-- TIMELINE -->
   <section aria-labelledby="h-tl">
     <div class="secband"><h2 id="h-tl">Timeline</h2></div>
+    <div class="sbody">
     <div class="tlkey"><span><i class="money"></i>Money</span><span><i class="courts"></i>Courts and regulators</span><span><i></i>Politics and business</span></div>
     <ol class="tl">
       <li class="courts"><span class="when">September 2026</span><span class="what">Sixth and Ninth Circuits rule against Kalshi; New Jersey asks the Supreme Court to decide.</span></li>
@@ -343,11 +369,13 @@
       <li class="courts"><span class="when">November 4, 2020</span><span class="what">The CFTC licenses Kalshi as an exchange.</span></li>
       <li><span class="when">2018–2019</span><span class="what">Founded; joins Y Combinator.</span></li>
     </ol>
+    </div>
   </section>
 
   <!-- OPEN -->
   <section aria-labelledby="h-open">
     <div class="secband"><h2 id="h-open">Still to check</h2></div>
+    <div class="sbody">
     <ul class="checks">
       <li>Third-quarter 2026 lobbying reports, due October 20, including FTP's fee and new in-house hires</li>
       <li>FEC filings after July 14, 2026, and the Trump inaugural committee's donor list</li>
@@ -357,6 +385,7 @@
       <li>Rulings in the Fourth Circuit (Maryland), the Massachusetts high court and the Supreme Court petitions</li>
     </ul>
     <p class="src"><b>Method:</b> compiled by Claude, Anthropic's AI assistant, from public records (Senate lobbying disclosures, FEC and IRS filings, court dockets, CFTC releases) and from reporting, under the same rules as the rest of Bankrolled, and reviewed by Chris Truong. AI can make mistakes, which is why every claim is linked to its source. Revenue figures are estimates or company claims; items marked Reported rest on a single outlet or unnamed sources. Spot an error? <a href="https://github.com/chrisqtruong/bankrolled/discussions" target="_blank" rel="noopener">Tell us on GitHub</a>.</p>
+    </div>
   </section>
 
   <footer>
