@@ -332,7 +332,7 @@
       <a href="#ledger" data-tab="ledger">Ledger</a>
       <a href="#numbers" data-tab="numbers">Numbers</a>
       <a href="#archive" data-tab="archive">Archive</a>
-      <a href="#research" data-tab="research">Research</a>
+      <a href="#deep-dives" data-tab="deep-dives">Deep dives</a>
       <a href="#method" data-tab="method">About</a>
     </nav>
   </header>
@@ -431,17 +431,17 @@
     </section>
 
     <!-- RESEARCH -->
-    <section id="s-research" hidden style="display:grid;gap:20px;min-width:0">
-      <h2 class="sec">Research</h2>
-      <p class="lede">Longer research projects that go deeper than the daily feed: one company or question at a time, traced from the beginning, with charts and every source linked. Each project is dated and reflects what was known on that date.</p>
-      <p class="aiuse">Research projects are researched, written and charted with <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>, Anthropic's AI assistant, and reviewed by Chris Truong before publishing.</p>
+    <section id="s-deep-dives" hidden style="display:grid;gap:20px;min-width:0">
+      <h2 class="sec">Deep dives</h2>
+      <p class="lede">Longer pieces that go deeper than the daily feed: one company or question at a time, traced from the beginning, with charts and every source linked. Each deep dive is dated and reflects what was known on that date.</p>
+      <p class="aiuse">Deep dives are researched, written and charted with <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>, Anthropic's AI assistant, and reviewed by Chris Truong before publishing.</p>
       <div class="day">
-        <div class="label">Research projects</div>
+        <div class="label">Deep dives</div>
         <article class="post">
-          <div class="meta"><span class="chip confirmed">Research project</span><span class="label">October 7, 2026</span></div>
+          <div class="meta"><span class="chip confirmed">Deep dive</span><span class="label">October 7, 2026</span></div>
           <h3><a href="research/kalshi/">Following the money: Kalshi</a></h3>
           <p>Where Kalshi's money came from, how it makes money from sports, and what it spends on lobbyists, politicians and ads, with the state-by-state court fight and what research says about harm.</p>
-          <p class="sources">Charts: valuation by round, federal lobbying by year, a money map, a state-by-state map and more. <a href="research/kalshi/">Read the project</a></p>
+          <p class="sources">Charts: valuation by round, federal lobbying by year, a money map, a state-by-state map and more. <a href="research/kalshi/">Read the deep dive</a></p>
         </article>
       </div>
     </section>
@@ -466,7 +466,7 @@
         <p>Criminal defendants are described as charged or accused until they plead guilty or are convicted. Lawsuits are allegations. Amounts sought in a lawsuit are claims, not judgments. When sources disagree on a number, we leave the number out and say so.</p>
 
         <h3>Made with Claude</h3>
-        <p>Bankrolled is built and run with <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>, Anthropic's AI assistant. Claude runs the hourly checks, reads the sources, writes the posts and draws the charts, under the rules on this page. The hourly updates are published without a person reviewing each one first; Chris Truong set the rules, oversees the project and handles corrections. Longer research projects are reviewed by him before publishing. AI can get things wrong, which is why every item links to its source and is labeled by how solid it is. If you find a mistake, please say so in the comments.</p>
+        <p>Bankrolled is built and run with <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>, Anthropic's AI assistant. Claude runs the hourly checks, reads the sources, writes the posts and draws the charts, under the rules on this page. The hourly updates are published without a person reviewing each one first; Chris Truong set the rules, oversees the project and handles corrections. Longer deep dives are reviewed by him before publishing. AI can get things wrong, which is why every item links to its source and is labeled by how solid it is. If you find a mistake, please say so in the comments.</p>
 
         <h3>How a day's update works</h3>
         <div class="pipe">
@@ -559,9 +559,9 @@
   document.querySelectorAll('svg.logo').forEach(drawLogo);
 
   // ---- tabs
-  const TABS = ['feed', 'ledger', 'numbers', 'archive', 'research', 'method'];
+  const TABS = ['feed', 'ledger', 'numbers', 'archive', 'deep-dives', 'method'];
   function show() {
-    const h = (location.hash || '#feed').slice(1);
+    const h = { research: 'deep-dives' }[(location.hash || '#feed').slice(1)] || (location.hash || '#feed').slice(1);  // old #research links still work
     const tab = TABS.includes(h) ? h : 'feed';  // post links (#p-...) open the feed
     TABS.forEach(t => { document.getElementById('s-' + t).hidden = t !== tab; });
     document.querySelectorAll('nav.tabs a').forEach(a => { if (a.dataset.tab === tab) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });

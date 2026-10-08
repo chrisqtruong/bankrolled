@@ -2,6 +2,10 @@
 
 A record of changes to the Bankrolled site and project. Daily content updates (new posts, ledger rows, corrections) are not listed here: they are committed as "Update YYYY-MM-DD HH:MM ET" and summarized in `reports/`. Design and feature changes are listed below, newest first, and from here on go through a pull request.
 
+## 2026-10-08
+
+- **Research tab renamed "Deep dives".** The tab, its intro and the Kalshi page's label and breadcrumb now say "Deep dive", to match Tracewire and Chris Truong's site, where longer dated pieces are called deep dives. Old `#research` links still open the tab, and the Kalshi page keeps its address (`research/kalshi/`).
+
 ## 2026-10-07
 
 - **Research tab and first research project.** New Research tab listing longer, dated research projects. First project: "Following the money: Kalshi" (`docs/research/kalshi/`), covering Kalshi's investors and valuation, fee revenue, federal and state lobbying, political giving, advertising, the state-by-state legal fight, and research on gambling harm, with eight hand-drawn charts and diagrams. Facts as of October 7, 2026.
